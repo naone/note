@@ -5,7 +5,7 @@
     <link>/tags/</link>
     <description>Recent content in Tags on Linuxisekai | Nolep enthuiast project</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 04 Jul 2019 15:49:01 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jul 2019 20:03:00 +0700</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,18 +13,9 @@
     <item>
       <title>Hugo</title>
       <link>/tags/hugo/</link>
-      <pubDate>Thu, 04 Jul 2019 15:49:01 +0700</pubDate>
+      <pubDate>Mon, 01 Jul 2019 20:03:00 +0700</pubDate>
       
       <guid>/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>bulma</title>
-      <link>/tags/bulma/</link>
-      <pubDate>Thu, 04 Jul 2019 15:49:01 +0700</pubDate>
-      
-      <guid>/tags/bulma/</guid>
       <description></description>
     </item>
     
@@ -61,6 +52,15 @@
       <pubDate>Sun, 30 Jun 2019 08:08:26 +0700</pubDate>
       
       <guid>/tags/oomox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bulma</title>
+      <link>/tags/bulma/</link>
+      <pubDate>Sat, 29 Jun 2019 16:38:23 +0700</pubDate>
+      
+      <guid>/tags/bulma/</guid>
       <description></description>
     </item>
     

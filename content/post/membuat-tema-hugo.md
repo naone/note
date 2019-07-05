@@ -1,7 +1,7 @@
 ---
 title: "#2 Hugo : Membuat tema hugo sebdiri"
 date: 2019-07-04T15:49:01+07:00
-draft: false
+draft: true
 tags: ["Hugo","Bulma"]
 ---
 <h3>Prakata</h3>
