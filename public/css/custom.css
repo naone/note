@@ -1,0 +1,106 @@
+@media screen and (max-width:768px) {
+.judul {
+    margin-top: 6rem;
+    font-size: 150%;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    text-align: center;
+}
+
+.content h3{
+    border-bottom:2px solid #60777B;
+    margin-top:2em; 
+}
+.info-post {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ACB6B7;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+.content {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}}
+
+@media screen and (min-width: 768px) {
+    .judul {
+        margin-top: 8rem;
+        font-size: 200%;
+        margin-left: 12rem;
+        margin-right: 12rem;
+        text-align: center;
+    }
+    
+    .content h3{
+        border-bottom:2px solid #60777B;
+        margin-top:2em; 
+    }
+    .info-post {
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #ACB6B7;
+        padding-bottom: 0.5rem;
+        text-align: center;
+        margin-left: 12rem;
+        margin-right: 12rem;
+    }
+    .content {
+        margin-top: 1rem;
+        margin-left: 17rem;
+        margin-right: 17rem;
+    }
+    h1 {
+        padding-top: 3rem;
+    }    
+    }
+.disqus-comment{
+    margin:0 0em 0em
+}
+.disqus-comment .disqus-button{
+    cursor:pointer;
+    border:2px solid rgb(167, 167, 167);
+    color:#999;
+    margin:0 auto;
+    max-width:200px;
+    text-align:center;
+    padding:10px;
+    transition:.5s;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+.disqus-comment .disqus-button:hover{
+    color:rgb(50, 156, 116);border-color:rgb(233, 233, 233)
+}
+            
+.content-img {
+        align-items: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 700px;
+    }
+.ghost-padding {
+    padding-bottom: 6rem;
+}
+html {
+font-family: 'Mali', cursive;
+}
+  .break {
+    word-break: break-all;
+  }
+  .judul-post {
+      font-size: 1.1em;
+  }
+  .font-cmd {
+    font-family: 'Ubuntu Mono', monospace;
+  }
+  .message-code {
+    align-items: center;
+    background-color: #839496;
+    color: #002B36;
+    border-radius: 0.4em 0.4em 0 0;
+    display: flex;
+    font-size: 1rem;
+    line-height: 0.7em;
+    padding: 0.75em 1em;
+  }

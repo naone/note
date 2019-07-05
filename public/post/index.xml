@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Linuxisekai | Nolep enthuiast project</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Linuxisekai | Nolep enthuiast project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 04 Jul 2019 15:49:01 +0700</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>#2 Hugo : Membuat tema hugo sebdiri</title>
+      <link>/post/membuat-tema-hugo/</link>
+      <pubDate>Thu, 04 Jul 2019 15:49:01 +0700</pubDate>
+      
+      <guid>/post/membuat-tema-hugo/</guid>
+      <description>Prakata melanjutkan artikel sebelumnya, Pada artikel kali ini kita akan membahas cara membuat tema hugo. sebenarnya di website https://themes.gohugo.io juga sudah banyak sekali tema yang sudah siap pakai akan tetapi saya merasa kurang sreg dengan tampilan tema yang disediakan, saya juga bingung jika ingin memodifikasi tampilan oleh karena itu saya ingin mencoba membuat tema sendiri sekaligus mencoba hal baru. tema yang kita buat akan menggunkan CSS framework yaitu bulma. pertama siapkan bahan-bahanya terlebih dahulu   Info #1 Hugo: Membuat blog menggunkan hugo + gitub paga    Bulma untuk CSS framework Font Awesome unutuk gylph icon Jquery JS framework Prismjs untuk Syntax Hightlight  Download semua bahanya disini  Instalasi setelah semua bahanya sudah siap sekarang saatnya membuat tema hugo kita  pertama masuk ke direktory hugo kita root@linuxisekai $ cd linuxisekai  $ cd hugo new theme isekai    keterangan :  linuxisekai adalah directory tempat hug kita dibuat jika kmu belum membuatnya ketikan perintah : $ hugo new site linuxisekai isekai adalah nama tema yang kita buat kalian bebas menggantinya sesuka kalian.</description>
+    </item>
+    
+    <item>
+      <title>#1 Hugo : membuat blog menggunkan Hugo &#43; github page</title>
+      <link>/post/ngeblog-dengan-hugo/</link>
+      <pubDate>Mon, 01 Jul 2019 20:03:00 +0700</pubDate>
+      
+      <guid>/post/ngeblog-dengan-hugo/</guid>
+      <description>Pendahuluan  dunia website terus berkembang, banyak banyak sekali frameeork dan tools-tools baru bermunculkan yang menawarkan banyak fitur serta kemudahan, salah satunya yaitu SSG ( static site generator ), sepeti namanya SSG digunakan unutk meng generate web static, nah hugo adalah salah satu dari sekian banyak static site generator. List Static Site Generator  Hexo Gatsby Pelican Jekyll Vuepress Elevnty Hugo Etc.  menurut klaim hugo, hugo adalah framework tercepat unutuk membuat website.</description>
+    </item>
+    
+    <item>
+      <title>Membuat gtk theme sendiri menggunkan oomox</title>
+      <link>/post/oomo-gtk/</link>
+      <pubDate>Sun, 30 Jun 2019 08:08:26 +0700</pubDate>
+      
+      <guid>/post/oomo-gtk/</guid>
+      <description>Pendahuluan oomox adalah aplikasi yang digunakan membuat gtk theme pada sistem operasi linux.oomox berbasisikan GUI jadi sangat mudah digunkan. bagi yang hobi otak atik tampilan desktop, oomox pasti akan menjadi aplikasi yang sangat berguna. tema oomox sendiri terbagi menjadi 3 varian yaitu numix-based, materia dan arch theme dan untuk icon ada 4 yaitu archdroid, gnome color, numix, papirus dan suru++.    Instalasi  Arch Linux root@linuxisekai $ sudo pacman -S yay  $ yay -S oomox   Ubuntu Install paket depensi yang dibutuhkan $ sudo apt-get install python3-gi libglib2.</description>
+    </item>
+    
+    <item>
+      <title>Bulma : Alternativ Framework CSS selain Bootstrap</title>
+      <link>/post/bulma-framework/</link>
+      <pubDate>Sat, 29 Jun 2019 16:38:23 +0700</pubDate>
+      
+      <guid>/post/bulma-framework/</guid>
+      <description>Pendahuluan  Ini bukan bulma dragon ball 😠   bulma adalah salah satu framework CSS yang sedang naik daun akhir-akhir ini, bulma dibuat oleh Jeremy Thomas berbasiskan css flexbox, oleh karena itu grid system pada bulma sangatlah flexibel dan responsif. inilah kelebihan utama pada bulma dibanding framework css lain. oh iya linuxisekai juga meggunakan bulma loh 😅 .  kelebihan bulma :   flexbox based : membuat kita lebih mudah dalam membuat grid system yang fleksibel dan responsif hanya menggunkan satu file css : bulma sama sekali tidak menggunakan javascript, saat kita menginstallnya kita hanya diberi satu file yaitu bulma.</description>
+    </item>
+    
+    <item>
+      <title>Cara menginstall driver realtek di linux</title>
+      <link>/post/driver-realtek/</link>
+      <pubDate>Fri, 28 Jun 2019 19:43:35 +0700</pubDate>
+      
+      <guid>/post/driver-realtek/</guid>
+      <description>Pendahuluan setelah selesai menginstall sistem operasi linux terus ternyata tidak ada wifinya ? mengkin itu terjadi karena driver dari wifi tersebut belum terinstall, memenag ada beberapa yang wifinya secara default sudah terinstall beberapa vendor seperti realtek atau broadcom yang secara dedault belum terinstal yang saya sendiri juga tidak tau alasnya. instalasi Cek versi karnel $ uname -a   Output Linux asuna 5.2.0-1-MANJARO #1 SMP PREEMPT Sun Jun 9 16:43:42 UTC 2019 x86_64 GNU/Linux   selanjutnya install paket-paket yang dibutuhkan   Arch Linux $ sudo pacman -S linux52-headers dkms git build-essential automake   NB : untuk linux52-headers silahkan kalian sesuaikan dengan versi karnel kalian, misal versi karnel kalian adalah 4.</description>
+    </item>
+    
+    <item>
+      <title>Desktop environment terasa berat ? coba pakai Windows Manager</title>
+      <link>/post/windows-manager/</link>
+      <pubDate>Fri, 28 Jun 2019 14:22:15 +0700</pubDate>
+      
+      <guid>/post/windows-manager/</guid>
+      <description>Pendahuluan Artikel ini dibuat karena saya melihat digrub facebook banyak sekali yang bertanya &amp;ldquo;Desktop environtment apa yang ringan ?&amp;rdquo;, &amp;ldquo;saya mau install linux mint kira kira yang ringan dan tampilanya bagus pakai lxde xfce atau mate ?&amp;rdquo; &amp;ldquo;Saya habis install ubutnu kok ngelag ya ?&amp;rdquo; etc. mungkin artikel ini bisa menjawab pertanyaan - pertanyaan tersebut. sebenarnya jawaban pertanyaan diatas adalah xfce/lxde namun ada alernatif lain yaitu hanya menggunakan windows manager tanpa meggunakan desktop environment.</description>
+    </item>
+    
+  </channel>
+</rss>

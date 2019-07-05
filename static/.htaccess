@@ -1,0 +1,189 @@
+# MATJAZ.IT .HTACCESS FILE
+# =============================================================================
+
+## Domain redirection from gustin.it to matjaz.it over HTTPS
+## --------------------------------------------------------
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !linuxisekai.github.io$ [NC]
+RewriteRule ^(.*)$ https://linuxisekai.github.io/$1 [R=302,L]
+
+
+## Redirect www to non-www URL (plain domain) over HTTPS
+## --------------------------------------------------------
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+
+## Redirect HTTP request to HTTPS
+## --------------------------------------------------------
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+
+## Security headers: HSTS, CSP etc.
+## --------------------------------------------------------
+<ifModule mod_headers.c>
+    # Make browsers remember that this website prefers HTTPS over HTTP
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+    # Allowed domains to load scripts, style sheets, images etc.
+    Header set Content-Security-Policy "default-src https://linuxisekai.github.io:443"
+    # Don't allow the website to be iframed
+    Header always set X-Frame-Options "DENY"
+    # Disable MIME type sniffing, which can e.g. make IE execute an innocent looking .img URL as a javascript.
+    Header always set X-Content-Type-Options nosniff
+    # Enable the built in reflective XSS protection in some browsers
+    Header always set X-Xss-Protection "1; mode=block"
+    # When navigating within this website, send full URL as referrer,
+    # when from this to another HTTPS website send only home URL,
+    # when from this to another HTTP website, send nothing.
+    Header always set Referrer-Policy no-referrer-when-downgrade
+</ifModule>
+
+
+## Set HTTP headers for Charset and Content language
+## --------------------------------------------------------
+AddDefaultCharset UTF-8
+AddCharset utf-8 .html .css .js .txt .xml .json .asc
+DefaultLanguage en-US
+
+
+## Add WOFF2 MIME type
+## https://gist.github.com/sergejmueller/cf6b4f2133bcb3e2f64a
+## --------------------------------------------------------
+AddType application/font-woff2 .woff2
+
+
+## Enable compression for common file types
+## --------------------------------------------------------
+<IfModule mod_deflate.c>
+  <IfModule mod_filter.c>
+    # Plaintext, HTML, JavaScript, CSS, XML and fonts
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+    AddOutputFilterByType DEFLATE application/x-font
+    AddOutputFilterByType DEFLATE application/x-font-opentype
+    AddOutputFilterByType DEFLATE application/x-font-otf
+    AddOutputFilterByType DEFLATE application/x-font-truetype
+    AddOutputFilterByType DEFLATE application/x-font-ttf
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE font/opentype
+    AddOutputFilterByType DEFLATE font/otf
+    AddOutputFilterByType DEFLATE font/ttf
+    AddOutputFilterByType DEFLATE image/svg+xml
+    AddOutputFilterByType DEFLATE image/x-icon
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/xml
+
+    # Remove browser bugs
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+    Header append Vary User-Agent
+  </IfModule>
+</IfModule>
+    
+
+## Enable Keep-Alive connections
+## --------------------------------------------------------
+<ifModule mod_headers.c>
+    Header set Connection keep-alive
+</ifModule>
+
+
+## Set browser cache time to live
+## --------------------------------------------------------
+# 1 YEAR - fonts
+<FilesMatch "\.(woff2|woff|eot|ttf)$">
+    Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
+
+# 3 MONTHS - images don't change except in strange cases
+<FilesMatch "\.(png|svg|ico|jpg|jpeg|gif|pdf)$">
+    Header set Cache-Control "max-age=7884000, public"
+</FilesMatch>
+<FilesMatch "^manifest\.json$">
+    # Manifest file used for Favicons by RealFaviconGenerator
+    Header set Cache-Control "max-age=7884000, public"
+</FilesMatch>
+
+# 2 WEEKS - possible to be changed
+<FilesMatch "\.(css|txt|js)$">
+    Header set Cache-Control "max-age=1209600, public"
+</FilesMatch>
+
+# 10 MINUTES - just keep shortly to speed up navigation through pages
+<FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "max-age=600, public"
+</FilesMatch>
+
+# NEVER CACHE - notice the extra directives
+<FilesMatch "\.(php|py|cgi|pl)$">
+    Header set Cache-Control "max-age=0, private, no-store, no-cache, must-revalidate"
+</FilesMatch>
+
+
+## 404 and 403 custom error page
+## --------------------------------------------------------
+ErrorDocument 404 /404.html
+ErrorDocument 403 /404.html
+
+
+## 301-Redirections of page name aliases instead of HTML meta redirects
+## and other manually set redirections
+## --------------------------------------------------------
+# Old RSS feed to new
+RedirectMatch 301 (?i)^/feed/?(index.xml)?$ https://linuxisekai.github.io/index.xml
+
+# About page
+RedirectMatch 301 (?i)^/about-me/?$        https://linuxisekai.github.io/about/
+RedirectMatch 301 (?i)^/about-this-blog/?$ https://linuxisekai.github.io/about/
+RedirectMatch 301 (?i)^/info/?$            https://linuxisekai.github.io/about/
+
+# Contact page
+RedirectMatch 301 (?i)^/gpg/?$             https://linuxisekai.github.io/contact/
+RedirectMatch 301 (?i)^/pgp/?$             https://linuxisekai.github.io/contact/
+RedirectMatch 301 (?i)^/contact-me/?$      https://linuxisekai.github.io/contact/
+RedirectMatch 301 (?i)^/signal/?$          https://linuxisekai.github.io/contact/
+
+# E-mail signature to Keybase profile
+RedirectMatch 301 (?i)^/siggpg/?$          https://keybase.io/TheMatjaz
+
+# Legal notice page
+RedirectMatch 301 (?i)^/copyright/?$       https://linuxisekai.github.io/legal-notice/
+RedirectMatch 301 (?i)^/notice/?$          https://linuxisekai.github.io/legal-notice/
+RedirectMatch 301 (?i)^/terms/?$           https://linuxisekai.github.io/legal-notice/
+RedirectMatch 301 (?i)^/privacy/?$         https://linuxisekai.github.io/legal-notice/
+RedirectMatch 301 (?i)^/policy/?$          https://linuxisekai.github.io/legal-notice/
+RedirectMatch 301 (?i)^/legal/?$           https://linuxisekai.github.io/legal-notice/
+RedirectMatch 301 (?i)^/tos/?$             https://linuxisekai.github.io/legal-notice/
+RedirectMatch 301 (?i)^/license/?$         https://linuxisekai.github.io/legal-notice/
+RedirectMatch 301 (?i)^/disclaimer/?$      https://linuxisekai.github.io/legal-notice/
+
+# Site map for humans
+RedirectMatch 301 (?i)^/sitemap.html?      https://linuxisekai.github.io/sitemap/
+
+# Software page
+RedirectMatch 301 (?i)^/sw/?$              https://linuxisekai.github.io/software/
+RedirectMatch 301 (?i)^/numerus/?$         https://linuxisekai.github.io/software/
+
+# Talks and slides page
+RedirectMatch 301 (?i)^/slide/?$           https://linuxisekai.github.io/slides/
+RedirectMatch 301 (?i)^/talks?/?$          https://linuxisekai.github.io/slides/
+RedirectMatch 301 (?i)^/presentations?/?$  https://linuxisekai.github.io/slides/
+RedirectMatch 301 (?i)^/powerpoints?/?$    https://linuxisekai.github.io/slides/
+
+# Taxonomies singular to plural
+RedirectMatch 301 (?i)^/category/?(.*)$    https://linuxisekai.github.io/categories/$1
+RedirectMatch 301 (?i)^/(tag|tag/(.*))$    https://linuxisekai.github.io/tags/$2
+
+# Post aliases
+RedirectMatch 301 (?i)^/first/?$           https://linuxisekai.github.io/hi-out-there/
+RedirectMatch 301 (?i)^/my-name/?$         https://linuxisekai.github.io/name/
+RedirectMatch 301 (?i)^/how-to-pronounce-matjaz/?$ https://linuxisekai.github.io/name/

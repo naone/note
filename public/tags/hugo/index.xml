@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Linuxisekai | Nolep enthuiast project</title>
+    <link>/tags/hugo/</link>
+    <description>Recent content in Hugo on Linuxisekai | Nolep enthuiast project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 04 Jul 2019 15:49:01 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>#2 Hugo : Membuat tema hugo sebdiri</title>
+      <link>/post/membuat-tema-hugo/</link>
+      <pubDate>Thu, 04 Jul 2019 15:49:01 +0700</pubDate>
+      
+      <guid>/post/membuat-tema-hugo/</guid>
+      <description>Prakata melanjutkan artikel sebelumnya, Pada artikel kali ini kita akan membahas cara membuat tema hugo. sebenarnya di website https://themes.gohugo.io juga sudah banyak sekali tema yang sudah siap pakai akan tetapi saya merasa kurang sreg dengan tampilan tema yang disediakan, saya juga bingung jika ingin memodifikasi tampilan oleh karena itu saya ingin mencoba membuat tema sendiri sekaligus mencoba hal baru. tema yang kita buat akan menggunkan CSS framework yaitu bulma. pertama siapkan bahan-bahanya terlebih dahulu   Info #1 Hugo: Membuat blog menggunkan hugo + gitub paga    Bulma untuk CSS framework Font Awesome unutuk gylph icon Jquery JS framework Prismjs untuk Syntax Hightlight  Download semua bahanya disini  Instalasi setelah semua bahanya sudah siap sekarang saatnya membuat tema hugo kita  pertama masuk ke direktory hugo kita root@linuxisekai $ cd linuxisekai  $ cd hugo new theme isekai    keterangan :  linuxisekai adalah directory tempat hug kita dibuat jika kmu belum membuatnya ketikan perintah : $ hugo new site linuxisekai isekai adalah nama tema yang kita buat kalian bebas menggantinya sesuka kalian.</description>
+    </item>
+    
+    <item>
+      <title>#1 Hugo : membuat blog menggunkan Hugo &#43; github page</title>
+      <link>/post/ngeblog-dengan-hugo/</link>
+      <pubDate>Mon, 01 Jul 2019 20:03:00 +0700</pubDate>
+      
+      <guid>/post/ngeblog-dengan-hugo/</guid>
+      <description>Pendahuluan  dunia website terus berkembang, banyak banyak sekali frameeork dan tools-tools baru bermunculkan yang menawarkan banyak fitur serta kemudahan, salah satunya yaitu SSG ( static site generator ), sepeti namanya SSG digunakan unutk meng generate web static, nah hugo adalah salah satu dari sekian banyak static site generator. List Static Site Generator  Hexo Gatsby Pelican Jekyll Vuepress Elevnty Hugo Etc.  menurut klaim hugo, hugo adalah framework tercepat unutuk membuat website.</description>
+    </item>
+    
+  </channel>
+</rss>

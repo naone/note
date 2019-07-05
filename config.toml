@@ -1,0 +1,31 @@
+title = "Linuxisekai | Nolep enthuiast project"
+baseurl = "/"
+canonifyURLs = true 
+# Agar front-matter pakai format YAML
+MetaDataFormat = "YAML"
+
+enableRobotsTXT = true
+
+# untuk apply temanya
+themesDir = "themes"
+theme = "isekai"
+
+# Shortname disqus, silahkan sesuaikan
+DisqusShortname = "linuxisekai-github-io"
+
+# Untuk Google Analytic, silahkan sesuikan
+
+googleAnalytics = "UA-143247560-1" 
+
+
+PygmentsCodeFences=true
+PygmentsStyle="monokai"
+# Untuk deskripsi tag meta di homepage
+description = "Nolep enthuiast project."
+
+# Biodata Author
+[author]
+    name = "tempegoreng"
+    homepage = "/"
+    bio = "~ stay goblok"
+    image = "/img/profil.jpg"

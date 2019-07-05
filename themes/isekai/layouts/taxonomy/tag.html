@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "navbar.html" . }}
+
+
+    <section class="section projects is-medium is-white has-text-centered">
+            <div class="container is-narrow">
+                <h1 class="title"><b>Linuxisekai</b></h1>
+                <h2 class="subtitle is-size-5">Nolep Enthusiast Project</h2>
+                  <div class="project-grid">
+                    <div class="section">
+                      
+                    <div class="columns is-multiline is-mobile">
+                            {{ range .Data.Pages }}
+                       
+                      <div class="column is-12-mobile is-half-tablet is-one-third-desktop"> 
+                          <div class="box">    
+                        <figure class="image"><img class="project-thumb" src="{{ with .Params.image }}{{ . }}{{ end }}" alt="" />
+                          <figcaption class="figcaption">
+                            <a class="button is-primary is-outlined is-rounded" href="{{ .RelPermalink }}">
+                              <span>Read..</span>
+                              <span class="icon">
+                                <i class="fas fa-angle-right"></i>
+                              </span></a>
+                            </figcaption>
+                          <div class="overlay">
+                        </figure>
+                        <br>
+                        
+                        <a href="{{ .RelPermalink }}">
+                        <span class="icon">
+                          <i class="fas fa-book"></i>             
+                      </span>
+                      &nbsp;{{ .Title }}
+                        </a>
+                        </div>
+                        </div>
+                        {{ end }}
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </section>
+    {{ partial "footer.html" . }}
+    {{ partial "js-init.html" . }}
+  </body>
+</html>

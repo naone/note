@@ -1,0 +1,15 @@
+{
+"emojisense.languages" : {
+        "plaintext" : {
+        "markupCompletionEnabled" : true,
+        "emojiDecoratorsEnabled" : true,
+    },
+"markdown" : true,
+"git-commit" : true,
+"plaintext" : true,
+"json" : true,
+"html" : true,
+"yaml" : true,
+"go" : true,
+}
+}

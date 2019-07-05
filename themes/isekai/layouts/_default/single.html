@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    {{ partial "head.html" . }}
+    <body>
+    {{ partial "navbar.html" . }}
+    <div class="judul"><b>{{ .Title }}</b></div>
+    <div class="is-size-6 info-post">
+    <span class="icon has-text-primary"><i class="fas fa-user"></i></span>
+    {{ .Site.Author.name }} | 
+    <span class="icon has-text-primary"><i class="fas fa-calendar"></i></span> 
+    {{ .Date.Format "02-01-2006" }}
+    | <span class="icon has-text-primary"><i class="fas fa-tags"></i></span>
+    {{ $taxonomy := "tags" }}
+{{ with .Param $taxonomy }}
+{{ range $index, $tag := . }}
+{{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+&nbsp;{{ $tag | urlize }}
+{{- end -}}
+{{- end -}}
+</div>
+{{ end }}                          
+<br>
+ <div class="content">
+ <article class="article">
+{{ .Content }}
+</article>
+    {{ partial "disqus.html" . }}
+    {{ partial "related.html" . }}
+       </div>
+       </div>
+    {{ partial "footer.html" . }}
+    {{ partial "js-init.html" . }}
+    </body>
+</html>

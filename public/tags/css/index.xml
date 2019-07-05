@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>css on Linuxisekai | Nolep enthuiast project</title>
+    <link>/tags/css/</link>
+    <description>Recent content in css on Linuxisekai | Nolep enthuiast project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 29 Jun 2019 16:38:23 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bulma : Alternativ Framework CSS selain Bootstrap</title>
+      <link>/post/bulma-framework/</link>
+      <pubDate>Sat, 29 Jun 2019 16:38:23 +0700</pubDate>
+      
+      <guid>/post/bulma-framework/</guid>
+      <description>Pendahuluan  Ini bukan bulma dragon ball 😠   bulma adalah salah satu framework CSS yang sedang naik daun akhir-akhir ini, bulma dibuat oleh Jeremy Thomas berbasiskan css flexbox, oleh karena itu grid system pada bulma sangatlah flexibel dan responsif. inilah kelebihan utama pada bulma dibanding framework css lain. oh iya linuxisekai juga meggunakan bulma loh 😅 .  kelebihan bulma :   flexbox based : membuat kita lebih mudah dalam membuat grid system yang fleksibel dan responsif hanya menggunkan satu file css : bulma sama sekali tidak menggunakan javascript, saat kita menginstallnya kita hanya diberi satu file yaitu bulma.</description>
+    </item>
+    
+  </channel>
+</rss>
