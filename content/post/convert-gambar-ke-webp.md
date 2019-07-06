@@ -52,7 +52,7 @@ sudo apt-get install libwebp gthumb
 jika kamu ingin mengconvert gambar dalam jumlah banyak sekaligus
 
     asuna@linuxisekai:~$ cd Pictures
-    asuna@linuxisekai:~/Pictures$ nano conver.sh
+    asuna@linuxisekai:~/Pictures$ nano convert.sh
     
         #!/bin/bash
 
