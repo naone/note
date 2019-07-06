@@ -1,7 +1,14 @@
 @media screen and (max-width:768px) {
+    h1.header-judul{
+    margin-top: 9rem;
+    font-size: 200%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: left;
+    }
 .judul {
     margin-top: 6rem;
-    font-size: 150%;
+    font-size: 10%;
     margin-left: 1rem;
     margin-right: 1rem;
     text-align: left;
@@ -27,15 +34,15 @@ h1 {
 }}
 
 @media screen and (min-width: 768px) {
-    .juduls {
-        margin-top: 6rem;
-        font-size: 150%;
+    h1.header-judul{
+        margin-top: 3rem;
+        font-size: 200%;
         margin-left: 1rem;
         margin-right: 1rem;
         text-align: center;
-    }
+        }
     .judul {
-        margin-top: 3.5rem;
+        margin-top: 6rem;
         font-size: 200%;
         margin-left: 12rem;
         margin-right: 12rem;
@@ -104,7 +111,7 @@ h1 {
       font-size: 0.8em;
   }
   .message-body {
-      font-family: 'PT sans', sans-serif;
+      font-family: 'Ubuntu Mono', monospace;
   }
   
   #profile_pic {

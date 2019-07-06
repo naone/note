@@ -1,6 +1,6 @@
 /*! bulmaswatch v0.7.2 | MIT License */
 /*! bulma.io v0.7.2 | MIT License | github.com/jgthms/bulma */
-@import url(https://fonts.googleapis.com/css?family=Roboto|Inconsolata|Mali:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans|Ubuntu+Mono|Inconsolata|Mali:400,700,400italic);
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -265,13 +265,13 @@ button,
 input,
 select,
 textarea {
-  font-family: "Roboto" sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: "PT Sans" sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 code,
 pre {
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: auto;
-  font-family: "Mali", "Consolas", "Monaco", cursive, monospace; }
+  font-family: "Ubuntu Mono","Consolas", "Monaco", sans-serif, cursive, monospace; }
 
 body {
   color: #839496;
@@ -291,7 +291,7 @@ a {
 code {
   background-color: #073642;
   color: #d33682;
-  font-size: 0.875em;
+  font-size: 1rem;
   font-weight: normal;
   padding: 0.25em 0.5em 0.25em; }
 
@@ -333,7 +333,7 @@ pre {
   pre code {
     background-color: transparent;
     color: currentColor;
-    font-size: 1em;
+    font-size: 1rem;
     padding: 0; }
 
 table td,
