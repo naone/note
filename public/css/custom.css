@@ -1,10 +1,10 @@
 @media screen and (max-width:768px) {
     h1.header-judul{
-    margin-top: 9rem;
+    margin-top: 3.6rem;
     font-size: 200%;
     margin-left: 1rem;
     margin-right: 1rem;
-    text-align: left;
+    text-align: center;
     }
 .judul {
     margin-top: 6rem;
