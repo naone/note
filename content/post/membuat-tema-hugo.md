@@ -29,7 +29,7 @@ setelah semua bahanya sudah siap sekarang saatnya membuat tema hugo kita
 <li>pertama masuk ke direktory hugo kita</li>
 <div class="message">
 <div class="message-header">root@linuxisekai</div>
-<div class="message-body font-cmd">
+<div class="message-body">
 $ cd linuxisekai
 <br/>
 $ cd hugo new theme isekai
@@ -145,8 +145,9 @@ extrack bahan yang tadi didownload untuk file bulma.css dan custom.css silahkan 
 
 ### Satnya ngoding
 buka text editor kesayanganmu
-<pre><h4 class="has-text-centered">navbar.html</h4>
-<code class="html">
+
+<h4 class="has-text-centered">navbar.html</h4>
+
 
 	<div class="pageloader"></div>
 	<div class="infraloader is-active"></div>
@@ -247,10 +248,7 @@ buka text editor kesayanganmu
 	</div>
 	</nav>
 
-</code>
-</pre>
-<pre><h4 class="has-text-centered">head.html</h4>
-<code class="html">
+<h4 class="has-text-centered">head.html</h4>
 
 	<section class="section container projects">
 	<h1 class="is-size-1 has-text-centered">
@@ -309,10 +307,7 @@ buka text editor kesayanganmu
   	</div>
   	</section>
 
-</code>
-</pre>
-<pre><h4 class="has-text-centered">head.html</h4>
-<code class="html">
+<h4 class="has-text-centered">head.html</h4>
 
 	<head>
     <meta charset="utf-8">
@@ -339,10 +334,7 @@ buka text editor kesayanganmu
     {{ template "_internal/twitter_cards.html" . }}
 	</head>
 
-</code>
-</pre>
-<pre><h4 class="has-text-centered">pagination.html</h4>
-<code class="html">
+<h4 class="has-text-centered">pagination.html</h4>
 
 	<nav class="pagination is-centered is-rounded is-small" role="navigation" aria-label="pagination">
     {{ $pag := $.Paginator }}
@@ -385,10 +377,7 @@ buka text editor kesayanganmu
     </nav>
     <div class="ghost-padding"></div>
 		
-</code>
-</pre>
-<pre><h4 class="has-text-centered">footer.html</h4>
-<code class="html">
+<h4 class="has-text-centered">footer.html</h4>
 
 	<footer class="footer">
     <div class="container">
@@ -414,10 +403,7 @@ buka text editor kesayanganmu
     </div>
     </footer>
 
-</code>
-</pre>
-<pre><h4 class="has-text-centered">disqus.html</h4>
-<code class="html" >
+<h4 class="has-text-centered">disqus.html</h4>
 
 	<br/>
 	<br/>
@@ -442,10 +428,7 @@ buka text editor kesayanganmu
     </noscript>
     </div>
         
-</code>
-</pre>
-<pre><h4 class="has-text-centered">js.html</h4>
-<code class="html">
+<h4 class="has-text-centered">js.html</h4>
 
 	<a href="#" class="ignielToTop"></a>
 	<script src="/js/fontawesome.js" async></script>
@@ -455,10 +438,7 @@ buka text editor kesayanganmu
 	<script src="/js/cookie.js"></script>
 	<script src="/js/prism.js"></script>
 
-</code>
-</pre>
-<pre><h4 class="has-text-centered">index.html</h4>
-<code class="html">
+<h4 class="has-text-centered">index.html</h4>
 
 	<!DOCTYPE html>
 	<html lang="en">
@@ -472,10 +452,7 @@ buka text editor kesayanganmu
   	</body>
 	</html>
 
-</code>
-</pre>
-<pre><h4 class="has-text-centered">single.html</h4>
-<code class="html">
+<h4 class="has-text-centered">single.html</h4>
 
 	<!DOCTYPE html>
 	<html>
@@ -511,10 +488,7 @@ buka text editor kesayanganmu
     </body>
 	</html>
 
-</code>
-</pre>
-<pre><h4 class="has-text-centered">list.html</h4>
-<code class="html">
+<h4 class="has-text-centered">list.html</h4>
 
 	<!DOCTYPE html>
 	<html>
@@ -529,5 +503,4 @@ buka text editor kesayanganmu
     </body>
 	</html>
 
-</code>
-</pre>
+

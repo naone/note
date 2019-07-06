@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tutorial on Linuxisekai | Nolep enthuiast project</title>
+    <link>/tags/tutorial/</link>
+    <description>Recent content in tutorial on Linuxisekai | Nolep enthuiast project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 06 Jul 2019 08:29:35 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cara convert gambar ke format .webp di linux</title>
+      <link>/post/convert-gambar-ke-webp/</link>
+      <pubDate>Sat, 06 Jul 2019 08:29:35 +0700</pubDate>
+      
+      <guid>/post/convert-gambar-ke-webp/</guid>
+      <description>Pendahuluan bagi yang belum tau .webp adalah format gambar digital yang dibuat oleh google. format ini pertama kali diperkenalkan pada tanggal 30 september 2010. pada awal perilisanya hanya browser google chrome saja yang mendukung. tetapi unutk sekarang sudah hampir semua browser.
+mengapa menggunakan .webp 1.webp menghasilkan file yang kecil dengan kualias gambar yang bagus
+2.mampu menampilkan gambar bergerak
+3.mempercepat loading website
+instalasi arch linux root@linuxisekai sudo pacman -S libwebp gthumb   ubuntu root@linuxisekai sudo apt-get install libwebp gthumb   Convert gambar asuna@linuxisekai:~$ cd Pictures asuna@linuxisekai:~/Pictures$ ls asuna.</description>
+    </item>
+    
+  </channel>
+</rss>

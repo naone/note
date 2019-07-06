@@ -12,12 +12,11 @@
     <meta name="theme-color" content="#073642">
     <meta http-equiv="Cache-control" content="public">
     <link rel="icon" type="image/png" href="tuxguitar.png">
-    <meta name="Description" content="Linux, Golang, PHP, Tutorial, Ricing, Ubuntu, Arch Linux">
-
-    <link href="/css/bulma.css" rel="stylesheet"/>
-    <link href="/css/solarized-dark.css"/>
-    <link href="/css/custom.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Mali|Ubuntu+Mono&display=swap" rel="stylesheet"/>
+    <meta name="description" content="Linux, Golang, PHP, Tutorial, Ricing, Ubuntu, Arch Linux">
+    <link href="/css/bs.css" rel="stylesheet">
+    <link href="/css/solarized-dark.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Inconsolata|Mali|&display=swap" rel="stylesheet">
     
 <meta itemprop="name" content="Linuxisekai | Nolep enthuiast project">
 <meta itemprop="description" content="">
@@ -43,7 +42,7 @@ if (!doNotTrack) {
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/" />
 
-<meta property="og:updated_time" content="2019-07-01T20:03:00&#43;07:00"/>
+<meta property="og:updated_time" content="2019-07-06T08:29:35&#43;07:00"/>
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linuxisekai | Nolep enthuiast project"/>
@@ -86,11 +85,11 @@ if (!doNotTrack) {
       
         <div id="navMenuIndex" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item bd-navbar-item-documentation  " href="/">
+            <a class="navbar-item" href="/">
               <span class="icon has-text-primary">
                 <i class="fas fa-home"></i>
               </span>
-              <span class="is-hidden-desktop-only">
+              <span class="is-hidden-desktop-only is-1">
                 Home
               </span>
             </a>
@@ -139,13 +138,13 @@ if (!doNotTrack) {
           
       
           <div class="navbar-end">
-            <a class="navbar-item is-hidden-touch is-hidden-desktop-only" href="https://github.com/linuxisekai" target="_blank">
+            <a class="navbar-item is-hidden-touch" href="https://github.com/linuxisekai" target="_blank">
               <span class="icon" style="color: rgb(170, 174, 184);">
                 <i class="fab fa-lg fa-github-alt"></i>
               </span>
             </a>
       
-            <a class="navbar-item is-hidden-touch is-hidden-desktop-only" href="#" target="_blank">
+            <a class="navbar-item is-hidden-touch" href="#" target="_blank">
               <span class="icon has-text-primary">
                 <i class="fab fa-lg fa-twitter"></i>
               </span>
@@ -172,18 +171,65 @@ if (!doNotTrack) {
                
           
       
-    <section class="section container projects">
-  <h1 class="is-size-1 has-text-centered"><b>Linuxisekai</b></h1>
-  <h2 class="subtitle is-size-5 has-text-centered">Nolep Enthusiast Project</h2>
+    <div class="container">
+  <div class="has-text-centered">
+    <h1 class="is-size-1 juduls"> Linuxisekai </h1>
+    <h2 class="subtitle is-6" style="margin-bottom: 0.8rem"> Nolep Enthusiast Project. </h2>
+  </div>
+</div>
+
+    <section class="section projects">
+  <div class="container">
+
   <div class="project-grid">
-           <div class="container">
   <div class="columns is-multiline is-mobile">
   
            
   <div class="column is-12-mobile is-half-tablet is-one-third-desktop"> 
-  <div class="box">    
+  <div class="card">
+    <div class="card-image">    
   <figure class="image is-5by3">
-    <img class="project-thumb lazyload" sizes="20em" data-src="/img/cute.webp" alt="" />
+    <img class="project-thumb lazyload"  data-src="/img/loli.webp" alt="" />
+  <figcaption class="figcaption">
+  <a class="button is-primary is-outlined is-rounded" href="/post/convert-gambar-ke-webp/">
+  <span>Read..</span>
+  <span class="icon">
+  <i class="fas fa-angle-right"></i>
+  </span></a>
+  </figcaption>
+  <div class="overlay">
+  </figure>
+  </div>
+  <div class="has-background-grey-dark">
+  <a href="/post/convert-gambar-ke-webp/" class="judul-post">
+  <span class="icon">
+  <i class="fas has-text-primary fa-book"></i>             
+  </span>
+  Cara convert gambar ke format .webp di linux
+  </a>
+  <br/>
+
+  <time class="f"><span class="icon"><i class="fas fa-calendar has-text-primary"></i></span>&nbsp;06-07-2019
+  | <span class="icon is-small"><i class="fas fa-tags has-text-primary"></i></span></time>
+  
+  
+  
+  <time class="f">
+  linux
+  </time>
+  <time class="f">
+  tutorial
+  </time>
+</div>
+</div>
+
+</div>
+         
+  <div class="column is-12-mobile is-half-tablet is-one-third-desktop"> 
+  <div class="card">
+    <div class="card-image">    
+  <figure class="image is-5by3">
+    <img class="project-thumb lazyload"  data-src="/img/cute.webp" alt="" />
   <figcaption class="figcaption">
   <a class="button is-primary is-outlined is-rounded" href="/post/ngeblog-dengan-hugo/">
   <span>Read..</span>
@@ -193,7 +239,8 @@ if (!doNotTrack) {
   </figcaption>
   <div class="overlay">
   </figure>
-  <br/>
+  </div>
+  <div class="has-background-grey-dark">
   <a href="/post/ngeblog-dengan-hugo/" class="judul-post">
   <span class="icon">
   <i class="fas has-text-primary fa-book"></i>             
@@ -201,27 +248,31 @@ if (!doNotTrack) {
   #1 Hugo : membuat blog menggunkan Hugo &#43; github page
   </a>
   <br/>
-  <time class="is-size-7"><span class="icon"><i class="fas fa-calendar has-text-primary"></i></span>&nbsp;01-07-2019
+
+  <time class="f"><span class="icon"><i class="fas fa-calendar has-text-primary"></i></span>&nbsp;01-07-2019
   | <span class="icon is-small"><i class="fas fa-tags has-text-primary"></i></span></time>
   
   
   
-  <time class="is-size-7">
+  <time class="f">
   hugo
   </time>
-  <time class="is-size-7">
+  <time class="f">
   github
   </time>
-  <time class="is-size-7">
+  <time class="f">
   blog
   </time>
-  </div>
-  </div>
-           
+</div>
+</div>
+
+</div>
+         
   <div class="column is-12-mobile is-half-tablet is-one-third-desktop"> 
-  <div class="box">    
+  <div class="card">
+    <div class="card-image">    
   <figure class="image is-5by3">
-    <img class="project-thumb lazyload" sizes="20em" data-src="/img/megumin.webp" alt="" />
+    <img class="project-thumb lazyload"  data-src="/img/megumin.webp" alt="" />
   <figcaption class="figcaption">
   <a class="button is-primary is-outlined is-rounded" href="/post/oomo-gtk/">
   <span>Read..</span>
@@ -231,7 +282,8 @@ if (!doNotTrack) {
   </figcaption>
   <div class="overlay">
   </figure>
-  <br/>
+  </div>
+  <div class="has-background-grey-dark">
   <a href="/post/oomo-gtk/" class="judul-post">
   <span class="icon">
   <i class="fas has-text-primary fa-book"></i>             
@@ -239,24 +291,28 @@ if (!doNotTrack) {
   Membuat gtk theme sendiri menggunkan oomox
   </a>
   <br/>
-  <time class="is-size-7"><span class="icon"><i class="fas fa-calendar has-text-primary"></i></span>&nbsp;30-06-2019
+
+  <time class="f"><span class="icon"><i class="fas fa-calendar has-text-primary"></i></span>&nbsp;30-06-2019
   | <span class="icon is-small"><i class="fas fa-tags has-text-primary"></i></span></time>
   
   
   
-  <time class="is-size-7">
+  <time class="f">
   linux
   </time>
-  <time class="is-size-7">
+  <time class="f">
   oomox
   </time>
-  </div>
-  </div>
-           
+</div>
+</div>
+
+</div>
+         
   <div class="column is-12-mobile is-half-tablet is-one-third-desktop"> 
-  <div class="box">    
+  <div class="card">
+    <div class="card-image">    
   <figure class="image is-5by3">
-    <img class="project-thumb lazyload" sizes="20em" data-src="/img/bulma.webp" alt="" />
+    <img class="project-thumb lazyload"  data-src="/img/bulma.webp" alt="" />
   <figcaption class="figcaption">
   <a class="button is-primary is-outlined is-rounded" href="/post/bulma-framework/">
   <span>Read..</span>
@@ -266,7 +322,8 @@ if (!doNotTrack) {
   </figcaption>
   <div class="overlay">
   </figure>
-  <br/>
+  </div>
+  <div class="has-background-grey-dark">
   <a href="/post/bulma-framework/" class="judul-post">
   <span class="icon">
   <i class="fas has-text-primary fa-book"></i>             
@@ -274,24 +331,28 @@ if (!doNotTrack) {
   Bulma : Alternativ Framework CSS selain Bootstrap
   </a>
   <br/>
-  <time class="is-size-7"><span class="icon"><i class="fas fa-calendar has-text-primary"></i></span>&nbsp;29-06-2019
+
+  <time class="f"><span class="icon"><i class="fas fa-calendar has-text-primary"></i></span>&nbsp;29-06-2019
   | <span class="icon is-small"><i class="fas fa-tags has-text-primary"></i></span></time>
   
   
   
-  <time class="is-size-7">
+  <time class="f">
   bulma
   </time>
-  <time class="is-size-7">
+  <time class="f">
   css
   </time>
-  </div>
-  </div>
-           
+</div>
+</div>
+
+</div>
+         
   <div class="column is-12-mobile is-half-tablet is-one-third-desktop"> 
-  <div class="box">    
+  <div class="card">
+    <div class="card-image">    
   <figure class="image is-5by3">
-    <img class="project-thumb lazyload" sizes="20em" data-src="/img/sagiri.webp" alt="" />
+    <img class="project-thumb lazyload"  data-src="/img/sagiri.webp" alt="" />
   <figcaption class="figcaption">
   <a class="button is-primary is-outlined is-rounded" href="/post/driver-realtek/">
   <span>Read..</span>
@@ -301,7 +362,8 @@ if (!doNotTrack) {
   </figcaption>
   <div class="overlay">
   </figure>
-  <br/>
+  </div>
+  <div class="has-background-grey-dark">
   <a href="/post/driver-realtek/" class="judul-post">
   <span class="icon">
   <i class="fas has-text-primary fa-book"></i>             
@@ -309,24 +371,28 @@ if (!doNotTrack) {
   Cara menginstall driver realtek di linux
   </a>
   <br/>
-  <time class="is-size-7"><span class="icon"><i class="fas fa-calendar has-text-primary"></i></span>&nbsp;28-06-2019
+
+  <time class="f"><span class="icon"><i class="fas fa-calendar has-text-primary"></i></span>&nbsp;28-06-2019
   | <span class="icon is-small"><i class="fas fa-tags has-text-primary"></i></span></time>
   
   
   
-  <time class="is-size-7">
+  <time class="f">
   linux
   </time>
-  <time class="is-size-7">
+  <time class="f">
   driver
   </time>
-  </div>
-  </div>
-           
+</div>
+</div>
+
+</div>
+         
   <div class="column is-12-mobile is-half-tablet is-one-third-desktop"> 
-  <div class="box">    
+  <div class="card">
+    <div class="card-image">    
   <figure class="image is-5by3">
-    <img class="project-thumb lazyload" sizes="20em" data-src="/img/loli.webp" alt="" />
+    <img class="project-thumb lazyload"  data-src="/img/loli.webp" alt="" />
   <figcaption class="figcaption">
   <a class="button is-primary is-outlined is-rounded" href="/post/windows-manager/">
   <span>Read..</span>
@@ -336,7 +402,8 @@ if (!doNotTrack) {
   </figcaption>
   <div class="overlay">
   </figure>
-  <br/>
+  </div>
+  <div class="has-background-grey-dark">
   <a href="/post/windows-manager/" class="judul-post">
   <span class="icon">
   <i class="fas has-text-primary fa-book"></i>             
@@ -344,24 +411,28 @@ if (!doNotTrack) {
   Desktop environment terasa berat ? coba pakai Windows Manager
   </a>
   <br/>
-  <time class="is-size-7"><span class="icon"><i class="fas fa-calendar has-text-primary"></i></span>&nbsp;28-06-2019
+
+  <time class="f"><span class="icon"><i class="fas fa-calendar has-text-primary"></i></span>&nbsp;28-06-2019
   | <span class="icon is-small"><i class="fas fa-tags has-text-primary"></i></span></time>
   
   
   
-  <time class="is-size-7">
+  <time class="f">
   linux
   </time>
-  <time class="is-size-7">
+  <time class="f">
   wm
   </time>
-  </div>
-  </div>
-  
-  </div>
-  </div>
-  </div>
-  </section>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
 
 
       
@@ -396,12 +467,12 @@ if (!doNotTrack) {
             </footer>
           
     <a href="#" class="ignielToTop"></a>
+<script>hljs.initHighlightingOnLoad();</script>
 <script src="/js/fontawesome.js"></script>
 <script src="/js/jquery.js"></script>
 <script src="/js/lazysizes.min.js"></script>
 <script src="/js/core.js"></script>
 <script src="/js/cookie.js"></script>
 <script src="/js/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

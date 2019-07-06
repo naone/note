@@ -12,12 +12,11 @@
     <meta name="theme-color" content="#073642">
     <meta http-equiv="Cache-control" content="public">
     <link rel="icon" type="image/png" href="tuxguitar.png">
-    <meta name="Description" content="Linux, Golang, PHP, Tutorial, Ricing, Ubuntu, Arch Linux">
-
-    <link href="/css/bulma.css" rel="stylesheet"/>
-    <link href="/css/solarized-dark.css"/>
-    <link href="/css/custom.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Mali|Ubuntu+Mono&display=swap" rel="stylesheet"/>
+    <meta name="description" content="Linux, Golang, PHP, Tutorial, Ricing, Ubuntu, Arch Linux">
+    <link href="/css/bs.css" rel="stylesheet">
+    <link href="/css/solarized-dark.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Inconsolata|Mali|&display=swap" rel="stylesheet">
     
 <meta itemprop="name" content="Membuat gtk theme sendiri menggunkan oomox">
 <meta itemprop="description" content="Pendahuluan oomox adalah aplikasi yang digunakan membuat gtk theme pada sistem operasi linux.oomox berbasisikan GUI jadi sangat mudah digunkan. bagi yang hobi otak atik tampilan desktop, oomox pasti akan menjadi aplikasi yang sangat berguna. tema oomox sendiri terbagi menjadi 3 varian yaitu numix-based, materia dan arch theme dan untuk icon ada 4 yaitu archdroid, gnome color, numix, papirus dan suru&#43;&#43;.    Instalasi  Arch Linux root@linuxisekai $ sudo pacman -S yay  $ yay -S oomox   Ubuntu Install paket depensi yang dibutuhkan $ sudo apt-get install python3-gi libglib2.">
@@ -61,6 +60,8 @@ if (!doNotTrack) {
 
 
     <body>
+            <script src="/js/highlight.pack.js"></script>
+            <script>hljs.initHighlightingOnLoad();</script>
     <div class="pageloader"></div>
         <div class="infraloader is-active"></div>
 <nav id="navbar" class="navbar is-fixed-top has-shadow is-spaced">
@@ -94,11 +95,11 @@ if (!doNotTrack) {
       
         <div id="navMenuIndex" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item bd-navbar-item-documentation  " href="/">
+            <a class="navbar-item" href="/">
               <span class="icon has-text-primary">
                 <i class="fas fa-home"></i>
               </span>
-              <span class="is-hidden-desktop-only">
+              <span class="is-hidden-desktop-only is-1">
                 Home
               </span>
             </a>
@@ -147,13 +148,13 @@ if (!doNotTrack) {
           
       
           <div class="navbar-end">
-            <a class="navbar-item is-hidden-touch is-hidden-desktop-only" href="https://github.com/linuxisekai" target="_blank">
+            <a class="navbar-item is-hidden-touch" href="https://github.com/linuxisekai" target="_blank">
               <span class="icon" style="color: rgb(170, 174, 184);">
                 <i class="fab fa-lg fa-github-alt"></i>
               </span>
             </a>
       
-            <a class="navbar-item is-hidden-touch is-hidden-desktop-only" href="#" target="_blank">
+            <a class="navbar-item is-hidden-touch" href="#" target="_blank">
               <span class="icon has-text-primary">
                 <i class="fab fa-lg fa-twitter"></i>
               </span>
@@ -280,7 +281,7 @@ Referensi :
 <br/>
 <div class="disqus-comment">
         <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
-          <span class="icon fa-lg"><i class="fas fa-comment"></i></span> Comment
+          <span class="icon"><i class="fas fa-comment-alt"></i>&nbsp;comment</span>
         </div>
         <div id="disqus_thread"></div>
         <script type="text/javascript">
@@ -371,9 +372,26 @@ Referensi :
 
 
 
+
+
+
+
+
+
 <h3>
     Related Post
 </h3>
+  
+  
+  
+  
+  
+    
+    <a href="/post/convert-gambar-ke-webp/" >
+        <span class="icon is-medium"><i class="fas fa-book-open"></i></span>Cara convert gambar ke format .webp di linux</a>
+        <br/>
+  
+  
   
   
   
@@ -476,12 +494,12 @@ Referensi :
             </footer>
           
     <a href="#" class="ignielToTop"></a>
+<script>hljs.initHighlightingOnLoad();</script>
 <script src="/js/fontawesome.js"></script>
 <script src="/js/jquery.js"></script>
 <script src="/js/lazysizes.min.js"></script>
 <script src="/js/core.js"></script>
 <script src="/js/cookie.js"></script>
 <script src="/js/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
     </body>
 </html>

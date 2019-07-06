@@ -1,0 +1,26 @@
+<section class="section">
+<div class="container">
+        <h1 class="is-size-1 has-text-centered"><b>Linuxisekai</b></h1>
+        <h2 class="subtitle is-size-5 has-text-centered">Nolep Enthusiast Project</h2>
+        
+    <div class="tile is-ancestor">
+            {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 6 }}
+                {{ range $paginator.Pages }} 
+        <div class="tile is-parent"> 
+                
+            <div class="is-child tile columns is-multiline">
+                <div class="column is-one-third">
+                   
+            
+                <a href="#" class="is-size-5">
+                    {{ .Title }}
+                </a>
+                
+                </div>
+            </div>
+            
+         </div>
+         {{ end }}
+  </div>
+  </div>
+  </section>

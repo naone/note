@@ -5,6 +5,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 */
 
 .hljs {
+  font-family: 'Ubuntu Mono', monospace;
   display: block;
   overflow-x: auto;
   padding: 0.5em;
