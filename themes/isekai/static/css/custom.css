@@ -1,3 +1,4 @@
+/* end mobile screen */
 @media screen and (max-width:768px) {
     h1.header-judul{
     margin-top: 1rem;
@@ -31,7 +32,20 @@ h1 {
     margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-}}
+}
+.button-post {
+    padding: 2rem;
+}
+.button-next {
+    margin-left: 3rem;
+}
+.button-prev {
+  margin-right: 3rem;
+}
+}
+/* end mobile screen */
+
+/* laptop scren */
 
 @media screen and (min-width: 768px) {
     h1.header-judul{
@@ -69,8 +83,22 @@ h1 {
     h1 {
         padding-top: 5rem;
         padding-bottom: 0rem;
-    }    
+        
+    }   
+    .button-post {
+        padding: 2rem;
     }
+    .button-next {
+        margin-left: 10rem;
+    }
+    .button-prev {
+      margin-right: 10rem;
+  }
+   
+    }
+
+/* end laptop screen */
+
 .disqus-comment{
     margin:0 0em 0em
 }
@@ -114,16 +142,52 @@ h1 {
       font-family: 'Ubuntu Mono', monospace;
   }
   
-  #profile_pic {
-    bottom: 4rem;
-    margin-left: 42%;
+
+  .popup {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+  }
+  .popup .popuptext {
+      visibility: hidden;
+      width: 160px;
+      background-color: #60777B;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 8px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -80px;
+  }
+  .popup .popuptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left:50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #60777B transparent transparent transparent;
+      
+  }
+  .popup .show {
+      visibility: visible;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s;
+  }
+  @-webkit-keyframes fadeIn {
+      from {opacity:0;}
+      to {opacity:1;}
+  }
+  @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
   }
   
-  .profile_info {
-    margin-top: -3.3rem;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-  .section.uu{
-      margin-top: 10rem;
-  }
+
+.btn-counter:after{
+    content:attr(data-count);
+}

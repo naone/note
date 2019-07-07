@@ -465,3 +465,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   };
 });
+
+function functionPopup() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+  setTimeout(function() { 
+    document.getElementById("myPopup").classList.toggle("show");}, 2000);
+}
+$('.btn-counter').on('click', function(event,count){
+  event.preventDefault();
+  var $this = $(this),
+  count = $this.attr('data-count'),
+  active = $this.hasClass('active'),
+  multiple = $this.hasClass('multiple-count');
+  
+  $.fn.noop =$.noop;
+  $this.attr('data-count', ! active || multiple ? ++count : --count )[multiple ? 'noop' : 'toggleClass']('active');
+
+});

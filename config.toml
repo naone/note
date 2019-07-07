@@ -17,10 +17,6 @@ DisqusShortname = "linuxisekai-github-io"
 
 googleAnalytics = "UA-143247560-1" 
 
-
-PygmentsCodeFences=true
-PygmentsStyle="monokai"
-# Untuk deskripsi tag meta di homepage
 description = "Nolep enthuiast project."
 
 # Biodata Author
