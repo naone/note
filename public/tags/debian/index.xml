@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>debian on Linuxisekai | Nolep enthuiast project</title>
+    <link>/tags/debian/</link>
+    <description>Recent content in debian on Linuxisekai | Nolep enthuiast project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 07 Jul 2019 22:22:35 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/debian/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Realease Debian 10 codename &#39;Buster&#39;</title>
+      <link>/post/debian10-rilis/</link>
+      <pubDate>Sun, 07 Jul 2019 22:22:35 +0700</pubDate>
+      
+      <guid>/post/debian10-rilis/</guid>
+      <description>tanggal 6 july 2019 kemarin akhirnya debian merilis versi OS terbaru mereka dengan code name &amp;ldquo;buster&amp;rdquo;,Yuup !! setelah sekian lama ( kurang lebih 25 bulan dalam pengembanganya ) akhirnya nenek moyang dari sebagian besar distro yang bertebaran diluar sana rilis juga 👍. Menurut keterangan di website resmi mereka debian 10 akan mendapat dukungan penuh selama 5 tahun dan seperti biasa debian 10 memiliki bebrapa pilihan Dektop environment yang bisa kalian pilih saat ingin mendownload isonya seperti Gnome, Cinammon, KDE, LXQT dll.</description>
+    </item>
+    
+  </channel>
+</rss>

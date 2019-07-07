@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>news on Linuxisekai | Nolep enthuiast project</title>
+    <link>/tags/news/</link>
+    <description>Recent content in news on Linuxisekai | Nolep enthuiast project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 08 Jul 2019 00:31:14 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Akun Github Cannocial Diretas</title>
+      <link>/post/akun-github-cannocial-diretas/</link>
+      <pubDate>Mon, 08 Jul 2019 00:31:14 +0700</pubDate>
+      
+      <guid>/post/akun-github-cannocial-diretas/</guid>
+      <description>tanggal 6 july 2019 kemarin akun github cannocial diretas, Pihak connocial juga sudah mengkonvirmasi bahwa pada tanggal 6 july 2019 bahwa akun gihub mereka diretas, akan tetapi source kode dari ubutnu aman. Menurut cannocial pelaku hanya membuat 11 repository kosong denagn nama CAN_GOT_HAXXD dan tidak memodifikasi source kode dari ubuntu atatupun project lain dari cannocial. unutuk saat ini cannocial menggunakan launchpad unutk mendistribusikan paket ubuntu dan semua tool didalamnya sehingga pengguna tidak akan berdampak akibat kejadian ini kejadian hampir serupa juga pernah dialami oleh gentoo linux yang akun githubnya diretas dengan menyisipkan malware pada source code gentoo memlalui repository gihub meraka.</description>
+    </item>
+    
+    <item>
+      <title>Realease Debian 10 codename &#39;Buster&#39;</title>
+      <link>/post/debian10-rilis/</link>
+      <pubDate>Sun, 07 Jul 2019 22:22:35 +0700</pubDate>
+      
+      <guid>/post/debian10-rilis/</guid>
+      <description>tanggal 6 july 2019 kemarin akhirnya debian merilis versi OS terbaru mereka dengan code name &amp;ldquo;buster&amp;rdquo;,Yuup !! setelah sekian lama ( kurang lebih 25 bulan dalam pengembanganya ) akhirnya nenek moyang dari sebagian besar distro yang bertebaran diluar sana rilis juga 👍. Menurut keterangan di website resmi mereka debian 10 akan mendapat dukungan penuh selama 5 tahun dan seperti biasa debian 10 memiliki bebrapa pilihan Dektop environment yang bisa kalian pilih saat ingin mendownload isonya seperti Gnome, Cinammon, KDE, LXQT dll.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,32 +1,37 @@
-{{ range where .Site.Pages.ByDate "Params.series" .Params.series }}
-{{ if gt $.Date.Unix .Date.Unix }}
-    {{ $.Scratch.Set "previous" .Permalink }}
-    {{ end }}
-    {{ end }}
 
-{{ range where .Site.Pages.ByDate.Reverse "Params.series" .Params.series }}
-{{ if lt $.Date.Unix .Date.Unix }}
-     {{ $.Scratch.Set "next" .Permalink }}
-     {{ end }}
-     {{ end }}
-     <div class="has-text-centered button-post">
+ <div class="has-text-centered button-post">
+
 <div class="button button-prev">
-    <a href="{{ if $.Scratch.Get "previous" }}{{ $.Scratch.Get "previous" }} {{ end }}" class="{{ if not ($.Scratch.Get "previous") }}disabled {{ end }}">
-        <i class="fas has-text-grey fa-arrow-alt-circle-left"></i>
-    </a>
+{{ $currentPage := . }}
+{{range where .Site.Pages.ByDate "Params.recuil" .Params.recuil }}
+{{ if eq .RelPermalink $currentPage.RelPermalink }}
+<span class="{{if not .PrevInSection}} disabled noselect{{ end }}">
+<a href="{{if .PrevInSection}}{{.PrevInSection.RelPermalink}}{{end}}"  class="has-text-grey"><i class="fas fa-angle-left"></i> prev</a>
+</span>
 </div>
-        <div class="popup" onclick="functionPopup()">
+
+<div class="popup" onclick="functionPopup()">
                 
-                <div class="btn-counter button multiple-count" title="love" data-count="0" herf="#">
-                <span class="is-size-5 has-text-danger icon"><i class="fas fa-heart"></i></span>&nbsp;&nbsp;</a>
-                </div>
-            <span class="popuptext" id="myPopup">
-            Thanks 😙
-          </span>
-          </div>
-         <div class="button button-next"> 
-    <a href="{{ if $.Scratch.Get "next" }}{{ $.Scratch.Get "next" }} {{ end }}" class="{{ if not ($.Scratch.Get "next") }}disabled {{ end }}">
-        <i class="fas has-text-grey fa-arrow-alt-circle-right"></i>
-    </a>
-    </div>
+        <div class="btn-counter button multiple-count" title="love" data-count="0" herf="#">
+        <span class="is-size-5 has-text-danger icon"><i class="fas fa-heart"></i></span>&nbsp;&nbsp;</a>
+        </div>
+    <span class="popuptext" id="myPopup">
+    Thanks 😇
+  </span>
+  </div>
+
+<div class="button button-next"> 
+<span class="{{if not .NextInSection}} disabled noselect{{ end }}">
+<a href="{{if .NextInSection}}{{.NextInSection.RelPermalink}}{{end}}" class=" has-text-grey">next <i class="fas fa-angle-right"></i></a>
+</span>
+{{end}}
+{{end}}
 </div>
+</div>
+    
+
+    
+    
+    
+    
+    

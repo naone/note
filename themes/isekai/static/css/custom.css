@@ -35,12 +35,15 @@ h1 {
 }
 .button-post {
     padding: 2rem;
+    border-color: #073642;
 }
 .button-next {
     margin-left: 3rem;
+    border-color: #073642;
 }
 .button-prev {
   margin-right: 3rem;
+  border-color: #073642;
 }
 }
 /* end mobile screen */
@@ -87,12 +90,15 @@ h1 {
     }   
     .button-post {
         padding: 2rem;
+        border-color: #073642;
     }
-    .button-next {
-        margin-left: 10rem;
+    .button.button-next {
+        margin-left: 13rem;
+        border-color: #073642;
     }
     .button-prev {
-      margin-right: 10rem;
+      margin-right: 13rem;
+      border-color: #073642;
   }
    
     }
@@ -120,10 +126,12 @@ h1 {
             
 .content-img {
         align-items: center;
+        border-radius: 5px;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 700px;
+        width: 600px;
+        height: 300px;
     }
 .ghost-padding {
     padding-bottom: 6rem;
@@ -141,7 +149,14 @@ h1 {
   .message-body {
       font-family: 'Ubuntu Mono', monospace;
   }
-  
+  .borderless {
+        padding: 2rem;
+        border-left:3rem;
+        border-left-color: aqua;
+  }
+  .e {
+      padding: 1em;
+  }
 
   .popup {
       position: relative;
@@ -151,8 +166,8 @@ h1 {
   .popup .popuptext {
       visibility: hidden;
       width: 160px;
-      background-color: #60777B;
-      color: #fff;
+      background-color: rgba(255, 255, 255, 0.897);
+      color: rgb(47, 47, 53);
       text-align: center;
       border-radius: 6px;
       padding: 8px 0;
@@ -170,7 +185,7 @@ h1 {
       margin-left: -5px;
       border-width: 5px;
       border-style: solid;
-      border-color: #60777B transparent transparent transparent;
+      border-color: rgba(255, 255, 255, 0.829) transparent transparent transparent;
       
   }
   .popup .show {
@@ -187,7 +202,9 @@ h1 {
       to {opacity: 1;}
   }
   
-
+.btn-counter{
+    border-color: #073642;
+}
 .btn-counter:after{
     content:attr(data-count);
 }
