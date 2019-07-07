@@ -6,11 +6,6 @@ tags: ["news","linux","debian"]
 image: /img/debian.webp
 ---
 
-<img src="/img/debian.webp" class="content-img">
-
-
-
-
 tanggal 6 july 2019 kemarin akhirnya debian  merilis versi OS terbaru mereka dengan code name "buster",Yuup !! setelah sekian lama ( kurang lebih 25 bulan dalam pengembanganya ) akhirnya nenek moyang dari sebagian besar distro yang bertebaran diluar sana rilis juga 👍. Menurut keterangan di website resmi mereka debian 10 akan mendapat dukungan penuh selama 5 tahun dan seperti biasa debian 10 memiliki bebrapa pilihan Dektop environment yang bisa kalian pilih saat ingin mendownload isonya seperti Gnome, Cinammon, KDE, LXQT dll.
 
 berikut beberapa fitur baru di debian 10:
@@ -24,7 +19,7 @@ seperti yang kita tahu python2 sudah tidak didukung lagi oleh python.org sampai 
 #### Menggunakan Karnel 4.19
 pada debian 9 kemarin, debian menggunkan karnel versi 4.9 yang mengharuskan saya masuk ke live CD terus masuk mode chroot terus install driver amd wualahhh ribetlah pokonya 😠, semoga versi 4.19 tidak, yaa walaupun agak ketinggalan juga sih, mengingat sekarang sudah sampai ke versi 5.2.
 
-fitur baru lain bisa baca disini
+fitur baru lain bisa baca <a href="https://itsfoss.com/debian-10-buster/">disini</a>
 
 Berikut list Paket aplikasi yang sudah ter-include didalam debian 10:
 
@@ -52,6 +47,6 @@ Berikut list Paket aplikasi yang sudah ter-include didalam debian 10:
 
 dan masih banyak lagi.
 
-jika kalian ingin menginstall debian 10 file isonya bisa di download disini, tertarik mencoba ? saya sendiri berencana akan menggunakan debian 10 sebagai secondary OS setelah manjaro.
+jika kalian ingin menginstall debian 10 file isonya bisa di download <a href="https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/">disini</a>, tertarik mencoba ? saya sendiri berencana akan menggunakan debian 10 sebagai secondary OS setelah manjaro.
 
 
