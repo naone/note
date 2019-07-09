@@ -5,20 +5,10 @@
     <link>/tags/linux/</link>
     <description>Recent content in linux on Linuxisekai | Nolep enthuiast project</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 08 Jul 2019 00:31:14 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jul 2019 22:22:35 +0700</lastBuildDate>
     
 	<atom:link href="/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Akun Github Cannocial Diretas</title>
-      <link>/post/akun-github-cannocial-diretas/</link>
-      <pubDate>Mon, 08 Jul 2019 00:31:14 +0700</pubDate>
-      
-      <guid>/post/akun-github-cannocial-diretas/</guid>
-      <description>tanggal 6 july 2019 kemarin akun github cannocial diretas, Pihak connocial juga sudah mengkonvirmasi bahwa pada tanggal 6 july 2019 bahwa akun gihub mereka diretas, akan tetapi source kode dari ubutnu aman.Menurut cannocial pelaku hanya membuat 11 repository kosong denagn nama CAN_GOT_HAXXD dan tidak memodifikasi source kode dari ubuntu atatupun project lain dari cannocial.
-untuk saat ini cannocial menggunakan launchpad unutk mendistribusikan paket ubuntu dan semua tool didalamnya sehingga pengguna tidak akan berdampak akibat kejadian ini kejadian hampir serupa juga pernah dialami oleh gentoo linux yang akun githubnya diretas dengan menyisipkan malware pada source code gentoo memlalui repository gihub meraka.</description>
-    </item>
     
     <item>
       <title>Realease Debian 10 codename &#39;Buster&#39;</title>

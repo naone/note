@@ -10,11 +10,14 @@ tanggal 6 july 2019 kemarin akhirnya debian  merilis versi OS terbaru mereka den
 
 berikut beberapa fitur baru di debian 10:
 
+
 #### Pindah dari xorg ke wayland
 unutk versi sekarang Gnome menggunakan wayland sebagai display server menggantilan xorg. wayland sendiri merupakan display server yang lebih modern dan powerful ketimbang xorg. Perubahan selanjutnya yaitu  semua paket berpindah dari libgtk2+ ke  libgtk3+ 
 
+
 #### move on dari python 2 ke python 3
 seperti yang kita tahu python2 sudah tidak didukung lagi oleh python.org sampai tanggal 1 january 2020. ini mengharuskan para python developer memprogram kembali code mereka agar bisa compatible denagn python3.
+
 
 #### Menggunakan Karnel 4.19
 pada debian 9 kemarin, debian menggunkan karnel versi 4.9 yang mengharuskan saya masuk ke live CD terus masuk mode chroot terus install driver amd wualahhh ribetlah pokonya 😠, semoga versi 4.19 tidak, yaa walaupun agak ketinggalan juga sih, mengingat sekarang sudah sampai ke versi 5.2.
