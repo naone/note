@@ -11,8 +11,10 @@ tanggal 6 july 2019 kemarin akhirnya debian  merilis versi OS terbaru mereka den
 berikut beberapa fitur baru di debian 10:
 
 
+
 #### Pindah dari xorg ke wayland
 unutk versi sekarang Gnome menggunakan wayland sebagai display server menggantilan xorg. wayland sendiri merupakan display server yang lebih modern dan powerful ketimbang xorg. Perubahan selanjutnya yaitu  semua paket berpindah dari libgtk2+ ke  libgtk3+ 
+
 
 
 #### move on dari python 2 ke python 3
