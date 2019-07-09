@@ -11,21 +11,24 @@
     {{ .Site.Author.name }} | 
     <span class="icon has-text-primary"><i class="fas fa-calendar"></i></span> 
     {{ .Date.Format "02-01-2006" }}
-    | <span class="icon has-text-primary"><i class="fas fa-tags"></i></span>
-    {{ $taxonomy := "tags" }}
-{{ with .Param $taxonomy }}
-{{ range $index, $tag := . }}
-{{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
-&nbsp;{{ $tag | urlize }}
-{{- end -}}
-{{- end -}}
-</div>
-{{ end }}                          
-<br>
+    </div>
  <div class="content">
  <article class="article">
 {{ .Content }}
 </article>
+<br/>
+<br/>
+<span class="icon has-text-primary"><i class="fas fa-tags"></i></span>
+{{ $taxonomy := "tags" }}
+{{ with .Param $taxonomy }}
+{{ range $index, $tag := . }}
+{{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+&nbsp;#{{ $tag | urlize }}
+{{- end -}}
+{{- end -}}
+
+{{ end }}                          
+<br>
     {{ partial "button-post.html" . }}
     {{ partial "disqus.html" . }}
     {{ partial "related.html" . }}
