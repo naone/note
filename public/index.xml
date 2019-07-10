@@ -98,5 +98,23 @@ instalasi arch linux root@linuxisekai sudo pacman -S libwebp gthumb   ubuntu roo
 1). Okitavera.me -&amp;gt; Nanda ( Yunee ) OKitavera. 2). Addy-dclxvi.github.io -&amp;gt; Adhi Pambudhi. 3). Epsi-rns.gitlab.io -&amp;gt; Epsi-rns 4). Bandithijo.com -&amp;gt; Rizqi Nur Assyaufi 5). Aflasio.art -&amp;gt; Aflasio</description>
     </item>
     
+    <item>
+      <title>Darn... Page not found.</title>
+      <link>/404/</link>
+      <pubDate>Sun, 16 Oct 2016 19:28:41 +0200</pubDate>
+      
+      <guid>/404/</guid>
+      <description>You should look somewhere else.</description>
+    </item>
+    
+    <item>
+      <title>Oops, you are offline.</title>
+      <link>/offline/</link>
+      <pubDate>Sun, 16 Oct 2016 19:28:41 +0200</pubDate>
+      
+      <guid>/offline/</guid>
+      <description>You should try to find some internet connection to browse here.</description>
+    </item>
+    
   </channel>
 </rss>
