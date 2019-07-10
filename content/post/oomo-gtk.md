@@ -3,7 +3,7 @@ title: "Membuat gtk theme sendiri menggunkan oomox"
 date: 2019-06-30T08:08:26+07:00
 draft: false
 tags: ["linux","oomox"]
-image: /img/megumin.webp
+image: /img/post/megumin.webp
 ---
 <h3>Pendahuluan</h3>
 oomox adalah aplikasi yang digunakan membuat gtk theme pada sistem operasi linux.oomox berbasisikan GUI jadi sangat mudah digunkan. bagi yang hobi otak atik tampilan desktop, oomox  pasti akan menjadi aplikasi yang sangat berguna. tema oomox sendiri terbagi menjadi 3 varian yaitu numix-based, materia dan arch theme dan untuk icon ada 4 yaitu archdroid, gnome color, numix, papirus dan suru++.

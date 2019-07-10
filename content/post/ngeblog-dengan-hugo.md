@@ -3,7 +3,7 @@ title: "#1 Hugo : membuat blog menggunkan Hugo + github page"
 date: 2019-07-01T20:03:00+07:00
 draft: false
 tags: ["Hugo","github","blog"]
-image: /img/cute.webp
+image: /img/post/cute.webp
 ---
 <h3>Pendahuluan</h3>
 <p>

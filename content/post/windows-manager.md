@@ -2,7 +2,7 @@
 title: "Desktop environment terasa berat ? coba pakai Windows Manager"
 date: 2019-06-28T14:22:15+07:00
 draft: false
-image : "/img/loli.webp"
+image : "/img/post/loli.webp"
 tags: ["linux", "wm"]
 ---
 <h3>Pendahuluan</h3>

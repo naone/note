@@ -2,7 +2,7 @@
 title: "Bulma : Alternativ Framework CSS selain Bootstrap"
 date: 2019-06-29T16:38:23+07:00
 draft: false
-image: /img/bulma.webp
+image: /img/post/bulma.webp
 tags: ["bulma","css"]
 ---
 <h3>Pendahuluan</h3>

@@ -3,7 +3,7 @@ title: "Realease Debian 10 codename 'Buster'"
 date: 2019-07-07T22:22:35+07:00
 draft: false
 tags: ["news","linux","debian"]
-image: /img/debian.webp
+image: /img/post/debian.webp
 ---
 
 tanggal 6 july 2019 kemarin akhirnya debian  merilis versi OS terbaru mereka dengan code name "buster",Yuup !! setelah sekian lama ( kurang lebih 25 bulan dalam pengembanganya ) akhirnya nenek moyang dari sebagian besar distro yang bertebaran diluar sana rilis juga 👍. Menurut keterangan di website resmi mereka debian 10 akan mendapat dukungan penuh selama 5 tahun dan seperti biasa debian 10 memiliki bebrapa pilihan Dektop environment yang bisa kalian pilih saat ingin mendownload isonya seperti Gnome, Cinammon, KDE, LXQT dll.

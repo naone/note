@@ -1,10 +1,10 @@
 ---
-title: "Cara convert gambar ke format .webp di linux"
+title: "Cara "
 date: 2019-07-06T08:29:35+07:00
 draft: false
 tags: ["linux", "tutorial"]
-thumbnail: /img/pink.jpg
-image: /img/pink.jpg
+thumbnail: /img/post/pink.webp
+image: /img/post/pink.webp
 description: "convert gambar di linux menggunkan libwebp" 
 ---
 <div class="has-text-centered">

@@ -2,7 +2,7 @@
 title: "Cara menginstall driver realtek di linux"
 date: 2019-06-28T19:43:35+07:00
 draft: false
-image: "/img/sagiri.webp"
+image: "/img/post/sagiri.webp"
 tags: ["linux","driver"]
 ---
 <h3>Pendahuluan</h3>

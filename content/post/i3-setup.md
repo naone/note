@@ -2,7 +2,7 @@
 title: "I3wm: Tiling Windows manager yang cocok untuk pemula"
 date: 2019-06-27T10:10:59+07:00
 draft: true
-image: "/img/menhara.webp"
+image: "/img/post/menhara.webp"
 ---
 
 <img src="/img/1.webp" alt="i3">
