@@ -1,5 +1,5 @@
 ---
-title: "Cara "
+title: "Cara convert gambar ke format .webp di linux"
 date: 2019-07-06T08:29:35+07:00
 draft: false
 tags: ["linux", "tutorial"]

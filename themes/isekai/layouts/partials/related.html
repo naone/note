@@ -20,6 +20,9 @@
 <div class="has-text-danger"><b>Tetap semangat ngoding 👊</b></div>
 <br/>-->
 {{ if eq ($.Scratch.Get "count") 0 }}
+<br/>
+<br/>
+<br/>
 <div class="is-size-4 has-addons">
     Related Post
 </div>
@@ -35,10 +38,12 @@
               {{ $.Scratch.Add "limit" 1 }}
          
             
-              
+              <div class="tile has-background-grey-dark">
                   <a href="{{ .Permalink }}" class="judul-post">
                       <i class="fas fa-newspaper"></i>&nbsp;{{ .Title }}</a>
               <br/>
+              
+              </div>
             
               
       
