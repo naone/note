@@ -2,7 +2,7 @@ const CACHE_VERSION = 1;
 
 const BASE_CACHE_FILES = [
     '/css/bs.css',
-    '/css/custom.css,'
+    '/css/custom.css,',
     '/js/jquery.js',
     '/js/fontawesome.js',
     '/js/cookie.js',
