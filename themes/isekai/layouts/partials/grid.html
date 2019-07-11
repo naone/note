@@ -20,7 +20,7 @@
                   {{ range $index, $tag := . }}
                   
                   {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
-                  <h7 class="f">{{ $tag | urlize }}</h7>
+                  <h7 class="is-size-6">{{ $tag | urlize }}</h7>
                   {{- end -}}
                   {{- end -}}
                   {{ end }}
