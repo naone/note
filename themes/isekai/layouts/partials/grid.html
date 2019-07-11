@@ -1,7 +1,5 @@
 <div class="container">
-    
     <div class="masonry-wrapper">
-        
       <div class="masonry">
           {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 9 }}
           {{ range $paginator.Pages }} 
@@ -14,27 +12,22 @@
               {{ .Title }}
               </a>
             <br/>
-
-              <time class="f"><span class="icon"><i class="fas fa-calendar has-text-primary"></i></span>&nbsp;{{ .Date.Format "02-01-2006" }}
-                | <span class="icon is-small"><i class="fas fa-tags has-text-primary"></i></span></time>
+              <i class="fas fa-calendar has-text-primary f"></i>
+              <h7 class="f">&nbsp;{{ .Date.Format "02-01-2006" }}</h7>
+                | <i class="fas fa-tags has-text-primary f"></i>
                   {{ $taxonomy := "tags" }}
                   {{ with .Param $taxonomy }}
                   {{ range $index, $tag := . }}
-                  <time class="f">
+                  
                   {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
-                  {{ $tag | urlize }}
-                  </time>
-                
+                  <h7 class="f">{{ $tag | urlize }}</h7>
                   {{- end -}}
                   {{- end -}}
                   {{ end }}
                   </div>
               </div>
-          
             </div>
             {{ end }}
        </div>
-       
       </div>
-      
        </div>
