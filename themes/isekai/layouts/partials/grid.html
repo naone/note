@@ -13,7 +13,7 @@
               </a>
             <br/>
               <i class="fas fa-calendar has-text-primary f"></i>
-              <h7 class="f">&nbsp;{{ .Date.Format "02-01-2006" }}</h7>
+              <h7 class="is-size-6">&nbsp;{{ .Date.Format "02-01-2006" }}</h7>
                 | <i class="fas fa-tags has-text-primary f"></i>
                   {{ $taxonomy := "tags" }}
                   {{ with .Param $taxonomy }}

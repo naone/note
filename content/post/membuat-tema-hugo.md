@@ -3,7 +3,7 @@ title: "#2 Hugo : Membuat tema hugo sebdiri"
 date: 2019-07-04T15:49:01+07:00
 draft: false
 tags: ["Hugo","Bulma"]
-image: "/img/post/music.webp"
+image: /img/post/music.webp
 ---
 <h3>Prakata</h3>
 melanjutkan artikel sebelumnya, Pada artikel kali ini kita akan membahas cara membuat tema hugo.
