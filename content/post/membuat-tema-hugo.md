@@ -134,14 +134,10 @@ folder staic digunakan untuk menyimpan file-file static seperti gambar, CSS, ata
 extrack bahan yang tadi didownload untuk file bulma.css dan custom.css silahkan taruh di folder themese/isekai/static/css sedangkan untuk file fontawesome.js prism.js jquery.js core.js cookie.js lazysizes.js tauh di themes/isekai/static/js.
 #### membuat partial
 
-<div class="message">
 <div class="message-header">root@linuxisekai: ~/linuxisekai</div>
-<div class="message-body">
-	cd themes/isekai/layout/partials
-<br/>
-	touch navbar.html head.html grid.html pagination.html footer.html js.html
-</div>
-</div> 
+
+	$ cd themes/isekai/layout/partials
+	$ touch navbar.html head.html grid.html pagination.html footer.html js.html
 
 ### Satnya ngoding
 buka text editor kesayanganmu
