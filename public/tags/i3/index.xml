@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>i3 on Linuxisekai | Nolep enthuiast project</title>
+    <link>/tags/i3/</link>
+    <description>Recent content in i3 on Linuxisekai | Nolep enthuiast project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 27 Jun 2019 10:10:59 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/i3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mencoba i3wm</title>
+      <link>/post/i3-setup/</link>
+      <pubDate>Thu, 27 Jun 2019 10:10:59 +0700</pubDate>
+      
+      <guid>/post/i3-setup/</guid>
+      <description>intro setelah sekian lama bersama dengan openbox, kini sepertinya saya harus selinkuh dengan i3, hal ini karena saya merasa openbox gagal memuaskan saya saat menjalankan banyak aplikasi sekaligus, saya harus menggeser touchpad unutk meminimaze aplikasi auatu meutup aplikasi saya juga harus menggeser touchpad lagi unutk membuka jendela yang diminimize, berapa banyak waktu yang terbuang hanya untuk menggeser touchpad ? huuh!!! sangat tidak praktis i3. masalah itu membuat saya melirik windows manager lain dan pilihan saya jatuh kepada i3.</description>
+    </item>
+    
+  </channel>
+</rss>

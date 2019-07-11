@@ -61,5 +61,14 @@ Instalasi Cek versi karnel $ uname -a  Output Linux asuna 5.2.0-1-MANJARO #1 SMP
       <description>Intro Artikel ini dibuat karena saya melihat digrub facebook banyak sekali yang bertanya &amp;ldquo;Desktop environtment apa yang ringan ?&amp;rdquo;, &amp;ldquo;saya mau install linux mint kira kira yang ringan dan tampilanya bagus pakai lxde xfce atau mate ?&amp;rdquo; &amp;ldquo;Saya habis install ubutnu kok ngelag ya ?&amp;rdquo; etc. mungkin artikel ini bisa menjawab pertanyaan - pertanyaan tersebut. sebenarnya jawaban pertanyaan diatas adalah xfce/lxde namun ada alernatif lain yaitu hanya menggunakan windows manager tanpa meggunakan desktop environment.</description>
     </item>
     
+    <item>
+      <title>Mencoba i3wm</title>
+      <link>/post/i3-setup/</link>
+      <pubDate>Thu, 27 Jun 2019 10:10:59 +0700</pubDate>
+      
+      <guid>/post/i3-setup/</guid>
+      <description>intro setelah sekian lama bersama dengan openbox, kini sepertinya saya harus selinkuh dengan i3, hal ini karena saya merasa openbox gagal memuaskan saya saat menjalankan banyak aplikasi sekaligus, saya harus menggeser touchpad unutk meminimaze aplikasi auatu meutup aplikasi saya juga harus menggeser touchpad lagi unutk membuka jendela yang diminimize, berapa banyak waktu yang terbuang hanya untuk menggeser touchpad ? huuh!!! sangat tidak praktis i3. masalah itu membuat saya melirik windows manager lain dan pilihan saya jatuh kepada i3.</description>
+    </item>
+    
   </channel>
 </rss>
