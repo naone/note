@@ -1,5 +1,5 @@
 ---
-title: "Realease Debian 10 codename 'Buster'"
+title: "Realease Debian 10 codename Buster"
 date: 2019-07-07T22:22:35+07:00
 draft: false
 tags: ["news","linux","debian"]
