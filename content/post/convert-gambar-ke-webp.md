@@ -8,7 +8,7 @@ image: /img/post/pink.webp
 description: "convert gambar di linux menggunkan libwebp" 
 ---
 <div class="has-text-centered">
-<img src="/img/pink.jpg" class="content-img"/>
+<img src="/img/post/pink.webp" class="content-img"/>
 </div>
 
 
@@ -26,20 +26,14 @@ bagi yang belum tau .webp adalah format gambar digital yang dibuat oleh google. 
 ### instalasi
 
 #### arch linux
-<div class="message">
 <div class="message-header">root@linuxisekai</div>
-<div class="message-body">
-sudo pacman -S libwebp gthumb
-</div>
-</div>
+
+    sudo pacman -S libwebp gthumb
 
 #### ubuntu
-<div class="message">
 <div class="message-header">root@linuxisekai</div>
-<div class="message-body">
-sudo apt-get install libwebp gthumb
-</div>
-</div>
+
+    sudo apt-get install libwebp gthumb
 
 ### Convert gambar
 
@@ -54,21 +48,21 @@ jika kamu ingin mengconvert gambar dalam jumlah banyak sekaligus
     asuna@linuxisekai:~$ cd Pictures
     asuna@linuxisekai:~/Pictures$ nano convert.sh
     
-        #!/bin/bash
+    #!/bin/bash
 
-        PARAMS=('-m 6 -q 70 -mt -af -progress')
+    PARAMS=('-m 6 -q 70 -mt -af -progress')
 
-        if [ $# -ne 0 ]; then
-	    PARAMS=$@;
-        fi
+    if [ $# -ne 0 ]; then
+	PARAMS=$@;
+    fi
 
-        cd $(pwd)
+    cd $(pwd)
 
-        shopt -s nullglob nocaseglob extglob
+    shopt -s nullglob nocaseglob extglob
 
-        for FILE in *.@(jpg|jpeg|tif|tiff|png); do 
-        cwebp $PARAMS "$FILE" -o "${FILE%.*}".webp;
-        done
+    for FILE in *.@(jpg|jpeg|tif|tiff|png); do 
+    cwebp $PARAMS "$FILE" -o "${FILE%.*}".webp;
+    done
 
     asuna@linuxisekai:~/Pictures$ chmod +x convert.sh
     asuna@linuxisekai:~/Pictures$ ./convert.sh

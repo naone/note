@@ -3922,12 +3922,12 @@ a.list-item {
   align-items: center;
   background-color: #839496;
   border-radius: 0.4em 0.4em 0 0;
-  color: #fff;
+  color: #002B36;
   display: flex;
-  font-weight: 700;
+  font-weight: 10;
   justify-content: space-between;
   line-height: 1.25;
-  padding: 0.75em 1em;
+  padding: 0.1em 1em;
   position: relative; }
   .message-header .delete {
     flex-grow: 0;
@@ -3945,11 +3945,7 @@ a.list-item {
   border-width: 0 0 0 4px;
   color: #839496;
   padding: 1.25em 1.5em; }
-  .message-body code,
-  .message-body pre {
-    background-color: white; }
-  .message-body pre code {
-    background-color: transparent; }
+  
 
 .modal {
   align-items: center;

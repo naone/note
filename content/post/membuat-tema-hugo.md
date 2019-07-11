@@ -1,50 +1,48 @@
 ---
 title: "#2 Hugo : Membuat tema hugo sebdiri"
 date: 2019-07-04T15:49:01+07:00
-draft: true
+draft: false
 tags: ["Hugo","Bulma"]
+image: "/img/post/music.webp"
 ---
 <h3>Prakata</h3>
 melanjutkan artikel sebelumnya, Pada artikel kali ini kita akan membahas cara membuat tema hugo.
 sebenarnya di website https://themes.gohugo.io juga sudah banyak sekali tema yang sudah siap pakai akan tetapi saya merasa kurang sreg dengan tampilan tema yang disediakan, saya juga bingung jika ingin memodifikasi tampilan oleh karena itu saya ingin mencoba membuat tema sendiri sekaligus mencoba hal baru. tema yang kita buat akan menggunkan CSS framework yaitu bulma. pertama siapkan bahan-bahanya terlebih dahulu
-<br/>
-<br/>
-<div class="message is-primary">
-<div class="message-header">Info</div>
-<div class="message-body">
+
+<div class="is-primary message-body">
 <a href="http://localhost:1313/post/ngeblog-dengan-hugo/">#1 Hugo: Membuat blog menggunkan hugo + gitub paga</a>
 </div>
-</div>
+
 <ul>
 <li>Bulma untuk CSS framework</li>
 <li>Font Awesome unutuk gylph icon</li>
 <li>Jquery JS framework</li>
 <li>Prismjs untuk Syntax Hightlight</li>
 </ul>
+
 <strong>Download semua bahanya <a href="https://github.com/linuxisekai/tema-hugo">disini</a></strong>
-<br/>
-<h3>Instalasi</h3>
+
+### Instalasi
 setelah semua bahanya sudah siap sekarang saatnya membuat tema hugo kita
-<ul>
-<li>pertama masuk ke direktory hugo kita</li>
-<div class="message">
+
+
 <div class="message-header">root@linuxisekai</div>
-<div class="message-body">
-$ cd linuxisekai
-<br/>
-$ cd hugo new theme isekai
-</div>
-</div>
-</ul>
+
+	$ cd linuxisekai
+	$ cd hugo new theme isekai
+
 <strong>keterangan :</strong>
-<br/>
-linuxisekai adalah directory tempat hug kita dibuat jika kmu belum membuatnya ketikan perintah :
-<div class="font-cmd has-text-primary">$ hugo new site linuxisekai</div>
-isekai adalah nama tema yang kita buat kalian bebas menggantinya sesuka kalian.
-<br/>
-<br/>
+
+linuxisekai adalah directory tempat hugo kita dibuat jika kamu belum membuatnya ketikan perintah :
+
+<div class="message-header">root@linuxisekai</div>
+
+	$ hugo new site linuxisekai
+
+linuxisekai adalah nama tema yang kita buat kalian bebas menggantinya sesuka kalian.
+
+
 <strong>Struktur directory tema Hugo</strong>
-<br/>
 
 	├── archetypes
 	│   └── default.md
@@ -118,10 +116,12 @@ didalam folder layout terdapat folder partial. layout yang kita buat nantinya ak
  	       └── head.html => partia head
 
 #### Default
+
 	│   ├── _default
 	│   │   ├── baseof.html
 	│   │   ├── list.html
 	│   │   └── single.html
+
 <strong>List.html: </strong>digunakan unutk menampilkan daftar kontent
 
 <strong>single.html: </strong>digunakan unutuk menampilkan satu konten
@@ -438,6 +438,9 @@ buka text editor kesayanganmu
 	<script src="/js/cookie.js"></script>
 	<script src="/js/prism.js"></script>
 
+
+setelah semua partial kita buat, saatnya memanggil partial-partial tersebut
+
 <h4 class="has-text-centered">index.html</h4>
 
 	<!DOCTYPE html>
@@ -503,4 +506,10 @@ buka text editor kesayanganmu
     </body>
 	</html>
 
+semua file yang dibutuhkan sudah selesai, sekarang buat postingan baru
 
+	$ hugo new post/firs-post.md
+
+pada file <i>/content/first-post.md</i> jangan lupa ubah value <code>draft : true</code> menjadi <code>false</code>.
+Oh iya, jika ada yang ingin tema seperti linuxisekai, saya sudah menguploadnya di repo github saya
+https://github.com/linuxisekai/hugo-theme-solarized

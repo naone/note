@@ -10,11 +10,11 @@
       "sizes": "144x144",
       "type": "image/png"
     }, {
-      "src": "/img/icons/favicon-152x152.png",
-      "sizes": "152x152",
+      "src": "/img/icons/favicon-156x156.png",
+      "sizes": "156x156",
       "type": "image/png"
     }, {
-      "src": "/img/icons/logo-196x196.png",
+      "src": "/img/icons/favicon-196x196.png",
       "sizes": "192x192",
       "type": "image/png"
     }],

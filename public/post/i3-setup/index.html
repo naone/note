@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Linuxisekai ~#: Nolep Enthusiast</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="title" content="">
+    <meta name="author" content="linuxisekai">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="linuxisekai">
+    <meta name="theme-color" content="#073642">
+    <meta http-equiv="Cache-control" content="public">
+    <link rel="icon" type="image/png" href="tuxguitar.png">
+    <meta name="description" content="Linux, Golang, PHP, Tutorial, Ricing, Ubuntu, Arch Linux">
+    <link href="/css/bs.css" rel="stylesheet">
+    <link href="/css/solarized-dark.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+    
+<meta itemprop="name" content="Mencoba i3wm">
+<meta itemprop="description" content="intro setelah sekian lama bersama dengan openbox, kini sepertinya saya harus selinkuh dengan i3, hal ini karena saya merasa openbox gagal memuaskan saya saat menjalankan banyak aplikasi sekaligus, saya harus menggeser touchpad unutk meminimaze aplikasi auatu meutup aplikasi saya juga harus menggeser touchpad lagi unutk membuka jendela yang diminimize, berapa banyak waktu yang terbuang hanya untuk menggeser touchpad ? huuh!!! sangat tidak praktis i3. masalah itu membuat saya melirik windows manager lain dan pilihan saya jatuh kepada i3.">
+
+
+<meta itemprop="datePublished" content="2019-06-27T10:10:59&#43;07:00" />
+<meta itemprop="dateModified" content="2019-06-27T10:10:59&#43;07:00" />
+<meta itemprop="wordCount" content="1615">
+
+
+
+<meta itemprop="keywords" content="" />
+
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-143247560-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    <meta property="og:title" content="Mencoba i3wm" />
+<meta property="og:description" content="intro setelah sekian lama bersama dengan openbox, kini sepertinya saya harus selinkuh dengan i3, hal ini karena saya merasa openbox gagal memuaskan saya saat menjalankan banyak aplikasi sekaligus, saya harus menggeser touchpad unutk meminimaze aplikasi auatu meutup aplikasi saya juga harus menggeser touchpad lagi unutk membuka jendela yang diminimize, berapa banyak waktu yang terbuang hanya untuk menggeser touchpad ? huuh!!! sangat tidak praktis i3. masalah itu membuat saya melirik windows manager lain dan pilihan saya jatuh kepada i3." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/i3-setup/" />
+<meta property="article:published_time" content="2019-06-27T10:10:59&#43;07:00"/>
+<meta property="article:modified_time" content="2019-06-27T10:10:59&#43;07:00"/>
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Mencoba i3wm"/>
+<meta name="twitter:description" content="intro setelah sekian lama bersama dengan openbox, kini sepertinya saya harus selinkuh dengan i3, hal ini karena saya merasa openbox gagal memuaskan saya saat menjalankan banyak aplikasi sekaligus, saya harus menggeser touchpad unutk meminimaze aplikasi auatu meutup aplikasi saya juga harus menggeser touchpad lagi unutk membuka jendela yang diminimize, berapa banyak waktu yang terbuang hanya untuk menggeser touchpad ? huuh!!! sangat tidak praktis i3. masalah itu membuat saya melirik windows manager lain dan pilihan saya jatuh kepada i3."/>
+
+</head>
+
+
+    <body>
+            <script src="/js/highlight.pack.js"></script>
+            <script>hljs.initHighlightingOnLoad();</script>
+    <div class="pageloader"></div>
+        <div class="infraloader is-active"></div>
+<nav id="navbar" class="navbar is-fixed-top has-shadow">
+        <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/" >
+            <span class="icon fa-lg"><i class="fas fa-terminal"></i></span>
+            <div class="is-size-4 has-text-weight-bold title">&nbsp;linuxisekai</div>
+            
+          </a>
+          
+          <a class="navbar-item is-hidden-desktop" href="https://github.com/linuxisekai" target="_blank">
+            <span class="icon" style="color: rgb(173, 179, 197);">
+              <i class="fab fa-lg fa-github-alt"></i>
+            </span>
+          </a>
+      
+          <a class="navbar-item is-hidden-desktop" href="#" target="_blank">
+            <span class="icon has-text-primary">
+              <i class="fab fa-lg fa-twitter"></i>
+            </span>
+          </a>
+        
+          <div id="navbarBurger" class="navbar-burger burger" data-target="navMenuIndex">
+          
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      
+        <div id="navMenuIndex" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="/">
+              <span class="icon has-text-primary">
+                <i class="fas fa-home"></i>
+              </span>
+              <span>
+                Home
+              </span>
+            </a>
+      
+            
+              <a class="navbar-item bd-navbar-item-videos " href="/tags/linux">
+                <span class="icon has-text-primary">
+                  <i class="fas fa-terminal"></i>
+                </span>
+      
+                <span>Linux</span>
+              </a>
+            
+              <div class="navbar-item has-dropdown is-hoverable" href="/ngoding">
+                <a class="navbar-link">
+                <span class="icon has-text-primary">
+                  <i class="fas fa-code"></i>
+                </span>
+      
+                <span>Ngoding</span>
+                </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="#">
+                    PHP
+                  </a>
+                  <a class="navbar-item" href="#">
+                    Go
+                  </a>
+                </div>
+              </div>
+              <a class="navbar-item bd-navbar-item-blog " href="/about">
+                <span class="icon has-text-primary">
+                  <i class="fas fa-newspaper"></i>
+                </span>
+      
+                <span>News</span>
+              </a>
+              <a class="navbar-item bd-navbar-item-blog " href="/friendlist">
+                <span class="icon has-text-primary">
+                  <i class="fas fa-user-friends"></i>
+                </span>
+      
+                <span>Friends</span>
+              </a>
+          </div>
+          
+      
+          <div class="navbar-end">
+            <a class="navbar-item is-hidden-touch" href="https://github.com/linuxisekai" target="_blank">
+              <span class="icon" style="color: rgb(170, 174, 184);">
+                <i class="fab fa-lg fa-github-alt"></i>
+              </span>
+            </a>
+      
+            <a class="navbar-item is-hidden-touch" href="#" target="_blank">
+              <span class="icon has-text-primary">
+                <i class="fab fa-lg fa-twitter"></i>
+              </span>
+            </a>
+      
+            <div class="navbar-item is-hidden-desktop">
+              <div class="field is-grouped is-grouped-multiline">
+                <p class="control">
+                  <input type="text" class="input is-rounded has-background-grey-light" placeholder="Cari">
+      
+                </p>
+                <p class="control has-icon">
+                    <input type="submit" value ="Cari" class="button is-rounded input has-background-grey-light has-text-primary" />
+                    <span class="icon is-small is-left has-text-primary">
+                      <i class="fas fa-search"></i>
+                    </span>
+                  </p>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </nav>
+               
+          
+      
+    <div class="judul"><b>Mencoba i3wm</b></div>
+    <div class="is-size-7 info-post">
+    <span class="icon has-text-primary"><i class="fas fa-user"></i></span>
+    tempegoreng | 
+    <span class="icon has-text-primary"><i class="fas fa-calendar"></i></span> 
+    27-06-2019
+    </div>
+ <div class="content">
+ <article class="article">
+
+
+<p><img src="/img/post/i3.webp" alt="i3"></p>
+
+<h3 id="intro">intro</h3>
+
+<p>setelah sekian lama bersama dengan openbox, kini sepertinya saya harus selinkuh dengan i3,
+hal ini karena saya merasa openbox gagal memuaskan saya saat menjalankan banyak aplikasi sekaligus,
+saya harus menggeser touchpad unutk meminimaze aplikasi auatu meutup aplikasi saya juga harus menggeser touchpad lagi unutk membuka jendela yang diminimize, berapa banyak waktu yang terbuang hanya untuk menggeser touchpad ? huuh!!! sangat tidak praktis i3. masalah itu membuat saya melirik windows manager lain dan pilihan saya jatuh kepada i3. i3 sendiri merupakan tiling windows manager yang artinya fungsi-fungsi unutk mengontrol jendela aplikasi menggunakan kombinasi keyboard. dengan i3 maslah yang ada pada openbox sudah teratasi, gomenasai openbox 😕.</p>
+
+<h3 id="install">install</h3>
+
+<pre><code>sudo pacman -S i3 feh suckless-tools zsh rofi lxappearance redshift
+</code></pre>
+
+<ul>
+    <li>i3 : windows manager yang akan kinakan</li>
+    <li>feh :  unutk mengatur background</li>
+    <li>suckless-tools: aplikasi utility dari suckless.org</li>
+    <li>zsh : sebagai shell menggantikn bash</li>
+    <li>rofi : launcher aplikasi</li>
+    <li>lxappearance : unutk mennganti teme, font, icon dan lain-lain</li>
+    <li> redshift : untuk memfilter cahaya biru pada monitor ( mode malam )</li>
+</ul>
+
+<p>saya juga membutuhkan aplikasi lain yang ada di AUR</p>
+
+<pre><code>yay -S networkmanager_dmenu polybar clearine-git
+</code></pre>
+
+<ul>
+    <li>networkmanager_dmenu : ssebagai network manager</li>
+    <li>polybar : sebagai bar/panel</li>
+    <li>clearine : sebagai logout UI buatan</li>
+</ul>
+
+<p>konfigurasi i3 terletak pada ~/.i3 atau ~/.config/i3, saya sendiri lebih memilih di .config/i3 agar folder home saya lebih bersih.</p>
+
+<pre><code>mkdir ~/.config/i3
+touch ~/.config/i3/config
+</code></pre>
+
+<h4 id="autostart-aplication">Autostart aplication</h4>
+
+<pre><code>exec --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id feh --bg-scale ~/Pictures/dek.png
+exec --no-startup-id redshift
+</code></pre>
+
+<h4 id="set-font">set font</h4>
+
+<pre><code>set $ft pango: ubuntumono Nerd Font 12
+font $ft
+</code></pre>
+
+<h4 id="set-tampilan">set tampilan</h4>
+
+<pre><code># border jendela
+new_window pixel 3
+new_float pixel 3
+
+# ukuran minimum jendela saat mode floating
+floating_minimum_size 10x10
+
+# ukuran maximum jendela saat mode floating
+floating_maximum_size -1x-1
+
+# mengatur fokus jendela mengikuti mouse ubah ke 'yes' untuk mengaktifkanyas
+focus_follows_mouse no
+
+# Mengambil warna dari .Xresources
+set_from_resource $back         i3wm.background 
+set_from_resource $black        i3wm.color0     
+set_from_resource $grey         i3wm.color8     
+set_from_resource $lightgrey    i3wm.color7     
+set_from_resource $white        i3wm.color15    
+set_from_resource $yellow       i3wm.color11    
+set_from_resource $red          i3wm.color9 
+set_from_resource $darkred      i3wm.color1     
+set_from_resource $green        i3wm.color10    
+
+# mengatur warna border, backgound, dan text
+#class                      border      backgr.     text        split
+client.focused              $green      $green      $black      $red
+client.focused_inactive     $green      $grey       $lightgrey  $grey
+client.unfocused            $green      $grey       $lightgrey  $grey
+client.urgent               $green      $red        $black      $red
+client.background           $back
+</code></pre>
+
+<h4 id="keybinds-untuk-aplikasi">Keybinds untuk aplikasi</h4>
+
+<pre><code># Mod4 = Win key
+set $mod Mod4
+# jika kalian  lebih suka menggunakan tombol alt
+# Mod1 = alt
+# set $mod Mod1
+
+# Terminal (mod+Enter)
+bindsym $mod+Return exec xst
+# Networkmanager_dmenu (mod+alt+p)
+bindsym $mod+Mod1+p exec networkmanager_dmenu
+# lxappearance (mod+alt+a)
+bindsym $mod+Mod1+a exec lxappearance
+# QT5 (mod+alt+q)
+bindsym $mod+Mod1+q exec qt5ct
+# Gcolor2 (mod+alt+g)
+bindsym $mod+Mod1+g exec gcolor2
+# rofi (mod+w)
+bindsym $mod+w exec rofi -show drun
+# clearine (mod+c)
+bindsym $mod+c exec clearine
+
+# Multimedia control
+
+# f8 (volume up)
+bindsym XF86AudioRaiseVolume exec &quot;amixer sset Master 5%+&quot;
+# f7 (volume down)
+bindsym XF86AudioLowerVolume exec &quot;amixer sset Master 5%-&quot;
+# f6 (mute)
+bindsym XF86AudioMute exec &quot;amixer -q sset Master toggle&quot;
+# f3 ( brightness up)
+bindsym XF86MonBrightnessDown exec &quot;light -U 5&quot;
+# f2 ( brightness down)
+bindsym XF86MonBrightnessUp exec &quot;light -A 5&quot;
+# f10 ( ncmpcpp (music player) play)
+bindsym XF86AudioPlay exec ncmpcpp toggle
+# f10 ( ncmpcpp (music player) pause)
+bindsym XF86AudioStop exec ncmpcpp stop
+# f9 ( ncmpcpp (music player) prev)
+bindsym XF86AudioPrev exec ncmpcpp prev
+# f11 ( ncmpcpp (music player) next)
+bindsym XF86AudioNext exec ncmpcpp next
+</code></pre>
+
+<h4 id="keybinds-unutk-i3">keybinds unutk i3</h4>
+
+<pre><code># menutup jendela aplikasi (mod+q)
+bindsym $mod+q kill
+
+# Fokus jendela aplikasi
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Memindahkan jendela aplikasi
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# horizontal mode (mod+h)
+bindsym $mod+h split h
+
+# vertikal mode (mod+v)
+bindsym $mod+v split v
+
+# Fullscreen mode (mod+f)
+bindsym $mod+f fullscreen
+
+# layout mode (stacked (mod+s), tabbed (mod+t), default(mod+e))
+bindsym $mod+s layout stacking
+bindsym $mod+t layout tabbed
+bindsym $mod+e layout default
+
+# mode tiling / floating (mod+shitf+space)
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+Mod1+space floating toggle
+
+# mengubah fokus saat mode tiling / floating (mod+space)
+bindsym $mod+space focus mode_toggle
+
+# focus parent container (mod+a)
+bindsym $mod+a focus parent
+
+# focus child container (mod+z)
+bindsym $mod+z focus child
+
+# Berpindah workspace
+bindsym $mod+1 workspace 1:term
+bindsym $mod+2 workspace 2:www
+bindsym $mod+3 workspace 3:vbox
+bindsym $mod+4 workspace 4:vnc
+bindsym $mod+5 workspace 5:vid
+bindsym $mod+6 workspace 6:img
+bindsym $mod+7 workspace 7:misc
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10:float
+
+# memindahkan jendela aplikasi ke workspace tertentu
+bindsym $mod+Shift+1 move container to workspace 1:term
+bindsym $mod+Shift+2 move container to workspace 2:www
+bindsym $mod+Shift+3 move container to workspace 3:vbox
+bindsym $mod+Shift+4 move container to workspace 4:vnc
+bindsym $mod+Shift+5 move container to workspace 5:vid
+bindsym $mod+Shift+6 move container to workspace 6:img
+bindsym $mod+Shift+7 move container to workspace 7:misc
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10:float
+
+# reload konfigurasi i3
+bindsym $mod+Shift+c reload
+# restart i3 (mod+shitf+r)
+bindsym $mod+Shift+r restart
+
+
+# resize (mod+r)
+mode &quot;resize&quot; {
+
+# menggunkann tombol a,s,w,d
+bindsym a resize shrink width 10 px or 10 ppt
+bindsym s resize grow height 10 px or 10 ppt
+bindsym w resize shrink height 10 px or 10 ppt
+bindsym d resize grow width 10 px or 10 ppt
+
+# menggunakan tombol arah
+bindsym Left resize shrink width 1 px or 1 ppt
+bindsym Down resize grow height 1 px or 1 ppt
+bindsym Up resize shrink height 1 px or 1 ppt
+bindsym Right resize grow width 1 px or 1 ppt
+
+# keluar dari mode resize 
+bindsym Return mode &quot;default&quot;
+bindsym Escape mode &quot;default&quot;
+}
+# resize mode
+bindsym $mod+r mode &quot;resize&quot;
+</code></pre>
+
+<h4 id="full-configurasi">Full configurasi</h4>
+
+<pre><code>exec --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id feh --bg-scale ~/Pictures/dek.png
+exec --no-startup-id redshift
+
+set $ft pango: ubuntumono Nerd Font 12
+font $ft
+
+# border jendela
+new_window pixel 3
+new_float pixel 3
+
+# ukuran minimum jendela saat mode floating
+floating_minimum_size 10x10
+
+# ukuran maximum jendela saat mode floating
+floating_maximum_size -1x-1
+
+# mengatur fokus jendela mengikuti mouse ubah ke 'yes' untuk mengaktifkanyas
+focus_follows_mouse no
+
+# Mengambil warna dari .Xresources
+set_from_resource $back         i3wm.background 
+set_from_resource $black        i3wm.color0     
+set_from_resource $grey         i3wm.color8     
+set_from_resource $lightgrey    i3wm.color7     
+set_from_resource $white        i3wm.color15    
+set_from_resource $yellow       i3wm.color11    
+set_from_resource $red          i3wm.color9 
+set_from_resource $darkred      i3wm.color1     
+set_from_resource $green        i3wm.color10    
+
+# mengatur warna border, backgound, dan text
+#class                      border      backgr.     text        split
+client.focused              $green      $green      $black      $red
+client.focused_inactive     $green      $grey       $lightgrey  $grey
+client.unfocused            $green      $grey       $lightgrey  $grey
+client.urgent               $green      $red        $black      $red
+client.background           $back
+
+# Mod4 = Win key
+set $mod Mod4
+# jika kalian  lebih suka menggunakan tombol alt
+# Mod1 = alt
+# set $mod Mod1
+
+# Terminal (mod+Enter)
+bindsym $mod+Return exec xst
+# Networkmanager_dmenu (mod+alt+p)
+bindsym $mod+Mod1+p exec networkmanager_dmenu
+# lxappearance (mod+alt+a)
+bindsym $mod+Mod1+a exec lxappearance
+# QT5 (mod+alt+q)
+bindsym $mod+Mod1+q exec qt5ct
+# Gcolor2 (mod+alt+g)
+bindsym $mod+Mod1+g exec gcolor2
+# rofi (mod+w)
+bindsym $mod+w exec rofi -show drun
+# clearine (mod+c)
+bindsym $mod+c exec clearine
+
+# Multimedia control
+
+# f8 (volume up)
+bindsym XF86AudioRaiseVolume exec &quot;amixer sset Master 5%+&quot;
+# f7 (volume down)
+bindsym XF86AudioLowerVolume exec &quot;amixer sset Master 5%-&quot;
+# f6 (mute)
+bindsym XF86AudioMute exec &quot;amixer -q sset Master toggle&quot;
+# f3 ( brightness up)
+bindsym XF86MonBrightnessDown exec &quot;light -U 5&quot;
+# f2 ( brightness down)
+bindsym XF86MonBrightnessUp exec &quot;light -A 5&quot;
+# f10 ( ncmpcpp (music player) play)
+bindsym XF86AudioPlay exec ncmpcpp toggle
+# f10 ( ncmpcpp (music player) pause)
+bindsym XF86AudioStop exec ncmpcpp stop
+# f9 ( ncmpcpp (music player) prev)
+bindsym XF86AudioPrev exec ncmpcpp prev
+# f11 ( ncmpcpp (music player) next)
+bindsym XF86AudioNext exec ncmpcpp next
+
+# menutup jendela aplikasi (mod+q)
+bindsym $mod+q kill
+
+# Fokus jendela aplikasi
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Memindahkan jendela aplikasi
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# horizontal mode (mod+h)
+bindsym $mod+h split h
+
+# vertikal mode (mod+v)
+bindsym $mod+v split v
+
+# Fullscreen mode (mod+f)
+bindsym $mod+f fullscreen
+
+# layout mode (stacked (mod+s), tabbed (mod+t), default(mod+e))
+bindsym $mod+s layout stacking
+bindsym $mod+t layout tabbed
+bindsym $mod+e layout default
+
+# mode tiling / floating (mod+shitf+space)
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+Mod1+space floating toggle
+
+# mengubah fokus saat mode tiling / floating (mod+space)
+bindsym $mod+space focus mode_toggle
+
+# focus parent container (mod+a)
+bindsym $mod+a focus parent
+
+# focus child container (mod+z)
+bindsym $mod+z focus child
+
+# Berpindah workspace
+bindsym $mod+1 workspace 1:term
+bindsym $mod+2 workspace 2:www
+bindsym $mod+3 workspace 3:vbox
+bindsym $mod+4 workspace 4:vnc
+bindsym $mod+5 workspace 5:vid
+bindsym $mod+6 workspace 6:img
+bindsym $mod+7 workspace 7:misc
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10:float
+
+# memindahkan jendela aplikasi ke workspace tertentu
+bindsym $mod+Shift+1 move container to workspace 1:term
+bindsym $mod+Shift+2 move container to workspace 2:www
+bindsym $mod+Shift+3 move container to workspace 3:vbox
+bindsym $mod+Shift+4 move container to workspace 4:vnc
+bindsym $mod+Shift+5 move container to workspace 5:vid
+bindsym $mod+Shift+6 move container to workspace 6:img
+bindsym $mod+Shift+7 move container to workspace 7:misc
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10:float
+
+# reload konfigurasi i3
+bindsym $mod+Shift+c reload
+# restart i3 (mod+shitf+r)
+bindsym $mod+Shift+r restart
+
+
+# resize (mod+r)
+mode &quot;resize&quot; {
+
+# menggunkann tombol a,s,w,d
+bindsym a resize shrink width 10 px or 10 ppt
+bindsym s resize grow height 10 px or 10 ppt
+bindsym w resize shrink height 10 px or 10 ppt
+bindsym d resize grow width 10 px or 10 ppt
+
+# menggunakan tombol arah
+bindsym Left resize shrink width 1 px or 1 ppt
+bindsym Down resize grow height 1 px or 1 ppt
+bindsym Up resize shrink height 1 px or 1 ppt
+bindsym Right resize grow width 1 px or 1 ppt
+
+# keluar dari mode resize 
+bindsym Return mode &quot;default&quot;
+bindsym Escape mode &quot;default&quot;
+}
+# resize mode
+bindsym $mod+r mode &quot;resize&quot;
+</code></pre>
+
+</article>
+<br/>
+<br/>
+<span class="icon has-text-primary"><i class="fas fa-tags"></i></span>
+
+                          
+<br>
+    
+ <div class="has-text-centered button-post">
+
+<div class="button button-prev">
+
+
+
+
+
+
+
+
+
+<span class=" disabled noselect">
+<a href=""  class="has-text-grey"><i class="fas fa-angle-left"></i> prev</a>
+</span>
+</div>
+
+<div class="popup" onclick="functionPopup()">
+                
+        <div class="btn-counter button multiple-count" title="love" data-count="0" herf="#">
+        <span class="is-size-5 has-text-danger icon"><i class="fas fa-heart"></i></span>&nbsp;&nbsp;</a>
+        </div>
+    <span class="popuptext" id="myPopup">
+    Thanks 😇
+  </span>
+  </div>
+
+<div class="button button-next"> 
+<span class="">
+<a href="/post/windows-manager/" class=" has-text-grey">next <i class="fas fa-angle-right"></i></a>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+    
+    
+    
+    
+    
+<div class="disqus-comment">
+        <div class="disqus-button has-background-grey-dark" id="load_disqus" onclick="load_disqus()">
+          <span class="icon"><i class="fas fa-comment-alt"></i>&nbsp;comment</span>
+        </div>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+         
+          function load_disqus() {
+            
+            
+            if (window.location.hostname === 'localhost') return;
+      
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            var disqus_shortname = 'linuxisekai-github-io';
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      
+            $('#load_disqus').remove();
+          };
+        </script>
+        <noscript>Please enable JavaScript to view the
+          <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+        
+        </div>
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br/>
+<br/>
+<br/>
+<div class="is-size-4 has-addons">
+    Related Post
+</div>
+  
+    
+
+        
+            
+            
+            
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+
+</div>
+    
+
+<div class="ghost-padding"></div>
+       </div>
+       </div>
+    <footer class="footer">
+        <div class="container">
+          <div class="has-text-centered">
+              <a class="icon fa-lg has-text-grey" href="//github.com/linuxisekai" target="_blank" onclick="ga('send', 'event', 'footer', 'click', 'github');">
+                <i class="fab fa-github"></i>
+              </a>
+              &nbsp;
+              <a class="icon fa-lg has-text-grey" href="#" target="_blank" onclick="ga('send', 'event', 'footer', 'click', 'twitter');">
+                <i class="fab fa-facebook"></i>
+              </a>
+            <p></p>
+            <p></p>
+              <strong>Linuxisekai</strong> by
+              <a href="https://github.com/linuxisekai" class="has-text-grey" target="_blank">tempegoreng</a>.
+              Based on
+              <a href="http://bulma.io" target="_blank" onclick="ga('send', 'event', 'footer', 'click', 'bulma');">Bulma</a> + <a href="gohugo,io">Hugo</a> +
+              <a href="http://fontawesome.io/" target="_blank" onclick="ga('send', 'event', 'footer', 'click', 'font-awesome');">Font Awesome</a>.
+              thanks to <a href="https://jenil.github.io/bulmaswatch" target="_blank" onclick="ga('send', 'event', 'footer', 'click', 'bulmaswatcg');">Bulmaswatch</a>
+            
+            </div>
+            </div>
+            </footer>
+          
+    <a href="#" class="ignielToTop"></a>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="/js/fontawesome.js"></script>
+<script src="/js/jquery.js"></script>
+<script src="/js/masonry.js"></script>
+<script src="/js/lazysizes.min.js"></script>
+<script src="/js/core.js"></script>
+<script src="/js/cookie.js"></script>
+<script src="/js/highlight.pack.js"></script>
+    </body>
+</html>

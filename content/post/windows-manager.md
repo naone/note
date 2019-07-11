@@ -5,12 +5,14 @@ draft: false
 image : "/img/post/loli.webp"
 tags: ["linux", "wm"]
 ---
-<h3>Pendahuluan</h3>
+
+### Intro
+
 Artikel ini dibuat karena saya melihat digrub facebook banyak sekali yang bertanya "Desktop environtment apa yang ringan ?", "saya mau install linux mint kira kira yang ringan dan tampilanya bagus pakai lxde xfce atau mate ?" "Saya habis install ubutnu kok ngelag ya ?" etc.
 mungkin artikel ini bisa menjawab pertanyaan - pertanyaan tersebut.
 sebenarnya jawaban pertanyaan diatas adalah xfce/lxde namun ada alernatif lain yaitu hanya menggunakan windows manager tanpa meggunakan desktop environment. windows manager adalah salah satu komponen dari dekstop environment (selanjutnya saya menyebutnya DE). setiap DE mempunyai windows managernya sendiri-sendiri
-<br/>
-<br/>
+
+
 <table class="table">
 <thead>
 <tr>
@@ -42,11 +44,8 @@ sebenarnya jawaban pertanyaan diatas adalah xfce/lxde namun ada alernatif lain y
 </tbody>
 </table>
 untuk lebih lengkapnya bisa baca artikel berikut <a href="https://wiki.archlinux.org/index.php/Deskto_environment">Arch wiki</a>. Seperti yang saya sebutkan tadi kita setiap DE mempunya windows manager sendiri sendiri tapi ada juga beberapa DE yang windows managernya bisa diganti misal xfce terus windows managernya openbox. 
-<br/>
-<br/>
-<strong>
-beberapa jenis windows manager :
-</strong>
+
+##### beberapa jenis windows manager :
 <ul>
 <li><b>Stacking/foating</b> : windows manager yang bisa bertumpuk atau melayang, ini adalah jenis windows manager yang terdapat pada dektop environtment.
 </li>
@@ -68,18 +67,16 @@ desktop environtment memang sudah menawarkan customisasi yang cukup fleksibel te
 </ul>
 <br>
 Contoh tampilan windows manager yang sya gunakan :
-<h3>
-i3 solarized
-</h3>
-<img src="/img/i3.webp">
-<h3>
-i3 dark
-</h3>
-<img src="/img/openbox.webp">
-<br/>
+
+#### i3 solarized
+
+<img src="/img/post/i3.webp">
+
+##### i3 Dark
+<img src="/img/post/openbox.webp">
+
 untuk tutorial konfigurasi windows manager mungkin akan saya buat pada artikel selanjutnya. 
-<br/>
-<br/>
+
 <center>
 TERIMA KASIH SUDAH MEMBACA ARTIKEL SMPAH INI 😃
 </center>

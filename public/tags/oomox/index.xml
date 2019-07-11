@@ -16,7 +16,8 @@
       <pubDate>Sun, 30 Jun 2019 08:08:26 +0700</pubDate>
       
       <guid>/post/oomo-gtk/</guid>
-      <description>Pendahuluan oomox adalah aplikasi yang digunakan membuat gtk theme pada sistem operasi linux.oomox berbasisikan GUI jadi sangat mudah digunkan. bagi yang hobi otak atik tampilan desktop, oomox pasti akan menjadi aplikasi yang sangat berguna. tema oomox sendiri terbagi menjadi 3 varian yaitu numix-based, materia dan arch theme dan untuk icon ada 4 yaitu archdroid, gnome color, numix, papirus dan suru++.    Instalasi  Arch Linux root@linuxisekai $ sudo pacman -S yay  $ yay -S oomox   Ubuntu Install paket depensi yang dibutuhkan $ sudo apt-get install python3-gi libglib2.</description>
+      <description>Intro oomox adalah aplikasi yang digunakan membuat gtk theme pada sistem operasi linux.oomox berbasisikan GUI jadi sangat mudah digunkan. bagi yang hobi otak atik tampilan desktop, oomox pasti akan menjadi aplikasi yang sangat berguna. tema oomox sendiri terbagi menjadi 3 varian yaitu numix-based, materia dan arch theme dan untuk icon ada 4 yaitu archdroid, gnome color, numix, papirus dan suru++.
+Instalasi Arch linux root@linuxisekai $ sudo pacman -S yay $ yay -S oomox  Ubuntu Install paket depensi yang dibutuhkan $ sudo apt-get install python3-gi libglib2.</description>
     </item>
     
   </channel>

@@ -29,7 +29,7 @@
 mengapa menggunakan .webp 1.webp menghasilkan file yang kecil dengan kualias gambar yang bagus
 2.mampu menampilkan gambar bergerak
 3.mempercepat loading website
-instalasi arch linux root@linuxisekai sudo pacman -S libwebp gthumb   ubuntu root@linuxisekai sudo apt-get install libwebp gthumb   Convert gambar asuna@linuxisekai:~$ cd Pictures asuna@linuxisekai:~/Pictures$ ls asuna.</description>
+instalasi arch linux root@linuxisekai sudo pacman -S libwebp gthumb  ubuntu root@linuxisekai sudo apt-get install libwebp gthumb  Convert gambar asuna@linuxisekai:~$ cd Pictures asuna@linuxisekai:~/Pictures$ ls asuna.</description>
     </item>
     
     <item>
@@ -38,7 +38,8 @@ instalasi arch linux root@linuxisekai sudo pacman -S libwebp gthumb   ubuntu roo
       <pubDate>Sun, 30 Jun 2019 08:08:26 +0700</pubDate>
       
       <guid>/post/oomo-gtk/</guid>
-      <description>Pendahuluan oomox adalah aplikasi yang digunakan membuat gtk theme pada sistem operasi linux.oomox berbasisikan GUI jadi sangat mudah digunkan. bagi yang hobi otak atik tampilan desktop, oomox pasti akan menjadi aplikasi yang sangat berguna. tema oomox sendiri terbagi menjadi 3 varian yaitu numix-based, materia dan arch theme dan untuk icon ada 4 yaitu archdroid, gnome color, numix, papirus dan suru++.    Instalasi  Arch Linux root@linuxisekai $ sudo pacman -S yay  $ yay -S oomox   Ubuntu Install paket depensi yang dibutuhkan $ sudo apt-get install python3-gi libglib2.</description>
+      <description>Intro oomox adalah aplikasi yang digunakan membuat gtk theme pada sistem operasi linux.oomox berbasisikan GUI jadi sangat mudah digunkan. bagi yang hobi otak atik tampilan desktop, oomox pasti akan menjadi aplikasi yang sangat berguna. tema oomox sendiri terbagi menjadi 3 varian yaitu numix-based, materia dan arch theme dan untuk icon ada 4 yaitu archdroid, gnome color, numix, papirus dan suru++.
+Instalasi Arch linux root@linuxisekai $ sudo pacman -S yay $ yay -S oomox  Ubuntu Install paket depensi yang dibutuhkan $ sudo apt-get install python3-gi libglib2.</description>
     </item>
     
     <item>
@@ -47,7 +48,8 @@ instalasi arch linux root@linuxisekai sudo pacman -S libwebp gthumb   ubuntu roo
       <pubDate>Fri, 28 Jun 2019 19:43:35 +0700</pubDate>
       
       <guid>/post/driver-realtek/</guid>
-      <description>Pendahuluan setelah selesai menginstall sistem operasi linux terus ternyata tidak ada wifinya ? mengkin itu terjadi karena driver dari wifi tersebut belum terinstall, memenag ada beberapa yang wifinya secara default sudah terinstall beberapa vendor seperti realtek atau broadcom yang secara dedault belum terinstal yang saya sendiri juga tidak tau alasnya. instalasi Cek versi karnel $ uname -a   Output Linux asuna 5.2.0-1-MANJARO #1 SMP PREEMPT Sun Jun 9 16:43:42 UTC 2019 x86_64 GNU/Linux   selanjutnya install paket-paket yang dibutuhkan   Arch Linux $ sudo pacman -S linux52-headers dkms git build-essential automake   NB : untuk linux52-headers silahkan kalian sesuaikan dengan versi karnel kalian, misal versi karnel kalian adalah 4.</description>
+      <description>Intro setelah selesai menginstall sistem operasi linux terus ternyata tidak ada wifinya ? mengkin itu terjadi karena driver dari wifi tersebut belum terinstall, memenag ada beberapa yang wifinya secara default sudah terinstall beberapa vendor seperti realtek atau broadcom yang secara dedault belum terinstal yang saya sendiri juga tidak tau alasnya.
+Instalasi Cek versi karnel $ uname -a  Output Linux asuna 5.2.0-1-MANJARO #1 SMP PREEMPT Sun Jun 9 16:43:42 UTC 2019 x86_64 GNU/Linux  selanjutnya install paket-paket yang dibutuhkan</description>
     </item>
     
     <item>
@@ -56,7 +58,7 @@ instalasi arch linux root@linuxisekai sudo pacman -S libwebp gthumb   ubuntu roo
       <pubDate>Fri, 28 Jun 2019 14:22:15 +0700</pubDate>
       
       <guid>/post/windows-manager/</guid>
-      <description>Pendahuluan Artikel ini dibuat karena saya melihat digrub facebook banyak sekali yang bertanya &amp;ldquo;Desktop environtment apa yang ringan ?&amp;rdquo;, &amp;ldquo;saya mau install linux mint kira kira yang ringan dan tampilanya bagus pakai lxde xfce atau mate ?&amp;rdquo; &amp;ldquo;Saya habis install ubutnu kok ngelag ya ?&amp;rdquo; etc. mungkin artikel ini bisa menjawab pertanyaan - pertanyaan tersebut. sebenarnya jawaban pertanyaan diatas adalah xfce/lxde namun ada alernatif lain yaitu hanya menggunakan windows manager tanpa meggunakan desktop environment.</description>
+      <description>Intro Artikel ini dibuat karena saya melihat digrub facebook banyak sekali yang bertanya &amp;ldquo;Desktop environtment apa yang ringan ?&amp;rdquo;, &amp;ldquo;saya mau install linux mint kira kira yang ringan dan tampilanya bagus pakai lxde xfce atau mate ?&amp;rdquo; &amp;ldquo;Saya habis install ubutnu kok ngelag ya ?&amp;rdquo; etc. mungkin artikel ini bisa menjawab pertanyaan - pertanyaan tersebut. sebenarnya jawaban pertanyaan diatas adalah xfce/lxde namun ada alernatif lain yaitu hanya menggunakan windows manager tanpa meggunakan desktop environment.</description>
     </item>
     
   </channel>

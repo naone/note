@@ -8,7 +8,6 @@ const BASE_CACHE_FILES = [
     '/js/cookie.js',
     '/js/mansory.js',
     '/js/core.js',
-    '/search.json',
     '/manifest.json',
     '/favicon.png',
 ];

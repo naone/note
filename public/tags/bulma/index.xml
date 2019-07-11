@@ -5,10 +5,19 @@
     <link>/tags/bulma/</link>
     <description>Recent content in bulma on Linuxisekai | Nolep enthuiast project</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 29 Jun 2019 16:38:23 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jul 2019 15:49:01 +0700</lastBuildDate>
     
 	<atom:link href="/tags/bulma/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>#2 Hugo : Membuat tema hugo sebdiri</title>
+      <link>/post/membuat-tema-hugo/</link>
+      <pubDate>Thu, 04 Jul 2019 15:49:01 +0700</pubDate>
+      
+      <guid>/post/membuat-tema-hugo/</guid>
+      <description>Prakata melanjutkan artikel sebelumnya, Pada artikel kali ini kita akan membahas cara membuat tema hugo. sebenarnya di website https://themes.gohugo.io juga sudah banyak sekali tema yang sudah siap pakai akan tetapi saya merasa kurang sreg dengan tampilan tema yang disediakan, saya juga bingung jika ingin memodifikasi tampilan oleh karena itu saya ingin mencoba membuat tema sendiri sekaligus mencoba hal baru. tema yang kita buat akan menggunkan CSS framework yaitu bulma. pertama siapkan bahan-bahanya terlebih dahulu</description>
+    </item>
     
     <item>
       <title>Bulma : Alternativ Framework CSS selain Bootstrap</title>
@@ -16,7 +25,8 @@
       <pubDate>Sat, 29 Jun 2019 16:38:23 +0700</pubDate>
       
       <guid>/post/bulma-framework/</guid>
-      <description>Pendahuluan  Ini bukan bulma dragon ball 😠   bulma adalah salah satu framework CSS yang sedang naik daun akhir-akhir ini, bulma dibuat oleh Jeremy Thomas berbasiskan css flexbox, oleh karena itu grid system pada bulma sangatlah flexibel dan responsif. inilah kelebihan utama pada bulma dibanding framework css lain. oh iya linuxisekai juga meggunakan bulma loh 😅 .  kelebihan bulma :   flexbox based : membuat kita lebih mudah dalam membuat grid system yang fleksibel dan responsif hanya menggunkan satu file css : bulma sama sekali tidak menggunakan javascript, saat kita menginstallnya kita hanya diberi satu file yaitu bulma.</description>
+      <description>Pendahuluan  Ini bukan bulma dragon ball 😠   bulma adalah salah satu framework CSS yang sedang naik daun akhir-akhir ini, bulma dibuat oleh Jeremy Thomas berbasiskan css flexbox, oleh karena itu grid system pada bulma sangatlah flexibel dan responsif. inilah kelebihan utama pada bulma dibanding framework css lain. oh iya linuxisekai juga meggunakan bulma loh 😅 .
+kelebihan bulma  flexbox based : membuat kita lebih mudah dalam membuat grid system yang fleksibel dan responsif hanya menggunkan satu file css : bulma sama sekali tidak menggunakan javascript, saat kita menginstallnya kita hanya diberi satu file yaitu bulma.</description>
     </item>
     
   </channel>
