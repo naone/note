@@ -7,23 +7,26 @@
           <div class="masonry-content">
             <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" sizes="20em">
             <div class="judul-post">
-                <a href="{{ .RelPermalink }}">
-                    <i class="fas has-text-primary fa-book"></i>             
+                <a href="{{ .RelPermalink }}" class="is-size-5">
+                    <i data-feather="file" class="is-size-6"></i>             
               {{ .Title }}
               </a>
             <br/>
-              <i class="fas fa-calendar has-text-primary f"></i>
-              <h7 class="is-size-6">&nbsp;{{ .Date.Format "02-01-2006" }}</h7>
-                | <i class="fas fa-tags has-text-primary f"></i>
+            
+              
+              <i data-feather="calendar"  class="is-size-7 has-text-primary"></i>
+              {{ .Date.Format "02-01-2006" }}
+                 <i data-feather="edit-3" class="is-size-7 has-text-primary"></i>
                   {{ $taxonomy := "tags" }}
                   {{ with .Param $taxonomy }}
                   {{ range $index, $tag := . }}
                   
                   {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
-                  <h7 class="is-size-6">{{ $tag | urlize }}</h7>
+                  {{ $tag | urlize }}
                   {{- end -}}
                   {{- end -}}
                   {{ end }}
+                  
                   </div>
               </div>
             </div>
