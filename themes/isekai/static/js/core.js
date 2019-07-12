@@ -31,7 +31,7 @@ function functionPopup() {
   setTimeout(function() { 
     document.getElementById("myPopup").classList.toggle("show");}, 2000);
 }
-('.btn-counter').on('click', function(event,count){
+/*$('.btn-counter').on('click', function(event,count){
   event.preventDefault();
   var $this = $(this),
   count = $this.attr('data-count'),
@@ -41,7 +41,7 @@ function functionPopup() {
   $.fn.noop =$.noop;
   $this.attr('data-count', ! active || multiple ? ++count : --count )[multiple ? 'noop' : 'toggleClass']('active');
 
-});
+});*/
 
 $('.grid').masonry({
   itemSelector: '.masonry-item',
