@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-  if ('.pageloader').length) {
+  /*if ($('.pageloader').length) {
 
     $('.pageloader').toggleClass('is-active');
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             clearTimeout( pageloaderTimeout );
         }, 300 );
     })
-}
+}*/
 
 function functionPopup() {
   var popup = document.getElementById("myPopup");
