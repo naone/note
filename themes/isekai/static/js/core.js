@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-  if ($('.pageloader').length) {
+  if ('.pageloader').length) {
 
     $('.pageloader').toggleClass('is-active');
 
