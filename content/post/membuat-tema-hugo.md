@@ -2,7 +2,7 @@
 title: "#2 Hugo : Membuat tema hugo sendiri"
 date: 2019-07-04T15:49:01+07:00
 draft: false
-tags: ["Hugo","Bulma"]
+tags: ["hugo","bulma"]
 image: /img/post/music.webp
 ---
 <h3>Prakata</h3>

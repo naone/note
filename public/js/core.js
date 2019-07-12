@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-if ($('.pageloader').length) {
+/*if ($('.pageloader').length) {
 
     $('.pageloader').toggleClass('is-active');
 
@@ -24,7 +24,7 @@ if ($('.pageloader').length) {
         }, 300 );
     })
 }
-
+*/
 function functionPopup() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
