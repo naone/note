@@ -43,7 +43,7 @@ function functionPopup() {
 
 });*/
 
-$('.grid').masonry({
+('.grid').masonry({
   itemSelector: '.masonry-item',
   columnWidth:200
 });
