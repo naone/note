@@ -11,12 +11,14 @@
     
     
     <item>
-      <title>Setup Pwa Hugo</title>
+      <title>Setup PWA di Hugo | first PWA</title>
       <link>/post/setup-pwa-hugo/</link>
       <pubDate>Sat, 13 Jul 2019 19:58:55 +0700</pubDate>
       
       <guid>/post/setup-pwa-hugo/</guid>
-      <description>berawal dari dari grub jamstackid lalu saya melihat websitenya @okitavera yang di build menggunakan sgg eleventy, nah dari situternyata okitavera.me bisa diakses secara offline. terus saya bertanya kok bisa ? lalu saya melihat salah satu artikel di okitavera.me ternyata ia menggunakan yang namanya progresif web application ( PWA ), nah dari situ saya mencari tau bagaimana caranya mengimplementasikanya pada hugo, jarena di artikel okitavera.me hanya untuk eleventy saja. setelah saya browsing saya memenumakan artkel disini, disitu dijelaaskan step by step cara install pwa dan service worker, setelah saya coba service worker sudah teregistrasi tetapi kalau diakses secara offline tidak mau 😶, akhirnya saya bertanya ke @okitavera dan menyarankan menggunakan cara ini dan itu work thank nanda okitavera.</description>
+      <description>setup hugo yang saya gunakan  vscode github netlify custom domain .site di idwebhost Bulma HightlightJS Feather icon Lazysizes Masonry Jquery 
+Siapkan favicon kamu bisa menggenerate di http://www.favicomatic.com/ tinggal upload gambar yang kamu ingin jadikan icon dengan ukuran 128,144,152,196,310. gambar ini nantinya akan dijadikan icon saat kita menambkanya ke layar utama.Kenapa ada banyak ukuran ? karena untuk menyesuaikan resolusi layar pada device user.
+setelah didownload taruh di folder static project hugo kamu.</description>
     </item>
     
     <item>

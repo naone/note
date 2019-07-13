@@ -18,17 +18,19 @@
     <link href="/css/custom.css" rel="stylesheet">
     <link rel="manifest" href="/manifest.json">
     
-<meta itemprop="name" content="Setup Pwa Hugo">
-<meta itemprop="description" content="berawal dari dari grub jamstackid lalu saya melihat websitenya @okitavera yang di build menggunakan sgg eleventy, nah dari situternyata okitavera.me bisa diakses secara offline. terus saya bertanya kok bisa ? lalu saya melihat salah satu artikel di okitavera.me ternyata ia menggunakan yang namanya progresif web application ( PWA ), nah dari situ saya mencari tau bagaimana caranya mengimplementasikanya pada hugo, jarena di artikel okitavera.me hanya untuk eleventy saja. setelah saya browsing saya memenumakan artkel disini, disitu dijelaaskan step by step cara install pwa dan service worker, setelah saya coba service worker sudah teregistrasi tetapi kalau diakses secara offline tidak mau 😶, akhirnya saya bertanya ke @okitavera dan menyarankan menggunakan cara ini dan itu work thank nanda okitavera.">
+<meta itemprop="name" content="Setup PWA di Hugo | first PWA">
+<meta itemprop="description" content="setup hugo yang saya gunakan  vscode github netlify custom domain .site di idwebhost Bulma HightlightJS Feather icon Lazysizes Masonry Jquery 
+Siapkan favicon kamu bisa menggenerate di http://www.favicomatic.com/ tinggal upload gambar yang kamu ingin jadikan icon dengan ukuran 128,144,152,196,310. gambar ini nantinya akan dijadikan icon saat kita menambkanya ke layar utama.Kenapa ada banyak ukuran ? karena untuk menyesuaikan resolusi layar pada device user.
+setelah didownload taruh di folder static project hugo kamu.">
 
 
 <meta itemprop="datePublished" content="2019-07-13T19:58:55&#43;07:00" />
 <meta itemprop="dateModified" content="2019-07-13T19:58:55&#43;07:00" />
-<meta itemprop="wordCount" content="920">
+<meta itemprop="wordCount" content="794">
 
 
 
-<meta itemprop="keywords" content="" />
+<meta itemprop="keywords" content="hugo,pwa," />
 
     
     
@@ -45,16 +47,20 @@ if (!doNotTrack) {
 }
 </script>
 
-    <meta property="og:title" content="Setup Pwa Hugo" />
-<meta property="og:description" content="berawal dari dari grub jamstackid lalu saya melihat websitenya @okitavera yang di build menggunakan sgg eleventy, nah dari situternyata okitavera.me bisa diakses secara offline. terus saya bertanya kok bisa ? lalu saya melihat salah satu artikel di okitavera.me ternyata ia menggunakan yang namanya progresif web application ( PWA ), nah dari situ saya mencari tau bagaimana caranya mengimplementasikanya pada hugo, jarena di artikel okitavera.me hanya untuk eleventy saja. setelah saya browsing saya memenumakan artkel disini, disitu dijelaaskan step by step cara install pwa dan service worker, setelah saya coba service worker sudah teregistrasi tetapi kalau diakses secara offline tidak mau 😶, akhirnya saya bertanya ke @okitavera dan menyarankan menggunakan cara ini dan itu work thank nanda okitavera." />
+    <meta property="og:title" content="Setup PWA di Hugo | first PWA" />
+<meta property="og:description" content="setup hugo yang saya gunakan  vscode github netlify custom domain .site di idwebhost Bulma HightlightJS Feather icon Lazysizes Masonry Jquery 
+Siapkan favicon kamu bisa menggenerate di http://www.favicomatic.com/ tinggal upload gambar yang kamu ingin jadikan icon dengan ukuran 128,144,152,196,310. gambar ini nantinya akan dijadikan icon saat kita menambkanya ke layar utama.Kenapa ada banyak ukuran ? karena untuk menyesuaikan resolusi layar pada device user.
+setelah didownload taruh di folder static project hugo kamu." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/setup-pwa-hugo/" />
 <meta property="article:published_time" content="2019-07-13T19:58:55&#43;07:00"/>
 <meta property="article:modified_time" content="2019-07-13T19:58:55&#43;07:00"/>
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Setup Pwa Hugo"/>
-<meta name="twitter:description" content="berawal dari dari grub jamstackid lalu saya melihat websitenya @okitavera yang di build menggunakan sgg eleventy, nah dari situternyata okitavera.me bisa diakses secara offline. terus saya bertanya kok bisa ? lalu saya melihat salah satu artikel di okitavera.me ternyata ia menggunakan yang namanya progresif web application ( PWA ), nah dari situ saya mencari tau bagaimana caranya mengimplementasikanya pada hugo, jarena di artikel okitavera.me hanya untuk eleventy saja. setelah saya browsing saya memenumakan artkel disini, disitu dijelaaskan step by step cara install pwa dan service worker, setelah saya coba service worker sudah teregistrasi tetapi kalau diakses secara offline tidak mau 😶, akhirnya saya bertanya ke @okitavera dan menyarankan menggunakan cara ini dan itu work thank nanda okitavera."/>
+<meta name="twitter:title" content="Setup PWA di Hugo | first PWA"/>
+<meta name="twitter:description" content="setup hugo yang saya gunakan  vscode github netlify custom domain .site di idwebhost Bulma HightlightJS Feather icon Lazysizes Masonry Jquery 
+Siapkan favicon kamu bisa menggenerate di http://www.favicomatic.com/ tinggal upload gambar yang kamu ingin jadikan icon dengan ukuran 128,144,152,196,310. gambar ini nantinya akan dijadikan icon saat kita menambkanya ke layar utama.Kenapa ada banyak ukuran ? karena untuk menyesuaikan resolusi layar pada device user.
+setelah didownload taruh di folder static project hugo kamu."/>
 
 </head>
 
@@ -172,7 +178,7 @@ if (!doNotTrack) {
                
           
       
-    <div class="judul"><b>Setup Pwa Hugo</b></div>
+    <div class="judul"><b>Setup PWA di Hugo | first PWA</b></div>
     <div class="info-post">
     <span class="icon has-text-primary"><i data-feather="user"></i></span>
     tempegoreng | 
@@ -183,22 +189,26 @@ if (!doNotTrack) {
  <article class="article">
 
 
-<p>berawal dari dari grub jamstackid lalu saya melihat websitenya @okitavera yang di build menggunakan sgg eleventy, nah dari situternyata okitavera.me bisa diakses secara offline. terus saya bertanya kok bisa ?
-lalu saya melihat salah satu artikel di okitavera.me ternyata ia menggunakan yang namanya progresif web application ( PWA ), nah dari situ saya mencari tau bagaimana caranya mengimplementasikanya pada hugo, jarena di artikel okitavera.me hanya untuk eleventy saja. setelah saya browsing saya memenumakan artkel disini, disitu dijelaaskan step by step cara install pwa dan service worker, setelah saya coba service worker sudah teregistrasi tetapi kalau diakses secara offline tidak mau 😶, akhirnya saya bertanya ke @okitavera dan menyarankan menggunakan cara ini dan itu work thank nanda okitavera. terus apa gunanya artikel ini ? gak ada guanya sih, saya cuma mau nunjukin cara installnya, jarena jujur saya juga tidak paham dengan javascript.</p>
-
-<p>setup hugo yang saya gunakan</p>
-
-<pre><code>vscode
-github
-netlify 
-custom domain .site di idwebhost
-</code></pre>
+<p>setup hugo yang saya gunakan
+<ul>
+<li>vscode</li>
+<li>github</li>
+<li>netlify</li>
+<li>custom domain .site di idwebhost</li>
+<li>Bulma</li>
+<li>HightlightJS</li>
+<li>Feather icon</li>
+<li>Lazysizes</li>
+<li>Masonry</li>
+<li>Jquery</li>
+</ul></p>
 
 <h3 id="siapkan-favicon">Siapkan favicon</h3>
 
-<pre><code>kamu bisa menggenerate disini -tinggal upload gambar yang kamu ingin jadikan icon
-gambar yang gunakan (128,144,152,196,310) gambar ini nantinya akan dijadikan icon saat kita menambkanya ke layar utama, kenapa ada banyak ? karena ntar service workernya nyesuain sendiri buat resolusi laya device kita. setelah didownload taruh di folder static project hugo kalian, kalau saya semdiri lebih memilih menaruhnya di themese/static/img biar folder root project hugo saye lebih bersih, ini sangat subjective.
-</code></pre>
+<p>kamu bisa menggenerate di <a href="http://www.favicomatic.com/">http://www.favicomatic.com/</a> tinggal upload gambar yang kamu ingin jadikan icon
+dengan ukuran 128,144,152,196,310. gambar ini nantinya akan dijadikan icon saat kita menambkanya ke layar utama.Kenapa ada banyak ukuran ? karena untuk menyesuaikan resolusi layar pada device user.</p>
+
+<p>setelah didownload taruh di folder static project hugo kamu.</p>
 
 <h3 id="konfigurasi-manifest-json">konfigurasi manifest.json</h3>
 
@@ -238,15 +248,25 @@ gambar yang gunakan (128,144,152,196,310) gambar ini nantinya akan dijadikan ico
 }
 </code></pre>
 
-<p>&ldquo;name&rdquo; dan &ldquo;shortname&rdquo; tinggal disesuaikan. untuk &ldquo;name&rdquo; disini akan tampil ketika app kita dibuka (kaya semacam splash screen )</p>
+<ul>
+<li>
+"name" dan "shortname" : sesuaikan denagn situs hugo kamu.
+</li>
+<li>
+"src", "size", dan "type" : sesuaikan dengan favicon yang tadi didownload.
+</li>
+<li>
+"theme_color" : fungsinya sama seperti theme-color pada tag <code>meta</code>
+</li>
+<li>
+"display" : "standalone" : membuat aplikasi menyembunyikan UI browser
+</li>
+<li>
+"orientation" : orientasi tampilan
+</li>
+</ul>
 
-<p>&ldquo;src&rdquo;, &ldquo;size&rdquo;, dan &ldquo;type tinggal disesuaikan dengan punya kamu
-theme_color fungsinya sama seperti theme-color pada tag <meta>
-background_color: background dari aplikasi saat loading
-display:standalone membuat aplikasi webmenyembunyikan UI browser
-orientation: orientasi tampilan</p>
-
-<h3 id="emanggil-manifest-json">emanggil manifest.json</h3>
+<h3 id="memanggil-manifest-json">Memanggil manifest.json</h3>
 
 <pre><code> &lt;link rel=&quot;manifest&quot; href=&quot;/manifest.json&quot;&gt;
 </code></pre>
@@ -255,13 +275,15 @@ orientation: orientasi tampilan</p>
 
 <h3 id="menginstall-workbox-dan-gulp">menginstall workbox dan gulp</h3>
 
-<p>pastikan sudah menginstall npm di os kamu. lalu jalankan perintah di bawah ini di directory root hugo</p>
+<p>pastikan sudah menginstall npm di OS kamu, lalu jalankan perintah di bawah ini di directory root hugo</p>
 
-<pre><code>npm init -y
-npm install gulp --save-dev
-npm install workbox-build --save-dev
-npm install gulp-clean --save-dev
-npm install gulp-shell --save-dev
+<div class="message-header">root@linuxisekai</div>
+
+<pre><code>$ npm init -y
+$ npm install gulp --save-dev
+$ npm install workbox-build --save-dev
+$ npm install gulp-clean --save-dev
+$ npm install gulp-shell --save-dev
 </code></pre>
 
 <p>perintah npm init -y diatas akan menghasilkan file package.json.
@@ -269,7 +291,7 @@ perintah selanjutnya untuk menginstall gulp, workbox, gulp-clean dan gulp-shell.
 
 <h3 id="konfigurasi-gulp">Konfigurasi gulp</h3>
 
-<p>pada directory root hugo kamu buat file gulpfile.js lalu isi denagan</p>
+<p>pada directory root hugo kamu, buat file gulpfile.js lalu isi denagan :</p>
 
 <pre><code>const gulp = require(&quot;gulp&quot;);
 const clean = require(&quot;gulp-clean&quot;);
@@ -350,7 +372,8 @@ return workbox.generateSW({
 gulp.task(&quot;build&quot;, gulp.series(&quot;clean&quot;, &quot;hugo-build&quot;, &quot;generate-service-worker&quot;));
 </code></pre>
 
-<p>apa fungsi baris kode diatas ? silahkan tanya ke adminpoly.</p>
+<p>apa fungsi baris kode diatas ? silahkan tanya saja ke admin thepolyglotdeveloper.
+atau kunjungi websitenya <a href="https://www.thepolyglotdeveloper.com/2019/03/service-workers-workbox-hugo-static-generated-site/">https://www.thepolyglotdeveloper.com/2019/03/service-workers-workbox-hugo-static-generated-site/</a> 😆.</p>
 
 <h3 id="membuat-script-untuk-memanggil-service-worker">membuat script untuk memanggil service worker</h3>
 
@@ -371,11 +394,11 @@ gulp.task(&quot;build&quot;, gulp.series(&quot;clean&quot;, &quot;hugo-build&quo
 &lt;/script&gt;
 </code></pre>
 
-<p>tauh kode diatas di bagian tepat diatas </body></p>
+<p>tauh kode diatas tepat diatas tag tutup <code>body</code></p>
 
 <h3 id="run-bulid-task">run bulid task</h3>
 
-<p>buka vscode lalu tekan ctrl+shift+p lalu pilih Task : Run task lalu pilih gulp : build selanjutnya pilih continue without scanning the task output</p>
+<p>buka vscode lalu tekan <span class="has-text-primary"><i>ctrl+shift+p</i> =&gt; <i>Task : Run task</i> =&gt; <i>gulp : build </i> =&gt; <i>continue without scanning the task output</i></span></p>
 
 <p>perintah ini akan menghasilkan file sw.js di directory public ( silahkan cek terlebih dahulu )
 contoh sw.js punya saya :</p>
@@ -460,19 +483,30 @@ workbox.routing.registerRoute(/\.(?:m4v|mpg|avi)$/, new workbox.strategies.Cache
 workbox.googleAnalytics.initialize({});
 </code></pre>
 
+<p>sekarang tinggal kita push ke github dan matikan data seluler kamu. 👊😎 (anjay mabar).</p>
+
+<p><div class="no-border">
+Note : hanya halaman sudah pernah dibuka yang bisa diakses secara offline
+</div>
+<br/>
+<br/></p>
+
+<p><img src="/img/post/pwa.webp" class="content-img"></p>
+
 </article>
 <br/>
 <br/>
 <div class="is-uppercase">
 
-                          
+
+
+&nbsp;#hugo
+&nbsp;#pwa                          
 </div>
     
  <div class="has-text-centered button-post">
 
   <div class="button button-prev">
-  
-  
   
   
   
@@ -553,13 +587,17 @@ workbox.googleAnalytics.initialize({});
   </span>
   
   
+  
+  
+  
+  
   </div>
   </div>
       
     
 <div class="disqus-comment">
         <div class="disqus-button has-background-grey-dark" id="load_disqus" onclick="load_disqus()">
-          <span class="icon"><i data-feather="message-square"></i>comment</span>
+          comment
         </div>
         <div id="disqus_thread"></div>
         <script type="text/javascript">
@@ -681,6 +719,9 @@ workbox.googleAnalytics.initialize({});
 
 
 
+
+
+
 <br/>
 <br/>
 <br/>
@@ -726,6 +767,22 @@ workbox.googleAnalytics.initialize({});
   
             
             
+  
+            
+            
+              
+         
+            
+              <div class="no-border">
+                  <a href="/post/membuat-tema-hugo/" class="has-text-grey">
+                      <i data-feather="link" class="is-size-7"></i>&nbsp;#2 Hugo : Membuat tema hugo sendiri</a>
+              </div>
+             
+      
+                         
+                          
+                          
+  
   
             
             

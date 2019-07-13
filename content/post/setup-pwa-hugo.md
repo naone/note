@@ -1,23 +1,34 @@
 ---
-title: "Setup Pwa Hugo"
+title: "Setup PWA di Hugo | first PWA"
 date: 2019-07-13T19:58:55+07:00
 draft: false
+tags: ["hugo","pwa"]
+image: /img/post/thumbpwa.webp
 ---
 
-berawal dari dari grub jamstackid lalu saya melihat websitenya @okitavera yang di build menggunakan sgg eleventy, nah dari situternyata okitavera.me bisa diakses secara offline. terus saya bertanya kok bisa ?
-lalu saya melihat salah satu artikel di okitavera.me ternyata ia menggunakan yang namanya progresif web application ( PWA ), nah dari situ saya mencari tau bagaimana caranya mengimplementasikanya pada hugo, jarena di artikel okitavera.me hanya untuk eleventy saja. setelah saya browsing saya memenumakan artkel disini, disitu dijelaaskan step by step cara install pwa dan service worker, setelah saya coba service worker sudah teregistrasi tetapi kalau diakses secara offline tidak mau 😶, akhirnya saya bertanya ke @okitavera dan menyarankan menggunakan cara ini dan itu work thank nanda okitavera. terus apa gunanya artikel ini ? gak ada guanya sih, saya cuma mau nunjukin cara installnya, jarena jujur saya juga tidak paham dengan javascript.
-
 setup hugo yang saya gunakan
-
-    vscode
-    github
-    netlify 
-    custom domain .site di idwebhost
+<ul>
+<li>vscode</li>
+<li>github</li>
+<li>netlify</li>
+<li>custom domain .site di idwebhost</li>
+<li>Bulma</li>
+<li>HightlightJS</li>
+<li>Feather icon</li>
+<li>Lazysizes</li>
+<li>Masonry</li>
+<li>Jquery</li>
+</ul>
 
 ### Siapkan favicon
-    kamu bisa menggenerate disini -tinggal upload gambar yang kamu ingin jadikan icon
-    gambar yang gunakan (128,144,152,196,310) gambar ini nantinya akan dijadikan icon saat kita menambkanya ke layar utama, kenapa ada banyak ? karena ntar service workernya nyesuain sendiri buat resolusi laya device kita. setelah didownload taruh di folder static project hugo kalian, kalau saya semdiri lebih memilih menaruhnya di themese/static/img biar folder root project hugo saye lebih bersih, ini sangat subjective.
+
+kamu bisa menggenerate di http://www.favicomatic.com/ tinggal upload gambar yang kamu ingin jadikan icon
+dengan ukuran 128,144,152,196,310. gambar ini nantinya akan dijadikan icon saat kita menambkanya ke layar utama.Kenapa ada banyak ukuran ? karena untuk menyesuaikan resolusi layar pada device user. 
+
+setelah didownload taruh di folder static project hugo kamu.
+
 ### konfigurasi manifest.json
+
 buat file manifest.json di static/manifest.json
 
     {
@@ -53,36 +64,48 @@ buat file manifest.json di static/manifest.json
     "start_url": "/"
     }
 
+<ul>
+<li>
+"name" dan "shortname" : sesuaikan denagn situs hugo kamu.
+</li>
+<li>
+"src", "size", dan "type" : sesuaikan dengan favicon yang tadi didownload.
+</li>
+<li>
+"theme_color" : fungsinya sama seperti theme-color pada tag <code>meta</code>
+</li>
+<li>
+"display" : "standalone" : membuat aplikasi menyembunyikan UI browser
+</li>
+<li>
+"orientation" : orientasi tampilan
+</li>
+</ul>
 
-"name" dan "shortname" tinggal disesuaikan. untuk "name" disini akan tampil ketika app kita dibuka (kaya semacam splash screen )
+### Memanggil manifest.json
 
-"src", "size", dan "type tinggal disesuaikan dengan punya kamu
-theme_color fungsinya sama seperti theme-color pada tag <meta>
-background_color: background dari aplikasi saat loading
-display:standalone membuat aplikasi webmenyembunyikan UI browser
-orientation: orientasi tampilan
-
-### emanggil manifest.json
-    
      <link rel="manifest" href="/manifest.json">
 
 taruh script diatas di antara tag <head>
 
 ### menginstall workbox dan gulp
-pastikan sudah menginstall npm di os kamu. lalu jalankan perintah di bawah ini di directory root hugo
 
-    npm init -y
-    npm install gulp --save-dev
-    npm install workbox-build --save-dev
-    npm install gulp-clean --save-dev
-    npm install gulp-shell --save-dev
+pastikan sudah menginstall npm di OS kamu, lalu jalankan perintah di bawah ini di directory root hugo
+
+<div class="message-header">root@linuxisekai</div>
+
+    $ npm init -y
+    $ npm install gulp --save-dev
+    $ npm install workbox-build --save-dev
+    $ npm install gulp-clean --save-dev
+    $ npm install gulp-shell --save-dev
 
 perintah npm init -y diatas akan menghasilkan file package.json.
 perintah selanjutnya untuk menginstall gulp, workbox, gulp-clean dan gulp-shell.
 
 ### Konfigurasi gulp
 
-pada directory root hugo kamu buat file gulpfile.js lalu isi denagan
+pada directory root hugo kamu, buat file gulpfile.js lalu isi denagan :
 
     const gulp = require("gulp");
     const clean = require("gulp-clean");
@@ -163,7 +186,8 @@ pada directory root hugo kamu buat file gulpfile.js lalu isi denagan
     gulp.task("build", gulp.series("clean", "hugo-build", "generate-service-worker"));
 
 
-apa fungsi baris kode diatas ? silahkan tanya ke adminpoly.
+apa fungsi baris kode diatas ? silahkan tanya saja ke admin thepolyglotdeveloper.
+atau kunjungi websitenya https://www.thepolyglotdeveloper.com/2019/03/service-workers-workbox-hugo-static-generated-site/ 😆.
 
 ### membuat script untuk memanggil service worker
 
@@ -183,11 +207,11 @@ apa fungsi baris kode diatas ? silahkan tanya ke adminpoly.
         }
     </script>
 
-tauh kode diatas di bagian tepat diatas </body>
+tauh kode diatas tepat diatas tag tutup <code>body</code>
 
 ### run bulid task
 
-buka vscode lalu tekan ctrl+shift+p lalu pilih Task : Run task lalu pilih gulp : build selanjutnya pilih continue without scanning the task output
+buka vscode lalu tekan <span class="has-text-primary"><i>ctrl+shift+p</i> => <i>Task : Run task</i> => <i>gulp : build </i> => <i>continue without scanning the task output</i></span>
 
 perintah ini akan menghasilkan file sw.js di directory public ( silahkan cek terlebih dahulu )
 contoh sw.js punya saya :
@@ -271,5 +295,14 @@ contoh sw.js punya saya :
 
     workbox.googleAnalytics.initialize({});
 
+sekarang tinggal kita push ke github dan matikan data seluler kamu. 👊😎 (anjay mabar).
 
 
+<div class="no-border">
+Note : hanya halaman sudah pernah dibuka yang bisa diakses secara offline
+</div>
+<br/>
+<br/>
+
+
+<img src="/img/post/pwa.webp" class="content-img">
