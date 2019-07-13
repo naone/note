@@ -8,8 +8,8 @@
 {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) }}
 <div class="container">
     <div class="no-border has-background-grey-dark">
-    <a href="{{ .Permalink }}" class="judul-post">
-        <img src="/img/related.svg" width="16">&nbsp;{{ .Title }}</a>
+    <a href="{{ .Permalink }}" class="has-text-grey">
+        <i data-feather="link" class="is-size-7"></i>&nbsp;{{ .Title }}</a>
         </div>
 <br/>
 
