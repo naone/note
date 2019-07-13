@@ -90,7 +90,6 @@ h1 {
     }
     
     .content h3{
-        
         margin-top:2em; 
     }
     .info-post {
@@ -335,12 +334,13 @@ html {scroll-behavior:smooth;}
   }
   .no-border {
     border-style: solid;
-    border-color: #002B36;
+    border-color: rgb(86, 96, 99);
     border-left-color: #2AA198;
+    background-color: #073642;
     border-left-width: 0.5rem;
     border-radius: 6px;
     margin:3px;
-    border-width: 0 0 0 4px;
-    padding: 1em 1em;
+    border-width: 0px 0px 0 12px;
+    padding: 1rem;
   }
  
