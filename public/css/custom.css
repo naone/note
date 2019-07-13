@@ -334,9 +334,10 @@ html {scroll-behavior:smooth;}
     width: 1.4em;
   }
   .no-border {
-    border-color: #073642;
+    border: 1px solid #073642;
     border-left-color: #2AA198;
     border-left-width: 0.5rem;
+    border-radius: 6px;
     margin:3px;
     padding: 1rem;
   }
