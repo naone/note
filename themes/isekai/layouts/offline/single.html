@@ -4,9 +4,7 @@
   {{ partial "head.html" . }}
  </head>
  <body>
-    <h1>{{ .Title }}</h1>
+    <h1 class="title">{{ .Title }}</h1>
     {{ .Content }}
-    {{ partial "footer.html" . }}
-    {{ partial "js-init.html" . }}
  </body>
 </html>
