@@ -1,405 +1,78 @@
-const CACHE_VERSION = 1;
+/**
+ * Welcome to your Workbox-powered service worker!
+ *
+ * You'll need to register this file in your web app and you should
+ * disable HTTP caching for this file too.
+ * See https://goo.gl/nhQhGp
+ *
+ * The rest of the code is auto-generated. Please don't update this file
+ * directly; instead, make changes to your Workbox build configuration
+ * and re-run your build process.
+ * See https://goo.gl/2aRDsh
+ */
 
-const BASE_CACHE_FILES = [
-    '/css/bs.css',
-    '/css/custom.css',
-    '/css/solarized-dark.css',
-    '/js/lazysizes.min.js',
-    '/js/masonry.js',
-    '/js/core.js',
-    '/js/feather.min.js',
-    '/js/highlight.pack.js',
-    '/favicon.png',
-    '/manifest.json'
-];
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
-const OFFLINE_CACHE_FILES = [
-    '/css/bs.css',
-    '/css/custom.css',
-    '/css/solarized-dark.css',
-    '/js/lazysizes.min.js',
-    '/js/masonry.js',
-    '/js/core.js',
-    '/js/feather.min.js',
-    '/js/highlight.pack.js',
-    '/favicon.png',
-    '/offline/index.html',
-    '/manifest.json'
-];
+workbox.core.setCacheNameDetails({prefix: "Linuxisekai"});
 
-const NOT_FOUND_CACHE_FILES = [
-    '/css/bs.css',
-    '/css/custom.css',
-    '/css/solarized-dark.css',
-    '/js/lazysizes.min.js',
-    '/js/masonry.js',
-    '/js/core.js',
-    '/js/feather.min.js',
-    '/js/highlight.pack.js',
-    '/favicon.png',
-    '/404.html',
-    '/manifest.json'
-];
+workbox.core.skipWaiting();
 
-const OFFLINE_PAGE = 'index.html';
-const NOT_FOUND_PAGE = '404.html';
-
-const CACHE_VERSIONS = {
-    assets: 'assets-v' + CACHE_VERSION,
-    content: 'content-v' + CACHE_VERSION,
-    offline: 'offline-v' + CACHE_VERSION,
-    notFound: '404-v' + CACHE_VERSION,
-};
-
-// Define MAX_TTL's in SECONDS for specific file extensions
-const MAX_TTL = {
-    '/': 3600,
-    html: 3600,
-    json: 86400,
-    js: 86400,
-    css: 86400,
-};
-
-const CACHE_BLACKLIST = [
-    (str) => {
-       return !str.startsWith('https://linuxisekai.site');
-    },
-];
-
-const SUPPORTED_METHODS = [
-    'GET',
-];
+workbox.core.clientsClaim();
 
 /**
- * isBlackListed
- * @param {string} url
- * @returns {boolean}
+ * The workboxSW.precacheAndRoute() method efficiently caches and responds to
+ * requests for URLs in the manifest.
+ * See https://goo.gl/S9QRab
  */
-function isBlacklisted(url) {
-    return (CACHE_BLACKLIST.length > 0) ? !CACHE_BLACKLIST.filter((rule) => {
-        if(typeof rule === 'function') {
-            return !rule(url);
-        } else {
-            return false;
-        }
-    }).length : false
-}
-
-/**
- * getFileExtension
- * @param {string} url
- * @returns {string}
- */
-function getFileExtension(url) {
-    let extension = url.split('.').reverse()[0].split('?')[0];
-    return (extension.endsWith('/')) ? '/' : extension;
-}
-
-/**
- * getTTL
- * @param {string} url
- */
-function getTTL(url) {
-    if (typeof url === 'string') {
-        let extension = getFileExtension(url);
-        if (typeof MAX_TTL[extension] === 'number') {
-            return MAX_TTL[extension];
-        } else {
-            return null;
-        }
-    } else {
-        return null;
-    }
-}
-
-/**
- * installServiceWorker
- * @returns {Promise}
- */
-function installServiceWorker() {
-    return Promise.all(
-        [
-            caches.open(CACHE_VERSIONS.assets)
-                .then(
-                    (cache) => {
-                        return cache.addAll(BASE_CACHE_FILES);
-                    }
-                ),
-            caches.open(CACHE_VERSIONS.offline)
-                .then(
-                    (cache) => {
-                        return cache.addAll(OFFLINE_CACHE_FILES);
-                    }
-                ),
-            caches.open(CACHE_VERSIONS.notFound)
-                .then(
-                    (cache) => {
-                        return cache.addAll(NOT_FOUND_CACHE_FILES);
-                    }
-                )
-        ]
-    )
-        .then(() => {
-            return self.skipWaiting();
-        });
-}
-
-/**
- * cleanupLegacyCache
- * @returns {Promise}
- */
-function cleanupLegacyCache() {
-
-    let currentCaches = Object.keys(CACHE_VERSIONS)
-        .map(
-            (key) => {
-                return CACHE_VERSIONS[key];
-            }
-        );
-
-    return new Promise(
-        (resolve, reject) => {
-
-            caches.keys()
-                .then(
-                    (keys) => {
-                        return legacyKeys = keys.filter(
-                            (key) => {
-                                return !~currentCaches.indexOf(key);
-                            }
-                        );
-                    }
-                )
-                .then(
-                    (legacy) => {
-                        if (legacy.length) {
-                            Promise.all(
-                                legacy.map(
-                                    (legacyKey) => {
-                                        return caches.delete(legacyKey)
-                                    }
-                                )
-                            )
-                                .then(
-                                    () => {
-                                        resolve()
-                                    }
-                                )
-                                .catch(
-                                    (err) => {
-                                        reject(err);
-                                    }
-                                );
-                        } else {
-                            resolve();
-                        }
-                    }
-                )
-                .catch(
-                    () => {
-                        reject();
-                    }
-                );
-
-        }
-    );
-}
-
-function precacheUrl(url) {
-    if(!isBlacklisted(url)) {
-        caches.open(CACHE_VERSIONS.content)
-            .then((cache) => {
-                cache.match(url)
-                    .then((response) => {
-                        if(!response) {
-                            return fetch(url)
-                        } else {
-                            // already in cache, nothing to do.
-                            return null
-                        }
-                    })
-                    .then((response) => {
-                        if(response) {
-                            return cache.put(url, response.clone());
-                        } else {
-                            return null;
-                        }
-                    });
-            })
-    }
-}
-
-
-
-self.addEventListener(
-    'install', event => {
-        event.waitUntil(
-            Promise.all([
-                installServiceWorker(),
-                self.skipWaiting(),
-            ])
-        );
-    }
-);
-
-// The activate handler takes care of cleaning up old caches.
-self.addEventListener(
-    'activate', event => {
-        event.waitUntil(
-            Promise.all(
-                [
-                    cleanupLegacyCache(),
-                    self.clients.claim(),
-                    self.skipWaiting(),
-                ]
-            )
-                .catch(
-                    (err) => {
-                        event.skipWaiting();
-                    }
-                )
-        );
-    }
-);
-
-self.addEventListener(
-    'fetch', event => {
-
-        event.respondWith(
-            caches.open(CACHE_VERSIONS.content)
-                .then(
-                    (cache) => {
-
-                        return cache.match(event.request)
-                            .then(
-                                (response) => {
-
-                                    if (response) {
-
-                                        let headers = response.headers.entries();
-                                        let date = null;
-
-                                        for (let pair of headers) {
-                                            if (pair[0] === 'date') {
-                                                date = new Date(pair[1]);
-                                            }
-                                        }
-
-                                        if (date) {
-                                            let age = parseInt((new Date().getTime() - date.getTime()) / 1000);
-                                            let ttl = getTTL(event.request.url);
-
-                                            if (ttl && age > ttl) {
-
-                                                return new Promise(
-                                                    (resolve) => {
-
-                                                        return fetch(event.request.clone())
-                                                            .then(
-                                                                (updatedResponse) => {
-                                                                    if (updatedResponse) {
-                                                                        cache.put(event.request, updatedResponse.clone());
-                                                                        resolve(updatedResponse);
-                                                                    } else {
-                                                                        resolve(response)
-                                                                    }
-                                                                }
-                                                            )
-                                                            .catch(
-                                                                () => {
-                                                                    resolve(response);
-                                                                }
-                                                            );
-
-                                                    }
-                                                )
-                                                    .catch(
-                                                        (err) => {
-                                                            return response;
-                                                        }
-                                                    );
-                                            } else {
-                                                return response;
-                                            }
-
-                                        } else {
-                                            return response;
-                                        }
-
-                                    } else {
-                                        return null;
-                                    }
-                                }
-                            )
-                            .then(
-                                (response) => {
-                                    if (response) {
-                                        return response;
-                                    } else {
-                                        return fetch(event.request.clone())
-                                            .then(
-                                                (response) => {
-
-                                                    if(response.status < 400) {
-                                                        if (~SUPPORTED_METHODS.indexOf(event.request.method) && !isBlacklisted(event.request.url)) {
-                                                            cache.put(event.request, response.clone());
-                                                        }
-                                                        return response;
-                                                    } else {
-                                                        return caches.open(CACHE_VERSIONS.notFound).then((cache) => {
-                                                            return cache.match(NOT_FOUND_PAGE);
-                                                        })
-                                                    }
-                                                }
-                                            )
-                                            .then((response) => {
-                                                if(response) {
-                                                    return response;
-                                                }
-                                            })
-                                            .catch(
-                                                () => {
-
-                                                    return caches.open(CACHE_VERSIONS.offline)
-                                                        .then(
-                                                            (offlineCache) => {
-                                                                return offlineCache.match(OFFLINE_PAGE)
-                                                            }
-                                                        )
-
-                                                }
-                                            );
-                                    }
-                                }
-                            )
-                            .catch(
-                                (error) => {
-                                    console.error('  Error in fetch handler:', error);
-                                    throw error;
-                                }
-                            );
-                    }
-                )
-        );
-
-    }
-);
-
-
-self.addEventListener('message', (event) => {
-
-    if(
-        typeof event.data === 'object' &&
-        typeof event.data.action === 'string'
-    ) {
-        switch(event.data.action) {
-            case 'cache' :
-                precacheUrl(event.data.url);
-                break;
-            default :
-                console.log('Unknown action: ' + event.data.action);
-                break;
-        }
-    }
-
+self.__precacheManifest = [
+  {
+    "url": "/css/bs.css",
+    "revision": "417f7a255065a91ee9ec2f44eb321a22"
+  },
+  {
+    "url": "/css/bulma.css",
+    "revision": "b15b1b1893809fc6c6a8d7268fd7d3fe"
+  },
+  {
+    "url": "/css/custom.css",
+    "revision": "84f1a3067b47c6240f071563f194e127"
+  },
+  {
+    "url": "/css/solarized-dark.css",
+    "revision": "09a127856dba4865a3429ea0c0f756fd"
+  },
+  {
+    "url": "/js/core.js",
+    "revision": "25e10a60f408cb7d7d52580473558050"
+  },
+  {
+    "url": "/js/feather.min.js",
+    "revision": "a6cd4b6cf83ee3b37fc6f4d59294619b"
+  },
+  {
+    "url": "/js/highlight.pack.js",
+    "revision": "0c675cebad7b4fce6bfb948a274a940f"
+  },
+  {
+    "url": "/js/jquery.js",
+    "revision": "99b0a83cf1b0b1e2cb16041520e87641"
+  },
+  {
+    "url": "/js/lazysizes.min.js",
+    "revision": "149ff45fc6c2f13e892e438a58abb77f"
+  },
+  {
+    "url": "/js/masonry.js",
+    "revision": "c39480835cf00844e6407f24d8aaba2e"
+  }
+].concat(self.__precacheManifest || []);
+workbox.precaching.precacheAndRoute(self.__precacheManifest, {
+  "ignoreURLParametersMatching": [/./]
 });
+
+workbox.routing.registerRoute(/(?:\/)$/, new workbox.strategies.StaleWhileRevalidate({ "cacheName":"html", plugins: [new workbox.expiration.Plugin({ maxAgeSeconds: 604800, purgeOnQuotaError: false })] }), 'GET');
+workbox.routing.registerRoute(/\.(?:png|jpg|jpeg|gif|bmp|webp|svg|ico)$/, new workbox.strategies.CacheFirst({ "cacheName":"images", plugins: [new workbox.expiration.Plugin({ maxEntries: 1000, maxAgeSeconds: 31536000, purgeOnQuotaError: false })] }), 'GET');
+workbox.routing.registerRoute(/\.(?:mp3|wav|m4a)$/, new workbox.strategies.CacheFirst({ "cacheName":"audio", plugins: [new workbox.expiration.Plugin({ maxEntries: 1000, maxAgeSeconds: 31536000, purgeOnQuotaError: false })] }), 'GET');
+workbox.routing.registerRoute(/\.(?:m4v|mpg|avi)$/, new workbox.strategies.CacheFirst({ "cacheName":"videos", plugins: [new workbox.expiration.Plugin({ maxEntries: 1000, maxAgeSeconds: 31536000, purgeOnQuotaError: false })] }), 'GET');
+
+workbox.googleAnalytics.initialize({});

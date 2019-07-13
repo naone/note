@@ -3,12 +3,6 @@ const clean = require("gulp-clean");
 const shell = require("gulp-shell");
 const workbox = require("workbox-build");
 
-gulp.task("clean", function () { });
-gulp.task("hugo-build", shell.task(["hugo"]));
-gulp.task("generate-service-worker", () => { });
-
-gulp.task("build", gulp.series("clean", "hugo-build", "generate-service-worker"));
-
 gulp.task("clean", function () {
   return gulp.src("public", { read: false, allowEmpty: true })
   .pipe(clean());
@@ -18,7 +12,7 @@ gulp.task("hugo-build", shell.task(["hugo"]));
 
 gulp.task("generate-service-worker", () => {
   return workbox.generateSW({
-      cacheId: "thepolyglotdeveloper",
+      cacheId: "Linuxisekai",
       globDirectory: "./public",
       globPatterns: [
           "**/*.{css,js,eot,ttf,woff,woff2,otf}"
@@ -79,3 +73,5 @@ gulp.task("generate-service-worker", () => {
       ],
   });
 });
+
+gulp.task("build", gulp.series("clean", "hugo-build", "generate-service-worker"));
