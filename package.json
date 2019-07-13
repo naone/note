@@ -1,0 +1,28 @@
+{
+  "name": "nolep",
+  "version": "1.0.0",
+  "description": "this is my personal blog to build on netlify. you can see on here https://linuxisekai.site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linuxisekai/blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linuxisekai/blog/issues"
+  },
+  "homepage": "https://github.com/linuxisekai/blog#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "workbox-build": "^4.3.1"
+  },
+  "dependencies": {
+    "gulp-clean": "^0.4.0",
+    "gulp-shell": "^0.7.1"
+  }
+}
