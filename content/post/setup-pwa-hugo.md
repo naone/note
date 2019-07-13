@@ -144,45 +144,45 @@ pada directory root hugo kamu, buat file gulpfile.js lalu isi denagan :
       maximumFileSizeToCacheInBytes: 50 * 1024 * 1024,
       runtimeCaching: [
           {
-              urlPattern: /(?:\/)$/,
-              handler: "staleWhileRevalidate",
-              options: {
-                  cacheName: "html",
-                  expiration: {
-                      maxAgeSeconds: 60 * 60 * 24 * 7,
-                  },
+        urlPattern: /(?:\/)$/,
+        handler: "staleWhileRevalidate",
+        options: {
+            cacheName: "html",
+            expiration: {
+            maxAgeSeconds: 60 * 60 * 24 * 7,
+            },
+        },
+            },
+        {
+        urlPattern: /\.(?:png|jpg|jpeg|gif|bmp|webp|svg|ico)$/,
+        handler: "cacheFirst",
+        options: {
+        cacheName: "images",
+        expiration: {
+        maxEntries: 1000,
+        maxAgeSeconds: 60 * 60 * 24 * 365,
+            },
+        },
+          },
+        {
+        urlPattern: /\.(?:mp3|wav|m4a)$/,
+        handler: "cacheFirst",
+        options: {
+            cacheName: "audio",
+            expiration: {
+            maxEntries: 1000,
+                    maxAgeSeconds: 60 * 60 * 24 * 365,
+            },
               },
           },
           {
-              urlPattern: /\.(?:png|jpg|jpeg|gif|bmp|webp|svg|ico)$/,
-              handler: "cacheFirst",
-              options: {
-                  cacheName: "images",
-                  expiration: {
-                      maxEntries: 1000,
-                      maxAgeSeconds: 60 * 60 * 24 * 365,
-                  },
-              },
-          },
-          {
-              urlPattern: /\.(?:mp3|wav|m4a)$/,
-              handler: "cacheFirst",
-              options: {
-                  cacheName: "audio",
-                  expiration: {
-                      maxEntries: 1000,
-                      maxAgeSeconds: 60 * 60 * 24 * 365,
-                  },
-              },
-          },
-          {
-              urlPattern: /\.(?:m4v|mpg|avi)$/,
-              handler: "cacheFirst",
-              options: {
-                  cacheName: "videos",
-                  expiration: {
-                      maxEntries: 1000,
-                      maxAgeSeconds: 60 * 60 * 24 * 365,
+        urlPattern: /\.(?:m4v|mpg|avi)$/,
+        handler: "cacheFirst",
+        options: {
+            cacheName: "videos",
+            expiration: {
+            maxEntries: 1000,
+            maxAgeSeconds: 60 * 60 * 24 * 365,
                   },
               },
           }
