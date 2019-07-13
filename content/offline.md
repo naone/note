@@ -4,5 +4,5 @@ draft = false
 title = "Maaf, Kamu sedang offline"
 type = "offline"
 +++
-
-<h1 class="is-size-3"><center>女性が歌うなんてもないやRADWIMPS君の名は歌詞付き</center></h1>
+<h1 class="is-size-2">Maaf, Kamu sedang offline 😟</h1>
+<h1 class="is-size-5">女性が歌うなんてもないや名は歌詞付き</h1>
