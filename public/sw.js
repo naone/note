@@ -43,7 +43,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/js/core.js",
-    "revision": "25e10a60f408cb7d7d52580473558050"
+    "revision": "234f1617219da82d9336b142623b1b5e"
   },
   {
     "url": "/js/feather.min.js",
