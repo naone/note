@@ -130,12 +130,12 @@ Instalasi Cek versi karnel $ uname -a  Output Linux asuna 5.2.0-1-MANJARO #1 SMP
     </item>
     
     <item>
-      <title>Oops, you are offline.</title>
+      <title>Maaf, Kamu sedang offline</title>
       <link>/offline/</link>
       <pubDate>Sun, 16 Oct 2016 19:28:41 +0200</pubDate>
       
       <guid>/offline/</guid>
-      <description>You should try to find some internet connection to browse here.</description>
+      <description>女性が歌うなんてもないやRADWIMPS君の名は歌詞付き </description>
     </item>
     
   </channel>
