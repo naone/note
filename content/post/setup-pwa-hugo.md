@@ -307,7 +307,8 @@ sekarang tinggal kita push ke github dan matikan data seluler kamu. 👊😎 (an
 <div class="no-border">
 Note : hanya halaman yang sudah pernah dibuka saja yang bisa diakses secara offline
 
-thanks: <a href="Okitavera.me">Yuune</a>, https://www.thepolyglotdeveloper.com
+thanks: <a href="Okitavera.me">Yuune</a>,
+<a href="https://www.thepolyglotdeveloper.com">thepolyglotdeveloper</a>
 </div>
 <br/>
 <br/>
