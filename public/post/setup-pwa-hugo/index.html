@@ -278,13 +278,13 @@ dengan ukuran 128,144,152,196,310. gambar ini nantinya akan dijadikan icon saat 
 <pre><code> &lt;link rel=&quot;manifest&quot; href=&quot;/manifest.json&quot;&gt;
 </code></pre>
 
-<p>taruh script diatas di antara tag <head></p>
+<p>taruh script diatas di antara tag <code>head</code></p>
 
 <h3 id="menginstall-workbox-dan-gulp">menginstall workbox dan gulp</h3>
 
-<p>pastikan sudah menginstall npm di OS kamu, lalu jalankan perintah di bawah ini di directory root hugo</p>
+<p>pastikan sudah npm sudah terinstall di OS kamu, lalu jalankan perintah di bawah ini di directory root hugo</p>
 
-<div class="message-header">root@linuxisekai</div>
+<div class="message-header">asuna@linuxisekai</div>
 
 <pre><code>$ npm init -y
 $ npm install gulp --save-dev
@@ -379,34 +379,34 @@ return workbox.generateSW({
 gulp.task(&quot;build&quot;, gulp.series(&quot;clean&quot;, &quot;hugo-build&quot;, &quot;generate-service-worker&quot;));
 </code></pre>
 
-<p>apa fungsi baris kode diatas ? saya tidak tahu 😆. Tapi disini sudah dijelaskan tapi menggunkan bahasa inggris <div class="break"><a href="https://www.thepolyglotdeveloper.com/2019/03/service-workers-workbox-hugo-static-generated-site/">https://www.thepolyglotdeveloper.com/2019/03/service-workers-workbox-hugo-static-generated-site/</a></div>.</p>
+<p>apa fungsi baris kode diatas ? saya tidak tahu 😆. tusbol disini untuk penjelasanya <div class="break"><a href="https://www.thepolyglotdeveloper.com/2019/03/service-workers-workbox-hugo-static-generated-site/">https://www.thepolyglotdeveloper.com/2019/03/service-workers-workbox-hugo-static-generated-site/</a></div>.</p>
 
 <h3 id="membuat-script-untuk-memanggil-service-worker">membuat script untuk memanggil service worker</h3>
 
 <pre><code>&lt;script&gt;
     if('serviceWorker' in navigator) {
         navigator.serviceWorker
-            .register('/sw.js', { scope: '/' })
-            .then(function(registration) {
-                console.log('Service Worker Registered');
+        .register('/sw.js', { scope: '/' })
+        .then(function(registration) {
+        console.log('Service Worker Registered');
             });
 
         navigator.serviceWorker
-            .ready
-            .then(function(registration) {
-                console.log('Service Worker Ready');
+        .ready
+        .then(function(registration) {
+        console.log('Service Worker Ready');
             });
     }
 &lt;/script&gt;
 </code></pre>
 
-<p>tauh kode diatas tepat diatas tag tutup <code>body</code></p>
+<p>taruh kode diatas tepat diatas tag tutup <code>body</code></p>
 
 <h3 id="run-bulid-task">run bulid task</h3>
 
 <p>buka vscode lalu tekan <span class="has-text-primary"><i>ctrl+shift+p</i> =&gt; <i>Task : Run task</i> =&gt; <i>gulp : build </i> =&gt; <i>continue without scanning the task output</i></span></p>
 
-<p>perintah ini akan menghasilkan file sw.js di directory public ( silahkan cek terlebih dahulu )
+<p>perintah ini akan menghasilkan file sw.js di directory <code>public</code> ( silahkan cek terlebih dahulu )
 contoh sw.js punya saya :</p>
 
 <pre><code>/**
@@ -492,7 +492,7 @@ workbox.googleAnalytics.initialize({});
 <p>sekarang tinggal kita push ke github dan matikan data seluler kamu. 👊😎 (anjay mabar).</p>
 
 <p><div class="no-border">
-Note : hanya halaman sudah pernah dibuka yang bisa diakses secara offline</p>
+Note : hanya halaman yang sudah pernah dibuka saja yang bisa diakses secara offline</p>
 
 <p>thanks: <a href="Okitavera.me">Yuune</a>, <a href="https://www.thepolyglotdeveloper.com">https://www.thepolyglotdeveloper.com</a>
 </div>

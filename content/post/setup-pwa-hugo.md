@@ -93,13 +93,13 @@ buat file manifest.json di static/manifest.json
 
      <link rel="manifest" href="/manifest.json">
 
-taruh script diatas di antara tag <head>
+taruh script diatas di antara tag <code>head</code>
 
 ### menginstall workbox dan gulp
 
-pastikan sudah menginstall npm di OS kamu, lalu jalankan perintah di bawah ini di directory root hugo
+pastikan sudah npm sudah terinstall di OS kamu, lalu jalankan perintah di bawah ini di directory root hugo
 
-<div class="message-header">root@linuxisekai</div>
+<div class="message-header">asuna@linuxisekai</div>
 
     $ npm init -y
     $ npm install gulp --save-dev
@@ -193,33 +193,33 @@ pada directory root hugo kamu, buat file gulpfile.js lalu isi denagan :
     gulp.task("build", gulp.series("clean", "hugo-build", "generate-service-worker"));
 
 
-apa fungsi baris kode diatas ? saya tidak tahu 😆. Tapi disini sudah dijelaskan tapi menggunkan bahasa inggris <div class="break">https://www.thepolyglotdeveloper.com/2019/03/service-workers-workbox-hugo-static-generated-site/</div>.
+apa fungsi baris kode diatas ? saya tidak tahu 😆. tusbol disini untuk penjelasanya <div class="break">https://www.thepolyglotdeveloper.com/2019/03/service-workers-workbox-hugo-static-generated-site/</div>.
 
 ### membuat script untuk memanggil service worker
 
     <script>
         if('serviceWorker' in navigator) {
             navigator.serviceWorker
-                .register('/sw.js', { scope: '/' })
-                .then(function(registration) {
-                    console.log('Service Worker Registered');
+            .register('/sw.js', { scope: '/' })
+            .then(function(registration) {
+            console.log('Service Worker Registered');
                 });
     
             navigator.serviceWorker
-                .ready
-                .then(function(registration) {
-                    console.log('Service Worker Ready');
+            .ready
+            .then(function(registration) {
+            console.log('Service Worker Ready');
                 });
         }
     </script>
 
-tauh kode diatas tepat diatas tag tutup <code>body</code>
+taruh kode diatas tepat diatas tag tutup <code>body</code>
 
 ### run bulid task
 
 buka vscode lalu tekan <span class="has-text-primary"><i>ctrl+shift+p</i> => <i>Task : Run task</i> => <i>gulp : build </i> => <i>continue without scanning the task output</i></span>
 
-perintah ini akan menghasilkan file sw.js di directory public ( silahkan cek terlebih dahulu )
+perintah ini akan menghasilkan file sw.js di directory <code>public</code> ( silahkan cek terlebih dahulu )
 contoh sw.js punya saya :
 
     /**
@@ -305,7 +305,7 @@ sekarang tinggal kita push ke github dan matikan data seluler kamu. 👊😎 (an
 
 
 <div class="no-border">
-Note : hanya halaman sudah pernah dibuka yang bisa diakses secara offline
+Note : hanya halaman yang sudah pernah dibuka saja yang bisa diakses secara offline
 
 thanks: <a href="Okitavera.me">Yuune</a>, https://www.thepolyglotdeveloper.com
 </div>
