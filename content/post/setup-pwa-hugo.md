@@ -6,6 +6,13 @@ tags: ["hugo","pwa"]
 image: /img/post/thumbpwa.webp
 ---
 
+<div class="no-border">
+Disclaimer :
+saya bukan ahli dalam dunia web, tutorial ini saya dapat dari <a href="https://www.thepolyglotdeveloper.com/2019/03/service-workers-workbox-hugo-static-generated-site/">sini</a>
+</div>
+
+<br/>
+
 setup hugo yang saya gunakan
 <ul>
 <li>vscode</li>
@@ -186,8 +193,7 @@ pada directory root hugo kamu, buat file gulpfile.js lalu isi denagan :
     gulp.task("build", gulp.series("clean", "hugo-build", "generate-service-worker"));
 
 
-apa fungsi baris kode diatas ? silahkan tanya saja ke admin thepolyglotdeveloper.
-atau kunjungi websitenya <div class="break">https://www.thepolyglotdeveloper.com/2019/03/service-workers-workbox-hugo-static-generated-site/</div> 😆.
+apa fungsi baris kode diatas ? saya tidak tahu 😆. Tapi disini sudah dijelaskan tapi menggunkan bahasa inggris <div class="break">https://www.thepolyglotdeveloper.com/2019/03/service-workers-workbox-hugo-static-generated-site/</div>.
 
 ### membuat script untuk memanggil service worker
 
@@ -300,6 +306,8 @@ sekarang tinggal kita push ke github dan matikan data seluler kamu. 👊😎 (an
 
 <div class="no-border">
 Note : hanya halaman sudah pernah dibuka yang bisa diakses secara offline
+
+thanks: <a href="Okitavera.me">Yuune</a>, https://www.thepolyglotdeveloper.com
 </div>
 <br/>
 <br/>
