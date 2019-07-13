@@ -59,7 +59,7 @@ const MAX_TTL = {
 
 const CACHE_BLACKLIST = [
     (str) => {
-        return !str.startsWith('https://linuxisekai.site');
+       return !str.startsWith('https://linuxisekai.site');
     },
 ];
 
