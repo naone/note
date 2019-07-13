@@ -334,7 +334,9 @@ html {scroll-behavior:smooth;}
     width: 1.4em;
   }
   .no-border {
-    border: 1px solid #073642;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #002B36;
     border-left-color: #2AA198;
     border-left-width: 0.5rem;
     border-radius: 6px;

@@ -7,8 +7,10 @@
 {{ $isMatchTags := intersect $tags .Params.tags | len | lt 1 }}
 {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) }}
 <div class="container">
+    <div class="no-border has-background-grey-dark">
     <a href="{{ .Permalink }}" class="judul-post">
         <img src="/img/related.svg" width="16">&nbsp;{{ .Title }}</a>
+        </div>
 <br/>
 
                 
