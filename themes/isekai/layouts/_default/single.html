@@ -12,6 +12,7 @@
     {{ .Date.Format "02-01-2006" }}
     </div>
  <div class="content">
+     <div class="style-pre message-body">
  <article class="article">
 {{ .Content }}
 </article>
@@ -27,6 +28,7 @@
 {{- end -}}
 
 {{ end }}                          
+</div>
 </div>
     {{ partial "button-post.html" . }}
     {{ partial "disqus.html" . }}

@@ -23,9 +23,6 @@
 <br/>
 <br/>
 <br/>
-<div class="is-size-4 has-addons">
-    Related Post
-</div>
   
     
 
@@ -34,20 +31,15 @@
             {{/* range (where .Site.Pages "Section" "tutorials") */}}
             {{ range .Site.Pages }}
             {{ $isMatchTags := intersect $tags .Params.tags | len | lt 0 }}
-            {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) (lt ($.Scratch.Get "limit") 5) }}
+            {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) (lt ($.Scratch.Get "limit") 3) }}
               {{ $.Scratch.Add "limit" 1 }}
          
             
-              <div class="tile is-parent has-background-grey-dark">
-                  <a href="{{ .Permalink }}">
-                   
+              <div class="message-body no-border is-parent has-background-grey-dark">
+                  <a href="{{ .Permalink }}" class="has-text-grey">
                       <i data-feather="link" class="is-size-7"></i>&nbsp;{{ .Title }}</a>
-              
-              <br/>
-              
               </div>
-            
-              
+             
       
                          
                           

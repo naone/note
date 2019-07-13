@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Linuxisekai ~#: Nolep Enthusiast</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="">
+    <meta name="author" content="linuxisekai">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="linuxisekai">
+    <meta name="theme-color" content="#073642">
+    <meta http-equiv="Cache-control" content="public">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" size="192x192" href="favicon.png">
+    <meta name="Description" content="Linux, Golang, PHP, Tutorial, Ricing, Ubuntu, Arch Linux">
+    <link href="/css/bs.css" rel="stylesheet">
+    <link href="/css/solarized-dark.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+    
+<meta itemprop="name" content="Setup Pwa Hugo">
+<meta itemprop="description" content="berawal dari dari grub jamstackid lalu saya melihat websitenya @okitavera yang di build menggunakan sgg eleventy, nah dari situternyata okitavera.me bisa diakses secara offline. terus saya bertanya kok bisa ? lalu saya melihat salah satu artikel di okitavera.me ternyata ia menggunakan yang namanya progresif web application ( PWA ), nah dari situ saya mencari tau bagaimana caranya mengimplementasikanya pada hugo, jarena di artikel okitavera.me hanya untuk eleventy saja. setelah saya browsing saya memenumakan artkel disini, disitu dijelaaskan step by step cara install pwa dan service worker, setelah saya coba service worker sudah teregistrasi tetapi kalau diakses secara offline tidak mau 😶, akhirnya saya bertanya ke @okitavera dan menyarankan menggunakan cara ini dan itu work thank nanda okitavera.">
+
+
+<meta itemprop="datePublished" content="2019-07-13T19:58:55&#43;07:00" />
+<meta itemprop="dateModified" content="2019-07-13T19:58:55&#43;07:00" />
+<meta itemprop="wordCount" content="920">
+
+
+
+<meta itemprop="keywords" content="" />
+
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-143247560-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    <meta property="og:title" content="Setup Pwa Hugo" />
+<meta property="og:description" content="berawal dari dari grub jamstackid lalu saya melihat websitenya @okitavera yang di build menggunakan sgg eleventy, nah dari situternyata okitavera.me bisa diakses secara offline. terus saya bertanya kok bisa ? lalu saya melihat salah satu artikel di okitavera.me ternyata ia menggunakan yang namanya progresif web application ( PWA ), nah dari situ saya mencari tau bagaimana caranya mengimplementasikanya pada hugo, jarena di artikel okitavera.me hanya untuk eleventy saja. setelah saya browsing saya memenumakan artkel disini, disitu dijelaaskan step by step cara install pwa dan service worker, setelah saya coba service worker sudah teregistrasi tetapi kalau diakses secara offline tidak mau 😶, akhirnya saya bertanya ke @okitavera dan menyarankan menggunakan cara ini dan itu work thank nanda okitavera." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/setup-pwa-hugo/" />
+<meta property="article:published_time" content="2019-07-13T19:58:55&#43;07:00"/>
+<meta property="article:modified_time" content="2019-07-13T19:58:55&#43;07:00"/>
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setup Pwa Hugo"/>
+<meta name="twitter:description" content="berawal dari dari grub jamstackid lalu saya melihat websitenya @okitavera yang di build menggunakan sgg eleventy, nah dari situternyata okitavera.me bisa diakses secara offline. terus saya bertanya kok bisa ? lalu saya melihat salah satu artikel di okitavera.me ternyata ia menggunakan yang namanya progresif web application ( PWA ), nah dari situ saya mencari tau bagaimana caranya mengimplementasikanya pada hugo, jarena di artikel okitavera.me hanya untuk eleventy saja. setelah saya browsing saya memenumakan artkel disini, disitu dijelaaskan step by step cara install pwa dan service worker, setelah saya coba service worker sudah teregistrasi tetapi kalau diakses secara offline tidak mau 😶, akhirnya saya bertanya ke @okitavera dan menyarankan menggunakan cara ini dan itu work thank nanda okitavera."/>
+
+</head>
+
+
+    <body>
+    
+    
+<nav id="navbar" class="navbar is-fixed-top has-shadow">
+        <div class="container">
+        <div class="navbar-brand is-size-2">
+          <a class="navbar-item" href="/" >
+            <span class="icon is-medium"><i data-feather="terminal"></i></span>
+            <div class="is-size-4 has-text-weight-bold title">linuxisekai</div>
+            
+          </a>
+          
+          <a class="navbar-item is-hidden-desktop" href="https://github.com/linuxisekai" rel="noopener" target="_blank">
+            <span class="icon" style="color: rgb(173, 179, 197);">
+              <div data-feather="github"></div>
+            </span>
+          </a>
+      
+          <a class="navbar-item is-hidden-desktop" href="#" target="_blank">
+            <span class="icon has-text-primary">
+              <i data-feather="twitter"></i>
+            </span>
+          </a>
+        
+          <div id="navbarBurgers" class="navbar-burger burger" data-target="navMenuIndex">
+          
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      
+        <div id="navMenuIndex" class="navbar-menu is-size-5">
+          <div class="navbar-start">
+            <a class="navbar-item" href="/">
+              <span class="icon has-text-primary">
+               <i data-feather="home"></i>
+              </span>
+              <span>
+              Home
+              </span>
+            </a>
+      
+            
+              <a class="navbar-item" href="/tags/linux">
+                <span class="icon is-medium has-text-primary">
+                  <i data-feather="terminal"></i>
+                </span>
+      
+                <span>Linux</span>
+              </a>
+            
+              <div class="navbar-item has-dropdown is-hoverable" href="/ngoding">
+                <a class="navbar-link">
+                <span class="icon has-text-primary">
+                  <i data-feather="coffee"></i>
+                </span>
+      
+                <span>Ngopi</span>
+                </a>
+                <div class="navbar-dropdown is-size-6">
+                  <a class="navbar-item" href="#">
+                    PHP
+                  </a>
+                  <a class="navbar-item" href="#">
+                    Go
+                  </a>
+                </div>
+              </div>
+              <a class="navbar-item" href="/friendlist">
+                <span class="icon has-text-primary">
+                  <i data-feather="users"></i>
+                </span>
+      
+                <span> Friends</span>
+              </a>
+          </div>
+          
+      
+          <div class="navbar-end">
+            <a class="navbar-item is-hidden-touch" href="https://github.com/linuxisekai" rel="noopener" target="_blank">
+              <span class="icon" style="color: rgb(170, 174, 184);">
+                <i data-feather="github"></i>
+              </span>
+            </a>
+      
+            <a class="navbar-item is-hidden-touch" href="#" target="_blank">
+              <span class="icon has-text-primary">
+                <i data-feather="twitter"></i>
+              </span>
+            </a>
+      
+            <div class="navbar-item">
+              <div class="field is-grouped is-grouped-multiline">
+                <p class="control">
+                  <input type="text" class="input is-rounded" placeholder="Cari">
+      
+                </p>
+                <p class="control has-icon">
+                    <input type="submit" value ="Cari" class="button is-rounded input has-text-primary" />
+                    <span class="icon is-left has-text-primary">
+                      <i data-feather="search"></i>
+                    </span>
+                  </p>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </nav>
+               
+          
+      
+    <div class="judul"><b>Setup Pwa Hugo</b></div>
+    <div class="info-post">
+    <span class="icon has-text-primary"><i data-feather="user"></i></span>
+    tempegoreng | 
+    <span class="icon has-text-primary is-size-7"><i data-feather="calendar"></i></span> 
+    13-07-2019
+    </div>
+ <div class="content">
+     <div class="style-pre message-body">
+ <article class="article">
+
+
+<p>berawal dari dari grub jamstackid lalu saya melihat websitenya @okitavera yang di build menggunakan sgg eleventy, nah dari situternyata okitavera.me bisa diakses secara offline. terus saya bertanya kok bisa ?
+lalu saya melihat salah satu artikel di okitavera.me ternyata ia menggunakan yang namanya progresif web application ( PWA ), nah dari situ saya mencari tau bagaimana caranya mengimplementasikanya pada hugo, jarena di artikel okitavera.me hanya untuk eleventy saja. setelah saya browsing saya memenumakan artkel disini, disitu dijelaaskan step by step cara install pwa dan service worker, setelah saya coba service worker sudah teregistrasi tetapi kalau diakses secara offline tidak mau 😶, akhirnya saya bertanya ke @okitavera dan menyarankan menggunakan cara ini dan itu work thank nanda okitavera. terus apa gunanya artikel ini ? gak ada guanya sih, saya cuma mau nunjukin cara installnya, jarena jujur saya juga tidak paham dengan javascript.</p>
+
+<p>setup hugo yang saya gunakan</p>
+
+<pre><code>vscode
+github
+netlify 
+custom domain .site di idwebhost
+</code></pre>
+
+<h3 id="siapkan-favicon">Siapkan favicon</h3>
+
+<pre><code>kamu bisa menggenerate disini -tinggal upload gambar yang kamu ingin jadikan icon
+gambar yang gunakan (128,144,152,196,310) gambar ini nantinya akan dijadikan icon saat kita menambkanya ke layar utama, kenapa ada banyak ? karena ntar service workernya nyesuain sendiri buat resolusi laya device kita. setelah didownload taruh di folder static project hugo kalian, kalau saya semdiri lebih memilih menaruhnya di themese/static/img biar folder root project hugo saye lebih bersih, ini sangat subjective.
+</code></pre>
+
+<h3 id="konfigurasi-manifest-json">konfigurasi manifest.json</h3>
+
+<p>buat file manifest.json di static/manifest.json</p>
+
+<pre><code>{
+&quot;name&quot;: &quot;Nolep Enthusisat.&quot;,
+&quot;short_name&quot;: &quot;Linuxisekai.&quot;,
+&quot;icons&quot;: [
+  {
+  &quot;src&quot;: &quot;/img/icons/favicon-128x128.png&quot;,
+  &quot;sizes&quot;: &quot;128x128&quot;,
+  &quot;type&quot;: &quot;image/png&quot;
+}, {
+  &quot;src&quot;: &quot;/img/icons/favicon-144x144.png&quot;,
+  &quot;sizes&quot;: &quot;144x144&quot;,
+  &quot;type&quot;: &quot;image/png&quot;
+}, {
+  &quot;src&quot;: &quot;/img/icons/favicon-152x152.png&quot;,
+  &quot;sizes&quot;: &quot;152x152&quot;,
+  &quot;type&quot;: &quot;image/png&quot;
+},{
+  &quot;src&quot;: &quot;/img/icons/favicon-196x196.png&quot;,
+  &quot;sizes&quot;: &quot;196x196&quot;,
+  &quot;type&quot;: &quot;image/png&quot;
+},{
+  &quot;src&quot;: &quot;/img/icons/favicon-310x310.png&quot;,
+  &quot;sizes&quot;: &quot;310x310&quot;,
+  &quot;type&quot;: &quot;image/png&quot;
+}
+],
+&quot;display&quot;: &quot;standalone&quot;,
+&quot;orientation&quot; : &quot;portrait&quot;,
+&quot;background_color&quot;: &quot;#002B36&quot;,
+&quot;theme_color&quot;: &quot;#073642&quot;,
+&quot;start_url&quot;: &quot;/&quot;
+}
+</code></pre>
+
+<p>&ldquo;name&rdquo; dan &ldquo;shortname&rdquo; tinggal disesuaikan. untuk &ldquo;name&rdquo; disini akan tampil ketika app kita dibuka (kaya semacam splash screen )</p>
+
+<p>&ldquo;src&rdquo;, &ldquo;size&rdquo;, dan &ldquo;type tinggal disesuaikan dengan punya kamu
+theme_color fungsinya sama seperti theme-color pada tag <meta>
+background_color: background dari aplikasi saat loading
+display:standalone membuat aplikasi webmenyembunyikan UI browser
+orientation: orientasi tampilan</p>
+
+<h3 id="emanggil-manifest-json">emanggil manifest.json</h3>
+
+<pre><code> &lt;link rel=&quot;manifest&quot; href=&quot;/manifest.json&quot;&gt;
+</code></pre>
+
+<p>taruh script diatas di antara tag <head></p>
+
+<h3 id="menginstall-workbox-dan-gulp">menginstall workbox dan gulp</h3>
+
+<p>pastikan sudah menginstall npm di os kamu. lalu jalankan perintah di bawah ini di directory root hugo</p>
+
+<pre><code>npm init -y
+npm install gulp --save-dev
+npm install workbox-build --save-dev
+npm install gulp-clean --save-dev
+npm install gulp-shell --save-dev
+</code></pre>
+
+<p>perintah npm init -y diatas akan menghasilkan file package.json.
+perintah selanjutnya untuk menginstall gulp, workbox, gulp-clean dan gulp-shell.</p>
+
+<h3 id="konfigurasi-gulp">Konfigurasi gulp</h3>
+
+<p>pada directory root hugo kamu buat file gulpfile.js lalu isi denagan</p>
+
+<pre><code>const gulp = require(&quot;gulp&quot;);
+const clean = require(&quot;gulp-clean&quot;);
+const shell = require(&quot;gulp-shell&quot;);
+const workbox = require(&quot;workbox-build&quot;);
+
+gulp.task(&quot;clean&quot;, function () {
+return gulp.src(&quot;public&quot;, { read: false, allowEmpty: true })
+.pipe(clean());
+});
+
+gulp.task(&quot;hugo-build&quot;, shell.task([&quot;hugo&quot;]));
+
+gulp.task(&quot;generate-service-worker&quot;, () =&gt; {
+return workbox.generateSW({
+  cacheId: &quot;Linuxisekai&quot;,
+  globDirectory: &quot;./public&quot;,
+  globPatterns: [
+      &quot;**/*.{css,js,eot,ttf,woff,woff2,otf}&quot;
+  ],
+  swDest: &quot;./public/sw.js&quot;,
+  modifyUrlPrefix: {
+      &quot;&quot;: &quot;/&quot;
+  },
+  clientsClaim: true,
+  skipWaiting: true,
+  ignoreUrlParametersMatching: [/./],
+  offlineGoogleAnalytics: true,
+  maximumFileSizeToCacheInBytes: 50 * 1024 * 1024,
+  runtimeCaching: [
+      {
+          urlPattern: /(?:\/)$/,
+          handler: &quot;staleWhileRevalidate&quot;,
+          options: {
+              cacheName: &quot;html&quot;,
+              expiration: {
+                  maxAgeSeconds: 60 * 60 * 24 * 7,
+              },
+          },
+      },
+      {
+          urlPattern: /\.(?:png|jpg|jpeg|gif|bmp|webp|svg|ico)$/,
+          handler: &quot;cacheFirst&quot;,
+          options: {
+              cacheName: &quot;images&quot;,
+              expiration: {
+                  maxEntries: 1000,
+                  maxAgeSeconds: 60 * 60 * 24 * 365,
+              },
+          },
+      },
+      {
+          urlPattern: /\.(?:mp3|wav|m4a)$/,
+          handler: &quot;cacheFirst&quot;,
+          options: {
+              cacheName: &quot;audio&quot;,
+              expiration: {
+                  maxEntries: 1000,
+                  maxAgeSeconds: 60 * 60 * 24 * 365,
+              },
+          },
+      },
+      {
+          urlPattern: /\.(?:m4v|mpg|avi)$/,
+          handler: &quot;cacheFirst&quot;,
+          options: {
+              cacheName: &quot;videos&quot;,
+              expiration: {
+                  maxEntries: 1000,
+                  maxAgeSeconds: 60 * 60 * 24 * 365,
+              },
+          },
+      }
+  ],
+});
+});
+
+gulp.task(&quot;build&quot;, gulp.series(&quot;clean&quot;, &quot;hugo-build&quot;, &quot;generate-service-worker&quot;));
+</code></pre>
+
+<p>apa fungsi baris kode diatas ? silahkan tanya ke adminpoly.</p>
+
+<h3 id="membuat-script-untuk-memanggil-service-worker">membuat script untuk memanggil service worker</h3>
+
+<pre><code>&lt;script&gt;
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('/sw.js', { scope: '/' })
+            .then(function(registration) {
+                console.log('Service Worker Registered');
+            });
+
+        navigator.serviceWorker
+            .ready
+            .then(function(registration) {
+                console.log('Service Worker Ready');
+            });
+    }
+&lt;/script&gt;
+</code></pre>
+
+<p>tauh kode diatas di bagian tepat diatas </body></p>
+
+<h3 id="run-bulid-task">run bulid task</h3>
+
+<p>buka vscode lalu tekan ctrl+shift+p lalu pilih Task : Run task lalu pilih gulp : build selanjutnya pilih continue without scanning the task output</p>
+
+<p>perintah ini akan menghasilkan file sw.js di directory public ( silahkan cek terlebih dahulu )
+contoh sw.js punya saya :</p>
+
+<pre><code>/**
+* Welcome to your Workbox-powered service worker!
+*
+* You'll need to register this file in your web app and you should
+* disable HTTP caching for this file too.
+* See https://goo.gl/nhQhGp
+*
+* The rest of the code is auto-generated. Please don't update this file
+* directly; instead, make changes to your Workbox build configuration
+* and re-run your build process.
+* See https://goo.gl/2aRDsh
+*/
+
+importScripts(&quot;https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js&quot;);
+
+workbox.core.setCacheNameDetails({prefix: &quot;Linuxisekai&quot;});
+
+workbox.core.skipWaiting();
+
+workbox.core.clientsClaim();
+
+/**
+* The workboxSW.precacheAndRoute() method efficiently caches and responds to
+* requests for URLs in the manifest.
+* See https://goo.gl/S9QRab
+*/
+self.__precacheManifest = [
+{
+&quot;url&quot;: &quot;/css/bs.css&quot;,
+&quot;revision&quot;: &quot;417f7a255065a91ee9ec2f44eb321a22&quot;
+},
+{
+&quot;url&quot;: &quot;/css/bulma.css&quot;,
+&quot;revision&quot;: &quot;b15b1b1893809fc6c6a8d7268fd7d3fe&quot;
+},
+{
+&quot;url&quot;: &quot;/css/custom.css&quot;,
+&quot;revision&quot;: &quot;84f1a3067b47c6240f071563f194e127&quot;
+},
+{
+&quot;url&quot;: &quot;/css/solarized-dark.css&quot;,
+&quot;revision&quot;: &quot;09a127856dba4865a3429ea0c0f756fd&quot;
+},
+{
+&quot;url&quot;: &quot;/js/core.js&quot;,
+&quot;revision&quot;: &quot;06f03a8cb3b8a7f3dd0feccf62afac66&quot;
+},
+{
+&quot;url&quot;: &quot;/js/feather.min.js&quot;,
+&quot;revision&quot;: &quot;a6cd4b6cf83ee3b37fc6f4d59294619b&quot;
+},
+{
+&quot;url&quot;: &quot;/js/highlight.pack.js&quot;,
+&quot;revision&quot;: &quot;0c675cebad7b4fce6bfb948a274a940f&quot;
+},
+{
+&quot;url&quot;: &quot;/js/jquery.js&quot;,
+&quot;revision&quot;: &quot;99b0a83cf1b0b1e2cb16041520e87641&quot;
+},
+{
+&quot;url&quot;: &quot;/js/lazysizes.min.js&quot;,
+&quot;revision&quot;: &quot;149ff45fc6c2f13e892e438a58abb77f&quot;
+},
+{
+&quot;url&quot;: &quot;/js/masonry.js&quot;,
+&quot;revision&quot;: &quot;c39480835cf00844e6407f24d8aaba2e&quot;
+}
+].concat(self.__precacheManifest || []);
+workbox.precaching.precacheAndRoute(self.__precacheManifest, {
+&quot;ignoreURLParametersMatching&quot;: [/./]
+});
+
+workbox.routing.registerRoute(/(?:\/)$/, new workbox.strategies.StaleWhileRevalidate({ &quot;cacheName&quot;:&quot;html&quot;, plugins: [new workbox.expiration.Plugin({ maxAgeSeconds: 604800, purgeOnQuotaError: false })] }), 'GET');
+workbox.routing.registerRoute(/\.(?:png|jpg|jpeg|gif|bmp|webp|svg|ico)$/, new workbox.strategies.CacheFirst({ &quot;cacheName&quot;:&quot;images&quot;, plugins: [new workbox.expiration.Plugin({ maxEntries: 1000, maxAgeSeconds: 31536000, purgeOnQuotaError: false })] }), 'GET');
+workbox.routing.registerRoute(/\.(?:mp3|wav|m4a)$/, new workbox.strategies.CacheFirst({ &quot;cacheName&quot;:&quot;audio&quot;, plugins: [new workbox.expiration.Plugin({ maxEntries: 1000, maxAgeSeconds: 31536000, purgeOnQuotaError: false })] }), 'GET');
+workbox.routing.registerRoute(/\.(?:m4v|mpg|avi)$/, new workbox.strategies.CacheFirst({ &quot;cacheName&quot;:&quot;videos&quot;, plugins: [new workbox.expiration.Plugin({ maxEntries: 1000, maxAgeSeconds: 31536000, purgeOnQuotaError: false })] }), 'GET');
+
+workbox.googleAnalytics.initialize({});
+</code></pre>
+
+</article>
+<br/>
+<br/>
+<div class="is-uppercase">
+
+                          
+</div>
+</div>
+    
+ <div class="has-text-centered button-post">
+
+  <div class="button button-prev">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span class="">
+  <a href="/post/debian10-rilis/"  data-feather="chevron-left"><i class="fas fa-angle-left"></i> prev</a>
+  </span>
+  </div>
+  
+  <div class="popup" onclick="functionPopup()">
+                  
+          <div class="btn-counter button multiple-count" title="love" data-count="0" herf="#">
+          <span class="is-size-5 has-text-danger icon"><i data-feather="heart"></i></span>&nbsp;&nbsp;</a>
+          </div>
+      <span class="popuptext" id="myPopup">
+      Thanks 😇
+    </span>
+    </div>
+  
+  <div class="button button-next"> 
+  <span class=" disabled noselect">
+  <a href="" class=" has-text-grey"><i data-feather="chevron-right"></i></a>
+  </span>
+  
+  
+  </div>
+  </div>
+      
+    
+<div class="disqus-comment">
+        <div class="disqus-button has-background-grey-dark" id="load_disqus" onclick="load_disqus()">
+          <span class="icon"><i data-feather="message-square"></i>comment</span>
+        </div>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+         
+          function load_disqus() {
+            
+            
+            if (window.location.hostname === 'localhost') return;
+      
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            var disqus_shortname = 'linuxisekai-github-io';
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      
+            $('#load_disqus').remove();
+          };
+        </script>
+        <noscript>Please enable JavaScript to view the
+          <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+        
+        </div>
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br/>
+<br/>
+<br/>
+  
+    
+
+        
+            
+            
+            
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+            
+            
+  
+
+</div>
+    
+
+<div class="ghost-padding"></div>
+       </div>
+       </div>
+    <footer class="footer">
+        <div class="container">
+          <div class="has-text-centered">
+              <a class="fa-lg has-text-grey" href="//github.com/linuxisekai" target="_blank" onclick="ga('send', 'event', 'footer', 'click', 'github');">
+                <i data-feather="github"></i>
+              </a>
+              &nbsp;
+              <a class="fa-lg has-text-grey" href="#" target="_blank" onclick="ga('send', 'event', 'footer', 'click', 'twitter');">
+                <i data-feather="facebook"></i>
+              </a>
+              <br/>
+              <strong>Linuxisekai</strong> by
+              <a href="https://github.com/linuxisekai" class="has-text-grey" target="_blank">tempegoreng</a>.
+              <br/>
+              Based on
+              <a href="http://bulma.io" target="_blank" onclick="ga('send', 'event', 'footer', 'click', 'bulma');">Bulma</a> + <a href="gohugo,io">Hugo</a> +
+              <a href="http://fontawesome.io/" target="_blank" onclick="ga('send', 'event', 'footer', 'click', 'font-awesome');">Font Awesome</a>.
+              <br/>
+              thanks to <a href="https://jenil.github.io/bulmaswatch" target="_blank" onclick="ga('send', 'event', 'footer', 'click', 'bulmaswatcg');">Bulmaswatch</a>
+            
+            </div>
+            </div>
+            </footer>
+          
+    <a href="#" class="ignielToTop"></a>
+<script src="/js/feather.min.js"></script>
+<script src="/js/masonry.js"></script>
+<script src="/js/jquery.js"></script>
+<script src="/js/lazysizes.min.js"></script>
+<script src="/js/core.js"></script>
+<script>
+feather.replace()
+</script>
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    </body>
+</html>
