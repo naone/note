@@ -41,8 +41,8 @@ const NOT_FOUND_CACHE_FILES = [
     '/manifest.json'
 ];
 
-const OFFLINE_PAGE = '/index.html';
-const NOT_FOUND_PAGE = '/404.html';
+const OFFLINE_PAGE = 'index.html';
+const NOT_FOUND_PAGE = '404.html';
 
 const CACHE_VERSIONS = {
     assets: 'assets-v' + CACHE_VERSION,
