@@ -47,20 +47,20 @@
     </item>
     
     <item>
-      <title>Hugo</title>
-      <link>/tags/hugo/</link>
-      <pubDate>Thu, 04 Jul 2019 15:49:01 +0700</pubDate>
-      
-      <guid>/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>bulma</title>
       <link>/tags/bulma/</link>
       <pubDate>Thu, 04 Jul 2019 15:49:01 +0700</pubDate>
       
       <guid>/tags/bulma/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>/tags/hugo/</link>
+      <pubDate>Thu, 04 Jul 2019 15:49:01 +0700</pubDate>
+      
+      <guid>/tags/hugo/</guid>
       <description></description>
     </item>
     

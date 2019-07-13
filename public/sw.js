@@ -10,6 +10,7 @@ const BASE_CACHE_FILES = [
     '/js/feather.min.js',
     '/js/highlight.pack.js',
     '/favicon.png',
+    '/manifest.json'
 ];
 
 const OFFLINE_CACHE_FILES = [
@@ -23,6 +24,7 @@ const OFFLINE_CACHE_FILES = [
     '/js/highlight.pack.js',
     '/favicon.png',
     '/offline/index.html',
+    '/manifest.json'
 ];
 
 const NOT_FOUND_CACHE_FILES = [
@@ -36,6 +38,7 @@ const NOT_FOUND_CACHE_FILES = [
     '/js/highlight.pack.js',
     '/favicon.png',
     '/404.html',
+    '/manifest.json'
 ];
 
 const OFFLINE_PAGE = '/index.html';
