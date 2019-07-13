@@ -159,11 +159,6 @@
   </url>
   
   <url>
-    <loc>/offline/</loc>
-    <lastmod>2016-10-16T19:28:41+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/</loc>
     <priority>0</priority>
   </url>
