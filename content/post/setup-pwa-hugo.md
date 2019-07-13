@@ -193,7 +193,7 @@ pada directory root hugo kamu, buat file gulpfile.js lalu isi denagan :
     gulp.task("build", gulp.series("clean", "hugo-build", "generate-service-worker"));
 
 
-apa fungsi baris kode diatas ? saya tidak tahu 😆. tusbol disini untuk penjelasanya <div class="break">https://www.thepolyglotdeveloper.com/2019/03/service-workers-workbox-hugo-static-generated-site/</div>.
+apa fungsi baris kode diatas ? saya tidak tahu 😆. tusbol <a href="https://www.thepolyglotdeveloper.com/2019/03/service-workers-workbox-hugo-static-generated-site/">disini</a> untuk penjelasanya.
 
 ### membuat script untuk memanggil service worker
 
