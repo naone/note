@@ -2,28 +2,39 @@ const CACHE_VERSION = 1;
 
 const BASE_CACHE_FILES = [
     '/css/bs.css',
-    '/css/custom.css,',
-    '/js/jquery.js',
-    '/js/fontawesome.js',
-    '/js/cookie.js',
+    '/css/custom.css',
+    '/css/solarized-dark.css',
+    '/js/lazysizes.js',
     '/js/mansory.js',
     '/js/core.js',
-    '/manifest.json',
+    '/js/feather.min.js',
+    '/js/highlight.pack.js',
     '/favicon.png',
 ];
 
 const OFFLINE_CACHE_FILES = [
     '/css/bs.css',
-    '/css/core.js',
+    '/css/custom.css',
+    '/css/solarized-dark.css',
+    '/js/lazysizes.js',
     '/js/mansory.js',
+    '/js/core.js',
+    '/js/feather.min.js',
+    '/js/highlight.pack.js',
+    '/favicon.png',
     '/offline/index.html',
 ];
 
 const NOT_FOUND_CACHE_FILES = [
     '/css/bs.css',
     '/css/custom.css',
+    '/css/solarized-dark.css',
+    '/js/lazysizes.js',
     '/js/mansory.js',
-    '/css/core.js',
+    '/js/core.js',
+    '/js/feather.min.js',
+    '/js/highlight.pack.js',
+    '/favicon.png',
     '/404.html',
 ];
 
