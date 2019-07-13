@@ -187,7 +187,7 @@ pada directory root hugo kamu, buat file gulpfile.js lalu isi denagan :
 
 
 apa fungsi baris kode diatas ? silahkan tanya saja ke admin thepolyglotdeveloper.
-atau kunjungi websitenya https://www.thepolyglotdeveloper.com/2019/03/service-workers-workbox-hugo-static-generated-site/ 😆.
+atau kunjungi websitenya <div class="break">https://www.thepolyglotdeveloper.com/2019/03/service-workers-workbox-hugo-static-generated-site/</div> 😆.
 
 ### membuat script untuk memanggil service worker
 
