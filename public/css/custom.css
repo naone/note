@@ -164,10 +164,15 @@ h1 {
     word-break: break-all;
   }
   .judul-post {
-      padding: 1rem;
+      
+      font-size: 1.1rem;
+      font-weight:550; 
+  }
+  .h{
+    padding:1rem;
   }
   .f {
-      font-size: 0.8rem;
+      font-size: 1rem;
   }
   .message-body {
       font-family: 'Ubuntu Mono', monospace;
@@ -260,22 +265,22 @@ html {scroll-behavior:smooth;}
 /* box masonry style */
 
   .masonry-wrapper {
-    padding: 1.5em;
+    padding: 1em;
     max-width: 1024px;
     margin-right: auto;
     margin-left: auto;
   }
   .masonry {
     columns: 1;
-    column-gap: 10px;
+    column-gap: 20px;
   }
   .masonry-item {
     display: inline-block;
     vertical-align: top;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   @media only screen and (max-width: 1023px) and (min-width: 768px) {  .masonry {
-      columns: 2;
+      columns: 3;
     }
   }
   @media only screen and (min-width: 1024px) {
@@ -305,8 +310,11 @@ html {scroll-behavior:smooth;}
   }
   .masonry-title {
     font-weight: 700;
-    font-size: 1.4rem;
-    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+  .masonry-info{
+    font-size: 0.9rem;
   }
   .masonry-description {
     padding: 0rem 1rem 1rem;

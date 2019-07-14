@@ -3,34 +3,35 @@
       <div class="masonry">
           {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 9 }}
           {{ range $paginator.Pages }} 
-        <div class="masonry-item">
-          <div class="masonry-content">
-            <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" sizes="20em">
-            <div class="judul-post">
-                <a href="{{ .RelPermalink }}" class="is-size-5">
-                    <i data-feather="file" class="is-size-6"></i>             
-              {{ .Title }}
-              </a>
-            <br/>
-            
-              
-              <i data-feather="calendar"  class="is-size-7 has-text-primary"></i>
-              {{ .Date.Format "02-01-2006" }}
-                 <i data-feather="edit-3" class="is-size-7 has-text-primary"></i>
-                  {{ $taxonomy := "tags" }}
-                  {{ with .Param $taxonomy }}
-                  {{ range $index, $tag := . }}
-                  
-                  {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
-                  {{ $tag | urlize }}
-                  {{- end -}}
-                  {{- end -}}
-                  {{ end }}
-                  
-                  </div>
+          <div class="masonry-item">
+            <div class="masonry-content">
+              <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" sizes="20em">
+              <div class="h">
+              <div class="judul-post">
+                  <a href="{{ .RelPermalink }}">
+                          
+                {{ .Title }}
+                </a>
+              <br/>
               </div>
-            </div>
-            {{ end }}
+                
+                <i data-feather="calendar"  class="is-size-7 has-text-primary"></i>
+                {{ .PublishDate.Format "January 2, 2006" }}
+                   <i data-feather="edit-3" class="is-size-7 has-text-primary"></i>
+                    {{ $taxonomy := "tags" }}
+                    {{ with .Param $taxonomy }}
+                    {{ range $index, $tag := . }}
+                    
+                    {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+                    {{ $tag | urlize }}
+                    {{- end -}}
+                    {{- end -}}
+                    {{ end }}
+                    
+                    </div>
+                </div>
+              </div>
+              {{ end }}
        </div>
       </div>
        </div>
