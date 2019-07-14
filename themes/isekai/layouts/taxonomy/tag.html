@@ -13,13 +13,14 @@
                             <div class="masonry-item">
                               <div class="masonry-content">
                                 <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" sizes="20em">
+                                <div class="h">
                                 <div class="judul-post">
-                                    <a href="{{ .RelPermalink }}" class="is-size-5">
-                                        <i data-feather="file" class="is-size-6"></i>             
+                                    <a href="{{ .RelPermalink }}">
+                                            
                                   {{ .Title }}
                                   </a>
                                 <br/>
-                                
+                                </div>
                                   
                                   <i data-feather="calendar"  class="is-size-7 has-text-primary"></i>
                                   {{ .PublishDate.Format "January 2, 2006" }}
@@ -38,9 +39,9 @@
                                   </div>
                                 </div>
                                 {{ end }}
-                           </div>
-                          </div>
-                           </div>
+                                </div>
+                                </div>
+                                </div>
     {{ partial "pagination.html" . }}
     {{ partial "info.html" . }}
     {{ partial "js-init.html" . }}
