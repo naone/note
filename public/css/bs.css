@@ -1,7 +1,7 @@
 /*! bulmaswatch v0.7.2 | MIT License */
 /*! bulma.io v0.7.2 | MIT License | github.com/jgthms/bulma */
 
-@import url(https://fonts.googleapis.com/css?family=PT+Sans|Ubuntu+Mono|Inconsolata|Mali:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif|Ubuntu+Mono|Inconsolata|Mali:400,700,400italic);
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -266,7 +266,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "PT Sans" sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: "Noto Serif" sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 code,
 pre {
