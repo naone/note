@@ -84,10 +84,6 @@ h1 {
       border-right-color: #839496;
       border-style: solid;
   }
-  
-    pre {
-      border: 2px solid #839496;
-    }
     
     .content h3{
         
@@ -350,4 +346,6 @@ html {scroll-behavior:smooth;}
     margin:3px;
     padding: 1rem;
   }
- 
+  pre {
+    border: 2px solid #839496;
+  }
