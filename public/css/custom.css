@@ -164,12 +164,12 @@ h1 {
     word-break: break-all;
   }
   .judul-post {
-      
+      padding: 0rem 1rem 0rem;
       font-size: 1.15rem;
       font-weight:500; 
   }
   .h{
-    padding:1rem;
+    padding: 0rem 1rem 1rem;
   }
   .f {
       font-size: 1rem;
