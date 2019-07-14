@@ -13,7 +13,7 @@
                 {{ .Title }}
                 </a>
                 <br/>
-              <div class="is-size-7">
+              <span class="is-size-7">
                 <i data-feather="calendar"  class="is-size-7 has-text-primary"></i>
                 {{ .PublishDate.Format "January 2, 2006" }}
                    <i data-feather="edit-3" class="is-size-7 has-text-primary"></i>
@@ -25,9 +25,9 @@
                     {{ $tag | urlize }}
                     {{- end -}}
                     {{- end -}}
-              </div>
+              
                     {{ end }}
-                    
+                  </span>
                     </div> 
                 </div>
               </div>
