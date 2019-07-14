@@ -6,14 +6,14 @@
           <div class="masonry-item">
             <div class="masonry-content">
               <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" sizes="20em">
+              <div class="h">
               
-              <div class="judul-post">
-                  <a href="{{ .RelPermalink }}">
+                  <a href="{{ .RelPermalink }}" class="judul-post">
                           
                 {{ .Title }}
                 </a>
-              </div>
-              <div class="h">
+                <br/>
+              <div class="is-size-7">
                 <i data-feather="calendar"  class="is-size-7 has-text-primary"></i>
                 {{ .PublishDate.Format "January 2, 2006" }}
                    <i data-feather="edit-3" class="is-size-7 has-text-primary"></i>
@@ -25,9 +25,10 @@
                     {{ $tag | urlize }}
                     {{- end -}}
                     {{- end -}}
+              </div>
                     {{ end }}
-                    </div>
                     
+                    </div> 
                 </div>
               </div>
               {{ end }}
