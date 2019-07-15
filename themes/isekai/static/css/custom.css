@@ -23,7 +23,7 @@ h1 {
     margin-top:2em; 
 }
 .info-post {
-    margin:1rem;
+    margin:-2rem;
     border-bottom: 2px solid #ACB6B7;
     padding-bottom: 0.5rem;
     text-align: center;
