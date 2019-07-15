@@ -27,11 +27,11 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [
   {
     "url": "/css/bs.css",
-    "revision": "6445d61b3b0f8fc019e96d80ae781fe4"
+    "revision": "c4ceeaf9ba7f077a256e209fab3d5878"
   },
   {
     "url": "/css/custom.css",
-    "revision": "44e186c824a9e32212a9e44be05f1b39"
+    "revision": "106116d862aeb535ae79fd5ff88d58e9"
   },
   {
     "url": "/css/solarized-dark.css",

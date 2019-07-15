@@ -15,20 +15,26 @@
             <div class="info-post">
                     <i class="fas fa-calendar-alt is-size-7 has-text-primary"></i>
                     {{ .PublishDate.Format "January 2, 2006" }}
-                      || <i class="fas fa-tag is-size-7 has-text-primary"></i>
-                        {{ $taxonomy := "tags" }}
-                        {{ with .Param $taxonomy }}
-                        {{ range $index, $tag := . }}
-                        
-                        {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
-                        {{ $tag | urlize }}
-                        {{- end -}}
-                        {{- end -}}
-                        {{ end }}
+                      || <span class="icon has-text-primary"><i class="fas fa-user"></i></span>
+                      {{ .Site.Author.name }}
             </div>
             
  <article class="article">
-    {{ .Content }}  
+    {{ .Content }}
+
+    <br/>
+    <br/>
+    <div class="is-uppercase">
+{{ $taxonomy := "tags" }}
+{{ with .Param $taxonomy }}
+{{ range $index, $tag := . }}
+{{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+&nbsp;#{{ $tag | urlize }}
+{{- end -}}
+{{- end -}}
+
+{{ end }}    
+    </div>
     {{ partial "button-post.html" . }}
     {{ partial "disqus.html" . }}
     {{ partial "related.html" . }}
