@@ -1,7 +1,7 @@
 /*! bulmaswatch v0.7.2 | MIT License */
 /*! bulma.io v0.7.2 | MIT License | github.com/jgthms/bulma */
 
-@import url(https://fonts.googleapis.com/css?family=Sans+Serif|Ubuntu+Mono:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif|Ubuntu+Mono:400,700,400italic);
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
