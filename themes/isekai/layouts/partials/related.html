@@ -9,7 +9,7 @@
 <div class="container">
     <div class="no-border has-background-grey-dark">
     <a href="{{ .Permalink }}" class="has-text-grey">
-        <i data-feather="link" class="is-size-7"></i>&nbsp;{{ .Title }}</a>
+        {{ .Title }}</a>
         </div>
 <br/>
 
@@ -37,9 +37,9 @@
               {{ $.Scratch.Add "limit" 1 }}
          
             
-              <div class="no-border">
+              <div class="no-border has-background-grey-dark">
                   <a href="{{ .Permalink }}" class="has-text-grey">
-                      <i data-feather="link" class="is-size-7"></i>&nbsp;{{ .Title }}</a>
+                      {{ .Title }}</a>
               </div>
              
       
