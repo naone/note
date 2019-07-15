@@ -65,7 +65,7 @@ List Static Site Generator  Hexo Gatsby Pelican Jekyll Vuepress Elevnty Hugo Etc
     <body>
     
     
-<nav id="navbar" class="navbar is-fixed-top has-shadow">
+<nav id="navbar" class="navbar is-fixed-top">
         <div class="container">
         <div class="navbar-brand is-size-2">
           <a class="navbar-item" href="/" >
@@ -154,7 +154,7 @@ List Static Site Generator  Hexo Gatsby Pelican Jekyll Vuepress Elevnty Hugo Etc
               </span>
             </a>
       
-            <div class="navbar-item">
+            <div class="navbar-item is-hidden-desktop">
               <div class="field is-grouped is-grouped-multiline">
                 <p class="control">
                   <input type="text" class="input is-rounded" placeholder="Cari">
@@ -175,16 +175,31 @@ List Static Site Generator  Hexo Gatsby Pelican Jekyll Vuepress Elevnty Hugo Etc
                
           
       
-    <div class="judul"><b>#1 Hugo : membuat blog menggunkan Hugo &#43; github page</b></div>
-    <div class="info-post">
-    <span class="icon has-text-primary"><i data-feather="user"></i></span>
-    tempegoreng | 
-    <span class="icon has-text-primary is-size-7"><i data-feather="calendar"></i></span> 
-    01-07-2019
-    </div>
+                
+    
  <div class="content">
- <article class="article">
 
+        <div class="judul">
+                <b>
+                #1 Hugo : membuat blog menggunkan Hugo &#43; github page</b>
+            </div>
+            <div class="info-post">
+                    <i data-feather="calendar"  class="is-size-7 has-text-primary"></i>
+                    July 1, 2019
+                       <i data-feather="edit-3" class="is-size-7 has-text-primary"></i>
+                        
+                        
+                        
+                        
+                        hugo
+                        
+                        github
+                        
+                        blog
+            </div>
+            
+ <article class="article">
+    
 
 <h3 id="intro">Intro</h3>
 
@@ -278,18 +293,7 @@ hugo server
 <p><img src="/img/post/hugo-theme.webp" class="content-img"></p>
 
 <p>selamat kita sudah berhasil membuat website menggunakan hugo, sekarang tinggal kita upload ke repo github kita</p>
-
-</article>
-<br/>
-<br/>
-<div class="is-uppercase">
-
-
-
-&nbsp;#hugo
-&nbsp;#github
-&nbsp;#blog                          
-</div>
+  
     
  <div class="has-text-centered button-post">
 
@@ -332,8 +336,8 @@ hugo server
   
   <div class="popup" onclick="functionPopup()">
                   
-          <div class="btn-counter button multiple-count" title="love" data-count="0" herf="#">
-          <span class="is-size-5 has-text-danger icon"><i data-feather="heart"></i></span>&nbsp;&nbsp;</a>
+          <div class="btn-counter button multiple-count" title="love" herf="#">
+          <span class="is-size-5 has-text-danger icon"><i data-feather="heart"></i></span></a>
           </div>
       <span class="popuptext" id="myPopup">
       Thanks 😇
@@ -522,102 +526,135 @@ hugo server
             
             
   
-            
-            
   
             
             
   
-            
-            
   
             
             
   
-            
-            
   
             
             
   
-            
-            
   
             
             
   
-            
-            
   
             
             
   
-            
-            
   
             
             
   
-            
-            
   
             
             
   
-            
-            
   
             
             
   
-            
-            
   
             
             
   
-            
-            
   
             
             
   
-            
-            
   
             
             
   
-            
-            
   
             
             
   
-            
-            
   
             
             
   
-            
-            
   
             
             
   
-            
-            
   
             
             
   
-
+  
+            
+            
+  
+  
+            
+            
+  
+  
+            
+            
+  
+  
+            
+            
+  
+  
+            
+            
+  
+  
+            
+            
+  
+  
+            
+            
+  
+  
+            
+            
+  
+  
+            
+            
+  
+  
+            
+            
+  
+  
+            
+            
+  
+  
+            
+            
+  
+  
+            
+            
+  
+  
+            
+            
+  
+  
+            
+            
+  
+  
 </div>
+
+
     
 
 <div class="ghost-padding"></div>
-       
+</article>
+</div>
     <footer class="footer">
         <div class="container">
           <div class="has-text-centered">
@@ -640,13 +677,12 @@ hugo server
             
             </div>
             </div>
+            
             </footer>
           
     <a href="#" class="ignielToTop"></a>
 <script src="/js/feather.min.js"></script>
 <script src="/js/masonry.js"></script>
-<script src="/js/jquery.js"></script>
-<script src="/js/lazysizes.min.js"></script>
 <script src="/js/core.js"></script>
 <script>
 feather.replace()

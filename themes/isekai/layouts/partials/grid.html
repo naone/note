@@ -3,20 +3,19 @@
       <div class="masonry">
           {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 9 }}
           {{ range $paginator.Pages }} 
+          <a href="{{ .RelPermalink }}" class="judul-post has-text-grey">
           <div class="masonry-item">
             <div class="masonry-content">
-              <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" sizes="20em">
+              <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}">
               <div class="h">
-              
-                  <a href="{{ .RelPermalink }}" class="judul-post">
                           
                 {{ .Title }}
-                </a>
+              
                 <br/>
-              <span class="is-size-7">
-                <i data-feather="calendar"  class="is-size-7 has-text-primary"></i>
+              <span class="masonry-info">
+                <i data-feather="calendar"  class="is-size-7"></i>
                 {{ .PublishDate.Format "January 2, 2006" }}
-                   <i data-feather="edit-3" class="is-size-7 has-text-primary"></i>
+                   <i data-feather="edit-3" class="is-size-7"></i>
                     {{ $taxonomy := "tags" }}
                     {{ with .Param $taxonomy }}
                     {{ range $index, $tag := . }}
@@ -28,9 +27,11 @@
               
                     {{ end }}
                   </span>
+                
                     </div> 
                 </div>
               </div>
+              </a>
               {{ end }}
        </div>
       </div>

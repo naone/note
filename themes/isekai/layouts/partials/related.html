@@ -34,10 +34,11 @@
             {{ range .Site.Pages }}
             {{ $isMatchTags := intersect $tags .Params.tags | len | lt 0 }}
             {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) (lt ($.Scratch.Get "limit") 3) }}
+            <div class="no-border">
               {{ $.Scratch.Add "limit" 1 }}
          
             
-              <div class="no-border has-background-grey-dark">
+              
                   <a href="{{ .Permalink }}" class="has-text-grey">
                       {{ .Title }}</a>
               </div>
@@ -47,9 +48,11 @@
                           
                           
   {{ end }}
+  
   {{ end }}
-{{ end }}
 </div>
+{{ end }}
+
     
 
 <div class="ghost-padding"></div>

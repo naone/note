@@ -56,7 +56,7 @@ if (!doNotTrack) {
     <body>
     
         
-<nav id="navbar" class="navbar is-fixed-top has-shadow">
+<nav id="navbar" class="navbar is-fixed-top">
         <div class="container">
         <div class="navbar-brand is-size-2">
           <a class="navbar-item" href="/" >
@@ -145,7 +145,7 @@ if (!doNotTrack) {
               </span>
             </a>
       
-            <div class="navbar-item">
+            <div class="navbar-item is-hidden-desktop">
               <div class="field is-grouped is-grouped-multiline">
                 <p class="control">
                   <input type="text" class="input is-rounded" placeholder="Cari">
@@ -172,20 +172,19 @@ if (!doNotTrack) {
       <div class="masonry">
           
            
+          <a href="/post/i3-setup/" class="judul-post has-text-grey">
           <div class="masonry-item">
             <div class="masonry-content">
-              <img src="/img/post/menhara.webp" alt="Mencoba i3wm" sizes="20em">
+              <img src="/img/post/menhara.webp" alt="Mencoba i3wm">
               <div class="h">
-              
-                  <a href="/post/i3-setup/" class="judul-post">
                           
                 Mencoba i3wm
-                </a>
+              
                 <br/>
-              <span class="is-size-7">
-                <i data-feather="calendar"  class="is-size-7 has-text-primary"></i>
+              <span class="masonry-info">
+                <i data-feather="calendar"  class="is-size-7"></i>
                 June 27, 2019
-                   <i data-feather="edit-3" class="is-size-7 has-text-primary"></i>
+                   <i data-feather="edit-3" class="is-size-7"></i>
                     
                     
                     
@@ -194,9 +193,11 @@ if (!doNotTrack) {
                     
                     linux
                   </span>
+                
                     </div> 
                 </div>
               </div>
+              </a>
               
        </div>
       </div>
@@ -224,13 +225,12 @@ if (!doNotTrack) {
             
             </div>
             </div>
+            
             </footer>
           
         <a href="#" class="ignielToTop"></a>
 <script src="/js/feather.min.js"></script>
 <script src="/js/masonry.js"></script>
-<script src="/js/jquery.js"></script>
-<script src="/js/lazysizes.min.js"></script>
 <script src="/js/core.js"></script>
 <script>
 feather.replace()

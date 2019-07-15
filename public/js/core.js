@@ -31,6 +31,7 @@ function functionPopup() {
   setTimeout(function() { 
     document.getElementById("myPopup").classList.toggle("show");}, 2000);
 }
+/*
 $('.btn-counter').on('click', function(event,count){
   event.preventDefault();
   var $this = $(this),
@@ -42,4 +43,4 @@ $('.btn-counter').on('click', function(event,count){
   $this.attr('data-count', ! active || multiple ? ++count : --count )[multiple ? 'noop' : 'toggleClass']('active');
 
 });
-
+*/

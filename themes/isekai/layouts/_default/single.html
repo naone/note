@@ -4,34 +4,36 @@
     <body>
     
     {{ partial "navbar.html" . }}
-    <div class="judul"><b>{{ .Title }}</b></div>
-    <div class="info-post">
-    <span class="icon has-text-primary"><i data-feather="user"></i></span>
-    {{ .Site.Author.name }} | 
-    <span class="icon has-text-primary is-size-7"><i data-feather="calendar"></i></span> 
-    {{ .Date.Format "02-01-2006" }}
-    </div>
+                
+    
  <div class="content">
- <article class="article">
-{{ .Content }}
-</article>
-<br/>
-<br/>
-<div class="is-uppercase">
-{{ $taxonomy := "tags" }}
-{{ with .Param $taxonomy }}
-{{ range $index, $tag := . }}
-{{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
-&nbsp;#{{ $tag | urlize }}
-{{- end -}}
-{{- end -}}
 
-{{ end }}                          
-</div>
+        <div class="judul">
+                <b>
+                {{ .Title }}</b>
+            </div>
+            <div class="info-post">
+                    <i data-feather="calendar"  class="is-size-7 has-text-primary"></i>
+                    {{ .PublishDate.Format "January 2, 2006" }}
+                       <i data-feather="edit-3" class="is-size-7 has-text-primary"></i>
+                        {{ $taxonomy := "tags" }}
+                        {{ with .Param $taxonomy }}
+                        {{ range $index, $tag := . }}
+                        
+                        {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+                        {{ $tag | urlize }}
+                        {{- end -}}
+                        {{- end -}}
+                        {{ end }}
+            </div>
+            
+ <article class="article">
+    {{ .Content }}  
     {{ partial "button-post.html" . }}
     {{ partial "disqus.html" . }}
     {{ partial "related.html" . }}
-       
+</article>
+</div>
     {{ partial "footer.html" . }}
     {{ partial "js-init.html" . }}
     <script src="/js/highlight.pack.js"></script>

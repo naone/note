@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [
   {
     "url": "/css/bs.css",
-    "revision": "0f5642df8db3166d7c7f6e6fcc074619"
+    "revision": "6c27e6700de47f6cc1afdb0a2a23f8d3"
   },
   {
     "url": "/css/bulma.css",
@@ -35,7 +35,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/css/custom.css",
-    "revision": "58f8ada41bdaf5149747f5c7b56c4f39"
+    "revision": "db985bfdec73d60262abfb5cc3a79b3d"
   },
   {
     "url": "/css/solarized-dark.css",
@@ -43,7 +43,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/js/core.js",
-    "revision": "06f03a8cb3b8a7f3dd0feccf62afac66"
+    "revision": "36c76a9d3af16ff29e7a9038cd413d52"
   },
   {
     "url": "/js/feather.min.js",
