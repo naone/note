@@ -23,10 +23,12 @@ h1 {
     margin-top:2em; 
 }
 .info-post {
-    margin:-2rem;
-    border-bottom: 2px solid #ACB6B7;
-    padding-bottom: 0.5rem;
-    text-align: center;
+  margin-bottom: 3rem;
+  border-bottom: 0.2rem solid ;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  margin-left:-0.1em;
+  margin-right: -0.1rem;
 }
 .content {
     margin-top: 1rem;
@@ -283,7 +285,9 @@ html {scroll-behavior:smooth;}
     border-radius: 10px;
     overflow: hidden;
   }
-  
+  .masonry-item {
+    filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, .1));
+  }
   .masonry-item:hover {
     filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, .6));
   }
@@ -312,8 +316,6 @@ html {scroll-behavior:smooth;}
   .masonry-footer {
     font-size: 1rem;
     text-align: center;
-    background-color: #073642;
-    
     border-radius: 10px;
     padding-top: 2em;
     padding-bottom: 2em;

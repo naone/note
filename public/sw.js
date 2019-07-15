@@ -27,39 +27,27 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [
   {
     "url": "/css/bs.css",
-    "revision": "1ca7bab13d70670ac752f3fed920ba0c"
-  },
-  {
-    "url": "/css/bulma.css",
-    "revision": "507b375617a8eec76d76275f61253b8d"
+    "revision": "6445d61b3b0f8fc019e96d80ae781fe4"
   },
   {
     "url": "/css/custom.css",
-    "revision": "db985bfdec73d60262abfb5cc3a79b3d"
+    "revision": "44e186c824a9e32212a9e44be05f1b39"
   },
   {
     "url": "/css/solarized-dark.css",
-    "revision": "09a127856dba4865a3429ea0c0f756fd"
+    "revision": "63946c38a66897a73408b3b2588ecb52"
+  },
+  {
+    "url": "/js/all.min.js",
+    "revision": "2f0211b6e82d5d5728023ae9ce4555a6"
   },
   {
     "url": "/js/core.js",
     "revision": "36c76a9d3af16ff29e7a9038cd413d52"
   },
   {
-    "url": "/js/feather.min.js",
-    "revision": "a6cd4b6cf83ee3b37fc6f4d59294619b"
-  },
-  {
     "url": "/js/highlight.pack.js",
     "revision": "0c675cebad7b4fce6bfb948a274a940f"
-  },
-  {
-    "url": "/js/jquery.js",
-    "revision": "99b0a83cf1b0b1e2cb16041520e87641"
-  },
-  {
-    "url": "/js/lazysizes.min.js",
-    "revision": "149ff45fc6c2f13e892e438a58abb77f"
   },
   {
     "url": "/js/masonry.js",

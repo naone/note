@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/linuxisekai/blog#readme",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "all": "0.0.0",
     "gulp": "^4.0.2",
     "workbox-build": "^4.3.1"
   },

@@ -13,9 +13,9 @@
                 {{ .Title }}</b>
             </div>
             <div class="info-post">
-                    <i data-feather="calendar"  class="is-size-7 has-text-primary"></i>
+                    <i class="fas fa-calendar-alt is-size-7 has-text-primary"></i>
                     {{ .PublishDate.Format "January 2, 2006" }}
-                       <i data-feather="edit-3" class="is-size-7 has-text-primary"></i>
+                      || <i class="fas fa-tag is-size-7 has-text-primary"></i>
                         {{ $taxonomy := "tags" }}
                         {{ with .Param $taxonomy }}
                         {{ range $index, $tag := . }}

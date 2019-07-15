@@ -7,15 +7,15 @@
           <div class="masonry-item">
             <div class="masonry-content">
               <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}">
-              <div class="h">
+              <div class="h has-text-grey">
                           
                 {{ .Title }}
               
                 <br/>
-              <span class="masonry-info has-text-grey">
-                <i data-feather="calendar"  class="is-size-7"></i>
+              <span class="masonry-info">
+                <i class="fas fa-calendar-alt"  class="is-size-7"></i>
                 {{ .PublishDate.Format "January 2, 2006" }}
-                   <i data-feather="edit-3" class="is-size-7"></i>
+                   || <i class="fas fa-tag" class="is-size-7"></i>
                     {{ $taxonomy := "tags" }}
                     {{ with .Param $taxonomy }}
                     {{ range $index, $tag := . }}

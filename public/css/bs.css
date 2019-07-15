@@ -1,7 +1,7 @@
 /*! bulmaswatch v0.7.2 | MIT License */
 /*! bulma.io v0.7.2 | MIT License | github.com/jgthms/bulma */
 
-@import url(https://fonts.googleapis.com/css?family=Noto+Serif|Ubuntu+Mono:400,700,400italic);
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono&display=swao');
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -266,7 +266,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Ubuntu Mono","Consolas", "Monaco", sans-serif, cursive, monospace; }
+  font-family: "Ubuntu", sans-serif; }
 
 code,
 pre {
@@ -328,7 +328,7 @@ pre {
   color: #839496;
   font-size: 0.875em;
   overflow-x: auto;
-  padding: 1.25rem 1.5rem;
+  padding:0;
   white-space: pre;
   word-wrap: normal; }
   pre code {
@@ -1961,7 +1961,6 @@ a.box:active {
 .content pre {
   -webkit-overflow-scrolling: touch;
   overflow-x: auto;
-  padding: 1.25em 1.5em;
   white-space: pre;
   word-wrap: normal; }
 
@@ -6743,7 +6742,7 @@ label.panel-block {
 
 .footer {
   background-color: #002B36;
-  padding: 1rem; }
+  padding: 0rem 0rem 4rem; }
 
 .section {
   background-color: #002B36; }
