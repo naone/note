@@ -1,5 +1,5 @@
 ---
-title: "Setup PWA di Hugo | first PWA"
+title: "Setup PWA di hugo | first PWA"
 date: 2019-07-13T19:58:55+07:00
 draft: false
 tags: ["hugo","pwa"]
@@ -13,7 +13,6 @@ saya bukan ahli dalam dunia web, tutorial ini saya dapat dari <a href="https://w
 </div>
 
 <br/>
-
 setup hugo yang saya gunakan
 <ul>
 <li>vscode</li>

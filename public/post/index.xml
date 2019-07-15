@@ -11,13 +11,12 @@
     
     
     <item>
-      <title>Setup PWA di Hugo | first PWA</title>
+      <title>Setup PWA di hugo | first PWA</title>
       <link>/post/setup-pwa-hugo/</link>
       <pubDate>Sat, 13 Jul 2019 19:58:55 +0700</pubDate>
       
       <guid>/post/setup-pwa-hugo/</guid>
-      <description>Disclaimer : saya bukan ahli dalam dunia web, tutorial ini saya dapat dari sini  
-setup hugo yang saya gunakan  vscode github netlify custom domain .site di idwebhost Bulma HightlightJS Feather icon Lazysizes Masonry Jquery 
+      <description>Disclaimer : saya bukan ahli dalam dunia web, tutorial ini saya dapat dari sini   setup hugo yang saya gunakan  vscode github netlify custom domain .site di idwebhost Bulma HightlightJS Feather icon Lazysizes Masonry Jquery 
 Siapkan favicon kamu bisa menggenerate di http://www.favicomatic.com/ tinggal upload gambar yang kamu ingin jadikan icon dengan ukuran 128,144,152,196,310. gambar ini nantinya akan dijadikan icon saat kita menambkanya ke layar utama.Kenapa ada banyak ukuran ?</description>
     </item>
     
