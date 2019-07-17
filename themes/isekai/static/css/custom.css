@@ -12,7 +12,7 @@
     text-align: center;
 }
 h1 {
-    padding-top: 3rem;
+    padding-top: 2.5rem;
     padding-bottom: 0rem;
 }
 .content h3{
@@ -347,7 +347,8 @@ html {scroll-behavior:smooth;} */
   }
   @media screen and (max-width:768px) {
     .masonry-wrapper {
-      margin:2rem;
+      margin:0.5rem;
+      padding: 0.5rem;
     }
   }
 
