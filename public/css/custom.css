@@ -339,9 +339,6 @@ html {scroll-behavior:smooth;} */
 }
 /* box masonry style */
 
-  .masonry-wrapper {
-    padding:1em;
-  }
   .masonry {
     columns: 1;
     column-gap: 20px;
@@ -351,6 +348,12 @@ html {scroll-behavior:smooth;} */
     vertical-align: top;
     margin-bottom: 20px;
   }
+  @media screen and (max-width:768px) {
+    .masonry-wrapper {
+      padding:1.1rem;
+    }
+  }
+
   @media only screen and (max-width: 1023px) and (min-width: 768px) {  .masonry {
       columns: 3;
   }
