@@ -209,6 +209,7 @@ height: 320px;
   border-bottom: 0.15rem solid ;
   padding-bottom: 0.5rem;
   text-align: center;
+  margin: 1rem;
 }
 
 .disqus-comment{
