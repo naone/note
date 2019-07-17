@@ -3,6 +3,7 @@
     h1.header-judul{
     font-size: 200%;
     text-align: center;
+    margin-top: 1rem;
     }
 .judul {
     margin-top: 3rem;
@@ -206,9 +207,11 @@ height: 320px;
 
 .info-header {
   margin-bottom: 3rem;
+  border-top: 0.15rem solid ;
   border-bottom: 0.15rem solid ;
   padding-bottom: 0.5rem;
   text-align: center;
+  padding: 1rem;
   margin: 1rem;
 }
 
@@ -348,7 +351,7 @@ html {scroll-behavior:smooth;} */
   }
   @media screen and (max-width:768px) {
     .masonry-wrapper {
-      margin:0.5rem;
+      margin:1.5rem;
       padding: 0.5rem;
     }
   }
