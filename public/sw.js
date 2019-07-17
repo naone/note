@@ -31,7 +31,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/css/custom.css",
-    "revision": "3246e55aa2f69620d4b1c801aa75e381"
+    "revision": "ebaa9f31a0d4440f708a7a648f2fa7fb"
   },
   {
     "url": "/css/solarized-dark.css",

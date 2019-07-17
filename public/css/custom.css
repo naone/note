@@ -341,9 +341,6 @@ html {scroll-behavior:smooth;} */
 
   .masonry-wrapper {
     padding: 1em;
-    max-width: 1024px;
-    margin-right: auto;
-    margin-left: auto;
   }
   .masonry {
     columns: 1;
@@ -356,11 +353,23 @@ html {scroll-behavior:smooth;} */
   }
   @media only screen and (max-width: 1023px) and (min-width: 768px) {  .masonry {
       columns: 3;
-    }
+  }
+      .masonry-wrapper {
+        padding: 1em;
+        max-width: 1024px;
+        margin-right: auto;
+        margin-left: auto;
+      }
   }
   @media only screen and (min-width: 1024px) {
     .masonry {
       columns: 3;
+    }
+    .masonry-wrapper {
+      padding: 1em;
+      max-width: 1024px;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
   .masonry-item, .masonry-content {
