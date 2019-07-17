@@ -1,7 +1,6 @@
 /* end mobile screen */
 @media screen and (max-width:768px) {
     h1.header-judul{
-    margin-top: 0.01rem;
     font-size: 200%;
     text-align: center;
     }
@@ -13,7 +12,7 @@
     text-align: center;
 }
 h1 {
-    padding-top: 4rem;
+    padding-top: 3rem;
     padding-bottom: 0rem;
 }
 .content h3{
@@ -348,7 +347,7 @@ html {scroll-behavior:smooth;} */
   }
   @media screen and (max-width:768px) {
     .masonry-wrapper {
-      padding:1.1rem;
+      padding:1.5rem;
     }
   }
 
