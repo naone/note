@@ -8,7 +8,7 @@
     text-align: center;
     }
 .judul {
-    margin-top: 6rem;
+    margin-top: 3rem;
     font-size: 180%;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -33,9 +33,8 @@ h1 {
   
 }
 .content {
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding:1rem;
+    font-size: 0.9rem;
 }
 .button-post {
     padding: 2rem;
