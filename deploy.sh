@@ -3,7 +3,7 @@
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # Genterate file statis
-hugo # if using a theme, replace by `hugo -t <yourtheme>`
+# hugo # if using a theme, replace by `hugo -t <yourtheme>`
 
 # pindah ke direktoru publik
 # tambahkan perubahan ke Git
@@ -20,4 +20,4 @@ git commit -m "$msg"
 git push origin master
 
 # Balik ke direktori sebelumnya
-cd ..
+# cd ..
