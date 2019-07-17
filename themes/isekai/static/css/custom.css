@@ -340,7 +340,8 @@ html {scroll-behavior:smooth;} */
 /* box masonry style */
 
   .masonry-wrapper {
-    padding: 1em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
   }
   .masonry {
     columns: 1;
