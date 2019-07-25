@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php on Linuxisekai | Nolep enthuiast project</title>
+    <link>/tags/php/</link>
+    <description>Recent content in php on Linuxisekai | Nolep enthuiast project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 25 Jul 2019 09:39:01 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install Laravel Dengan Laravel Installer</title>
+      <link>/post/install-laravel-dengan-composer/</link>
+      <pubDate>Thu, 25 Jul 2019 09:39:01 +0700</pubDate>
+      
+      <guid>/post/install-laravel-dengan-composer/</guid>
+      <description>install composer dan laravel installer
+sudo pacman -S composer composer global requiere laravel/installer  perintah diatas akan membuat folder composer directory .config.
+export laravel ke zsh/bash agar bisa dieksekusi
+export PATH=$PATH:$HOME/.config/composer/vendor/bin  membuat project laravel
+laravel new project_laravel  </description>
+    </item>
+    
+  </channel>
+</rss>

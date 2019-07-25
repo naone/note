@@ -5,10 +5,23 @@
     <link>/</link>
     <description>Recent content on Linuxisekai | Nolep enthuiast project</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Jul 2019 19:58:55 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jul 2019 09:39:01 +0700</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Install Laravel Dengan Laravel Installer</title>
+      <link>/post/install-laravel-dengan-composer/</link>
+      <pubDate>Thu, 25 Jul 2019 09:39:01 +0700</pubDate>
+      
+      <guid>/post/install-laravel-dengan-composer/</guid>
+      <description>install composer dan laravel installer
+sudo pacman -S composer composer global requiere laravel/installer  perintah diatas akan membuat folder composer directory .config.
+export laravel ke zsh/bash agar bisa dieksekusi
+export PATH=$PATH:$HOME/.config/composer/vendor/bin  membuat project laravel
+laravel new project_laravel  </description>
+    </item>
     
     <item>
       <title>Setup PWA di hugo | first PWA</title>
