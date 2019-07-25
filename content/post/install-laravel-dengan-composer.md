@@ -10,7 +10,7 @@ tags: ["php","laravel"]
 install composer dan laravel installer
 
     sudo pacman -S composer
-    composer global requiere laravel/installer
+    composer global require laravel/installer
     
 perintah diatas akan membuat folder <code>composer</code> directory <code>.config</code>.
 
