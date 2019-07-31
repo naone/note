@@ -27,15 +27,23 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [
   {
     "url": "/css/bs.css",
-    "revision": "8500767b0a47e653e7f4620976133b65"
+    "revision": "bc808befcd5b63878d4135039e6e2a53"
   },
   {
     "url": "/css/custom.css",
-    "revision": "551f145d19652dac11d46ba13def28ea"
+    "revision": "1c4f029f2c1cda9f49f5afdfcc193e29"
+  },
+  {
+    "url": "/css/mybulma.css",
+    "revision": "9c10f9288c5ca0100db8e64be75b0941"
+  },
+  {
+    "url": "/css/mystyle.css",
+    "revision": "de5fdb8753acf2f696851de3f6ac73cb"
   },
   {
     "url": "/css/solarized-dark.css",
-    "revision": "63946c38a66897a73408b3b2588ecb52"
+    "revision": "33c436ddc19bad95854fde20613bd03c"
   },
   {
     "url": "/js/all.min.js",

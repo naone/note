@@ -2,7 +2,6 @@
 <html>
     {{ partial "head.html" . }}
     <body>
-    
     {{ partial "navbar.html" . }}
                 
 
@@ -13,9 +12,9 @@
                 {{ .Title }}</b>
             </div>
             <div class="info-post">
-                    <i class="fas fa-calendar-alt is-size-7 has-text-primary"></i>
+                    <i class="fas fa-calendar-alt is-size-7"></i>
                     {{ .PublishDate.Format "January 2, 2006" }}
-                      || <span class="icon has-text-primary"><i class="fas fa-user"></i></span>
+                      || <span class="icon"><i class="fas fa-user"></i></span>
                       {{ .Site.Author.name }}
             </div>
             

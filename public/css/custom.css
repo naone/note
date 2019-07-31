@@ -317,8 +317,8 @@ height: 320px;
 */
 /*
 html {scroll-behavior:smooth;} */
-.ignielToTop {width:40px; height:40px; position:fixed; bottom:10px; right: 10px; z-index:99; cursor:pointer; border-radius:100px; transition:all .5s; background:#2AA198 url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;}
-.ignielToTop:hover {background:#2AA198 url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;}
+.ignielToTop {width:40px; height:40px; position:fixed; bottom:10px; right: 10px; z-index:99; cursor:pointer; border-radius:100px; transition:all .5s; background:#7600BE url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;}
+.ignielToTop:hover {background:#7600BE url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;}
 /*# sourceMappingURL=bulmaswatch.min.css.map */
 
 
@@ -381,17 +381,13 @@ html {scroll-behavior:smooth;} */
     border-radius: 10px;
     overflow: hidden;
   }
-  .masonry-item {
-    filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, .1));
-  }
-  .masonry-item:hover {
-    filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, .6));
-  }
+  
   .masonry-content .judul-post {
     overflow: hidden;
   }
   .masonry-item {
-    background-color: #073642;
+    background-color: #011627;
+    filter: drop-shadow(0px 4px 7px rgba(0, 0, 0, .6));
   }
   .masonry-title, .masonry-description {
     margin: 0;
@@ -415,9 +411,9 @@ html {scroll-behavior:smooth;} */
     border-radius: 10px;
     padding-top: 2em;
     padding-bottom: 2em;
-   
+    border-top: #01121F 1px solid;
     transition: opacity 1s ease-in-out;
-    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, .3));
+    filter: drop-shadow(0px 8px 8px rgb(0, 0, 0));
     transition: filter .25s ease-in-out;
   }
 

@@ -23,3 +23,6 @@ membuat project laravel
 
     laravel new project_laravel
 
+local development server
+
+    php artisan serve

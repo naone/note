@@ -17,10 +17,11 @@
       
       <guid>/post/install-laravel-dengan-composer/</guid>
       <description>install composer dan laravel installer
-sudo pacman -S composer composer global requiere laravel/installer  perintah diatas akan membuat folder composer directory .config.
+sudo pacman -S composer composer global require laravel/installer  perintah diatas akan membuat folder composer directory .config.
 export laravel ke zsh/bash agar bisa dieksekusi
 export PATH=$PATH:$HOME/.config/composer/vendor/bin  membuat project laravel
-laravel new project_laravel  </description>
+laravel new project_laravel  local development server
+php artisan serve  </description>
     </item>
     
   </channel>
