@@ -474,6 +474,9 @@ body.light-mode .masonry-item {
     background-color: #ffffff;
     color:#011627;
    }
+   body.light-mode .masonry-footer {
+    border: 1px solid rgb(238, 236, 238);
+   }
    body.light-mode .h {
     background-color: #ffffff;
     color:#011627;

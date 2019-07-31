@@ -31,7 +31,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/css/custom.css",
-    "revision": "e4d60f493d4a9b5c3f1d0f109f731e3a"
+    "revision": "cc90fdf1a8bff536b64e4559c89b02d6"
   },
   {
     "url": "/css/mybulma.css",
