@@ -31,7 +31,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/css/custom.css",
-    "revision": "1c4f029f2c1cda9f49f5afdfcc193e29"
+    "revision": "92d696ec5269cdd58952fe5e285f8f33"
   },
   {
     "url": "/css/mybulma.css",
@@ -39,7 +39,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/css/mystyle.css",
-    "revision": "6f354ade9a5da8a17a62560850652814"
+    "revision": "ddf67d8166fef603d67298ff6e51efd9"
   },
   {
     "url": "/css/solarized-dark.css",
@@ -51,7 +51,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/js/core.js",
-    "revision": "36c76a9d3af16ff29e7a9038cd413d52"
+    "revision": "3187def97cdd0a1b04ea41e7f40bd2c5"
   },
   {
     "url": "/js/highlight.pack.js",

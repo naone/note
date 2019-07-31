@@ -55,7 +55,7 @@ if (!doNotTrack) {
     <body>
     
         
-<nav id="navbar" class="navbar is-fixed-top has-shadow">
+<nav id="navbar" class="navbar is-fixed-top has-shadow dark-mode">
         <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="/" >
@@ -178,6 +178,11 @@ if (!doNotTrack) {
         <footer class="masonry-footer">
         <div class="container">
           <div class="has-text-centered">
+            <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggel dark/light">
+            <i class="fas fa-moon">
+              
+            </i>
+            </button>
               <a class="fa-lg has-text-grey" href="//github.com/linuxisekai" target="_blank" onclick="ga('send', 'event', 'footer', 'click', 'github');">
                 <i class="fab fa-github"></i>
               </a>
