@@ -13,9 +13,11 @@
               
                 <br/>
               <span class="masonry-info">
+                  <span class="has-background-success t has-text-dark">
                 <i class="fas fa-calendar-alt"  class="is-size-7"></i>
-                {{ .PublishDate.Format "January 2, 2006" }}
-                   || <i class="fas fa-tag" class="is-size-7"></i>
+                {{ .PublishDate.Format "January 2, 2006" }}</span>
+                   <span class="has-background-primary t has-text-dark"><i class="fas fa-tag" class="is-size-7"></i>
+                   
                     {{ $taxonomy := "tags" }}
                     {{ with .Param $taxonomy }}
                     {{ range $index, $tag := . }}
@@ -24,8 +26,9 @@
                     {{ $tag | urlize }}
                     {{- end -}}
                     {{- end -}}
-              
+                  </span>
                     {{ end }}
+                   
                   </span>
                 
                     </div> 

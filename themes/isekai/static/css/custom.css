@@ -17,7 +17,6 @@ h1 {
     padding-bottom: 0rem;
 }
 .content h3{
-    
     margin-top:2em; 
 }
 .info-post {
@@ -443,7 +442,10 @@ html {scroll-behavior:smooth;}
   nav {
     filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, .2));
   }
-
+ .t {
+   padding:3px;
+   background-color: #7645D1;
+ }
 *.light-mode {
  background-color: #ffffff;
  color:#011627;
@@ -480,9 +482,17 @@ body.light-mode .masonry-item {
     background-color: #ffffff;
     color:#011627;
    }
+   body.light-mode strong{
+    background-color: #ffffff;
+    color:#011627;
+   }
    body.light-mode .navbar .is-fixed-top{
     background-color: #ffffff;
     color:#011627;
+   }
+   body.light-mode pre{
+   border:0;
+   border-radius:0;
    }
    body.light-mode .is-fixed-top{
     background-color: #ffffff;
@@ -520,10 +530,34 @@ body.light-mode .masonry-item {
     background-color: #ffffff;
     color:#011627;
    }
+   body.light-mode h2{
+    background-color: #ffffff;
+    color:#011627;
+   }
+   body.light-mode h3{
+    background-color: #ffffff;
+    color:#011627;
+   }
+   body.light-mode h4{
+    background-color: #ffffff;
+    color:#011627;
+   }
+   body.light-mode h5{
+    background-color: #ffffff;
+    color:#011627;
+   }
+   body.light-mode button{
+    background-color: #ffffff;
+    color:#011627;
+   }
    body.light-mode .button{
     background-color: #ffffff;
     color:#011627;
     border-color:#fff;
+   }
+   body.light-mode .button-next{
+    background-color: #ffffff;
+    color:#011627;
    }
    body.light-mode .ignielToTop{
     background-color: #4c0391;
