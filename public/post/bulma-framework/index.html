@@ -62,9 +62,9 @@ kelebihan bulma  flexbox based : membuat kita lebih mudah dalam membuat grid sys
 </head>
 
 
-    <body id="body" class="dark-mode">
+    <body id="body">
     
-<nav id="navbar" class="navbar is-fixed-top has-shadow dark-mode">
+<nav id="navbar" class="navbar is-fixed-top">
         <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="/" >
@@ -84,7 +84,11 @@ kelebihan bulma  flexbox based : membuat kita lebih mudah dalam membuat grid sys
               <i class="fab fa-twitter"></i>
             </span>
           </a>
-        
+          <a type="button" name="dark_light" class="navbar-item is-hidden-desktop" onclick="toggleDarkLight()" title="Toggel dark/light">
+            <i class="fas fa-moon">
+              
+            </i>
+          </a>
           <div id="navbarBurgers" class="navbar-burger burger" data-target="navMenuIndex">
           
             <span></span>
@@ -141,6 +145,12 @@ kelebihan bulma  flexbox based : membuat kita lebih mudah dalam membuat grid sys
           
       
           <div class="navbar-end">
+
+              <a type="button" name="dark_light" class="navbar-item is-hidden-touch" onclick="toggleDarkLight()" title="Toggel dark/light">
+                <i class="fas fa-moon">
+                  
+                </i>
+                            </a>
             <a class="navbar-item is-hidden-touch" href="https://github.com/linuxisekai" rel="noopener" target="_blank">
               <span class="icon" style="color: rgb(170, 174, 184);">
                 <i class="fab fa-github"></i>
@@ -174,8 +184,6 @@ kelebihan bulma  flexbox based : membuat kita lebih mudah dalam membuat grid sys
                
           
       
-                
-
  <div class="content">
 
         <div class="judul">
@@ -554,7 +562,7 @@ TERIMA KASIH SUDAH MEMBACA ARTIKEL SAMPAH INI 😃
          
             
               
-                  <a href="/post/membuat-tema-hugo/">
+                  <a href="/post/membuat-tema-hugo/" class="has-text-grey">
                       #2 Hugo : Membuat tema hugo sendiri</a>
               </div>
              
@@ -648,11 +656,6 @@ TERIMA KASIH SUDAH MEMBACA ARTIKEL SAMPAH INI 😃
     <footer class="masonry-footer">
         <div class="container">
           <div class="has-text-centered">
-            <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggel dark/light">
-            <i class="fas fa-moon">
-              
-            </i>
-            </button>
               <a class="fa-lg has-text-grey" href="//github.com/linuxisekai" target="_blank" onclick="ga('send', 'event', 'footer', 'click', 'github');">
                 <i class="fab fa-github"></i>
               </a>

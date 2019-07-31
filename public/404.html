@@ -42,7 +42,7 @@
  </head>
  <body>
      
-<nav id="navbar" class="navbar is-fixed-top has-shadow dark-mode">
+<nav id="navbar" class="navbar is-fixed-top">
         <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="/" >
@@ -62,7 +62,11 @@
               <i class="fab fa-twitter"></i>
             </span>
           </a>
-        
+          <a type="button" name="dark_light" class="navbar-item is-hidden-desktop" onclick="toggleDarkLight()" title="Toggel dark/light">
+            <i class="fas fa-moon">
+              
+            </i>
+          </a>
           <div id="navbarBurgers" class="navbar-burger burger" data-target="navMenuIndex">
           
             <span></span>
@@ -119,6 +123,12 @@
           
       
           <div class="navbar-end">
+
+              <a type="button" name="dark_light" class="navbar-item is-hidden-touch" onclick="toggleDarkLight()" title="Toggel dark/light">
+                <i class="fas fa-moon">
+                  
+                </i>
+                            </a>
             <a class="navbar-item is-hidden-touch" href="https://github.com/linuxisekai" rel="noopener" target="_blank">
               <span class="icon" style="color: rgb(170, 174, 184);">
                 <i class="fab fa-github"></i>
