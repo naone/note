@@ -26,12 +26,10 @@ bagi yang belum tau .webp adalah format gambar digital yang dibuat oleh google. 
 ### instalasi
 
 #### arch linux
-<div class="message-header">root@linuxisekai</div>
 
     sudo pacman -S libwebp gthumb
 
 #### ubuntu
-<div class="message-header">root@linuxisekai</div>
 
     sudo apt-get install libwebp gthumb
 

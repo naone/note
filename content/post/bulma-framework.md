@@ -28,10 +28,6 @@ Bulma sudah menyajikan berbagai class untuk layout dan komponen seperti button, 
 ### Syntax pada Bulma
 bulma menggunakan keyword is- untuk memanggil modifier base class. contoh untuk button, button adalah base class sementara untuk memodifikasi tampilan button menggunakan is-primary is-rounded is-outlined dan lain lain. jika diamati class pada bulma tidak jauh berbeda dengan bootstrap
 
-
-
-<div class="message-header">perbandingan Bulma dengan Bootsptrap</div>
-
     //bulma
     < a class="button is-light is-small">
 

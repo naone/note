@@ -17,7 +17,7 @@
       
       <guid>/post/driver-realtek/</guid>
       <description>Intro setelah selesai menginstall sistem operasi linux terus ternyata tidak ada wifinya ? mengkin itu terjadi karena driver dari wifi tersebut belum terinstall, memenag ada beberapa yang wifinya secara default sudah terinstall beberapa vendor seperti realtek atau broadcom yang secara dedault belum terinstal yang saya sendiri juga tidak tau alasnya.
-Instalasi Cek versi karnel $ uname -a  Output Linux asuna 5.2.0-1-MANJARO #1 SMP PREEMPT Sun Jun 9 16:43:42 UTC 2019 x86_64 GNU/Linux  selanjutnya install paket-paket yang dibutuhkan</description>
+Instalasi $ uname -a $ Linux asuna 5.2.0-1-MANJARO #1 SMP PREEMPT Sun Jun 9 16:43:42 UTC 2019 x86_64 GNU/Linux  selanjutnya install paket-paket yang dibutuhkan</description>
     </item>
     
   </channel>

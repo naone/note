@@ -26,34 +26,29 @@ dunia website terus berkembang, banyak banyak sekali frameeork dan tools-tools b
 menurut klaim hugo, hugo adalah framework tercepat unutuk membuat website. hugo sendiri dibuat oleh <a href="https://twitter.com/bepsays/">Bjorn Erik Pederson</a>(biasa disapa Bep) dengan menggunkan bahasa Golang ( Go ). jika kalian yang belum bisa bahasa go tapi ingin menngunakan hugo, tenang saya juga tidak bisa bahasa go kok 😄. yap solusiya tinggal sering-seringlah meminta wejangan dari mbah google. Di website resminya hugo sendiri dokumentasinya cukup lengkap, kalian juga bisa gabung ke grub diskusi hugo di discourse.goghugo.io. atau join ke grub telegram <a href="t.me/gohugoid">Hugo indonesia</a>.
 
 
-<div class="message-body has-text-centered">
+<div class="no-border">
 linuxisekai juga dibuat menggunakan hugo loh 😁
 </div>
 
 ### Instalasi
 
 ##### Arch Linux
-<div class="message-header">root@linuxisekai</div>
 
     $ sudo pacman -S hugo
 
 ##### Ubuntu
-<div class="message-header">root@linuxisekai</div>
 
     $ sudo apt-get install hugo
 
 ##### Mengecek versi hugo
-<div class="message-header">root@linuxisekai</div>
 
     $ hugo version
 
 ##### Output
-<div class="message-header">root@linuxisekai</div>
 
     Hugo Static Site Generator v0.55.6/extended linux/amd64 BuildDate: unknown
 
 ##### Membuat situs baru
-<div class="message-header">root@linuxisekai</div>
 
     $ hugo new site linuxisekai
 
@@ -61,8 +56,6 @@ linuxisekai adalah nama situs yang dibuat, hugo akan membuat folder bernama linu
 
 ##### menginstall tema hugo 
 kinjungi https://themes.gohugo.io lalu pilih tema yang kalian sukai.Disini saya memilih tema introduction
-
-<div class="message-header">root@linuxisekai</div>
 
     $ git clone https://github.com/victoriadotdev/hugo-theme-introduction
 
@@ -75,8 +68,6 @@ theme = "namatema" pada config.toml.
 kalian juga bisa mengambil konfigurasi config.toml dari tema yang kita download silahkan buka folder tema kalian lalu buka folder examplesite lalu copy semua file lalu pastekan di folder linuxisekai
 
 ##### Run Hugo
-
-<div class="message-header">root@linuxisekai</div>
 
     cd linuxisekai/
     hugo server

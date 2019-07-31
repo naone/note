@@ -20,7 +20,7 @@
 mengapa menggunakan .webp 1.webp menghasilkan file yang kecil dengan kualias gambar yang bagus
 2.mampu menampilkan gambar bergerak
 3.mempercepat loading website
-instalasi arch linux root@linuxisekai sudo pacman -S libwebp gthumb  ubuntu root@linuxisekai sudo apt-get install libwebp gthumb  Convert gambar asuna@linuxisekai:~$ cd Pictures asuna@linuxisekai:~/Pictures$ ls asuna.</description>
+instalasi arch linux sudo pacman -S libwebp gthumb  ubuntu sudo apt-get install libwebp gthumb  Convert gambar asuna@linuxisekai:~$ cd Pictures asuna@linuxisekai:~/Pictures$ ls asuna.</description>
     </item>
     
   </channel>

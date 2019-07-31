@@ -24,7 +24,7 @@
 
 <meta itemprop="datePublished" content="2019-07-04T15:49:01&#43;07:00" />
 <meta itemprop="dateModified" content="2019-07-04T15:49:01&#43;07:00" />
-<meta itemprop="wordCount" content="1624">
+<meta itemprop="wordCount" content="1620">
 
 
 
@@ -193,9 +193,7 @@ if (!doNotTrack) {
 melanjutkan artikel sebelumnya, Pada artikel kali ini kita akan membahas cara membuat tema hugo.
 sebenarnya di website <a href="https://themes.gohugo.io">https://themes.gohugo.io</a> juga sudah banyak sekali tema yang sudah siap pakai akan tetapi saya merasa kurang sreg dengan tampilan tema yang disediakan, saya juga bingung jika ingin memodifikasi tampilan oleh karena itu saya ingin mencoba membuat tema sendiri sekaligus mencoba hal baru. tema yang kita buat akan menggunkan CSS framework yaitu bulma. pertama siapkan bahan-bahanya terlebih dahulu</p>
 
-<div class="is-primary message-body">
-<a href="http://localhost:1313/post/ngeblog-dengan-hugo/">#1 Hugo: Membuat blog menggunkan hugo + gitub paga</a>
-</div>
+<p><a href="http://localhost:1313/post/ngeblog-dengan-hugo/">#1 Hugo: Membuat blog menggunkan hugo + gitub paga</a></p>
 
 <ul>
 <li>Bulma untuk CSS framework</li>
@@ -210,8 +208,6 @@ sebenarnya di website <a href="https://themes.gohugo.io">https://themes.gohugo.i
 
 <p>setelah semua bahanya sudah siap sekarang saatnya membuat tema hugo kita</p>
 
-<div class="message-header">root@linuxisekai</div>
-
 <pre><code>$ cd linuxisekai
 $ cd hugo new theme isekai
 </code></pre>
@@ -219,8 +215,6 @@ $ cd hugo new theme isekai
 <p><strong>keterangan :</strong></p>
 
 <p>linuxisekai adalah directory tempat hugo kita dibuat jika kamu belum membuatnya ketikan perintah :</p>
-
-<div class="message-header">root@linuxisekai</div>
 
 <pre><code>$ hugo new site linuxisekai
 </code></pre>
@@ -329,8 +323,6 @@ draft: true
 <p>extrack bahan yang tadi didownload untuk file bulma.css dan custom.css silahkan taruh di folder themese/isekai/static/css sedangkan untuk file fontawesome.js prism.js jquery.js core.js cookie.js lazysizes.js tauh di themes/isekai/static/js.</p>
 
 <h4 id="membuat-partial">membuat partial</h4>
-
-<div class="message-header">root@linuxisekai: ~/linuxisekai</div>
 
 <pre><code>$ cd themes/isekai/layout/partials
 $ touch navbar.html head.html grid.html pagination.html footer.html js.html
@@ -730,7 +722,7 @@ Oh iya, jika ada yang ingin tema seperti linuxisekai, saya sudah menguploadnya d
     
  <div class="has-text-centered button-post">
 
-  <div class="button button-prev">
+  <div class="button button-prev  has-background-grey-dark">
   
   
   
@@ -775,15 +767,15 @@ Oh iya, jika ada yang ingin tema seperti linuxisekai, saya sudah menguploadnya d
   
   <div class="popup" onclick="functionPopup()">
                   
-          <div class="btn-counter button multiple-count" title="love" herf="#">
-          <span class="is-size-5 has-text-danger icon"><i class="fas fa-heart"></i></span></a>
+          <div class="btn-counter button  has-background-grey-dark multiple-count" title="love" herf="#">
+          <span class="is-size-5  has-background-grey-dark has-text-danger icon"><i class="fas fa-heart"></i></span></a>
           </div>
       <span class="popuptext" id="myPopup">
       Thanks 😇
     </span>
     </div>
   
-  <div class="button button-next"> 
+  <div class="button button-next has-background-grey-dark"> 
   <span class="">
   <a href="/post/convert-gambar-ke-webp/" class=" has-text-grey"><i class="fas fa-arrow-right"></i></a>
   </span>

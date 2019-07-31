@@ -53,7 +53,7 @@ Siapkan favicon kamu bisa menggenerate di http://www.favicomatic.com/ tinggal up
 mengapa menggunakan .webp 1.webp menghasilkan file yang kecil dengan kualias gambar yang bagus
 2.mampu menampilkan gambar bergerak
 3.mempercepat loading website
-instalasi arch linux root@linuxisekai sudo pacman -S libwebp gthumb  ubuntu root@linuxisekai sudo apt-get install libwebp gthumb  Convert gambar asuna@linuxisekai:~$ cd Pictures asuna@linuxisekai:~/Pictures$ ls asuna.</description>
+instalasi arch linux sudo pacman -S libwebp gthumb  ubuntu sudo apt-get install libwebp gthumb  Convert gambar asuna@linuxisekai:~$ cd Pictures asuna@linuxisekai:~/Pictures$ ls asuna.</description>
     </item>
     
     <item>
@@ -82,7 +82,7 @@ List Static Site Generator  Hexo Gatsby Pelican Jekyll Vuepress Elevnty Hugo Etc
       
       <guid>/post/oomo-gtk/</guid>
       <description>Intro oomox adalah aplikasi yang digunakan membuat gtk theme pada sistem operasi linux.oomox berbasisikan GUI jadi sangat mudah digunkan. bagi yang hobi otak atik tampilan desktop, oomox pasti akan menjadi aplikasi yang sangat berguna. tema oomox sendiri terbagi menjadi 3 varian yaitu numix-based, materia dan arch theme dan untuk icon ada 4 yaitu archdroid, gnome color, numix, papirus dan suru++.
-Instalasi Arch linux root@linuxisekai $ sudo pacman -S yay $ yay -S oomox  Ubuntu Install paket depensi yang dibutuhkan $ sudo apt-get install python3-gi libglib2.</description>
+Instalasi Arch linux $ sudo pacman -S yay $ yay -S oomox  Ubuntu $ sudo apt-get install python3-gi libglib2.</description>
     </item>
     
     <item>
@@ -102,7 +102,7 @@ kelebihan bulma  flexbox based : membuat kita lebih mudah dalam membuat grid sys
       
       <guid>/post/driver-realtek/</guid>
       <description>Intro setelah selesai menginstall sistem operasi linux terus ternyata tidak ada wifinya ? mengkin itu terjadi karena driver dari wifi tersebut belum terinstall, memenag ada beberapa yang wifinya secara default sudah terinstall beberapa vendor seperti realtek atau broadcom yang secara dedault belum terinstal yang saya sendiri juga tidak tau alasnya.
-Instalasi Cek versi karnel $ uname -a  Output Linux asuna 5.2.0-1-MANJARO #1 SMP PREEMPT Sun Jun 9 16:43:42 UTC 2019 x86_64 GNU/Linux  selanjutnya install paket-paket yang dibutuhkan</description>
+Instalasi $ uname -a $ Linux asuna 5.2.0-1-MANJARO #1 SMP PREEMPT Sun Jun 9 16:43:42 UTC 2019 x86_64 GNU/Linux  selanjutnya install paket-paket yang dibutuhkan</description>
     </item>
     
     <item>

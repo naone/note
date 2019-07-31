@@ -9,9 +9,9 @@ image: /img/post/music.webp
 melanjutkan artikel sebelumnya, Pada artikel kali ini kita akan membahas cara membuat tema hugo.
 sebenarnya di website https://themes.gohugo.io juga sudah banyak sekali tema yang sudah siap pakai akan tetapi saya merasa kurang sreg dengan tampilan tema yang disediakan, saya juga bingung jika ingin memodifikasi tampilan oleh karena itu saya ingin mencoba membuat tema sendiri sekaligus mencoba hal baru. tema yang kita buat akan menggunkan CSS framework yaitu bulma. pertama siapkan bahan-bahanya terlebih dahulu
 
-<div class="is-primary message-body">
+
 <a href="http://localhost:1313/post/ngeblog-dengan-hugo/">#1 Hugo: Membuat blog menggunkan hugo + gitub paga</a>
-</div>
+
 
 <ul>
 <li>Bulma untuk CSS framework</li>
@@ -25,9 +25,6 @@ sebenarnya di website https://themes.gohugo.io juga sudah banyak sekali tema yan
 ### Instalasi
 setelah semua bahanya sudah siap sekarang saatnya membuat tema hugo kita
 
-
-<div class="message-header">root@linuxisekai</div>
-
 	$ cd linuxisekai
 	$ cd hugo new theme isekai
 
@@ -35,7 +32,6 @@ setelah semua bahanya sudah siap sekarang saatnya membuat tema hugo kita
 
 linuxisekai adalah directory tempat hugo kita dibuat jika kamu belum membuatnya ketikan perintah :
 
-<div class="message-header">root@linuxisekai</div>
 
 	$ hugo new site linuxisekai
 
@@ -133,8 +129,6 @@ folder staic digunakan untuk menyimpan file-file static seperti gambar, CSS, ata
 #### css dan javascript
 extrack bahan yang tadi didownload untuk file bulma.css dan custom.css silahkan taruh di folder themese/isekai/static/css sedangkan untuk file fontawesome.js prism.js jquery.js core.js cookie.js lazysizes.js tauh di themes/isekai/static/js.
 #### membuat partial
-
-<div class="message-header">root@linuxisekai: ~/linuxisekai</div>
 
 	$ cd themes/isekai/layout/partials
 	$ touch navbar.html head.html grid.html pagination.html footer.html js.html

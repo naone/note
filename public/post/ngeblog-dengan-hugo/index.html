@@ -25,7 +25,7 @@ List Static Site Generator  Hexo Gatsby Pelican Jekyll Vuepress Elevnty Hugo Etc
 
 <meta itemprop="datePublished" content="2019-07-01T20:03:00&#43;07:00" />
 <meta itemprop="dateModified" content="2019-07-01T20:03:00&#43;07:00" />
-<meta itemprop="wordCount" content="307">
+<meta itemprop="wordCount" content="300">
 
 
 
@@ -211,7 +211,7 @@ List Static Site Generator  Hexo Gatsby Pelican Jekyll Vuepress Elevnty Hugo Etc
 
 <p>menurut klaim hugo, hugo adalah framework tercepat unutuk membuat website. hugo sendiri dibuat oleh <a href="https://twitter.com/bepsays/">Bjorn Erik Pederson</a>(biasa disapa Bep) dengan menggunkan bahasa Golang ( Go ). jika kalian yang belum bisa bahasa go tapi ingin menngunakan hugo, tenang saya juga tidak bisa bahasa go kok 😄. yap solusiya tinggal sering-seringlah meminta wejangan dari mbah google. Di website resminya hugo sendiri dokumentasinya cukup lengkap, kalian juga bisa gabung ke grub diskusi hugo di discourse.goghugo.io. atau join ke grub telegram <a href="t.me/gohugoid">Hugo indonesia</a>.</p>
 
-<div class="message-body has-text-centered">
+<div class="no-border">
 linuxisekai juga dibuat menggunakan hugo loh 😁
 </div>
 
@@ -219,35 +219,25 @@ linuxisekai juga dibuat menggunakan hugo loh 😁
 
 <h5 id="arch-linux">Arch Linux</h5>
 
-<div class="message-header">root@linuxisekai</div>
-
 <pre><code>$ sudo pacman -S hugo
 </code></pre>
 
 <h5 id="ubuntu">Ubuntu</h5>
-
-<div class="message-header">root@linuxisekai</div>
 
 <pre><code>$ sudo apt-get install hugo
 </code></pre>
 
 <h5 id="mengecek-versi-hugo">Mengecek versi hugo</h5>
 
-<div class="message-header">root@linuxisekai</div>
-
 <pre><code>$ hugo version
 </code></pre>
 
 <h5 id="output">Output</h5>
 
-<div class="message-header">root@linuxisekai</div>
-
 <pre><code>Hugo Static Site Generator v0.55.6/extended linux/amd64 BuildDate: unknown
 </code></pre>
 
 <h5 id="membuat-situs-baru">Membuat situs baru</h5>
-
-<div class="message-header">root@linuxisekai</div>
 
 <pre><code>$ hugo new site linuxisekai
 </code></pre>
@@ -257,8 +247,6 @@ linuxisekai juga dibuat menggunakan hugo loh 😁
 <h5 id="menginstall-tema-hugo">menginstall tema hugo</h5>
 
 <p>kinjungi <a href="https://themes.gohugo.io">https://themes.gohugo.io</a> lalu pilih tema yang kalian sukai.Disini saya memilih tema introduction</p>
-
-<div class="message-header">root@linuxisekai</div>
 
 <pre><code>$ git clone https://github.com/victoriadotdev/hugo-theme-introduction
 </code></pre>
@@ -272,8 +260,6 @@ theme = &ldquo;namatema&rdquo; pada config.toml.
 kalian juga bisa mengambil konfigurasi config.toml dari tema yang kita download silahkan buka folder tema kalian lalu buka folder examplesite lalu copy semua file lalu pastekan di folder linuxisekai</p>
 
 <h5 id="run-hugo">Run Hugo</h5>
-
-<div class="message-header">root@linuxisekai</div>
 
 <pre><code>cd linuxisekai/
 hugo server
@@ -299,7 +285,7 @@ hugo server
     
  <div class="has-text-centered button-post">
 
-  <div class="button button-prev">
+  <div class="button button-prev  has-background-grey-dark">
   
   
   
@@ -338,15 +324,15 @@ hugo server
   
   <div class="popup" onclick="functionPopup()">
                   
-          <div class="btn-counter button multiple-count" title="love" herf="#">
-          <span class="is-size-5 has-text-danger icon"><i class="fas fa-heart"></i></span></a>
+          <div class="btn-counter button  has-background-grey-dark multiple-count" title="love" herf="#">
+          <span class="is-size-5  has-background-grey-dark has-text-danger icon"><i class="fas fa-heart"></i></span></a>
           </div>
       <span class="popuptext" id="myPopup">
       Thanks 😇
     </span>
     </div>
   
-  <div class="button button-next"> 
+  <div class="button button-next has-background-grey-dark"> 
   <span class="">
   <a href="/post/membuat-tema-hugo/" class=" has-text-grey"><i class="fas fa-arrow-right"></i></a>
   </span>

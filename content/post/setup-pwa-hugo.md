@@ -99,8 +99,6 @@ taruh script diatas di antara tag <code>head</code>
 
 pastikan sudah npm sudah terinstall di OS kamu, lalu jalankan perintah di bawah ini di directory root hugo
 
-<div class="message-header">asuna@linuxisekai</div>
-
     $ npm init -y
     $ npm install gulp --save-dev
     $ npm install workbox-build --save-dev

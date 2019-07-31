@@ -13,17 +13,15 @@ oomox adalah aplikasi yang digunakan membuat gtk theme pada sistem operasi linux
 ### Instalasi
 
 ##### Arch linux
-<div class="message-header">root@linuxisekai</div>
 
     $ sudo pacman -S yay
     $ yay -S oomox
 
 ##### Ubuntu
-<div class="message-header">Install paket depensi yang dibutuhkan</div>
 
     $ sudo apt-get install python3-gi libglib2.0-bin libgdk-pixbuf2.0-dev libxml2-utils x11-xserver-utils gir1.2-gtk-3.0 gir1-2.glib-2.0 gir1.2-pango-1.0 gir1.2-gdkpixbuf-2.0 gtk2-engines gtk2-engines-murrine gtk2-engines-pixbuf bash bc sed grep parallel imagemagick optipng librsvg2-bin inkscape python3-pillow python3-pystache python3-yaml
 
-<div class="message-header">Install SASS</div>
+Install SASS
 
     $ cd /usr/share/local/lib/
     $ sudo git clone https://gihub.com/sass/sassc.git --branch 3.4.2 --depth 1
@@ -38,8 +36,6 @@ oomox adalah aplikasi yang digunakan membuat gtk theme pada sistem operasi linux
 ##### Download oomox
 buka https://github.com/themix-project/oomox/releases lalu download paket .deb nya.
 Saya sarankan install versi yang terbaru ( saat artikel ini dibuat versi terakhir adalah 1.11 ).
-
-<div class="message-header">Install oomox</div>
 
     $ cd ~/Download
     $ dpkg -i ./oomox-Versi-omox-kalian.deb
