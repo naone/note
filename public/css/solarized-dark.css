@@ -9,12 +9,12 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
   overflow-x: auto;
   padding: 1em;
   background: #011627;
-  color: #839496;
+  color: rgb(227, 228, 231);
 }
 
 .hljs-comment,
 .hljs-quote {
-  color: #BAC1D0;
+  color: rgb(80, 83, 88);
 }
 
 /* Solarized Green */
