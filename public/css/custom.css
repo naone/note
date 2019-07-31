@@ -31,7 +31,7 @@ h1 {
 }
 .content {
     padding:1rem;
-    font-size: 0.9rem;
+    font-size: 0.9em;
 }
 .button-post {
     padding: 2rem;
@@ -451,9 +451,11 @@ html {scroll-behavior:smooth;}
   }
   .content pre {
     padding: 0;
-    font-size: 1rem;
+    font-size: 0.9em;
   }
- 
+ .navbar {
+   font-family: "Noto Serif", sans-serif;
+ }
   nav {
     filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, .2));
   }
@@ -555,6 +557,7 @@ body.light-mode .masonry-item {
    }
    body.light-mode .disqus-button{
      background-color: #fff;
+     
    }
    body.light-mode h2{
     background-color: #ffffff;
@@ -588,4 +591,7 @@ body.light-mode .masonry-item {
    }
 body.dark-mode{
  
+}
+.judul, .judul-post, h2, h3, h4, h5{
+  font-family: "Noo serif";
 }

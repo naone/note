@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*! bulmaswatch v0.7.2 | MIT License */
-@import url("https://fonts.googleapis.com/css?family=Noto Serif|Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fira+Code|Ubuntu+Mono&display=swap");
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -285,7 +285,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Noto serif", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: "Fira Code", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 code,
 pre {
@@ -819,21 +819,6 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 
 .has-text-weight-bold {
   font-weight: 700 !important; }
-
-.is-family-primary {
-  font-family: "Noto serif", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
-
-.is-family-secondary {
-  font-family: "Noto serif", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
-
-.is-family-sans-serif {
-  font-family: "Noto serif", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
-
-.is-family-monospace {
-  font-family: "ubuntu mono", "Consolas", "Monaco", monospace !important; }
-
-.is-family-code {
-  font-family: "ubuntu mono", "Consolas", "Monaco", monospace !important; }
 
 .is-block {
   display: block !important; }
@@ -7389,13 +7374,13 @@ button,
 input,
 select,
 textarea {
-  font-family: "Noto serif", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: "ubuntu mono", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 code,
 pre {
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: auto;
-  font-family: "ubuntu mono", "Consolas", "Monaco", monospace; }
+  font-family: "Fira Code", "Consolas", "Monaco", monospace; }
 
 body {
   color: #86939E;
@@ -7925,13 +7910,13 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   font-weight: 700 !important; }
 
 .is-family-primary {
-  font-family: "Noto serif", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
+  font-family: "Fira Code", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
 
 .is-family-secondary {
-  font-family: "Noto serif", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
+  font-family: "Fira Code", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
 
 .is-family-sans-serif {
-  font-family: "Noto serif", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
+  font-family: "Fira Code", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
 
 .is-family-monospace {
   font-family: "ubuntu mono", "Consolas", "Monaco", monospace !important; }
