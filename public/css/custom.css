@@ -5,6 +5,9 @@
     text-align: center;
     margin-top: 3rem;
     }
+    .navbar {
+      padding: 0.5rem;
+    }
 .judul {
     font-size: 180%;
     text-align: center;
@@ -466,9 +469,7 @@ html {scroll-behavior:smooth;}
   }
  
   .navbar {
-    filter: drop-shadow(0px 7px 7px rgba(0, 0, 0, .2));
-    padding: 0.5rem;
-    border-radius: 0;
+    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, .2));
   }
  .t {
    padding:3px;
@@ -485,6 +486,9 @@ body.light-mode {
 }
 body.light-mode .fa-github {
  color:rgb(24, 25, 27);
+}
+body.light-mode code{
+  background-color: #2E3240;
 }
 body.light-mode .fa-home {
   color:rgb(35, 79, 167);
@@ -586,15 +590,11 @@ body.light-mode .masonry-item {
    body.light-mode .putih{
     color: #2E3240;
    }
-   body.light-mode code{
-    background-color: #011627;
-   
-   }
-
    body.light-mode .content{
     background-color: #ffffff;
     color:#2E3240;
-    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.096));
+    border: 1px solid rgb(238, 236, 238);
    }
    body.light-mode .content-lay{
      border: 1px solid transparent;
@@ -638,7 +638,7 @@ body.light-mode .masonry-item {
     color:#2E3240;
    }
    body.light-mode .ignielToTop{
-    background-color: #4c0391;
+    background-color: #5A3E8D;
     color:#ffffff;
    }
 body.dark-mode{
@@ -648,15 +648,5 @@ nav.pagination {
   filter: none;
 }
 .content {
-  font-family: 'GlacialIndifferenceRegular';
-   font-weight: normal;
-   font-style: normal; 
-}
-h1 h2 h3 h4 h5 {
-  font-family: 'Noto Serif', sans-serif;
-}
-.masonry-item {
-  font-family: 'GlacialIndifferenceRegular';
-   font-weight: normal;
-   font-style: normal; 
+  background-color: #011627;
 }
