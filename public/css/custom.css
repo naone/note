@@ -145,17 +145,13 @@ height: 320px;
         text-align: center;
         }
     .judul {
-        margin-top: 8rem;
         font-size: 200%;
         margin-left: -2rem;
         margin-right: -2rem;
         text-align: center;
     }
     .content-lay {
-      border-radius: 10px;
-      margin-top: 1rem;
-      margin-left: 13rem;
-      margin-right: 13rem;
+      border: 1px solid #011627;
   }
     
     .content h3{
@@ -163,24 +159,18 @@ height: 320px;
     }
     .info-post {
         margin-bottom: 3rem;
-        border-top: 1px solid ;
-        border-bottom: 1px solid ;
-        padding: 0.3rem;
+        border-bottom: 2px solid ;
+        padding: 5px;
         text-align: center;
         font-size: 0.9em;
         margin-left: -2rem;
         margin-right: -2rem;
     }
     .content {
-        margin-top: 1rem;
+        margin-top: 8rem;
         margin-left: 14rem;
         margin-right: 14rem;
-    }
-  
-    h1 {
-        padding-top: 5rem;
-        padding-bottom: 0rem;
-        
+        padding: 1rem;
     }
     .button {
       background-color: #011627;
@@ -239,7 +229,8 @@ height: 320px;
     font-size: 1rem;
 }
 .disqus-comment .disqus-button:hover{
-    color:rgb(75, 23, 117);border-color:rgb(79, 23, 117)
+    color:rgb(75, 23, 117);
+    border-color:rgb(79, 23, 117)
 }
             
 .ghost-padding {
@@ -463,13 +454,24 @@ html {scroll-behavior:smooth;}
    padding:3px;
    background-color: #7645D1;
  }
-*.light-mode {
+body.light-mode h1 h2 h3 h4 h5 h6{
  background-color: #ffffff;
- color:#011627;
+ color:#2E3240;
 }
-body.light-mode .article {
+body.light-mode {
   background-color: #ffffff;
-  color:#011627;
+ color:#2E3240;
+ border-color: #2E3240 solid;
+}
+body.light-mode .fa-github {
+ color:rgb(24, 25, 27);
+}
+body.light-mode .fa-home {
+  color:rgb(35, 79, 167);
+ }
+body.light-mode article {
+  background-color: #ffffff;
+  color:#2E3240;
  }
 body.light-mode a{
   background-color: transparent;
@@ -478,46 +480,55 @@ body.light-mode a{
 body.light-mode .masonry-item {
   background-color: #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(44, 44, 44, 0.397));
-  color:#011627;
-  }
-  body.light-mode .masonry-item:hover {
-    filter: drop-shadow(0px 7px 7px rgba(44, 44, 44, 0.637));
+  color:#2E3240;
   }
   body.light-mode .masonry-content {
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
    }
    body.light-mode .judul-post {
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
    }
    body.light-mode .has-text-grey {
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
    }
    body.light-mode .masonry-footer {
     border: 1px solid rgb(238, 236, 238);
    }
    body.light-mode .h {
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
    }
    body.light-mode .navbar-link{
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
    }
    body.light-mode .navbar-item{
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
    }
    body.light-mode strong{
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
    }
    
-   body.light-mode .navbar .is-fixed-top{
+   body.light-mode .navbar{
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
+   }
+   body.light-mode nav{
+    background-color: #ffffff;
+    color:#2E3240;
+   }
+   body.light-mode .container{
+    background-color: #ffffff;
+    color:#2E3240;
+   }
+   body.light-mode nav{
+    background-color: #ffffff;
+    color:#2E3240;
    }
    body.light-mode pre{
    border:0;
@@ -525,51 +536,66 @@ body.light-mode .masonry-item {
    }
    body.light-mode .is-fixed-top{
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
    }
    body.light-mode .container{
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
    }
    body.light-mode .masonry-info{
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
    }
    body.light-mode .judul{
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
    }
    body.light-mode h1.header-judul{
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
    }
    body.light-mode .content-lay{
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
    }
    body.light-mode .no-border{
     border: 1px #ffffff solid;
     border-left: 4px solid #7600BE;
-    color: #011627;
+    color: #2E3240;
    }
    body.light-mode .putih{
-    color: #011627;
+    color: #2E3240;
    }
    body.light-mode code{
     background-color: #011627;
+    border-left: 4px solid #7600BE;
    }
 
    body.light-mode .content{
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, .2));
+    position: inherit;
+    overflow: hidden;
+    margin-top: 8rem;
+    margin-left: 14rem;
+    margin-right: 14rem;
+    padding: 1rem;
+    padding-top:2rem;
+   }
+   body.light-mode .content-lay{
+     border: 1px solid #ffffff;
    }
    body.light-mode .masonry-info{
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
    }
    body.light-mode h1{
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
    }
    body.light-mode .disqus-button{
      background-color: #fff;
@@ -577,29 +603,29 @@ body.light-mode .masonry-item {
    }
    body.light-mode h2{
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
    }
    body.light-mode h3{
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
    }
    body.light-mode h4{
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
    }
    body.light-mode h5{
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
    }
    
    body.light-mode .button{
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
     border-color:#fff;
    }
    body.light-mode .button-next{
     background-color: #ffffff;
-    color:#011627;
+    color:#2E3240;
    }
    body.light-mode .ignielToTop{
     background-color: #4c0391;
@@ -610,4 +636,26 @@ body.dark-mode{
 }
 nav.pagination {
   filter: none;
+}
+.content {
+  font-family: 'GlacialIndifferenceRegular';
+   font-weight: normal;
+   font-style: normal; 
+}
+h1 h2 h3 h4 h5 {
+  font-family: 'Noto Serif', sans-serif;
+}
+pre {
+  font-family: 'Fira Code', monospace;
+}
+code {
+  font-family: 'Fira Code', monospace;
+}
+pre code {
+  font-family: 'Fira Code', monospace;
+}
+.masonry {
+  font-family: 'GlacialIndifferenceRegular';
+   font-weight: normal;
+   font-style: normal; 
 }
