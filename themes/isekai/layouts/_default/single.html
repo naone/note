@@ -3,8 +3,11 @@
     {{ partial "head.html" . }}
     <body id="body">
     {{ partial "navbar.html" . }}
+<div class="content-lay">
  <div class="content">
-
+     <center>
+        <img src="{{ .Params.image }}" alt="{{ .Title }}">
+        </center>
         <div class="judul">
                 <b>
                 {{ .Title }}</b>
@@ -36,6 +39,7 @@
     {{ partial "disqus.html" . }}
     {{ partial "related.html" . }}
 </article>
+</div>
 </div>
     {{ partial "footer.html" . }}
     {{ partial "js-init.html" . }}

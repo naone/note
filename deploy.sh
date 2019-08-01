@@ -4,7 +4,7 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # Genterate file statis
 # hugo # if using a theme, replace by `hugo -t <yourtheme>`
-hugo
+
 # pindah ke direktoru publik
 # tambahkan perubahan ke Git
 
