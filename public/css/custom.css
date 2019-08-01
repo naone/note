@@ -6,10 +6,7 @@
     margin-top: 3rem;
     }
 .judul {
-    margin-top: 5rem;
     font-size: 180%;
-    margin-left: 1rem;
-    margin-right: 1rem;
     text-align: center;
 }
 h1 {
@@ -25,13 +22,20 @@ h1 {
   border-bottom: 0.1rem solid ;
   padding-bottom: 0.3rem;
   text-align: center;
-  
   font-size: 0.9em;
   
 }
 .content {
-    padding:1rem;
+    
     font-size: 0.9em;
+    margin: 0.5em;
+    margin-top: 6rem;
+}
+
+.content, img {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  padding: 0;
 }
 .button-post {
     padding: 2rem;
@@ -82,7 +86,12 @@ h1 {
   margin-left: 13rem;
   margin-right: 13rem;
 }
-
+.content, img {
+  width: 1023px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  padding: 0;
+}
 .content h3{
     
     margin-top:2em; 
@@ -146,14 +155,17 @@ height: 320px;
         }
     .judul {
         font-size: 200%;
-        margin-left: -2rem;
-        margin-right: -2rem;
         text-align: center;
     }
     .content-lay {
-      border: 1px solid #011627;
+      border: 1px solid transparent;
   }
-    
+  .content, img {
+    width: 1024px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    padding: 0;
+  }
     .content h3{
         margin-top:2em; 
     }
@@ -163,14 +175,13 @@ height: 320px;
         padding: 5px;
         text-align: center;
         font-size: 0.9em;
-        margin-left: -2rem;
-        margin-right: -2rem;
+        
     }
     .content {
         margin-top: 8rem;
         margin-left: 14rem;
         margin-right: 14rem;
-        padding: 1rem;
+        padding: 0;
     }
     .button {
       background-color: #011627;
@@ -574,20 +585,12 @@ body.light-mode .masonry-item {
    body.light-mode .content{
     background-color: #ffffff;
     color:#2E3240;
-    background-color: #fff;
     border-radius: 8px;
-    border: 2px solid #ffffff;
+    border: 2px solid transparent;
     filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, .2));
-    position: inherit;
-    overflow: hidden;
-    margin-top: 8rem;
-    margin-left: 14rem;
-    margin-right: 14rem;
-    padding: 1rem;
-    padding-top:2rem;
    }
    body.light-mode .content-lay{
-     border: 1px solid #ffffff;
+     border: 1px solid transparent;
    }
    body.light-mode .masonry-info{
     background-color: #ffffff;
@@ -658,4 +661,7 @@ pre code {
   font-family: 'GlacialIndifferenceRegular';
    font-weight: normal;
    font-style: normal; 
+}
+article {
+  padding: 1rem;
 }
