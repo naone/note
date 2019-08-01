@@ -167,13 +167,13 @@ height: 320px;
     .content-lay {
       border: 1px solid transparent;
   }
-  .content, img {
+.content, img {
     width: 950px;
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
     margin: 0;
     justify-items: center;
-  }
+}
     .content h3{
         margin-top:2em; 
     }
@@ -432,13 +432,14 @@ html {scroll-behavior:smooth;}
     font-size: 1rem;
     border-top: 1px solid rgba(0, 0, 0, .05);
   }
-  .masonry-footer {
+  .footer {
     font-size: 1rem;
     text-align: center;
     border-radius: 10px;
     padding-top: 2em;
     padding-bottom: 2em;
     border-top: #01121F 1px solid;
+    filter: drop-shadow(0px 2px 7px rgba(0, 0, 0, .2));
   }
 .content h4 {
   font-size: 1.1rem;
@@ -475,172 +476,6 @@ html {scroll-behavior:smooth;}
    padding:3px;
    background-color: #7645D1;
  }
-body.light-mode h1 h2 h3 h4 h5 h6{
- background-color: #ffffff;
- color:#2E3240;
-}
-body.light-mode {
-  background-color: #ffffff;
- color:#2E3240;
- border-color: #2E3240 solid;
-}
-body.light-mode .fa-github {
- color:rgb(24, 25, 27);
-}
-body.light-mode code{
-  background-color: #2E3240;
-}
-body.light-mode .fa-home {
-  color:rgb(35, 79, 167);
- }
-body.light-mode article {
-  background-color: #ffffff;
-  color:#2E3240;
- }
-body.light-mode a{
-  background-color: transparent;
-  
- }
-body.light-mode .masonry-item {
-  background-color: #ffffff;
-  filter: drop-shadow(0px 4px 4px rgba(44, 44, 44, 0.397));
-  color:#2E3240;
-  }
-  body.light-mode .masonry-content {
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode .judul-post {
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode .has-text-grey {
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode .masonry-footer {
-    border: 1px solid rgb(238, 236, 238);
-   }
-   body.light-mode .h {
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode .navbar-link{
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode .navbar-item{
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode strong{
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   
-   body.light-mode .navbar{
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode nav{
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode .container{
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode nav{
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode pre{
-   border:0;
-   border-radius:0;
-   }
-   body.light-mode .is-fixed-top{
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode .container{
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode .masonry-info{
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode .judul{
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode h1.header-judul{
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode .content-lay{
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode .no-border{
-    border: 1px #ffffff solid;
-    border-left: 4px solid #7600BE;
-    color: #2E3240;
-   }
-   body.light-mode .putih{
-    color: #2E3240;
-   }
-   body.light-mode .content{
-    background-color: #ffffff;
-    color:#2E3240;
-    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.096));
-    border: 1px solid rgb(238, 236, 238);
-   }
-   body.light-mode .content-lay{
-     border: 1px solid transparent;
-   }
-   body.light-mode .masonry-info{
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode h1{
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode .disqus-button{
-     background-color: #fff;
-     
-   }
-   body.light-mode h2{
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode h3{
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode h4{
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode h5{
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   
-   body.light-mode .button{
-    background-color: #ffffff;
-    color:#2E3240;
-    border-color:#fff;
-   }
-   body.light-mode .button-next{
-    background-color: #ffffff;
-    color:#2E3240;
-   }
-   body.light-mode .ignielToTop{
-    background-color: #5A3E8D;
-    color:#ffffff;
-   }
 body.dark-mode{
  
 }
@@ -648,5 +483,5 @@ nav.pagination {
   filter: none;
 }
 .content {
-  background-color: #011627;
+  background-color: #01121F;
 }
