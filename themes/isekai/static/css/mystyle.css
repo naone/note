@@ -351,7 +351,7 @@ pre {
   color: #C0BDC0;
   font-size: 0.875em;
   overflow-x: auto;
-  padding: 1.25rem 1.5rem;
+  padding:0;
   white-space: pre;
   word-wrap: normal; }
   pre code {
@@ -6140,7 +6140,7 @@ a.box:active {
 .content pre {
   -webkit-overflow-scrolling: touch;
   overflow-x: auto;
-  padding: 1.25em 1.5em;
+  padding: 0;
   white-space: pre;
   word-wrap: normal; }
 .content sup,
@@ -7469,7 +7469,7 @@ pre {
   color: #C0BDC0;
   font-size: 0.875em;
   overflow-x: auto;
-  padding: 1.25rem 1.5rem;
+  padding:0;
   white-space: pre;
   word-wrap: normal; }
   pre code {

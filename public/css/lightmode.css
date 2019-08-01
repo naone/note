@@ -169,3 +169,30 @@ body.light-mode h1 h2 h3 h4 h5 h6{
        color:#2E3240;
        border-color: #fff;
       }
+      body.light-mode .fixed {
+        background-color: #fff;
+        color: #2E3240;
+        border-right: #CECECE 12px solid;
+      }
+      body.light-mode .menu-list li a {
+        background-color: #fff;
+        color: #2E3240;
+      }
+      body.light-mode .menu-list li a:hover {
+        color: rgb(82, 55, 158);
+      }
+      body.light-mode .column {
+        background-color: #fff;
+        
+      }
+      body.light-mode .section {
+        background-color: #fff;
+        
+      }
+      body.light-mode .main-content .container .columns .is-fullheight {
+        background-color: #fff;
+      }
+      body.light-mode .menu-label {
+       color: #2E3240;
+        
+      }

@@ -1,232 +1,10 @@
-/* end mobile screen */
-@media screen and (max-width:768px) {
-    h1.header-judul{
-    font-size: 200%;
-    text-align: center;
-    margin-top: 3rem;
+@font-face {
+  font-family: 'GlacialIndifferenceRegular';
+  src: url('/font/GlacialIndifferenceRegular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
     }
-    .navbar {
-      padding: 0.5rem;
-    }
-.judul {
-    font-size: 180%;
-    text-align: center;
-}
-h1 {
-    padding-top: 2.5rem;
-    padding-bottom: 0rem;
-}
-.content h3{
-    margin-top:2em; 
-}
-.info-post {
-  margin-bottom: 3rem;
-  border-top: 0.1rem solid ;
-  border-bottom: 0.1rem solid ;
-  padding-bottom: 0.3rem;
-  text-align: center;
-  font-size: 0.9em;
-  
-}
-.content {
-    font-size: 0.9em;
-    margin-top: 6rem;
-}
-article {
-  padding: 0.5em;
-}
-.content, img {
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
-  padding: 0;
-}
-.button-post {
-    padding: 2rem;
-    border-color: #011627;
-   
-}
-.button-next {
-    margin-left: 1rem;
-    border-color: #011627;
-    background-color: #011627;
-}
-.button-prev {
-  margin-right: 1rem;
-  border-color: #011627;
-  background-color: #011627;
-}
-.content-img {
-    align-items: center;
-    border-radius: 5px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    height: 200px;
-}
-}
-/* end mobile screen */
-
-/* tablet */
-@media only screen and (max-width: 1023px) and (min-width: 768px) { 
-  h1.header-judul{
-    margin-top: 3rem;
-    font-size: 300%;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    text-align: center;
-    }
-.judul {
-    margin-top: 8rem;
-    font-size: 200%;
-    margin-left: -2rem;
-    margin-right: -2rem;
-    text-align: center;
-}
-.content-lay {
-  border-radius: 10px;
-  margin-top: 1rem;
-  margin-left: 13rem;
-  margin-right: 13rem;
-}
-.content, img {
-  width: 1023px;
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
-  margin: auto;
-  padding: 0;
-}
-.content h3{
     
-    margin-top:2em; 
-}
-article{
-  padding: 1rem;
-}
-.info-post {
-    margin-bottom: 3rem;
-    border-top: 1px solid ;
-    border-bottom: 1px solid ;
-    padding-bottom: 0.5rem;
-    text-align: center;
-    margin-left: -2rem;
-    margin-right: -2rem;
-}
-.content {
-    margin-top: 1rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
-
-h1 {
-    padding-top: 5rem;
-    padding-bottom: 0rem;
-    
-}   
-.button-post {
-    padding: 2rem;
-    border-color: #011627;
-}
-.button.button-next {
-    margin-left: 15rem;
-    border-color: #011627;
-    background-color: #011627;
-}
-.button-prev {
-  margin-right: 15rem;
-  border-color: #011627;
-  background-color: #011627;
-}
-.content-img {
-align-items: center;
-border-radius: 5px;
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 600px;
-height: 320px;
-} 
-}
-
-/* end tablet */
-
-/* laptop scren */
-
-@media only screen and (min-width: 1024px) {
-    h1.header-judul{
-        margin-top: 3rem;
-        font-size: 300%;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        text-align: center;
-        }
-    .judul {
-        font-size: 200%;
-        text-align: center;
-    }
-    .content-lay {
-      border: 1px solid transparent;
-  }
-.content, img {
-    width: 950px;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    margin: 0;
-    justify-items: center;
-}
-    .content h3{
-        margin-top:2em; 
-    }
-    article {
-      padding: 1rem;
-    }
-    .info-post {
-        margin-bottom: 3rem;
-        border-bottom: 2px solid ;
-        padding: 5px;
-        text-align: center;
-        font-size: 0.9em;
-        
-    }
-    .content {
-        margin-top: 8rem;
-        margin-left: 13rem;
-        margin-right: 13rem;
-        padding: 0;
-        justify-content: center;
-    }
-    .button {
-      background-color: #011627;
-    }
-    .button-post {
-        padding: 2rem;
-        border-color: #011627;
-        
-    }
-    .button.button-next {
-        margin-left: 15rem;
-        border-color: #011627;
-        background-color: #011627;
-    }
-    .button-prev {
-      margin-right: 15rem;
-      border-color: #011627;
-      background-color: #011627;
-  }
-  .content-img {
-    align-items: center;
-    border-radius: 5px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-    height: 320px;
-} 
-
-    }
-
-/* end laptop screen */
-
 .info-header {
   margin-bottom: 3rem;
   border-top: 0.15rem solid ;
@@ -378,7 +156,7 @@ html {scroll-behavior:smooth;}
   }
   @media screen and (max-width:768px) {
     .masonry-wrapper {
-      margin:1.5rem;
+      margin:1rem;
      
     }
   }
@@ -395,7 +173,7 @@ html {scroll-behavior:smooth;}
   }
   @media only screen and (min-width: 1024px) {
     .masonry {
-      columns: 3;
+      columns: 1;
     }
     .masonry-wrapper {
       padding: 1em;
@@ -412,10 +190,7 @@ html {scroll-behavior:smooth;}
   .masonry-content .judul-post {
     overflow: hidden;
   }
-  .masonry-item {
-    background-color: #011627;
-    filter: drop-shadow(0px 4px 7px rgba(0, 0, 0, .6));
-  }
+  
   .masonry-title, .masonry-description {
     margin: 0;
   }
@@ -424,9 +199,7 @@ html {scroll-behavior:smooth;}
     font-size: 1.1rem;
     padding: 1rem;
   }
-  .masonry-info{
-    font-size: 0.8rem;
-  }
+  
   .masonry-description {
     padding: 0rem 1rem 1rem;
     font-size: 1rem;
@@ -484,4 +257,29 @@ nav.pagination {
 }
 .content {
   background-color: #01121F;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 6rem;
+  height: 100%;
+  font-size: 1.2rem;
+  padding: 1rem;
+  width: 290px;
+  z-index: 1;
+  border-right: 5px solid #00192F;
+  background-color: #011627;
+}
+.icon{
+  padding: 1em;
+}
+.content code {
+  padding: 1rem;
+  font-size: 0.8em;
+}
+
+.content {
+  font-size: 1.1em;
+  padding: 0em;
+  padding-top: 4em;
 }

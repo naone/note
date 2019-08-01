@@ -16,11 +16,7 @@
       <pubDate>Sat, 06 Jul 2019 08:29:35 +0700</pubDate>
       
       <guid>/post/convert-gambar-ke-webp/</guid>
-      <description>Pendahuluan bagi yang belum tau .webp adalah format gambar digital yang dibuat oleh google. format ini pertama kali diperkenalkan pada tanggal 30 september 2010. pada awal perilisanya hanya browser google chrome saja yang mendukung. tetapi unutk sekarang sudah hampir semua browser.
-mengapa menggunakan .webp 1.webp menghasilkan file yang kecil dengan kualias gambar yang bagus
-2.mampu menampilkan gambar bergerak
-3.mempercepat loading website
-instalasi arch linux sudo pacman -S libwebp gthumb  ubuntu sudo apt-get install libwebp gthumb  Convert gambar asuna@linuxisekai:~$ cd Pictures asuna@linuxisekai:~/Pictures$ ls asuna.</description>
+      <description>Pendahuluan bagi yang belum tau .</description>
     </item>
     
   </channel>

@@ -31,11 +31,11 @@ self.__precacheManifest = [
   },
   {
     "url": "/css/custom.css",
-    "revision": "a0d9f09c809cc056441af3a94dc45e25"
+    "revision": "b5bc501bbd00318de8f9d8f24f0195d5"
   },
   {
     "url": "/css/lightmode.css",
-    "revision": "08f637dc5033d928621a052bb0ba09fb"
+    "revision": "9f9c7350df619d56462d9b67af9ab536"
   },
   {
     "url": "/css/mybulma.css",
@@ -43,11 +43,15 @@ self.__precacheManifest = [
   },
   {
     "url": "/css/mystyle.css",
-    "revision": "d9ae1c552bd8a746e6b56f5d4ca4d93c"
+    "revision": "5dc5aa90c58005563066801511e78cb9"
   },
   {
     "url": "/css/solarized-dark.css",
     "revision": "1989ac4c4e039973d837cc60e8890fc9"
+  },
+  {
+    "url": "/font/GlacialIndifferenceRegular.otf",
+    "revision": "13dc531a2ffd9ca7eeb500515774fa74"
   },
   {
     "url": "/js/all.min.js",

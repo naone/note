@@ -1,41 +1,47 @@
-<div class="container">
+
+  <div class="ghost-padding is-hidden-tablet"></div>
   <div class="masonry-wrapper">
       <div class="masonry">
-          {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 9 }}
-          {{ range $paginator.Pages }} 
+
+          {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 5 }}
+          {{ range $paginator.Pages }}
           <a href="{{ .RelPermalink }}" class="judul-post">
           <div class="masonry-item">
+              <!--<img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" width="400px">-->
             <div class="masonry-content">
-              <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" width="400px">
               <div class="h">
-                          
+                      <b>    
                 {{ .Title }}
-              
+                </b>
+      
                 <br/>
-              <span class="masonry-info">
-                  <span class="has-background-danger t has-text-dark">
-                <i class="fas fa-calendar-alt"  class="is-size-7"></i>
-                {{ .PublishDate.Format "January 2, 2006" }}</span>
-                   <span class="has-background-warning t has-text-dark"><i class="fas fa-tag" class="is-size-7"></i>
+                </a>
+                
+                {{ .Summary }}
+                {{ if .Truncated }}
+                <br/>
+                <a href="{{ .RelPermalink }}">Read more..</a>
+                {{ end }}
+                </h6>
+                <br/>
+                <i class="fas fa-calendar-alt"></i>
+                {{ .PublishDate.Format "January 2, 2006" }}
+                  
                    
                     {{ $taxonomy := "tags" }}
                     {{ with .Param $taxonomy }}
                     {{ range $index, $tag := . }}
                     
                     {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
-                    {{ $tag | urlize }}
+                    #{{ $tag | urlize }}
                     {{- end -}}
                     {{- end -}}
-                  </span>
+                 
                     {{ end }}
                    
-                  </span>
-                
                     </div> 
                 </div>
               </div>
               </a>
               {{ end }}
-       </div>
-      </div>
-       </div>
+       

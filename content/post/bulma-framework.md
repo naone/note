@@ -7,8 +7,9 @@ tags: ["bulma","css"]
 ---
 <h3>Pendahuluan</h3>
 <b> Ini bukan bulma dragon ball 😠 </b>
-<br/>
+<br/><!--more-->
 bulma adalah salah satu framework CSS yang sedang naik daun akhir-akhir ini, bulma dibuat oleh <a href="http://jgthms.com">Jeremy Thomas</a> berbasiskan css flexbox, oleh karena itu grid system pada bulma sangatlah flexibel dan responsif. inilah kelebihan utama pada bulma dibanding framework css lain. oh iya linuxisekai juga meggunakan bulma loh 😅 .
+<!--more-->
 
 ### kelebihan bulma
 <ul>

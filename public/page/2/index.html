@@ -10,15 +10,15 @@
     <meta name="generator" content="linuxisekai">
     <meta name="theme-color" content="#011627">
     <meta http-equiv="Cache-control" content="public">
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="apple-touch-icon" size="192x192" href="img/favicon.png">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <link rel="apple-touch-icon" size="192x192" href="/img/favicon.png">
     <meta name="Description" content="Linux, Golang, PHP, Tutorial, Ricing, Ubuntu, Arch Linux">
     <link href="/css/mystyle.css" rel="stylesheet">
     <link href="/css/lightmode.css" rel="stylesheet">
     <link href="/css/solarized-dark.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/> 
+    <link rel="stylesheet" media="screen" href="/css/font.css" type="text/css"/> 
+    <link rel="manifest" href="/manifest.json"> 
     
 <meta itemprop="name" content="Linuxisekai | Nolep enthuiast project">
 <meta itemprop="description" content="">
@@ -55,7 +55,7 @@ if (!doNotTrack) {
 
   <body id="body" class="dark-mode">
     
-<nav id="navbar" class="navbar is-fixed-top">
+<nav id="navbar" class="navbar is-fixed-top is-hidden-tablet">
         <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="/" >
@@ -160,84 +160,268 @@ if (!doNotTrack) {
                
           
       
-    <div class="container">
-  <div class="has-text-centered">
-    <h1 class="is-size-1 header-judul"><b>Linuxisekai</b></h1>
-    <div class="info-header">
-        Nolep Enthusiast Project.
-  </div>
-</div>
-
-    <div class="container">
+    <section class="main-content container columns is-fullheight">
+    <aside class="column is-3 is-narrow-mobile is-fullheight section is-hidden-mobile">
+        <div class="fixed bg">
+          <p class="menu-label is-size-4 is-hidden-touch has-text-centered" style="font-family: monospace">
+            <br>
+            
+            <b><span class="has-text-success">Linux</span>isekai</b></p>
+          <ul class="menu-list">
+            <li class="">
+              <a href="/" class="">
+                <span class="icon">
+                  <i class="fa fa-home"></i>
+                </span> Home
+              </a>
+            </li>
+            <li>
+              <a class="" href="/tags/linux">
+              <span class="icon">
+                <i class="fa fa-terminal"></i>
+              </span> Linux
+            </a>
+            </li>
+            <li>
+              <a href="#" class="">
+                <span class="icon">
+                  <i class="fa fa-coffee"></i></span> Ngopi
+              </a>
+              <ul>
+                <li>
+                  <a href="#">
+                    <span class="icon is-small">
+                      <i class="fab fa-google"></i></span> olang
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon is-small">
+                      <i class="fab fa-php"></i></span>  PHP
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/frienlist" class="">
+                <span class="icon">
+                  <i class="fa fa-user-friends"></i></span> Friends
+              </a>
+            </li>
+            <li>
+                <a href="/about" class="">
+                  <span class="icon">
+                    <i class="fa fa-user-circle"></i></span> About
+                </a>
+              </li>
+          <li>
+  
+          
+          <center>
+          <a type="button" name="dark_light" class="navbar-item is-hidden-touch" onclick="toggleDarkLight()" title="Toggel dark/light">
+            <i class="fas fa-moon">
+            </i>
+                        </a>
+                        </center>
+                        </li>
+                        </ul>
+        </div>
+        </aside>
+        
+  
+    
+  <div class="ghost-padding is-hidden-tablet"></div>
   <div class="masonry-wrapper">
       <div class="masonry">
+
           
-           
+          
+          <a href="/post/ngeblog-dengan-hugo/" class="judul-post">
+          <div class="masonry-item">
+              
+            <div class="masonry-content">
+              <div class="h">
+                      <b>    
+                #1 Hugo : membuat blog menggunkan Hugo &#43; github page
+                </b>
+      
+                <br/>
+                </a>
+                
+                Intro dunia website terus berkembang, banyak banyak sekali frameeork dan tools-tools baru bermunculkan yang menawarkan banyak fitur serta kemudahan, salah satunya yaitu SSG ( static site generator ), sepeti namanya SSG digunakan unutk meng generate web static, nah hugo adalah salah satu dari sekian banyak static site generator.
+                
+                <br/>
+                <a href="/post/ngeblog-dengan-hugo/">Read more..</a>
+                
+                </h6>
+                <br/>
+                <i class="fas fa-calendar-alt"></i>
+                July 1, 2019
+                  
+                   
+                    
+                    
+                    
+                    
+                    #hugo
+                    
+                    #github
+                    
+                    #blog
+                   
+                    </div> 
+                </div>
+              </div>
+              </a>
+              
+          <a href="/post/oomo-gtk/" class="judul-post">
+          <div class="masonry-item">
+              
+            <div class="masonry-content">
+              <div class="h">
+                      <b>    
+                Membuat gtk theme sendiri menggunkan oomox
+                </b>
+      
+                <br/>
+                </a>
+                
+                Intro oomox adalah aplikasi yang digunakan membuat gtk theme pada sistem operasi linux.
+                
+                <br/>
+                <a href="/post/oomo-gtk/">Read more..</a>
+                
+                </h6>
+                <br/>
+                <i class="fas fa-calendar-alt"></i>
+                June 30, 2019
+                  
+                   
+                    
+                    
+                    
+                    
+                    #linux
+                    
+                    #oomox
+                   
+                    </div> 
+                </div>
+              </div>
+              </a>
+              
+          <a href="/post/bulma-framework/" class="judul-post">
+          <div class="masonry-item">
+              
+            <div class="masonry-content">
+              <div class="h">
+                      <b>    
+                Bulma : Alternativ Framework CSS selain Bootstrap
+                </b>
+      
+                <br/>
+                </a>
+                
+                <p><h3>Pendahuluan</h3>
+<b> Ini bukan bulma dragon ball 😠 </b>
+<br/></p>
+                
+                <br/>
+                <a href="/post/bulma-framework/">Read more..</a>
+                
+                </h6>
+                <br/>
+                <i class="fas fa-calendar-alt"></i>
+                June 29, 2019
+                  
+                   
+                    
+                    
+                    
+                    
+                    #bulma
+                    
+                    #css
+                   
+                    </div> 
+                </div>
+              </div>
+              </a>
+              
+          <a href="/post/driver-realtek/" class="judul-post">
+          <div class="masonry-item">
+              
+            <div class="masonry-content">
+              <div class="h">
+                      <b>    
+                Cara menginstall driver realtek di linux
+                </b>
+      
+                <br/>
+                </a>
+                
+                Intro setelah selesai menginstall sistem operasi linux terus ternyata tidak ada wifinya ?
+                
+                <br/>
+                <a href="/post/driver-realtek/">Read more..</a>
+                
+                </h6>
+                <br/>
+                <i class="fas fa-calendar-alt"></i>
+                June 28, 2019
+                  
+                   
+                    
+                    
+                    
+                    
+                    #linux
+                    
+                    #driver
+                   
+                    </div> 
+                </div>
+              </div>
+              </a>
+              
           <a href="/post/windows-manager/" class="judul-post">
           <div class="masonry-item">
+              
             <div class="masonry-content">
-              <img src="/img/post/loli.webp" alt="Desktop environment terasa berat ? coba pakai Windows Manager" width="400px">
               <div class="h">
-                          
+                      <b>    
                 Desktop environment terasa berat ? coba pakai Windows Manager
-              
+                </b>
+      
                 <br/>
-              <span class="masonry-info">
-                  <span class="has-background-danger t has-text-dark">
-                <i class="fas fa-calendar-alt"  class="is-size-7"></i>
-                June 28, 2019</span>
-                   <span class="has-background-warning t has-text-dark"><i class="fas fa-tag" class="is-size-7"></i>
-                   
-                    
-                    
-                    
-                    
-                    linux
-                    
-                    wm</span>
-                    
-                   
-                  </span>
+                </a>
                 
-                    </div> 
-                </div>
-              </div>
-              </a>
-               
-          <a href="/post/i3-setup/" class="judul-post">
-          <div class="masonry-item">
-            <div class="masonry-content">
-              <img src="/img/post/menhara.webp" alt="Mencoba i3wm" width="400px">
-              <div class="h">
-                          
-                Mencoba i3wm
-              
+                Intro Artikel ini dibuat karena saya melihat digrub facebook banyak sekali yang bertanya &ldquo;Desktop environtment apa yang ringan ?
+                
                 <br/>
-              <span class="masonry-info">
-                  <span class="has-background-danger t has-text-dark">
-                <i class="fas fa-calendar-alt"  class="is-size-7"></i>
-                June 27, 2019</span>
-                   <span class="has-background-warning t has-text-dark"><i class="fas fa-tag" class="is-size-7"></i>
-                   
-                    
-                    
-                    
-                    
-                    i3
-                    
-                    linux</span>
-                    
-                   
-                  </span>
+                <a href="/post/windows-manager/">Read more..</a>
                 
+                </h6>
+                <br/>
+                <i class="fas fa-calendar-alt"></i>
+                June 28, 2019
+                  
+                   
+                    
+                    
+                    
+                    
+                    #linux
+                    
+                    #wm
+                   
                     </div> 
                 </div>
               </div>
               </a>
               
-       </div>
-      </div>
-       </div>
+       
+  </section>
     <nav class="pagination is-centered is-rounded is-small" role="navigation" aria-label="pagination">
         
         
@@ -275,9 +459,21 @@ if (!doNotTrack) {
             ><a class="pagination-link is-current" href="/page/2/">2</a></li>
             
             
+            
+            
+            
+            
+                
+                
+            
+            
             <li
-            class="disabled page-item">
-            <a class="pagination-link is-current" href="" aria-label="Next"><i class="fas fa-arrow-right"></i></a>
+            ><a class="pagination-link is-current" href="/page/3/">3</a></li>
+            
+            
+            <li
+            >
+            <a class="pagination-link is-current" href="/page/3/" aria-label="Next"><i class="fas fa-arrow-right"></i></a>
             </li>
             
             
@@ -286,45 +482,7 @@ if (!doNotTrack) {
         
         </nav>
         <div class="ghost-padding"></div>
-    <div class="container">
-    <div class="masonry-wrapper">
-    <div class="masonry">
-      <div class="masonry-item">
-        <div class="masonry-content">
-              <img src="/img/nishimiya.webp" alt="About">
-              <div class="masonry-title">About</div>
-              <div class="masonry-description">
-            linuxisekai diambil dari kata linux dan isekai, nama ini saya pilih karena saya 
-            suka menonton anime dan tertarik dengan linux.
-            <br/>
-            <br/>
-            <div class="fa-lg">
-            <i class="fab fa-facebook"></i>
-             <i class="fab fa-github"></i>
-            <i class="fas fa-envelope"></i>
-            <i class="fab fa-twitter"></i>
-            </div>
-          </div>
-          </div>
-      </div>
-            
-              <div class="masonry-item">
-                  <div class="masonry-title">Disclaimer</div>
-                  <div class="masonry-description">
-                    Situs ini dibuat sebagai catatan pribadi saya dalam mempelajari sesuatu, 
-                    jadi apabila ada tulisan yang kurang jelas,
-                    tata bahasa yang amburadul atau bahkan malah menyesatkan saya mohon maaf.
-                  </div>
-              
-              
-            </div>
-              </div>
-              </div>
-              </div>
-              </div>
-              
-            
-          
+    
     <footer class="footer">
        
           <div class="has-text-centered">

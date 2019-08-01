@@ -16,7 +16,7 @@
       <pubDate>Sun, 07 Jul 2019 22:22:35 +0700</pubDate>
       
       <guid>/post/debian10-rilis/</guid>
-      <description>tanggal 6 july 2019 kemarin akhirnya debian merilis versi OS terbaru mereka dengan code name &amp;ldquo;buster&amp;rdquo;,Yuup !! setelah sekian lama ( kurang lebih 25 bulan dalam pengembanganya ) akhirnya nenek moyang dari sebagian besar distro yang bertebaran diluar sana rilis juga 👍. Menurut keterangan di website resmi mereka debian 10 akan mendapat dukungan penuh selama 5 tahun dan seperti biasa debian 10 memiliki bebrapa pilihan Dektop environment yang bisa kalian pilih saat ingin mendownload isonya seperti Gnome, Cinammon, KDE, LXQT dll.</description>
+      <description>tanggal 6 july 2019 kemarin akhirnya debian merilis versi OS terbaru mereka dengan code name &amp;ldquo;buster&amp;rdquo;,Yuup !</description>
     </item>
     
     <item>
@@ -25,11 +25,7 @@
       <pubDate>Sat, 06 Jul 2019 08:29:35 +0700</pubDate>
       
       <guid>/post/convert-gambar-ke-webp/</guid>
-      <description>Pendahuluan bagi yang belum tau .webp adalah format gambar digital yang dibuat oleh google. format ini pertama kali diperkenalkan pada tanggal 30 september 2010. pada awal perilisanya hanya browser google chrome saja yang mendukung. tetapi unutk sekarang sudah hampir semua browser.
-mengapa menggunakan .webp 1.webp menghasilkan file yang kecil dengan kualias gambar yang bagus
-2.mampu menampilkan gambar bergerak
-3.mempercepat loading website
-instalasi arch linux sudo pacman -S libwebp gthumb  ubuntu sudo apt-get install libwebp gthumb  Convert gambar asuna@linuxisekai:~$ cd Pictures asuna@linuxisekai:~/Pictures$ ls asuna.</description>
+      <description>Pendahuluan bagi yang belum tau .</description>
     </item>
     
     <item>
@@ -38,8 +34,7 @@ instalasi arch linux sudo pacman -S libwebp gthumb  ubuntu sudo apt-get install 
       <pubDate>Sun, 30 Jun 2019 08:08:26 +0700</pubDate>
       
       <guid>/post/oomo-gtk/</guid>
-      <description>Intro oomox adalah aplikasi yang digunakan membuat gtk theme pada sistem operasi linux.oomox berbasisikan GUI jadi sangat mudah digunkan. bagi yang hobi otak atik tampilan desktop, oomox pasti akan menjadi aplikasi yang sangat berguna. tema oomox sendiri terbagi menjadi 3 varian yaitu numix-based, materia dan arch theme dan untuk icon ada 4 yaitu archdroid, gnome color, numix, papirus dan suru++.
-Instalasi Arch linux $ sudo pacman -S yay $ yay -S oomox  Ubuntu $ sudo apt-get install python3-gi libglib2.</description>
+      <description>Intro oomox adalah aplikasi yang digunakan membuat gtk theme pada sistem operasi linux.</description>
     </item>
     
     <item>
@@ -48,8 +43,7 @@ Instalasi Arch linux $ sudo pacman -S yay $ yay -S oomox  Ubuntu $ sudo apt-get 
       <pubDate>Fri, 28 Jun 2019 19:43:35 +0700</pubDate>
       
       <guid>/post/driver-realtek/</guid>
-      <description>Intro setelah selesai menginstall sistem operasi linux terus ternyata tidak ada wifinya ? mengkin itu terjadi karena driver dari wifi tersebut belum terinstall, memenag ada beberapa yang wifinya secara default sudah terinstall beberapa vendor seperti realtek atau broadcom yang secara dedault belum terinstal yang saya sendiri juga tidak tau alasnya.
-Instalasi $ uname -a $ Linux asuna 5.2.0-1-MANJARO #1 SMP PREEMPT Sun Jun 9 16:43:42 UTC 2019 x86_64 GNU/Linux  selanjutnya install paket-paket yang dibutuhkan</description>
+      <description>Intro setelah selesai menginstall sistem operasi linux terus ternyata tidak ada wifinya ?</description>
     </item>
     
     <item>
@@ -58,7 +52,7 @@ Instalasi $ uname -a $ Linux asuna 5.2.0-1-MANJARO #1 SMP PREEMPT Sun Jun 9 16:4
       <pubDate>Fri, 28 Jun 2019 14:22:15 +0700</pubDate>
       
       <guid>/post/windows-manager/</guid>
-      <description>Intro Artikel ini dibuat karena saya melihat digrub facebook banyak sekali yang bertanya &amp;ldquo;Desktop environtment apa yang ringan ?&amp;rdquo;, &amp;ldquo;saya mau install linux mint kira kira yang ringan dan tampilanya bagus pakai lxde xfce atau mate ?&amp;rdquo; &amp;ldquo;Saya habis install ubutnu kok ngelag ya ?&amp;rdquo; etc. mungkin artikel ini bisa menjawab pertanyaan - pertanyaan tersebut. sebenarnya jawaban pertanyaan diatas adalah xfce/lxde namun ada alernatif lain yaitu hanya menggunakan windows manager tanpa meggunakan desktop environment.</description>
+      <description>Intro Artikel ini dibuat karena saya melihat digrub facebook banyak sekali yang bertanya &amp;ldquo;Desktop environtment apa yang ringan ?</description>
     </item>
     
     <item>
@@ -67,7 +61,7 @@ Instalasi $ uname -a $ Linux asuna 5.2.0-1-MANJARO #1 SMP PREEMPT Sun Jun 9 16:4
       <pubDate>Thu, 27 Jun 2019 10:10:59 +0700</pubDate>
       
       <guid>/post/i3-setup/</guid>
-      <description>intro setelah sekian lama bersama dengan openbox, kini sepertinya saya harus selinkuh dengan i3, hal ini karena saya merasa openbox gagal memuaskan saya saat menjalankan banyak aplikasi sekaligus, saya harus menggeser touchpad unutk meminimaze aplikasi auatu meutup aplikasi saya juga harus menggeser touchpad lagi unutk membuka jendela yang diminimize, berapa banyak waktu yang terbuang hanya untuk menggeser touchpad ? huuh!!! sangat tidak praktis i3. masalah itu membuat saya melirik windows manager lain dan pilihan saya jatuh kepada i3.</description>
+      <description>intro setelah sekian lama bersama dengan openbox, kini sepertinya saya harus selinkuh dengan i3, hal ini karena saya merasa openbox gagal memuaskan saya saat menjalankan banyak aplikasi sekaligus, saya harus menggeser touchpad unutk meminimaze aplikasi auatu meutup aplikasi saya juga harus menggeser touchpad lagi unutk membuka jendela yang diminimize, berapa banyak waktu yang terbuang hanya untuk menggeser touchpad ?</description>
     </item>
     
   </channel>

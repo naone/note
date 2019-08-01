@@ -18,7 +18,7 @@ DisqusShortname = "linuxisekai-github-io"
 googleAnalytics = "UA-143247560-1" 
 
 description = "Nolep enthuiast project."
-
+summaryLength = "1"
 # Biodata Author
 [author]
     name = "tempegoreng"

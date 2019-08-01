@@ -16,8 +16,7 @@
       <pubDate>Sat, 13 Jul 2019 19:58:55 +0700</pubDate>
       
       <guid>/post/setup-pwa-hugo/</guid>
-      <description>Disclaimer : saya bukan ahli dalam dunia web, tutorial ini saya dapat dari sini   setup hugo yang saya gunakan  vscode github netlify custom domain .site di idwebhost Bulma HightlightJS Feather icon Lazysizes Masonry Jquery 
-Siapkan favicon kamu bisa menggenerate di http://www.favicomatic.com/ tinggal upload gambar yang kamu ingin jadikan icon dengan ukuran 128,144,152,196,310. gambar ini nantinya akan dijadikan icon saat kita menambkanya ke layar utama.Kenapa ada banyak ukuran ?</description>
+      <description>Disclaimer : saya bukan ahli dalam dunia web, tutorial ini saya dapat dari sini   setup hugo yang saya gunakan  vscode github netlify custom domain .</description>
     </item>
     
     <item>
@@ -26,7 +25,7 @@ Siapkan favicon kamu bisa menggenerate di http://www.favicomatic.com/ tinggal up
       <pubDate>Thu, 04 Jul 2019 15:49:01 +0700</pubDate>
       
       <guid>/post/membuat-tema-hugo/</guid>
-      <description>Prakata melanjutkan artikel sebelumnya, Pada artikel kali ini kita akan membahas cara membuat tema hugo. sebenarnya di website https://themes.gohugo.io juga sudah banyak sekali tema yang sudah siap pakai akan tetapi saya merasa kurang sreg dengan tampilan tema yang disediakan, saya juga bingung jika ingin memodifikasi tampilan oleh karena itu saya ingin mencoba membuat tema sendiri sekaligus mencoba hal baru. tema yang kita buat akan menggunkan CSS framework yaitu bulma. pertama siapkan bahan-bahanya terlebih dahulu</description>
+      <description>Prakata melanjutkan artikel sebelumnya, Pada artikel kali ini kita akan membahas cara membuat tema hugo.</description>
     </item>
     
     <item>
@@ -35,8 +34,7 @@ Siapkan favicon kamu bisa menggenerate di http://www.favicomatic.com/ tinggal up
       <pubDate>Mon, 01 Jul 2019 20:03:00 +0700</pubDate>
       
       <guid>/post/ngeblog-dengan-hugo/</guid>
-      <description>Intro dunia website terus berkembang, banyak banyak sekali frameeork dan tools-tools baru bermunculkan yang menawarkan banyak fitur serta kemudahan, salah satunya yaitu SSG ( static site generator ), sepeti namanya SSG digunakan unutk meng generate web static, nah hugo adalah salah satu dari sekian banyak static site generator.
-List Static Site Generator  Hexo Gatsby Pelican Jekyll Vuepress Elevnty Hugo Etc.  menurut klaim hugo, hugo adalah framework tercepat unutuk membuat website.</description>
+      <description>Intro dunia website terus berkembang, banyak banyak sekali frameeork dan tools-tools baru bermunculkan yang menawarkan banyak fitur serta kemudahan, salah satunya yaitu SSG ( static site generator ), sepeti namanya SSG digunakan unutk meng generate web static, nah hugo adalah salah satu dari sekian banyak static site generator.</description>
     </item>
     
   </channel>

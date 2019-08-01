@@ -16,12 +16,7 @@
       <pubDate>Thu, 25 Jul 2019 09:39:01 +0700</pubDate>
       
       <guid>/post/install-laravel-dengan-composer/</guid>
-      <description>install composer dan laravel installer
-sudo pacman -S composer composer global require laravel/installer  perintah diatas akan membuat folder composer directory .config.
-export laravel ke zsh/bash agar bisa dieksekusi
-export PATH=$PATH:$HOME/.config/composer/vendor/bin  membuat project laravel
-laravel new project_laravel  local development server
-php artisan serve  </description>
+      <description>install composer dan laravel installer</description>
     </item>
     
     <item>
@@ -30,8 +25,7 @@ php artisan serve  </description>
       <pubDate>Sat, 13 Jul 2019 19:58:55 +0700</pubDate>
       
       <guid>/post/setup-pwa-hugo/</guid>
-      <description>Disclaimer : saya bukan ahli dalam dunia web, tutorial ini saya dapat dari sini   setup hugo yang saya gunakan  vscode github netlify custom domain .site di idwebhost Bulma HightlightJS Feather icon Lazysizes Masonry Jquery 
-Siapkan favicon kamu bisa menggenerate di http://www.favicomatic.com/ tinggal upload gambar yang kamu ingin jadikan icon dengan ukuran 128,144,152,196,310. gambar ini nantinya akan dijadikan icon saat kita menambkanya ke layar utama.Kenapa ada banyak ukuran ?</description>
+      <description>Disclaimer : saya bukan ahli dalam dunia web, tutorial ini saya dapat dari sini   setup hugo yang saya gunakan  vscode github netlify custom domain .</description>
     </item>
     
     <item>
@@ -40,7 +34,7 @@ Siapkan favicon kamu bisa menggenerate di http://www.favicomatic.com/ tinggal up
       <pubDate>Sun, 07 Jul 2019 22:22:35 +0700</pubDate>
       
       <guid>/post/debian10-rilis/</guid>
-      <description>tanggal 6 july 2019 kemarin akhirnya debian merilis versi OS terbaru mereka dengan code name &amp;ldquo;buster&amp;rdquo;,Yuup !! setelah sekian lama ( kurang lebih 25 bulan dalam pengembanganya ) akhirnya nenek moyang dari sebagian besar distro yang bertebaran diluar sana rilis juga 👍. Menurut keterangan di website resmi mereka debian 10 akan mendapat dukungan penuh selama 5 tahun dan seperti biasa debian 10 memiliki bebrapa pilihan Dektop environment yang bisa kalian pilih saat ingin mendownload isonya seperti Gnome, Cinammon, KDE, LXQT dll.</description>
+      <description>tanggal 6 july 2019 kemarin akhirnya debian merilis versi OS terbaru mereka dengan code name &amp;ldquo;buster&amp;rdquo;,Yuup !</description>
     </item>
     
     <item>
@@ -49,11 +43,7 @@ Siapkan favicon kamu bisa menggenerate di http://www.favicomatic.com/ tinggal up
       <pubDate>Sat, 06 Jul 2019 08:29:35 +0700</pubDate>
       
       <guid>/post/convert-gambar-ke-webp/</guid>
-      <description>Pendahuluan bagi yang belum tau .webp adalah format gambar digital yang dibuat oleh google. format ini pertama kali diperkenalkan pada tanggal 30 september 2010. pada awal perilisanya hanya browser google chrome saja yang mendukung. tetapi unutk sekarang sudah hampir semua browser.
-mengapa menggunakan .webp 1.webp menghasilkan file yang kecil dengan kualias gambar yang bagus
-2.mampu menampilkan gambar bergerak
-3.mempercepat loading website
-instalasi arch linux sudo pacman -S libwebp gthumb  ubuntu sudo apt-get install libwebp gthumb  Convert gambar asuna@linuxisekai:~$ cd Pictures asuna@linuxisekai:~/Pictures$ ls asuna.</description>
+      <description>Pendahuluan bagi yang belum tau .</description>
     </item>
     
     <item>
@@ -62,7 +52,7 @@ instalasi arch linux sudo pacman -S libwebp gthumb  ubuntu sudo apt-get install 
       <pubDate>Thu, 04 Jul 2019 15:49:01 +0700</pubDate>
       
       <guid>/post/membuat-tema-hugo/</guid>
-      <description>Prakata melanjutkan artikel sebelumnya, Pada artikel kali ini kita akan membahas cara membuat tema hugo. sebenarnya di website https://themes.gohugo.io juga sudah banyak sekali tema yang sudah siap pakai akan tetapi saya merasa kurang sreg dengan tampilan tema yang disediakan, saya juga bingung jika ingin memodifikasi tampilan oleh karena itu saya ingin mencoba membuat tema sendiri sekaligus mencoba hal baru. tema yang kita buat akan menggunkan CSS framework yaitu bulma. pertama siapkan bahan-bahanya terlebih dahulu</description>
+      <description>Prakata melanjutkan artikel sebelumnya, Pada artikel kali ini kita akan membahas cara membuat tema hugo.</description>
     </item>
     
     <item>
@@ -71,8 +61,7 @@ instalasi arch linux sudo pacman -S libwebp gthumb  ubuntu sudo apt-get install 
       <pubDate>Mon, 01 Jul 2019 20:03:00 +0700</pubDate>
       
       <guid>/post/ngeblog-dengan-hugo/</guid>
-      <description>Intro dunia website terus berkembang, banyak banyak sekali frameeork dan tools-tools baru bermunculkan yang menawarkan banyak fitur serta kemudahan, salah satunya yaitu SSG ( static site generator ), sepeti namanya SSG digunakan unutk meng generate web static, nah hugo adalah salah satu dari sekian banyak static site generator.
-List Static Site Generator  Hexo Gatsby Pelican Jekyll Vuepress Elevnty Hugo Etc.  menurut klaim hugo, hugo adalah framework tercepat unutuk membuat website.</description>
+      <description>Intro dunia website terus berkembang, banyak banyak sekali frameeork dan tools-tools baru bermunculkan yang menawarkan banyak fitur serta kemudahan, salah satunya yaitu SSG ( static site generator ), sepeti namanya SSG digunakan unutk meng generate web static, nah hugo adalah salah satu dari sekian banyak static site generator.</description>
     </item>
     
     <item>
@@ -81,8 +70,7 @@ List Static Site Generator  Hexo Gatsby Pelican Jekyll Vuepress Elevnty Hugo Etc
       <pubDate>Sun, 30 Jun 2019 08:08:26 +0700</pubDate>
       
       <guid>/post/oomo-gtk/</guid>
-      <description>Intro oomox adalah aplikasi yang digunakan membuat gtk theme pada sistem operasi linux.oomox berbasisikan GUI jadi sangat mudah digunkan. bagi yang hobi otak atik tampilan desktop, oomox pasti akan menjadi aplikasi yang sangat berguna. tema oomox sendiri terbagi menjadi 3 varian yaitu numix-based, materia dan arch theme dan untuk icon ada 4 yaitu archdroid, gnome color, numix, papirus dan suru++.
-Instalasi Arch linux $ sudo pacman -S yay $ yay -S oomox  Ubuntu $ sudo apt-get install python3-gi libglib2.</description>
+      <description>Intro oomox adalah aplikasi yang digunakan membuat gtk theme pada sistem operasi linux.</description>
     </item>
     
     <item>
@@ -91,8 +79,9 @@ Instalasi Arch linux $ sudo pacman -S yay $ yay -S oomox  Ubuntu $ sudo apt-get 
       <pubDate>Sat, 29 Jun 2019 16:38:23 +0700</pubDate>
       
       <guid>/post/bulma-framework/</guid>
-      <description>Pendahuluan  Ini bukan bulma dragon ball 😠   bulma adalah salah satu framework CSS yang sedang naik daun akhir-akhir ini, bulma dibuat oleh Jeremy Thomas berbasiskan css flexbox, oleh karena itu grid system pada bulma sangatlah flexibel dan responsif. inilah kelebihan utama pada bulma dibanding framework css lain. oh iya linuxisekai juga meggunakan bulma loh 😅 .
-kelebihan bulma  flexbox based : membuat kita lebih mudah dalam membuat grid system yang fleksibel dan responsif hanya menggunkan satu file css : bulma sama sekali tidak menggunakan javascript, saat kita menginstallnya kita hanya diberi satu file yaitu bulma.</description>
+      <description>&lt;p&gt;&lt;h3&gt;Pendahuluan&lt;/h3&gt;
+&lt;b&gt; Ini bukan bulma dragon ball 😠 &lt;/b&gt;
+&lt;br/&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -101,8 +90,7 @@ kelebihan bulma  flexbox based : membuat kita lebih mudah dalam membuat grid sys
       <pubDate>Fri, 28 Jun 2019 19:43:35 +0700</pubDate>
       
       <guid>/post/driver-realtek/</guid>
-      <description>Intro setelah selesai menginstall sistem operasi linux terus ternyata tidak ada wifinya ? mengkin itu terjadi karena driver dari wifi tersebut belum terinstall, memenag ada beberapa yang wifinya secara default sudah terinstall beberapa vendor seperti realtek atau broadcom yang secara dedault belum terinstal yang saya sendiri juga tidak tau alasnya.
-Instalasi $ uname -a $ Linux asuna 5.2.0-1-MANJARO #1 SMP PREEMPT Sun Jun 9 16:43:42 UTC 2019 x86_64 GNU/Linux  selanjutnya install paket-paket yang dibutuhkan</description>
+      <description>Intro setelah selesai menginstall sistem operasi linux terus ternyata tidak ada wifinya ?</description>
     </item>
     
     <item>
@@ -111,7 +99,7 @@ Instalasi $ uname -a $ Linux asuna 5.2.0-1-MANJARO #1 SMP PREEMPT Sun Jun 9 16:4
       <pubDate>Fri, 28 Jun 2019 14:22:15 +0700</pubDate>
       
       <guid>/post/windows-manager/</guid>
-      <description>Intro Artikel ini dibuat karena saya melihat digrub facebook banyak sekali yang bertanya &amp;ldquo;Desktop environtment apa yang ringan ?&amp;rdquo;, &amp;ldquo;saya mau install linux mint kira kira yang ringan dan tampilanya bagus pakai lxde xfce atau mate ?&amp;rdquo; &amp;ldquo;Saya habis install ubutnu kok ngelag ya ?&amp;rdquo; etc. mungkin artikel ini bisa menjawab pertanyaan - pertanyaan tersebut. sebenarnya jawaban pertanyaan diatas adalah xfce/lxde namun ada alernatif lain yaitu hanya menggunakan windows manager tanpa meggunakan desktop environment.</description>
+      <description>Intro Artikel ini dibuat karena saya melihat digrub facebook banyak sekali yang bertanya &amp;ldquo;Desktop environtment apa yang ringan ?</description>
     </item>
     
     <item>
@@ -120,7 +108,7 @@ Instalasi $ uname -a $ Linux asuna 5.2.0-1-MANJARO #1 SMP PREEMPT Sun Jun 9 16:4
       <pubDate>Thu, 27 Jun 2019 20:24:43 +0700</pubDate>
       
       <guid>/friendlist/</guid>
-      <description>Addy&#39;s Blog Hi! I’m Addy! Just a student, a worker, and a Linux Enthusiast. I love metal, cat, linux, playing guitar, design, customizing desktop, more metal, reading, climbing mountain, fishing, watching movie, anime, and even more metal. I write articles in this blog when I have some freetime and not lazy. I write some knowledges I have about Linux, and probably I will also expand the theme of this blog with my adventures in my life.</description>
+      <description>Addy&#39;s Blog Hi!</description>
     </item>
     
     <item>
@@ -129,10 +117,7 @@ Instalasi $ uname -a $ Linux asuna 5.2.0-1-MANJARO #1 SMP PREEMPT Sun Jun 9 16:4
       <pubDate>Thu, 27 Jun 2019 20:18:50 +0700</pubDate>
       
       <guid>/about/</guid>
-      <description>Selamat datang di linuxisekai website ini dibuat menggunkan : SSG : Hugo CSS Framework : Bulma Font : 
-1). Font Awesome 2). Google Font JS framework : 
-1). PrismJS for Syntax Highlight 2). JQuery My friendlist : 
-1). Okitavera.me -&amp;gt; Nanda ( Yunee ) OKitavera. 2). Addy-dclxvi.github.io -&amp;gt; Adhi Pambudhi. 3). Epsi-rns.gitlab.io -&amp;gt; Epsi-rns 4). Bandithijo.com -&amp;gt; Rizqi Nur Assyaufi 5). Aflasio.art -&amp;gt; Aflasio</description>
+      <description>Selamat datang di linuxisekai website ini dibuat menggunkan : SSG : Hugo CSS Framework : Bulma Font :</description>
     </item>
     
     <item>
@@ -141,7 +126,7 @@ Instalasi $ uname -a $ Linux asuna 5.2.0-1-MANJARO #1 SMP PREEMPT Sun Jun 9 16:4
       <pubDate>Thu, 27 Jun 2019 10:10:59 +0700</pubDate>
       
       <guid>/post/i3-setup/</guid>
-      <description>intro setelah sekian lama bersama dengan openbox, kini sepertinya saya harus selinkuh dengan i3, hal ini karena saya merasa openbox gagal memuaskan saya saat menjalankan banyak aplikasi sekaligus, saya harus menggeser touchpad unutk meminimaze aplikasi auatu meutup aplikasi saya juga harus menggeser touchpad lagi unutk membuka jendela yang diminimize, berapa banyak waktu yang terbuang hanya untuk menggeser touchpad ? huuh!!! sangat tidak praktis i3. masalah itu membuat saya melirik windows manager lain dan pilihan saya jatuh kepada i3.</description>
+      <description>intro setelah sekian lama bersama dengan openbox, kini sepertinya saya harus selinkuh dengan i3, hal ini karena saya merasa openbox gagal memuaskan saya saat menjalankan banyak aplikasi sekaligus, saya harus menggeser touchpad unutk meminimaze aplikasi auatu meutup aplikasi saya juga harus menggeser touchpad lagi unutk membuka jendela yang diminimize, berapa banyak waktu yang terbuang hanya untuk menggeser touchpad ?</description>
     </item>
     
     <item>

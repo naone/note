@@ -16,12 +16,7 @@
       <pubDate>Thu, 25 Jul 2019 09:39:01 +0700</pubDate>
       
       <guid>/post/install-laravel-dengan-composer/</guid>
-      <description>install composer dan laravel installer
-sudo pacman -S composer composer global require laravel/installer  perintah diatas akan membuat folder composer directory .config.
-export laravel ke zsh/bash agar bisa dieksekusi
-export PATH=$PATH:$HOME/.config/composer/vendor/bin  membuat project laravel
-laravel new project_laravel  local development server
-php artisan serve  </description>
+      <description>install composer dan laravel installer</description>
     </item>
     
   </channel>
