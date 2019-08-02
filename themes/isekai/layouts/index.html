@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   {{ partial "head.html" . }}
-  <body id="body" class="dark-mode">
+  <body id="body" class="dark-mode" style="background-image: linear-gradient(to bottom right, #ff00008f,rgba(0, 0, 255, 0.301))">
     {{ partial "navbar.html" . }}
-    <section class="main-content container columns is-fullheight">
+    <div class="main-content container columns is-fullheight">
     {{ partial "aside.html" . }}
     {{ partial "grid.html" . }}
-  </section>
     {{ partial "pagination.html" . }}
+ 
     {{ partial "info.html" . }}
     {{ partial "footer.html" . }}
+    </div>
     {{ partial "js-init.html" . }}
     <script>
         if('serviceWorker' in navigator) {

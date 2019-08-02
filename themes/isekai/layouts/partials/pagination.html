@@ -1,4 +1,5 @@
-<nav class="pagination is-centered is-rounded is-small" role="navigation" aria-label="pagination">
+<div class="conteiner column">
+<div class="pagination is-rounded is-small" role="navigation" aria-label="pagination">
         {{ $pag := $.Paginator }}
         {{ if gt $pag.TotalPages 1 }}
         <ul class="pagination-list">
@@ -7,7 +8,7 @@
             {{ end }}
             <li
             {{ if not $pag.HasPrev }}class="disabled page-item"{{ end }}>
-            <a class="pagination-link is-current" href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}" aria-label="Previous"><i class="fas fa-arrow-left"></i></a>
+            <a class="pagination-link is-current" href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}" aria-label="Previous"><i class="fas fa-angle-left"></i></a>
             </li>
             {{ $.Scratch.Set "__paginator.ellipsed" false }}
             {{ range $pag.Pagers }}
@@ -25,17 +26,17 @@
             <li
             {{ if eq . $pag }}{{ end }}><a class="pagination-link is-current" href="{{ .URL }}">{{ .PageNumber }}</a></li>
             {{ else if ($.Scratch.Get "__paginator.shouldEllipse") }}
-            <li><a class="pagination-link is-current" href="#"><span aria-hidden="true">&hellip;</span></a></li>
+            
             {{ end }}
             {{ end }}
             <li
             {{ if not $pag.HasNext }}class="disabled page-item"{{ end }}>
-            <a class="pagination-link is-current" href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}" aria-label="Next"><i class="fas fa-arrow-right"></i></a>
+            <a class="pagination-link is-current" href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}" aria-label="Next"><i class="fas fa-angle-right"></i></a>
             </li>
             {{ with $pag.Last }}
             
             {{ end }}
         </ul>
         {{ end }}
-        </nav>
-        <div class="ghost-padding"></div>
+    </div>
+</div>

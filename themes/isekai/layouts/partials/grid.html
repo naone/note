@@ -1,8 +1,9 @@
 
-  <div class="ghost-padding is-hidden-tablet"></div>
   <div class="masonry-wrapper">
       <div class="masonry">
-
+        <br>
+        <br>
+        <h1 class="title">Latest Post</h1>
           {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 5 }}
           {{ range $paginator.Pages }}
           <a href="{{ .RelPermalink }}" class="judul-post">
@@ -44,4 +45,5 @@
               </div>
               </a>
               {{ end }}
+            
        

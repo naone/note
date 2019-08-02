@@ -7,10 +7,6 @@ thumbnail: /img/post/pink.webp
 image: /img/post/pink.webp
 description: "convert gambar di linux menggunkan libwebp" 
 ---
-<div class="has-text-centered">
-<img src="/img/post/pink.webp" class="content-img"/>
-</div>
-
 
 ### Pendahuluan
 bagi yang belum tau .webp adalah format gambar digital yang dibuat oleh google. format ini pertama kali diperkenalkan pada tanggal 30 september 2010. pada awal perilisanya hanya browser google chrome saja yang mendukung. tetapi unutk sekarang sudah hampir semua browser.
