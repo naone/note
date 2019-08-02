@@ -99,12 +99,12 @@ body.light-mode h1 h2 h3 h4 h5 h6{
       body.light-mode .is-fullheight {
         background-color: #ffffff;
       }
-      body.light-mode nav{
+      body.light-mode .navbar{
        background-color: #ffffff;
        color:#2E3240;
       }
       body.light-mode .is-primary {
-        color:#FF007D;
+        color:#FF007D: 
       }
       body.light-mode pre{
       border-color: rgb(250, 119, 182);
