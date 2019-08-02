@@ -1,11 +1,12 @@
 
-  <div class="masonry-wrapper">
+   <div class="masonry-wrapper">
       <div class="masonry">
         <br>
         <br>
         <h1 class="title">Latest Post</h1>
           {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 5 }}
           {{ range $paginator.Pages }}
+          
           <a href="{{ .RelPermalink }}" class="judul-post">
           <div class="masonry-item">
               <!--<img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" width="400px">-->

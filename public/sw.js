@@ -31,7 +31,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/css/custom.css",
-    "revision": "3a311de199dda725693a736f3613f881"
+    "revision": "9834d59c608a7743a3b5e7f1b03d239f"
   },
   {
     "url": "/css/highlight.css",
@@ -46,6 +46,10 @@ self.__precacheManifest = [
     "revision": "5dc5aa90c58005563066801511e78cb9"
   },
   {
+    "url": "/css/oke.css",
+    "revision": "2c9aad0324d37d967cd4ec0471cb9067"
+  },
+  {
     "url": "/font/GlacialIndifferenceRegular.otf",
     "revision": "13dc531a2ffd9ca7eeb500515774fa74"
   },
@@ -55,7 +59,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/js/core.js",
-    "revision": "3187def97cdd0a1b04ea41e7f40bd2c5"
+    "revision": "fc95831f93a5255d2d06b8a2947e4b53"
   },
   {
     "url": "/js/highlight.pack.js",
