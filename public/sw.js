@@ -34,20 +34,16 @@ self.__precacheManifest = [
     "revision": "3a311de199dda725693a736f3613f881"
   },
   {
-    "url": "/css/lightmode.css",
-    "revision": "c3fe861a8bc88798f6dd6123c7943e29"
+    "url": "/css/highlight.css",
+    "revision": "1989ac4c4e039973d837cc60e8890fc9"
   },
   {
-    "url": "/css/mybulma.css",
-    "revision": "bfc366c87a0150555e21b6247ef8bd0c"
+    "url": "/css/lightmode.css",
+    "revision": "0362fdf090d879f316436b80c2bbfbb8"
   },
   {
     "url": "/css/mystyle.css",
     "revision": "5dc5aa90c58005563066801511e78cb9"
-  },
-  {
-    "url": "/css/solarized-dark.css",
-    "revision": "1989ac4c4e039973d837cc60e8890fc9"
   },
   {
     "url": "/font/GlacialIndifferenceRegular.otf",
