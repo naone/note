@@ -11,9 +11,7 @@ body.light-mode h1 h2 h3 h4 h5 h6{
    .fa-code {
      color:rgb(20, 141, 131);
     }
-    body.light-mode .fa-calendar-alt {
-      color:#736DBB;
-     }
+  
    .fa-coffee {
       color:rgb(150, 192, 52);
      }

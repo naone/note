@@ -1,10 +1,11 @@
 ---
-title: "Friendlist"
 date: 2019-06-27T20:24:43+07:00
 draft: false
 ---
 
-
+<h1 class="title has-text-centered">
+Friendlist
+</h1>
 <div class="masonry-friendlist">
 <div class="masonry-item">
 <a href="https://adddy-dclxvi.github.io" target="_blank">
