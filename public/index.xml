@@ -5,10 +5,19 @@
     <link>/</link>
     <description>Recent content on Linuxisekai | Nolep enthuiast project</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 25 Jul 2019 09:39:01 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 03 Aug 2019 21:38:01 +0700</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Costumize Bulma denagn sass-cli</title>
+      <link>/post/costumize-bulma/</link>
+      <pubDate>Sat, 03 Aug 2019 21:38:01 +0700</pubDate>
+      
+      <guid>/post/costumize-bulma/</guid>
+      <description>buat folder tempat kita mengcostumize bulma</description>
+    </item>
     
     <item>
       <title>Install Laravel Dengan Laravel Installer</title>

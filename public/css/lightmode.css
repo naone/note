@@ -105,11 +105,16 @@ body.light-mode h1 h2 h3 h4 h5 h6{
         color:#FF007D !important;
       }
       body.light-mode pre{
-      border-color: rgb(250, 119, 182);
+      border-color: #F85191;
+       
+      }
+
+      body.light-mode .hljs {
+        background: rgb(231, 233, 235);
+        color: rgb(79, 82, 90);
       }
       body.light-mode code {
-        background-color: #F1F1F1;
-        color: rgb(111, 114, 122);
+        background-color: #fff;
       }
       body.light-mode .is-fixed-top{
        background-color: #ffffff;
@@ -133,8 +138,12 @@ body.light-mode h1 h2 h3 h4 h5 h6{
       }
       body.light-mode .no-border{
        border: 1px #ffffff solid;
-       border-left: 4px solid #7600BE;
+       border-left: 4px solid #B063B2;
        color: #2E3240;
+      }
+      body.light-mode .popuptext {
+        background-color: #2E3240;
+        color: #fff;
       }
       body.light-mode .putih{
        color: #2E3240;
@@ -213,4 +222,16 @@ body.light-mode h1 h2 h3 h4 h5 h6{
       body.light-mode .menu-label {
        color: #2E3240;
         
+      }
+      body.light-mode .box {
+        background-color: #EFEFEF;
+      }
+      body.light-mode .container {
+        background-color: #FFF;
+      }
+      body.light-mode columns {
+       background-color: #fff;
+      }
+      body.light-mode .masonry {
+        background-color: #FFF;
       }

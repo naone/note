@@ -31,19 +31,19 @@ self.__precacheManifest = [
   },
   {
     "url": "/css/custom.css",
-    "revision": "769d53dbc3edb2c4de1c72498d7de9ab"
+    "revision": "b8d3335a9f84f6d0701c69d4ff69dbd9"
   },
   {
     "url": "/css/highlight.css",
-    "revision": "1989ac4c4e039973d837cc60e8890fc9"
+    "revision": "a3ce2b0cbbf95edb0f29fd740d1fc9e6"
   },
   {
     "url": "/css/lightmode.css",
-    "revision": "f5a5e1c3be901a4a58eb19f9027cb4a3"
+    "revision": "58aa813f9a622a94fe92794fc3ab648b"
   },
   {
     "url": "/css/mystyle.css",
-    "revision": "5dc5aa90c58005563066801511e78cb9"
+    "revision": "eb61554b2e1b623b17905cca22b5b544"
   },
   {
     "url": "/css/oke.css",

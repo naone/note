@@ -21,17 +21,17 @@
     <link rel="stylesheet" media="screen" href="/css/font.css" type="text/css"/> 
     <link rel="manifest" href="/manifest.json"> 
     
-<meta itemprop="name" content="Setup PWA di hugo | first PWA">
-<meta itemprop="description" content="Hugo Progresif Web Aplication">
+<meta itemprop="name" content="Costumize Bulma denagn sass-cli">
+<meta itemprop="description" content="buat folder tempat kita mengcostumize bulma">
 
 
-<meta itemprop="datePublished" content="2019-07-13T19:58:55&#43;07:00" />
-<meta itemprop="dateModified" content="2019-07-13T19:58:55&#43;07:00" />
-<meta itemprop="wordCount" content="813">
+<meta itemprop="datePublished" content="2019-08-03T21:38:01&#43;07:00" />
+<meta itemprop="dateModified" content="2019-08-03T21:38:01&#43;07:00" />
+<meta itemprop="wordCount" content="526">
 
 
 
-<meta itemprop="keywords" content="hugo,pwa," />
+<meta itemprop="keywords" content="" />
 
     
     
@@ -48,16 +48,16 @@ if (!doNotTrack) {
 }
 </script>
 
-    <meta property="og:title" content="Setup PWA di hugo | first PWA" />
-<meta property="og:description" content="Hugo Progresif Web Aplication" />
+    <meta property="og:title" content="Costumize Bulma denagn sass-cli" />
+<meta property="og:description" content="buat folder tempat kita mengcostumize bulma" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/post/setup-pwa-hugo/" />
-<meta property="article:published_time" content="2019-07-13T19:58:55&#43;07:00"/>
-<meta property="article:modified_time" content="2019-07-13T19:58:55&#43;07:00"/>
+<meta property="og:url" content="/post/costumize-bulma/" />
+<meta property="article:published_time" content="2019-08-03T21:38:01&#43;07:00"/>
+<meta property="article:modified_time" content="2019-08-03T21:38:01&#43;07:00"/>
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Setup PWA di hugo | first PWA"/>
-<meta name="twitter:description" content="Hugo Progresif Web Aplication"/>
+<meta name="twitter:title" content="Costumize Bulma denagn sass-cli"/>
+<meta name="twitter:description" content="buat folder tempat kita mengcostumize bulma"/>
 
 </head>
 
@@ -244,319 +244,256 @@ if (!doNotTrack) {
             <div class="content">
                     
                     <br>
-               <h1 class="title"> Setup PWA di hugo | first PWA </h1>
+               <h1 class="title"> Costumize Bulma denagn sass-cli </h1>
                 
                 
 
-<div class="no-border">
-Disclaimer :
-saya bukan ahli dalam dunia web, tutorial ini saya dapat dari <a href="https://www.thepolyglotdeveloper.com/2019/03/service-workers-workbox-hugo-static-generated-site/">sini</a>
+<p>buat folder tempat kita mengcostumize bulma</p>
+
+<pre><code>$ mkdir mybulma
+</code></pre>
+
+<p>download bulma terlebih dahulu di <a href="https://bulma.io">https://bulma.io</a>, lalu unzip lalu letakan folder bulmanya ke <code> mybulma</code>.</p>
+
+<h3 id="buat-folder-css-dan-sass">buat folder css dan sass</h3>
+
+<pre><code>$ cd mybulma
+~/mybulma $ mkdir sass css
+</code></pre>
+
+<p>css adalah folder untuk menaruh hasil compile sass, sedangkan sass tempat kita mengcostumize elemen/variable dari bulma.</p>
+
+<h3 id="buat-file-scss">buat file scss</h3>
+
+<p>buat sass file dengan nama <code>mystyle.scss</code> di folder <code>sass</code></p>
+
+<pre><code>@charset &quot;utf-8&quot;;
+@import &quot;../bulma-0.7.5/bulma.sass&quot;;
+</code></pre>
+
+<p>pastikan path yang menuku ke file <code>bulma.sass</code> sudah sesuai</p>
+
+<h3 id="membuat-halaman-html">membuat halaman html</h3>
+
+<pre><code>~/mybulma $ touch mypage.html
+</code></pre>
+
+<p>mypage.html</p>
+
+<pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;my custom bulma website&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/mybulma.css&quot;&gt;
+&lt;/head&gt;
+&lt;body class=&gt;
+&lt;h1 class=&quot;title&quot;&gt;
+bulma
+&lt;/h1&gt;
+&lt;p class=&quot;subtitle&quot;&gt;
+modern css framework
+&lt;/p&gt;
+&lt;div class=&quot;field&quot;&gt;
+&lt;div class=&quot;control&quot;&gt;
+&lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;input&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;field&quot;&gt;
+&lt;p class=&quot;control&quot;&gt;
+&lt;span class=&quot;select&quot;&gt;
+&lt;select&gt;
+&lt;option&gt;select dropdown&lt;/option&gt;
+&lt;/select&gt;
+&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;buttons&quot;&gt;
+&lt;a class=&quot;is-primary button&quot;&gt;Primary&lt;/a&gt;
+&lt;a class=&quot;button is-link&quot;&gt;Link&lt;/a&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>sekarang coba buka di browser, seharusnya tampilanya masih polos, itu dikarenakan css/mybulma.css belum di dibuat, nanti akan kita buat menggunakan sass.</p>
+
+<h3 id="membuat-css-file">membuat css file</h3>
+
+<p>sekarang kita akan memanggil bulma yang ada di folder <code>bulma-0.7.5/css/bulma.css</code> ke file <code>css/mybulma.css</code></p>
+
+<pre><code>~/mybulma $ sass --sourcemap=none sass/mystyle.sass:css/mystyle.css
+</code></pre>
+
+<p>sekarang coba refresh <code>mypage.html</code></p>
+
+<p><center>
+<img src="/img/post/costumize-bulma.png"  class="content-img">
+</center></p>
+
+<p>yapp itu adalah tampilan default dari bulma sekarang kita modifikasi class-class pada bulma</p>
+
+<p>buat folder <code>mystyle.scss</code> pada folder <code>sass</code>.</p>
+
+<p>mystyle.scss</p>
+
+<pre><code>$ungu:#81358A;
+$primary:$ungu;
+
+@import &quot;../bulma-0.7.5/sass/utilities/_all.sass&quot;;
+@import &quot;../bulma-0.7.5/sass/base/_all.sass&quot;;
+@import &quot;../bulma-0.7.5/sass/components/_all.sass&quot;;
+@import &quot;../bulma-0.7.5/sass/layout/_all.sass&quot;;
+@import &quot;../bulma-0.7.5/sass/form/_all.sass&quot;;
+@import &quot;../bulma-0.7.5/sass/grid/_all.sass&quot;;
+@import &quot;../bulma-0.7.5/sass/elements/_all.sass&quot;;
+</code></pre>
+
+<p>jalankan perintah perintah berikut ini :</p>
+
+<pre><code>~/mybulma $ sass --sourcemap=none sass/mystyle.sass:css/mystyle.css
+</code></pre>
+
+<p>sekarang refresh <code>mypage.html</code>, seharusnya tombol primary akan berwarna ungu karena kita tadi sudah merubahnya <code>$primary:$ungu;</code>.</p>
+
+<p>itu baru 1 variabe sekarang kita akan membuat beberapa variabel, untuk referensi variabel pada bulma kita bisa melihatnya disini <a href="https://bulma.io/documentationcostumize/variabel">https://bulma.io/documentationcostumize/variabel</a>.</p>
+
+<pre><code>$grey-lighter: #ffffff;
+$grey-light:   #BFBDD6;
+$grey:         #C0BDC0;
+$grey-alt:     #395369;
+$grey-dark:    #011627;
+$grey-darker:  #01121F;
+
+$orange       : #B87736;
+$yellow       : #AFB736;
+$green        : #6DB736;
+$cyan         : #36B1B7;
+$blue         : #2D85C3;
+$purple       : #5A3E8D;
+$red          : #B73652;
+
+$black-bis: rgb(41, 43, 49);
+
+$primary: $purple !default;
+$warning      : $orange;
+$info: $blue;
+$yellow-invert: #fff;
+
+$light: $grey-lighter;
+$dark : darken($grey-darker, 3);
+
+$family-sans-serif: &quot;GlacialIndifferenceRegular&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, &quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;
+$family-monospace: &quot;Fira Code&quot;, &quot;Consolas&quot;, &quot;Monaco&quot;, monospace;
+
+$radius-small: 3px;
+$radius: .4em;
+$radius-large: 8px;
+
+$body-size: 15px;
+$size-7: .85em;
+
+$title-weight: 500;
+$subtitle-weight: 400;
+$subtitle-color: $grey-dark;
+
+$border-width: 2px;
+$border: $grey-dark;
+
+$body-background-color: $grey-darker;
+$background: $grey-darker;
+$footer-background-color: $background;
+
+$title-color: $grey;
+$subtitle-color: $grey-alt;
+$subtitle-strong-color: $grey-light;
+
+$text       : $grey;
+$text-light : lighten($text, 10);
+$text-strong: darken($text, 5);
+
+$box-shadow: none;
+$box-background-color: $grey-dark;
+
+$card-shadow: none;
+$card-background-color: $grey-darker;
+$card-header-box-shadow: none;
+$card-header-background-color: rgba($black-bis, 0.2);
+$card-footer-background-color: rgba($black-bis, 0.2);
+
+$link             : $purple;
+$link-hover       : $grey-light;
+$link-hover-border: $grey-light;
+$link-focus       : darken($grey-light, 10);
+$link-focus-border: $grey-light;
+$link-active      : darken($grey-light, 10);
+
+$button-color: $grey;
+$button-background-color: $background;
+$button-border-color: $grey;
+
+$input-color: $grey;
+$input-icon-color: darken($grey-light, 10);
+$input-background-color: $grey-lighter;
+$input-border-color: darken($grey-light, 10);
+$input-hover-color: $grey-light;
+$input-disabled-background-color: $grey-dark;
+$input-disabled-border-color: $grey-dark;
+
+$table-color: $text;
+$table-head-color: $grey-lighter;
+$table-background-color: $grey-dark;
+$table-cell-border: 1px solid $grey;
+
+$table-row-hover-background-color: $grey-darker;
+$table-striped-row-even-background-color: $grey-darker;
+$table-striped-row-even-hover-background-color: lighten($grey-darker, 4);
+
+$pagination-border-color: $border;
+
+$navbar-background-color: $grey-dark;
+$navbar-item-color: $grey;
+$navbar-item-hover-color: $grey;
+$navbar-item-active-color: $grey-lighter;
+$navbar-item-active-background-color: transparent;
+$navbar-item-hover-background-color: transparent;
+$navbar-dropdown-border-top: 1px solid $grey-darker;
+$navbar-divider-background-color: $grey-darker;
+$navbar-dropdown-arrow: $grey;
+$navbar-dropdown-background-color: $grey-dark;
+$navbar-dropdown-item-hover-color: $grey-lighter;
+$navbar-dropdown-item-hover-background-color: lighten($grey-darker, 4);
+$navbar-dropdown-item-active-background-color: lighten($grey-darker, 4);
+$navbar-dropdown-item-active-color: $grey-lighter;
+
+$dropdown-content-background-color: $background;
+$dropdown-item-color: $text;
+$dropdown-item-hover-color: $link-hover;
+
+$bulmaswatch-import-font: true !default;
+
+@import &quot;../bulma-0.7.5/sass/utilities/_all.sass&quot;;
+@import &quot;../bulma-0.7.5/sass/base/_all.sass&quot;;
+@import &quot;../bulma-0.7.5/sass/components/_all.sass&quot;;
+@import &quot;../bulma-0.7.5/sass/layout/_all.sass&quot;;
+@import &quot;../bulma-0.7.5/sass/form/_all.sass&quot;;
+@import &quot;../bulma-0.7.5/sass/grid/_all.sass&quot;;
+@import &quot;../bulma-0.7.5/sass/elements/_all.sass&quot;;
+</code></pre>
+
+<p>sekarang jalankan perintah ini lagi</p>
+
+<pre><code> ~/mybulma $ sass --sourcemap=none sass/mystyle.sass:css/mystyle.css
+</code></pre>
+
+<p>refresh <code>mypage.html</code></p>
+
+<p><center>
+<div class="box">
+<img src="/img/post/costumize-bulma-2.png">
 </div>
-
-<p><br/>
-setup hugo yang saya gunakan
-<ul>
-<li>vscode</li>
-<li>github</li>
-<li>netlify</li>
-<li>custom domain .site di idwebhost</li>
-<li>Bulma</li>
-<li>HightlightJS</li>
-<li>Feather icon</li>
-<li>Lazysizes</li>
-<li>Masonry</li>
-<li>Jquery</li>
-</ul></p>
-
-<h3 id="siapkan-favicon">Siapkan favicon</h3>
-
-<p>kamu bisa menggenerate di <a href="http://www.favicomatic.com/">http://www.favicomatic.com/</a> tinggal upload gambar yang kamu ingin jadikan icon
-dengan ukuran 128,144,152,196,310. gambar ini nantinya akan dijadikan icon saat kita menambkanya ke layar utama.Kenapa ada banyak ukuran ? karena untuk menyesuaikan resolusi layar pada device user.</p>
-
-<p>setelah didownload taruh di folder static project hugo kamu.</p>
-
-<h3 id="konfigurasi-manifest-json">konfigurasi manifest.json</h3>
-
-<p>buat file manifest.json di static/manifest.json</p>
-
-<pre><code>{
-&quot;name&quot;: &quot;Nolep Enthusisat.&quot;,
-&quot;short_name&quot;: &quot;Linuxisekai.&quot;,
-&quot;icons&quot;: [
-  {
-  &quot;src&quot;: &quot;/img/icons/favicon-128x128.png&quot;,
-  &quot;sizes&quot;: &quot;128x128&quot;,
-  &quot;type&quot;: &quot;image/png&quot;
-}, {
-  &quot;src&quot;: &quot;/img/icons/favicon-144x144.png&quot;,
-  &quot;sizes&quot;: &quot;144x144&quot;,
-  &quot;type&quot;: &quot;image/png&quot;
-}, {
-  &quot;src&quot;: &quot;/img/icons/favicon-152x152.png&quot;,
-  &quot;sizes&quot;: &quot;152x152&quot;,
-  &quot;type&quot;: &quot;image/png&quot;
-},{
-  &quot;src&quot;: &quot;/img/icons/favicon-196x196.png&quot;,
-  &quot;sizes&quot;: &quot;196x196&quot;,
-  &quot;type&quot;: &quot;image/png&quot;
-},{
-  &quot;src&quot;: &quot;/img/icons/favicon-310x310.png&quot;,
-  &quot;sizes&quot;: &quot;310x310&quot;,
-  &quot;type&quot;: &quot;image/png&quot;
-}
-],
-&quot;display&quot;: &quot;standalone&quot;,
-&quot;orientation&quot; : &quot;portrait&quot;,
-&quot;background_color&quot;: &quot;#002B36&quot;,
-&quot;theme_color&quot;: &quot;#073642&quot;,
-&quot;start_url&quot;: &quot;/&quot;
-}
-</code></pre>
-
-<ul>
-<li>
-"name" dan "shortname" : sesuaikan denagn situs hugo kamu.
-</li>
-<li>
-"src", "size", dan "type" : sesuaikan dengan favicon yang tadi didownload.
-</li>
-<li>
-"theme_color" : fungsinya sama seperti theme-color pada tag <code>meta</code>
-</li>
-<li>
-"display" : "standalone" : membuat aplikasi menyembunyikan UI browser
-</li>
-<li>
-"orientation" : orientasi tampilan
-</li>
-</ul>
-
-<h3 id="memanggil-manifest-json">Memanggil manifest.json</h3>
-
-<pre><code> &lt;link rel=&quot;manifest&quot; href=&quot;/manifest.json&quot;&gt;
-</code></pre>
-
-<p>taruh script diatas di antara tag <code>head</code></p>
-
-<h3 id="menginstall-workbox-dan-gulp">menginstall workbox dan gulp</h3>
-
-<p>pastikan sudah npm sudah terinstall di OS kamu, lalu jalankan perintah di bawah ini di directory root hugo</p>
-
-<pre><code>$ npm init -y
-$ npm install gulp --save-dev
-$ npm install workbox-build --save-dev
-$ npm install gulp-clean --save-dev
-$ npm install gulp-shell --save-dev
-</code></pre>
-
-<p>perintah npm init -y diatas akan menghasilkan file package.json.
-perintah selanjutnya untuk menginstall gulp, workbox, gulp-clean dan gulp-shell.</p>
-
-<h3 id="konfigurasi-gulp">Konfigurasi gulp</h3>
-
-<p>pada directory root hugo kamu, buat file gulpfile.js lalu isi denagan :</p>
-
-<pre><code>const gulp = require(&quot;gulp&quot;);
-const clean = require(&quot;gulp-clean&quot;);
-const shell = require(&quot;gulp-shell&quot;);
-const workbox = require(&quot;workbox-build&quot;);
-
-gulp.task(&quot;clean&quot;, function () {
-return gulp.src(&quot;public&quot;, { read: false, allowEmpty: true })
-.pipe(clean());
-});
-
-gulp.task(&quot;hugo-build&quot;, shell.task([&quot;hugo&quot;]));
-
-gulp.task(&quot;generate-service-worker&quot;, () =&gt; {
-return workbox.generateSW({
-  cacheId: &quot;Linuxisekai&quot;,
-  globDirectory: &quot;./public&quot;,
-  globPatterns: [
-      &quot;**/*.{css,js,eot,ttf,woff,woff2,otf}&quot;
-  ],
-  swDest: &quot;./public/sw.js&quot;,
-  modifyUrlPrefix: {
-      &quot;&quot;: &quot;/&quot;
-  },
-  clientsClaim: true,
-  skipWaiting: true,
-  ignoreUrlParametersMatching: [/./],
-  offlineGoogleAnalytics: true,
-  maximumFileSizeToCacheInBytes: 50 * 1024 * 1024,
-  runtimeCaching: [
-      {
-    urlPattern: /(?:\/)$/,
-    handler: &quot;staleWhileRevalidate&quot;,
-    options: {
-        cacheName: &quot;html&quot;,
-        expiration: {
-        maxAgeSeconds: 60 * 60 * 24 * 7,
-        },
-    },
-        },
-    {
-    urlPattern: /\.(?:png|jpg|jpeg|gif|bmp|webp|svg|ico)$/,
-    handler: &quot;cacheFirst&quot;,
-    options: {
-    cacheName: &quot;images&quot;,
-    expiration: {
-    maxEntries: 1000,
-    maxAgeSeconds: 60 * 60 * 24 * 365,
-        },
-    },
-      },
-    {
-    urlPattern: /\.(?:mp3|wav|m4a)$/,
-    handler: &quot;cacheFirst&quot;,
-    options: {
-        cacheName: &quot;audio&quot;,
-        expiration: {
-        maxEntries: 1000,
-                maxAgeSeconds: 60 * 60 * 24 * 365,
-        },
-          },
-      },
-      {
-    urlPattern: /\.(?:m4v|mpg|avi)$/,
-    handler: &quot;cacheFirst&quot;,
-    options: {
-        cacheName: &quot;videos&quot;,
-        expiration: {
-        maxEntries: 1000,
-        maxAgeSeconds: 60 * 60 * 24 * 365,
-              },
-          },
-      }
-  ],
-});
-});
-
-gulp.task(&quot;build&quot;, gulp.series(&quot;clean&quot;, &quot;hugo-build&quot;, &quot;generate-service-worker&quot;));
-</code></pre>
-
-<p>apa fungsi baris kode diatas ? saya tidak tahu 😆. tusbol <a href="https://www.thepolyglotdeveloper.com/2019/03/service-workers-workbox-hugo-static-generated-site/">disini</a> untuk penjelasanya.</p>
-
-<h3 id="membuat-script-untuk-memanggil-service-worker">membuat script untuk memanggil service worker</h3>
-
-<pre><code>&lt;script&gt;
-    if('serviceWorker' in navigator) {
-        navigator.serviceWorker
-        .register('/sw.js', { scope: '/' })
-        .then(function(registration) {
-        console.log('Service Worker Registered');
-            });
-
-        navigator.serviceWorker
-        .ready
-        .then(function(registration) {
-        console.log('Service Worker Ready');
-            });
-    }
-&lt;/script&gt;
-</code></pre>
-
-<p>taruh kode diatas tepat diatas tag tutup <code>body</code></p>
-
-<h3 id="run-bulid-task">run bulid task</h3>
-
-<p>buka vscode lalu tekan <span class="has-text-primary"><i>ctrl+shift+p</i> =&gt; <i>Task : Run task</i> =&gt; <i>gulp : build </i> =&gt; <i>continue without scanning the task output</i></span></p>
-
-<p>perintah ini akan menghasilkan file sw.js di directory <code>public</code> ( silahkan cek terlebih dahulu )
-contoh sw.js punya saya :</p>
-
-<pre><code>/**
-* Welcome to your Workbox-powered service worker!
-*
-* You'll need to register this file in your web app and you should
-* disable HTTP caching for this file too.
-* See https://goo.gl/nhQhGp
-*
-* The rest of the code is auto-generated. Please don't update this file
-* directly; instead, make changes to your Workbox build configuration
-* and re-run your build process.
-* See https://goo.gl/2aRDsh
-*/
-
-importScripts(&quot;https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js&quot;);
-
-workbox.core.setCacheNameDetails({prefix: &quot;Linuxisekai&quot;});
-
-workbox.core.skipWaiting();
-
-workbox.core.clientsClaim();
-
-/**
-* The workboxSW.precacheAndRoute() method efficiently caches and responds to
-* requests for URLs in the manifest.
-* See https://goo.gl/S9QRab
-*/
-self.__precacheManifest = [
-{
-&quot;url&quot;: &quot;/css/bs.css&quot;,
-&quot;revision&quot;: &quot;417f7a255065a91ee9ec2f44eb321a22&quot;
-},
-{
-&quot;url&quot;: &quot;/css/bulma.css&quot;,
-&quot;revision&quot;: &quot;b15b1b1893809fc6c6a8d7268fd7d3fe&quot;
-},
-{
-&quot;url&quot;: &quot;/css/custom.css&quot;,
-&quot;revision&quot;: &quot;84f1a3067b47c6240f071563f194e127&quot;
-},
-{
-&quot;url&quot;: &quot;/css/solarized-dark.css&quot;,
-&quot;revision&quot;: &quot;09a127856dba4865a3429ea0c0f756fd&quot;
-},
-{
-&quot;url&quot;: &quot;/js/core.js&quot;,
-&quot;revision&quot;: &quot;06f03a8cb3b8a7f3dd0feccf62afac66&quot;
-},
-{
-&quot;url&quot;: &quot;/js/feather.min.js&quot;,
-&quot;revision&quot;: &quot;a6cd4b6cf83ee3b37fc6f4d59294619b&quot;
-},
-{
-&quot;url&quot;: &quot;/js/highlight.pack.js&quot;,
-&quot;revision&quot;: &quot;0c675cebad7b4fce6bfb948a274a940f&quot;
-},
-{
-&quot;url&quot;: &quot;/js/jquery.js&quot;,
-&quot;revision&quot;: &quot;99b0a83cf1b0b1e2cb16041520e87641&quot;
-},
-{
-&quot;url&quot;: &quot;/js/lazysizes.min.js&quot;,
-&quot;revision&quot;: &quot;149ff45fc6c2f13e892e438a58abb77f&quot;
-},
-{
-&quot;url&quot;: &quot;/js/masonry.js&quot;,
-&quot;revision&quot;: &quot;c39480835cf00844e6407f24d8aaba2e&quot;
-}
-].concat(self.__precacheManifest || []);
-workbox.precaching.precacheAndRoute(self.__precacheManifest, {
-&quot;ignoreURLParametersMatching&quot;: [/./]
-});
-
-workbox.routing.registerRoute(/(?:\/)$/, new workbox.strategies.StaleWhileRevalidate({ &quot;cacheName&quot;:&quot;html&quot;, plugins: [new workbox.expiration.Plugin({ maxAgeSeconds: 604800, purgeOnQuotaError: false })] }), 'GET');
-workbox.routing.registerRoute(/\.(?:png|jpg|jpeg|gif|bmp|webp|svg|ico)$/, new workbox.strategies.CacheFirst({ &quot;cacheName&quot;:&quot;images&quot;, plugins: [new workbox.expiration.Plugin({ maxEntries: 1000, maxAgeSeconds: 31536000, purgeOnQuotaError: false })] }), 'GET');
-workbox.routing.registerRoute(/\.(?:mp3|wav|m4a)$/, new workbox.strategies.CacheFirst({ &quot;cacheName&quot;:&quot;audio&quot;, plugins: [new workbox.expiration.Plugin({ maxEntries: 1000, maxAgeSeconds: 31536000, purgeOnQuotaError: false })] }), 'GET');
-workbox.routing.registerRoute(/\.(?:m4v|mpg|avi)$/, new workbox.strategies.CacheFirst({ &quot;cacheName&quot;:&quot;videos&quot;, plugins: [new workbox.expiration.Plugin({ maxEntries: 1000, maxAgeSeconds: 31536000, purgeOnQuotaError: false })] }), 'GET');
-
-workbox.googleAnalytics.initialize({});
-</code></pre>
-
-<p>sekarang tinggal kita push ke github dan matikan data seluler kamu. 👊😎 (anjay mabar).</p>
-
-<p><div class="no-border">
-Note : hanya halaman yang sudah pernah dibuka saja yang bisa diakses secara offline</p>
-
-<p>thanks: <a href="Okitavera.me">Yuune</a>,
-<a href="https://www.thepolyglotdeveloper.com">the polyglot developer</a>
-</div>
-<br/>
-<br/></p>
-
-<p><img src="/img/post/pwa.webp" class="content-img"></p>
+</center></p>
 
 </div>
 <div class="container has-text-centered">
@@ -616,8 +553,20 @@ Note : hanya halaman yang sudah pernah dibuka saja yang bisa diakses secara offl
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <span class="">
-  <a href="/post/debian10-rilis/" class="putih"><i class="fas fa-arrow-left"></i></a>
+  <a href="/post/install-laravel-dengan-composer/" class="putih"><i class="fas fa-arrow-left"></i></a>
   </span>
   
   <div class="popup" onclick="functionPopup()">
@@ -633,21 +582,9 @@ Note : hanya halaman yang sudah pernah dibuka saja yang bisa diakses secara offl
  
 
     
-  <span class="">
-  <a href="/post/install-laravel-dengan-composer/" class="putih"><i class="fas fa-arrow-right"></i></a>
+  <span class=" disabled noselect">
+  <a href="" class="putih"><i class="fas fa-arrow-right"></i></a>
   </span>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
   
@@ -875,17 +812,6 @@ Note : hanya halaman yang sudah pernah dibuka saja yang bisa diakses secara offl
   
             
             
-            <div class="no-border">
-              
-         
-            
-              
-                  <a href="/post/membuat-tema-hugo/">
-                      #2 Hugo : Membuat tema hugo sendiri</a>
-                  <br>  
-                  </div>      
-                          
-  
   
   
             

@@ -68,6 +68,10 @@
       position: relative;
       display: inline-block;
       cursor: pointer;
+      margin-left: 40%;
+      justify-items: center;
+      margin-right: 40%;
+     
   }
   .popup .popuptext {
       visibility: hidden;
@@ -96,8 +100,8 @@
   }
   .popup .show {
       visibility: visible;
-      -webkit-animation: fadeIn 1s;
-      animation: fadeIn 1s;
+      -webkit-animation: fadeIn 4s;
+      animation: fadeIn 2s;
   }
   @-webkit-keyframes fadeIn {
       from {opacity:0;}
@@ -143,7 +147,7 @@ html {scroll-behavior:smooth;}
     display: inline-block;
     background-color: #011627;
     vertical-align: top;
-    margin-bottom: 20px;
+    margin: 7px;
     
   }
   @media screen and (max-width:767px) {
@@ -255,9 +259,7 @@ body.dark-mode{
 nav.pagination {
   filter: none;
 }
-.content {
-  background-color: #01121F;
-}
+
 @media screen and (min-width:1024px) {
 .fixed {
   position: fixed;
@@ -272,7 +274,7 @@ nav.pagination {
   background-color: #011627;
 }
 }
-@media only screen and (max-width: 1023px) and (min-width: 767px) {  
+@media only screen and (max-width: 1023px) and (min-width: 768px) {  
   .fixed {
     position: fixed;
     top: 0;
@@ -294,47 +296,19 @@ span.icon {
 .content code {
   font-size: 0.9rem;
 }
-ent-img {
-  text-align: center !important;
-  width: 500px;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-
+.content-img {
+  width: 600px;
 }
-.container{
+.is-fullheight {
   background-color: #01121F;
  }
  
- .loader-wrapper {
-   position: absolute;
-   top: 0;
-   left: 0;
-   height: 100%;
-   width: 100%;
-   background: #fff;
-   opacity: 0;
-   z-index: -1;
-   transition: opacity .3s;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   border-radius: 6px;
+ 
+ .button-post {
+   margin-right: 40%;
+   margin-left: 40%;
  }
- .loader-wrapper .loader {
-   height: 80px;
-   width: 80px;
- }
- .loader-wrapper .is-active {
-   opacity: 1;
-   z-index: 1;
- }
- .is-loading {
-   position: relative;
- }
- .box .button {
-   padding: 0;
-   height: 40px;
-   min-width: 160px;
-   transition: all .3s;
- }
+
+.content {
+  background-color: #01121F;
+}

@@ -6,14 +6,11 @@
 {{ range .Site.Pages }}
 {{ $isMatchTags := intersect $tags .Params.tags | len | lt 1 }}
 {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) }}
-<div class="container">
-    <div class="no-border has-background-grey-dark">
-    <a href="{{ .Permalink }}" class="has-text-grey">
+<div class="no-border">
+    <a href="{{ .Permalink }}">
         {{ .Title }}</a>
-        </div>
 <br/>
-
-                
+</div>      
   {{ $.Scratch.Add "count" 1 }}
 {{ end }}
 {{ end }}
@@ -22,11 +19,6 @@
 <div class="has-text-danger"><b>Tetap semangat ngoding 👊</b></div>
 <br/>-->
 {{ if eq ($.Scratch.Get "count") 0 }}
-<br/>
-<br/>
-<br/>
-  
-    
 
         
             {{ $.Scratch.Set "limit" 0 }}
@@ -39,18 +31,13 @@
          
             
               
-                  <a href="{{ .Permalink }}" class="putih">
+                  <a href="{{ .Permalink }}">
                       {{ .Title }}</a>
-              </div>
-             
-      
-                         
-                          
+                  <br>  
+                  </div>      
                           
   {{ end }}
   
   {{ end }}
-</div>
+
 {{ end }}
-<br>
-<br>

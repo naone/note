@@ -1,31 +1,34 @@
-
- <div class="has-text-centered button-post">
-
-  <div class="button button-prev">
+<div class="container has-text-centered">
+<div class="column">  
   {{ $currentPage := . }}
   {{range where .Site.Pages.ByDate "Params.recuil" .Params.recuil }}
   {{ if eq .RelPermalink $currentPage.RelPermalink }}
   <span class="{{if not .PrevInSection}} disabled noselect{{ end }}">
   <a href="{{if .PrevInSection}}{{.PrevInSection.RelPermalink}}{{end}}" class="putih"><i class="fas fa-arrow-left"></i></a>
   </span>
-  </div>
   
   <div class="popup" onclick="functionPopup()">
-                  
-          <div class="btn-counter button multiple-count" title="love" herf="#">
-          <span class="is-size-5  has-text-danger icon"><i class="fas fa-heart"></i></span></a>
+      
+          <div class="btn-counter has-centered multiple-count" title="love" herf="#">
+          <span class="is-size-5 has-text-centered has-text-danger icon"><i class="fas fa-heart"></i></span></a>
           </div>
       <span class="popuptext" id="myPopup">
       Thanks 😇
     </span>
-    </div>
-  
-  <div class="button button-next"> 
+    
+  </div>
+ 
+
+    
   <span class="{{if not .NextInSection}} disabled noselect{{ end }}">
   <a href="{{if .NextInSection}}{{.NextInSection.RelPermalink}}{{end}}" class="putih"><i class="fas fa-arrow-right"></i></a>
   </span>
   {{end}}
   {{end}}
-  </div>
-  </div>
+</div>
+</div>
+  
+  
+  
+  
       

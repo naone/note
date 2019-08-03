@@ -4,21 +4,22 @@
     {{ partial "head.html" . }}
     <body id="body" style="background-image: linear-gradient(to bottom right, #ff000096,rgba(0, 0, 255, 0.637))">
     {{ partial "navbar.html" . }}
-    <section class="main-content container columns is-fullheight">
+    <div class="main-content container columns is-fullheight">
     {{ partial "aside.html" . }}
     <div class="column is-8">
-                <div class="loader-wrapper">
-                <div class="loader is-loading"></div></div>
+               
             <div class="content">
                     <!--<img src="{{ .Params.image }}" alt="{{ .Title }}">-->
                     <br>
                <h1 class="title"> {{ .Title }} </h1>
                 
                 {{ .Content }}
-               
-                </div>
-    {{ partial "footer.html" . }}
- </div>
+</div>
+{{ partial "button-post.html" . }}
+{{ partial "disqus.html" . }}
+{{ partial "related.html" . }}
+  {{ partial "footer.html" . }}
+</div>
     {{ partial "js-init.html" . }}
     <script src="/js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>

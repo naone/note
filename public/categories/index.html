@@ -61,7 +61,7 @@ if (!doNotTrack) {
         
         <div class="navbar-brand">
           <a class="navbar-item" href="/" >
-            <span class="icon is-medium"><i class="fas fa-terminal is-size-5"></i></span>
+            <span class="icon is-medium"> <i class="fas fa-terminal is-size-5"></i></span>
             <div class="is-size-4 has-text-weight-bold">linuxisekai</div>
             
           </a>
@@ -82,11 +82,11 @@ if (!doNotTrack) {
               
             </i>
           </a>
-          <div id="navbarBurgers" class="navbar-burger burger" data-target="navMenuIndex">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+          
+          <a id="navbarBurgers" class="navbar-burger is-hidden-desktop navbar-item" data-target="navMenuIndex">
+            <i class="fa fa-bars"></i>
+            
+          </a>
         </div>
       
         <div id="navMenuIndex" class="navbar-menu is-size-5">
@@ -174,7 +174,8 @@ if (!doNotTrack) {
             
        
 
-        <footer class="footer column">
+        <div class="column">
+<footer class="footer">
               <strong>Linuxisekai</strong> by
               <a href="https://github.com/linuxisekai" target="_blank">tempegoreng</a>.
               <br/>
@@ -184,10 +185,8 @@ if (!doNotTrack) {
               <br/>
               thanks to <a href="https://jenil.github.io/bulmaswatch" target="_blank" onclick="ga('send', 'event', 'footer', 'click', 'bulmaswatcg');">Bulmaswatch</a>
             
-            </div>
-            
             </footer>
-          
+          </div>
         <a href="#" class="ignielToTop"></a>
 <script src="/js/masonry.js"></script>
 <script src="/js/all.min.js"></script>
