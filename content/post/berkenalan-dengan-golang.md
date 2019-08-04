@@ -4,16 +4,14 @@ date: 2019-08-04T21:04:51+07:00
 draft: false
 image: /img/post/golang.webp
 tags: ["golang","ngopi"]
-description: "golang ( tatu bisa disebut dengan go ) adalah bahasa pemprograman yang dikembangkan oleh google oleh Robert Griesemer, Rob Pike, dan Ken Thompson pada tahun 2007 dan mulai diperkenalkan di publik pada tahun 2009."
+description: "golang ( atau bisa disebut dengan go ) adalah bahasa pemprograman yang dikembangkan di google oleh Robert Griesemer, Rob Pike, dan Ken Thompson pada tahun 2007 dan mulai diperkenalkan di publik pada tahun 2009."
 ---
-
-
 
 #### # Berkenalan dengan golang
 
-golang ( tatu bisa disebut dengan go ) adalah bahasa pemprograman yang dikembangkan oleh google oleh Robert Griesemer, Rob Pike, dan Ken Thompson pada tahun 2007 dan mulai diperkenalkan di publik pada tahun 2009.
+golang ( atau bisa disebut dengan go ) adalah bahasa pemprograman yang dikembangkan di google oleh Robert Griesemer, Rob Pike, dan Ken Thompson pada tahun 2007 dan mulai diperkenalkan di publik pada tahun 2009.
 
-Golang sendiri diciptakan berdasaekan bahasa C dan C++, oleh karena itu syntaks penulisanya sangat mirip
+Golang sendiri diciptakan berdasaekan bahasa C dan C++, oleh karena itu syntaks penulisanya sangat mirip.
 
 #### # Kelebihan golang
 
@@ -82,7 +80,7 @@ isi dengan kode berikut
 
     package main
     import "fmt"
-    func main() {    package mainimport"fmt"func main() {    fmt.Println("hello world")}
+    func main() {
         fmt.Println("hello world")
         }
 
@@ -90,6 +88,6 @@ mengeksekusi golang
 
     $ go run hello-world.go
 
-<div class="code">
+<div class="no-border">
 pastikan sudah berada di dalam direktory project golang kamu saat menjalankan perintah diatas
 </div>

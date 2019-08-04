@@ -2,7 +2,7 @@
 title: "Costumize Bulma denagn sass-cli"
 date: 2019-08-03T21:38:01+07:00
 draft: false
-tags: ["Bulma","sass"]
+tags: ["bulma","sass"]
 image: /img/post/sagiri.png
 description: "memodifikasi tampilan bulma menggunakan sass-cli"
 ---
@@ -17,15 +17,17 @@ download bulma terlebih dahulu di https://bulma.io, unzip lalu letakan folder bu
     $ cd mybulma
     ~/mybulma $ mkdir sass css
 
-css adalah folder untuk menaruh hasil compile sass, sedangkan sass tempat kita mengcostumize elemen/variable dari bulma.
+css akan kita gunakan unutk menaruh hasil compile dari sass, sedangkan sass tempat kita mengcostumize elemen/variable dari bulma.
 
 #### # buat file scss
-buat sass file dengan nama <code>mystyle.scss</code> di folder <code>sass</code>
+buat sass file dengan nama <code>mystyle.scss</code> di dalam folder <code>sass</code>
+
+mystyle.scss
 
     @charset "utf-8";
     @import "../bulma-0.7.5/bulma.sass";
 
-pastikan path yang menuku ke file <code>bulma.sass</code> sudah sesuai
+pastikan path yang menuju ke file <code>bulma.sass</code> sudah sesuai
 
 #### # membuat halaman html
 
@@ -69,10 +71,10 @@ mypage.html
     </body>
     </html>
 
-sekarang coba buka di browser, seharusnya tampilanya masih polos, itu dikarenakan css/mybulma.css belum di dibuat, nanti akan kita buat menggunakan sass.
+sekarang buka file diatas menggunakan browser, seharusnya tampilanya masih polos, itu dikarenakan <code><link rel="stylesheet" href="css/mybulma.css"></code> belum di dibuat.
 
 #### # membuat css file
-sekarang kita akan memanggil bulma yang ada di folder <code>bulma-0.7.5/css/bulma.css</code> ke file <code>css/mybulma.css</code>
+sekarang kita akan memanggil bulma yang ada di folder <code>bulma-0.7.5/css/bulma.css</code> ke <code>css/mybulma.css</code>
 
     ~/mybulma $ sass --sourcemap=none sass/mystyle.sass:css/mystyle.css
 
@@ -83,7 +85,7 @@ sekarang coba refresh <code>mypage.html</code>
 </center>
 
 
-yapp itu adalah tampilan default dari bulma sekarang kita modifikasi class-class pada bulma
+yapp itu adalah tampilan default dari bulma sekarang kita modifikasi tampilanya
 
 buat folder <code>mystyle.scss</code> pada folder <code>sass</code>.
 
@@ -123,19 +125,16 @@ itu baru 1 variabe sekarang kita akan membuat beberapa variabel, untuk referensi
     $blue         : #2D85C3;
     $purple       : #5A3E8D;
     $red          : #B73652;
-
     $black-bis: rgb(41, 43, 49);
 
     $primary: $purple !default;
-    $warning      : $orange;
+    $warning: $orange;
     $info: $blue;
+    $danger: $red;
+    $success: $green;
     $yellow-invert: #fff;
-
     $light: $grey-lighter;
     $dark : darken($grey-darker, 3);
-
-    $family-sans-serif: "GlacialIndifferenceRegular", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    $family-monospace: "Fira Code", "Consolas", "Monaco", monospace;
 
     $radius-small: 3px;
     $radius: .4em;

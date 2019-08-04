@@ -27,11 +27,11 @@
 
 <meta itemprop="datePublished" content="2019-08-03T21:38:01&#43;07:00" />
 <meta itemprop="dateModified" content="2019-08-03T21:38:01&#43;07:00" />
-<meta itemprop="wordCount" content="529">
+<meta itemprop="wordCount" content="510">
 
 
 
-<meta itemprop="keywords" content="Bulma,sass," />
+<meta itemprop="keywords" content="bulma,sass," />
 
     
     
@@ -277,17 +277,19 @@ if (!doNotTrack) {
 ~/mybulma $ mkdir sass css
 </code></pre>
 
-<p>css adalah folder untuk menaruh hasil compile sass, sedangkan sass tempat kita mengcostumize elemen/variable dari bulma.</p>
+<p>css akan kita gunakan unutk menaruh hasil compile dari sass, sedangkan sass tempat kita mengcostumize elemen/variable dari bulma.</p>
 
 <h4 id="buat-file-scss"># buat file scss</h4>
 
-<p>buat sass file dengan nama <code>mystyle.scss</code> di folder <code>sass</code></p>
+<p>buat sass file dengan nama <code>mystyle.scss</code> di dalam folder <code>sass</code></p>
+
+<p>mystyle.scss</p>
 
 <pre><code>@charset &quot;utf-8&quot;;
 @import &quot;../bulma-0.7.5/bulma.sass&quot;;
 </code></pre>
 
-<p>pastikan path yang menuku ke file <code>bulma.sass</code> sudah sesuai</p>
+<p>pastikan path yang menuju ke file <code>bulma.sass</code> sudah sesuai</p>
 
 <h4 id="membuat-halaman-html"># membuat halaman html</h4>
 
@@ -333,11 +335,11 @@ modern css framework
 &lt;/html&gt;
 </code></pre>
 
-<p>sekarang coba buka di browser, seharusnya tampilanya masih polos, itu dikarenakan css/mybulma.css belum di dibuat, nanti akan kita buat menggunakan sass.</p>
+<p>sekarang buka file diatas menggunakan browser, seharusnya tampilanya masih polos, itu dikarenakan <code><link rel="stylesheet" href="css/mybulma.css"></code> belum di dibuat.</p>
 
 <h4 id="membuat-css-file"># membuat css file</h4>
 
-<p>sekarang kita akan memanggil bulma yang ada di folder <code>bulma-0.7.5/css/bulma.css</code> ke file <code>css/mybulma.css</code></p>
+<p>sekarang kita akan memanggil bulma yang ada di folder <code>bulma-0.7.5/css/bulma.css</code> ke <code>css/mybulma.css</code></p>
 
 <pre><code>~/mybulma $ sass --sourcemap=none sass/mystyle.sass:css/mystyle.css
 </code></pre>
@@ -348,7 +350,7 @@ modern css framework
 <img src="/img/post/costumize-bulma.png">
 </center></p>
 
-<p>yapp itu adalah tampilan default dari bulma sekarang kita modifikasi class-class pada bulma</p>
+<p>yapp itu adalah tampilan default dari bulma sekarang kita modifikasi tampilanya</p>
 
 <p>buat folder <code>mystyle.scss</code> pada folder <code>sass</code>.</p>
 
@@ -389,19 +391,16 @@ $cyan         : #36B1B7;
 $blue         : #2D85C3;
 $purple       : #5A3E8D;
 $red          : #B73652;
-
 $black-bis: rgb(41, 43, 49);
 
 $primary: $purple !default;
-$warning      : $orange;
+$warning: $orange;
 $info: $blue;
+$danger: $red;
+$success: $green;
 $yellow-invert: #fff;
-
 $light: $grey-lighter;
 $dark : darken($grey-darker, 3);
-
-$family-sans-serif: &quot;GlacialIndifferenceRegular&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, &quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;
-$family-monospace: &quot;Fira Code&quot;, &quot;Consolas&quot;, &quot;Monaco&quot;, monospace;
 
 $radius-small: 3px;
 $radius: .4em;
@@ -869,6 +868,25 @@ $bulmaswatch-import-font: true !default;
   
             
             
+            <div class="no-border">
+              
+         
+            
+              
+                  <a href="/post/membuat-tema-hugo/" class="is-text-grey">
+                      # #2 Hugo : Membuat tema hugo sendiri</a>
+                  <br>  
+                  </div>      
+                          
+  
+  
+  
+            
+            
+  
+  
+            
+            
   
   
             
@@ -885,14 +903,17 @@ $bulmaswatch-import-font: true !default;
   
             
             
-  
-  
+            <div class="no-border">
+              
+         
             
-            
+              
+                  <a href="/post/bulma-framework/" class="is-text-grey">
+                      # Bulma : Alternativ Framework CSS selain Bootstrap</a>
+                  <br>  
+                  </div>      
+                          
   
-  
-            
-            
   
   
             
