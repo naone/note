@@ -216,7 +216,8 @@ html {scroll-behavior:smooth;}
     text-align: center;
     border-radius: 10px;
     padding-top: 2em;
-    padding-bottom: 2em;
+    font-size: 1.1rem;
+    padding-bottom: 0em;
   }
 .content h4 {
   font-size: 1.1rem;
@@ -228,12 +229,8 @@ html {scroll-behavior:smooth;}
     width: 1.4em;
   }
   .no-border {
-    border: 1px;
-    border-style: solid;
-    border-color: #01121F;
-    border-left-color: #5A3E8D;
-    border-left-width: 0.2rem;
-    border-radius: 6px;
+    border-left: 0.2rem solid #5A3E8D;
+    background-color: #011627;
     margin: 0;
     padding: 1rem;
   }
@@ -246,9 +243,6 @@ html {scroll-behavior:smooth;}
     font-size: 0.9em;
   }
  
-  .navbar {
-    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, .2));
-  }
  .t {
    padding:3px;
    background-color: #7645D1;
@@ -297,18 +291,24 @@ span.icon {
   font-size: 0.9rem;
 }
 .content-img {
-  width: 600px;
+  margin: -1rem;
+  padding: -1rem;
 }
 .is-fullheight {
   background-color: #01121F;
  }
- 
- 
  .button-post {
    margin-right: 40%;
    margin-left: 40%;
  }
-
 .content {
   background-color: #01121F;
+  padding: 1rem;
+}
+.judul-postingan {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: 600;
+  line-height: 1.125;
 }

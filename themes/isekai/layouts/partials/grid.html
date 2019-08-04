@@ -19,17 +19,13 @@
                 <br/>
                 </a>
                 
-                {{ .Summary }}
-                {{ if .Truncated }}
+                {{ .Description }}
                 <br/>
                 <a href="{{ .RelPermalink }}">Read more..</a>
-                {{ end }}
                 </h6>
                 <br/>
                 <i class="fas fa-calendar-alt"></i>
                 {{ .PublishDate.Format "January 2, 2006" }}
-                  
-                   
                     {{ $taxonomy := "tags" }}
                     {{ with .Param $taxonomy }}
                     {{ range $index, $tag := . }}

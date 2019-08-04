@@ -5,10 +5,19 @@
     <link>/tags/bulma/</link>
     <description>Recent content in bulma on Linuxisekai | Nolep enthuiast project</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 04 Jul 2019 15:49:01 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 03 Aug 2019 21:38:01 +0700</lastBuildDate>
     
 	<atom:link href="/tags/bulma/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Costumize Bulma denagn sass-cli</title>
+      <link>/post/costumize-bulma/</link>
+      <pubDate>Sat, 03 Aug 2019 21:38:01 +0700</pubDate>
+      
+      <guid>/post/costumize-bulma/</guid>
+      <description>buat folder tempat kita mengcostumize bulma</description>
+    </item>
     
     <item>
       <title>#2 Hugo : Membuat tema hugo sendiri</title>

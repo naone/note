@@ -5,10 +5,19 @@
     <link>/post/</link>
     <description>Recent content in Posts on Linuxisekai | Nolep enthuiast project</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 03 Aug 2019 21:38:01 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 04 Aug 2019 21:04:51 +0700</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>#1 Go : Berkenalan Dengan Golang</title>
+      <link>/post/berkenalan-dengan-golang/</link>
+      <pubDate>Sun, 04 Aug 2019 21:04:51 +0700</pubDate>
+      
+      <guid>/post/berkenalan-dengan-golang/</guid>
+      <description># Berkenalan dengan golang golang ( tatu bisa disebut dengan go ) adalah bahasa pemprograman yang dikembangkan oleh google oleh Robert Griesemer, Rob Pike, dan Ken Thompson pada tahun 2007 dan mulai diperkenalkan di publik pada tahun 2009.</description>
+    </item>
     
     <item>
       <title>Costumize Bulma denagn sass-cli</title>
@@ -29,7 +38,7 @@
     </item>
     
     <item>
-      <title>Setup PWA di hugo | first PWA</title>
+      <title>Menginstall service worker di hugo</title>
       <link>/post/setup-pwa-hugo/</link>
       <pubDate>Sat, 13 Jul 2019 19:58:55 +0700</pubDate>
       

@@ -5,7 +5,7 @@ draft: false
 tags: ["linux", "tutorial"]
 thumbnail: /img/post/pink.webp
 image: /img/post/pink.webp
-description: "convert gambar di linux menggunkan libwebp" 
+description: "bagi yang belum tau .webp adalah format gambar digital yang dibuat oleh google. format ini pertama kali diperkenalkan pada tanggal 30 september 2010" 
 ---
 
 ### Pendahuluan

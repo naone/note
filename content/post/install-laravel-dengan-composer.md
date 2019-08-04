@@ -2,8 +2,10 @@
 title: "Install Laravel Dengan Laravel Installer"
 date: 2019-07-25T09:39:01+07:00
 draft: false
-image: "img/post/php.png"
-description: "cara install fraework laravel dengan laravel installer"
+image: img/post/laravel.png
+description: "install composer dan laravel installer
+    sudo pacman -S composer
+    composer global require laravel/installer"
 tags: ["php","laravel"]
 ---
 

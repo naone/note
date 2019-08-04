@@ -4,6 +4,7 @@ date: 2019-06-29T16:38:23+07:00
 draft: false
 image: /img/post/bulma.webp
 tags: ["bulma","css"]
+description: "bulma adalah salah satu framework CSS yang sedang naik daun akhir-akhir ini, bulma dibuat olehJeremy Thomas berbasiskan css flexbox"
 ---
 <h3>Pendahuluan</h3>
 <b> Ini bukan bulma dragon ball 😠 </b>

@@ -2,21 +2,24 @@
 title: "Costumize Bulma denagn sass-cli"
 date: 2019-08-03T21:38:01+07:00
 draft: false
+tags: ["Bulma","sass"]
+image: /img/post/sagiri.png
+description: "memodifikasi tampilan bulma menggunakan sass-cli"
 ---
 buat folder tempat kita mengcostumize bulma
 
     $ mkdir mybulma
 
-download bulma terlebih dahulu di https://bulma.io, lalu unzip lalu letakan folder bulmanya ke <code> mybulma</code>.
+download bulma terlebih dahulu di https://bulma.io, unzip lalu letakan folder bulmanya ke <code> mybulma</code>.
 
-### buat folder css dan sass
+#### # buat folder css dan sass
 
     $ cd mybulma
     ~/mybulma $ mkdir sass css
 
 css adalah folder untuk menaruh hasil compile sass, sedangkan sass tempat kita mengcostumize elemen/variable dari bulma.
 
-### buat file scss
+#### # buat file scss
 buat sass file dengan nama <code>mystyle.scss</code> di folder <code>sass</code>
 
     @charset "utf-8";
@@ -24,7 +27,7 @@ buat sass file dengan nama <code>mystyle.scss</code> di folder <code>sass</code>
 
 pastikan path yang menuku ke file <code>bulma.sass</code> sudah sesuai
 
-### membuat halaman html
+#### # membuat halaman html
 
     ~/mybulma $ touch mypage.html
 
@@ -68,7 +71,7 @@ mypage.html
 
 sekarang coba buka di browser, seharusnya tampilanya masih polos, itu dikarenakan css/mybulma.css belum di dibuat, nanti akan kita buat menggunakan sass.
 
-### membuat css file
+#### # membuat css file
 sekarang kita akan memanggil bulma yang ada di folder <code>bulma-0.7.5/css/bulma.css</code> ke file <code>css/mybulma.css</code>
 
     ~/mybulma $ sass --sourcemap=none sass/mystyle.sass:css/mystyle.css
@@ -76,8 +79,9 @@ sekarang kita akan memanggil bulma yang ada di folder <code>bulma-0.7.5/css/bulm
 sekarang coba refresh <code>mypage.html</code>
 
 <center>
-<img src="/img/post/costumize-bulma.png"  class="content-img">
+<img src="/img/post/costumize-bulma.png">
 </center>
+
 
 yapp itu adalah tampilan default dari bulma sekarang kita modifikasi class-class pada bulma
 
@@ -102,7 +106,7 @@ jalankan perintah perintah berikut ini :
 
 sekarang refresh <code>mypage.html</code>, seharusnya tombol primary akan berwarna ungu karena kita tadi sudah merubahnya <code>$primary:$ungu;</code>.
 
-itu baru 1 variabe sekarang kita akan membuat beberapa variabel, untuk referensi variabel pada bulma kita bisa melihatnya disini https://bulma.io/documentationcostumize/variabel. 
+itu baru 1 variabe sekarang kita akan membuat beberapa variabel, untuk referensi variabel pada bulma kita bisa melihatnya disini <span class="break">https://bulma.io/documentationcostumize/variabel.</span>
 
 
     $grey-lighter: #ffffff;
@@ -235,7 +239,7 @@ sekarang jalankan perintah ini lagi
 refresh <code>mypage.html</code>
 
 <center>
-<div class="box">
+<div class="card">
 <img src="/img/post/costumize-bulma-2.png">
 </div>
 </center>

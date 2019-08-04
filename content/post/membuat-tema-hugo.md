@@ -4,6 +4,7 @@ date: 2019-07-04T15:49:01+07:00
 draft: false
 tags: ["hugo","bulma"]
 image: /img/post/music.webp
+description: "melanjutkan artikel sebelumnya, Pada artikel kali ini kita akan membahas cara membuat tema hugo"
 ---
 <h3>Prakata</h3>
 melanjutkan artikel sebelumnya, Pada artikel kali ini kita akan membahas cara membuat tema hugo.

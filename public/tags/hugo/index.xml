@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on Linuxisekai | Nolep enthuiast project</title>
+    <title>hugo on Linuxisekai | Nolep enthuiast project</title>
     <link>/tags/hugo/</link>
-    <description>Recent content in Hugo on Linuxisekai | Nolep enthuiast project</description>
+    <description>Recent content in hugo on Linuxisekai | Nolep enthuiast project</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 13 Jul 2019 19:58:55 +0700</lastBuildDate>
     
@@ -11,7 +11,7 @@
     
     
     <item>
-      <title>Setup PWA di hugo | first PWA</title>
+      <title>Menginstall service worker di hugo</title>
       <link>/post/setup-pwa-hugo/</link>
       <pubDate>Sat, 13 Jul 2019 19:58:55 +0700</pubDate>
       

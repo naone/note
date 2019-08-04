@@ -4,6 +4,8 @@ date: 2019-06-28T14:22:15+07:00
 draft: false
 image : "/img/post/loli.webp"
 tags: ["linux", "wm"]
+description: "mungkin artikel ini bisa menjawab pertanyaan - pertanyaan tersebut.
+sebenarnya jawaban pertanyaan"
 ---
 
 ### Intro

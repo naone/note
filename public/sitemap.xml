@@ -3,18 +3,53 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/post/costumize-bulma/</loc>
-    <lastmod>2019-08-03T21:38:01+07:00</lastmod>
+    <loc>/post/berkenalan-dengan-golang/</loc>
+    <lastmod>2019-08-04T21:04:51+07:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-08-03T21:38:01+07:00</lastmod>
+    <lastmod>2019-08-04T21:04:51+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
+    <lastmod>2019-08-04T21:04:51+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-08-04T21:04:51+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/golang/</loc>
+    <lastmod>2019-08-04T21:04:51+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/ngopi/</loc>
+    <lastmod>2019-08-04T21:04:51+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/costumize-bulma/</loc>
+    <lastmod>2019-08-03T21:38:01+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bulma/</loc>
+    <lastmod>2019-08-03T21:38:01+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/sass/</loc>
     <lastmod>2019-08-03T21:38:01+07:00</lastmod>
     <priority>0</priority>
   </url>
@@ -22,12 +57,6 @@
   <url>
     <loc>/post/install-laravel-dengan-composer/</loc>
     <lastmod>2019-07-25T09:39:01+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-07-25T09:39:01+07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -43,14 +72,14 @@
   </url>
   
   <url>
-    <loc>/tags/hugo/</loc>
+    <loc>/post/setup-pwa-hugo/</loc>
     <lastmod>2019-07-13T19:58:55+07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/setup-pwa-hugo/</loc>
+    <loc>/tags/hugo/</loc>
     <lastmod>2019-07-13T19:58:55+07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -96,12 +125,6 @@
   <url>
     <loc>/post/membuat-tema-hugo/</loc>
     <lastmod>2019-07-04T15:49:01+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/bulma/</loc>
-    <lastmod>2019-07-04T15:49:01+07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

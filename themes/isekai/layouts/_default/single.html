@@ -7,13 +7,33 @@
     <div class="main-content container columns is-fullheight">
     {{ partial "aside.html" . }}
     <div class="column is-8">
+    
                
-            <div class="content">
+           
                     <!--<img src="{{ .Params.image }}" alt="{{ .Title }}">-->
                     <br>
-               <h1 class="title"> {{ .Title }} </h1>
-                
+                    <br>
+               <div class="judul-postingan"> {{ .Title }}
+               <div class="has-text-centered is-size-6"><i class="fas fa-calendar-alt"></i> {{ .PublishDate.Format "January 2, 2006" }} / 
+                {{ $taxonomy := "tags" }}
+                    {{ with .Param $taxonomy }}
+                    {{ range $index, $tag := . }}
+                    
+                    {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+                    #{{ $tag | urlize }}
+                    {{- end -}}
+                    {{- end -}}
+                 
+                    {{ end }}
+              </div>
+               </div>
+               <br/>
+               <center>
+                <img src="{{ with .Params.image }}{{ . }}{{ end }}" class="content-img is-hidden-tablet">
+                </center>
+                <div class="content">
                 {{ .Content }}
+
 </div>
 {{ partial "button-post.html" . }}
 {{ partial "disqus.html" . }}

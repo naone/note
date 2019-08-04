@@ -4,9 +4,9 @@ date: 2019-06-27T10:10:59+07:00
 draft: false
 image: "/img/post/menhara.webp"
 tags: ["i3","linux"]
+description: "setelah sekian lama bersama dengan openbox, kini sepertinya saya harus selinkuh dengan i3,
+hal ini karena saya merasa"
 ---
-
-<img src="/img/post/i3.webp" alt="i3">
 
 ### intro
 

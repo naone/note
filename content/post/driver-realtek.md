@@ -4,6 +4,7 @@ date: 2019-06-28T19:43:35+07:00
 draft: false
 image: "/img/post/sagiri.webp"
 tags: ["linux","driver"]
+description: "setelah selesai menginstall sistem operasi linux terus ternyata tidak ada wifinya ? mengkin itu terjadi karena driver dari wifi tersebut belum terinstall"
 ---
 ### Intro
 setelah selesai menginstall sistem operasi linux terus ternyata tidak ada wifinya ? mengkin itu terjadi karena driver dari wifi tersebut belum terinstall, memenag ada beberapa yang wifinya secara default sudah terinstall beberapa vendor seperti realtek atau broadcom yang secara dedault belum terinstal yang saya sendiri juga tidak tau alasnya.

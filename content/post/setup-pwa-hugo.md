@@ -1,15 +1,15 @@
 ---
-title: "Setup PWA di hugo | first PWA"
+title: "Menginstall service worker di hugo"
 date: 2019-07-13T19:58:55+07:00
 draft: false
 tags: ["hugo","pwa"]
 image: /img/post/thumbpwa.webp
-description: "Hugo Progresif Web Aplication"
+description: "setup Progresif Web Aplication menggunakan workbox dan gulp"
 ---
 
 <div class="no-border">
 Disclaimer :
-saya bukan ahli dalam dunia web, tutorial ini saya dapat dari <a href="https://www.thepolyglotdeveloper.com/2019/03/service-workers-workbox-hugo-static-generated-site/">sini</a>
+saya bukan ahli dalam dunia web, tutorial ini saya dapat dari <a href="https://www.thepolyglotdeveloper.com/2019/03/service-workers-workbox-hu/img/post/loli.webp"go-static-generated-site/">sini</a>
 </div>
 
 <br/>
@@ -311,5 +311,6 @@ thanks: <a href="Okitavera.me">Yuune</a>,
 <br/>
 <br/>
 
-
+<center>
 <img src="/img/post/pwa.webp" class="content-img">
+</center>

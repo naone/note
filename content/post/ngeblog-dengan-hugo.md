@@ -4,6 +4,7 @@ date: 2019-07-01T20:03:00+07:00
 draft: false
 tags: ["Hugo","github","blog"]
 image: /img/post/cute.webp
+description: "dunia website terus berkembang, banyak banyak sekali frameeork dan tools-tools baru bermunculkan yang menawarkan banyak fitur serta kemudahan"
 ---
 
 ### Intro

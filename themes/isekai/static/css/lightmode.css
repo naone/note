@@ -16,12 +16,12 @@ body.light-mode h1 h2 h3 h4 h5 h6{
       color:rgb(150, 192, 52);
      }
     .fa-home {
-      color:rgb(15, 161, 187);
+      color:#FF007D;
      }
     .fa-user-friends {
       color:rgb(201, 39, 33);
      }
-    .fa-terminal {
+    body.light-mode .fa-terminal {
       color:rgb(226, 39, 142);
      }
      .fa-user-circle {
@@ -137,8 +137,10 @@ body.light-mode h1 h2 h3 h4 h5 h6{
        color:#2E3240;
       }
       body.light-mode .no-border{
-       border: 1px #ffffff solid;
-       border-left: 4px solid #B063B2;
+          background-color: #e5eaee;
+          margin: 0;
+          padding: 1rem;
+       border-left: 4px solid #F85191;
        color: #2E3240;
       }
       body.light-mode .popuptext {
@@ -198,7 +200,7 @@ body.light-mode h1 h2 h3 h4 h5 h6{
         border-color: #FF007D;
        }
       body.light-mode .ignielToTop{
-       background-color: rgb(206, 0, 171);
+       background-color: #F85191;
        color:#ffffff;
       }
       body.light-mode footer {
@@ -235,3 +237,22 @@ body.light-mode h1 h2 h3 h4 h5 h6{
       body.light-mode .masonry {
         background-color: #FFF;
       }
+      body.light-mode .navbar {
+        border-bottom: 2px solid rgb(231, 226, 231);
+      }
+      body.light-mode .disqus-comment .disqus-button{
+        cursor:pointer;
+        border:2px solid #E7E9EB;
+        background-color: #E7E9EB;
+        margin:0 auto;
+        color: #F85191;
+        max-width:150px;
+        text-align:center;
+        padding:2px;
+        transition:.5s;
+        font-size: 1rem;
+    }
+    .disqus-comment .disqus-button:hover{
+        color:rgb(75, 23, 117);
+        border-color:rgb(79, 23, 117)
+    }

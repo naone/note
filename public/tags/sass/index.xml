@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sass on Linuxisekai | Nolep enthuiast project</title>
+    <link>/tags/sass/</link>
+    <description>Recent content in sass on Linuxisekai | Nolep enthuiast project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 03 Aug 2019 21:38:01 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/sass/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Costumize Bulma denagn sass-cli</title>
+      <link>/post/costumize-bulma/</link>
+      <pubDate>Sat, 03 Aug 2019 21:38:01 +0700</pubDate>
+      
+      <guid>/post/costumize-bulma/</guid>
+      <description>buat folder tempat kita mengcostumize bulma</description>
+    </item>
+    
+  </channel>
+</rss>
