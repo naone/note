@@ -5,10 +5,19 @@
     <link>/post/</link>
     <description>Recent content in Posts on Linuxisekai | Nolep enthuiast project</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 04 Aug 2019 21:04:51 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 05 Aug 2019 09:18:05 +0700</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>#2 Go : Membahas program Hello World</title>
+      <link>/post/program-hello-world/</link>
+      <pubDate>Mon, 05 Aug 2019 09:18:05 +0700</pubDate>
+      
+      <guid>/post/program-hello-world/</guid>
+      <description># membahas program hello world package main import &amp;quot;fmt&amp;quot; func main() { fmt.</description>
+    </item>
     
     <item>
       <title>#1 Go : Berkenalan Dengan Golang</title>
@@ -25,7 +34,7 @@
       <pubDate>Sat, 03 Aug 2019 21:38:01 +0700</pubDate>
       
       <guid>/post/costumize-bulma/</guid>
-      <description>buat folder tempat kita mengcostumize bulma</description>
+      <description># install sass $ npm install -g sass  buat folder tempat kita mengcostumize bulma</description>
     </item>
     
     <item>

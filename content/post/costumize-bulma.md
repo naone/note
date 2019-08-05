@@ -6,6 +6,11 @@ tags: ["bulma","sass"]
 image: /img/post/sagiri.png
 description: "memodifikasi tampilan bulma menggunakan sass-cli"
 ---
+
+#### # install sass
+
+    $ npm install -g sass
+
 buat folder tempat kita mengcostumize bulma
 
     $ mkdir mybulma
