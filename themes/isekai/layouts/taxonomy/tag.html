@@ -3,48 +3,12 @@
   {{ partial "head.html" . }}
   <body id="body">
     {{ partial "navbar.html" . }}
-    {{ partial "header.html" . }}
-
-    <div class="container">
-      <div class="masonry-wrapper">
-        <div class="masonry">
-                            {{ range .Data.Pages }}
-                       
-                            <a href="{{ .RelPermalink }}" class="judul-post">
-                              <div class="masonry-item">
-                                <div class="masonry-content">
-                                  <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" width="500px">
-                                  <div class="h has-text-grey">
-                                              
-                                    {{ .Title }}
-                                  
-                                    <br/>
-                                  <span class="masonry-info">
-                                    <i class="fas has-text-primary fa-calendar-alt"  class="is-size-7"></i>
-                                    {{ .PublishDate.Format "January 2, 2006" }}
-                                       || <i class="fas has-text-primary fa-tag" class="is-size-7"></i>
-                                        {{ $taxonomy := "tags" }}
-                                        {{ with .Param $taxonomy }}
-                                        {{ range $index, $tag := . }}
-                                        
-                                        {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
-                                        {{ $tag | urlize }}
-                                        {{- end -}}
-                                        {{- end -}}
-                                  
-                                        {{ end }}
-                                      </span>
-                                    
-                                        </div> 
-                                    </div>
-                                  </div>
-                                  </a>
-                                {{ end }}
-                                </div>
-                                </div>
-                                </div>
+    <div class="main-content container columns is-fullheight">
+      {{ partial "aside.html" . }}
+      {{ partial "tag.html" . }}
     {{ partial "pagination.html" . }}
-    {{ partial "info.html" . }}
+    {{ partial "footer.html" . }}
+  </div>
     {{ partial "js-init.html" . }}
   </body>
 </html>

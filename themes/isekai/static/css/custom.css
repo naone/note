@@ -165,7 +165,7 @@ html {scroll-behavior:smooth;}
       columns: 1;
   }
   .masonry-friendlist {
-    columns: 3;
+    columns: 2;
   }
       .masonry-wrapper {
         padding: 1em;
@@ -179,7 +179,7 @@ html {scroll-behavior:smooth;}
       columns: 1;
     }
     .masonry-friendlist {
-      columns: 3;
+      columns: 2;
     }
     .masonry-wrapper {
       padding: 1em;
@@ -311,4 +311,12 @@ span.icon {
   padding: 1rem;
   font-weight: 600;
   line-height: 1.125;
+}
+.gambar-teman {
+  border-radius: 50%;
+  bottom: 4rem;
+  width: 100px;
+}
+.mbuh {
+padding: 1em;
 }

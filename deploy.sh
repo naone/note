@@ -8,6 +8,8 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 # pindah ke direktoru publik
 # tambahkan perubahan ke Git
 
+gulp build
+
 git add .
 
 # Buat sebuah commit baru
@@ -20,5 +22,3 @@ git commit -m "$msg"
 # Push atau puload ke Github
 git push origin master
 
-# Balik ke direktori sebelumnya
-# cd ..

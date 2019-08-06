@@ -5,10 +5,19 @@
     <link>/</link>
     <description>Recent content on Linuxisekai | Nolep enthuiast project</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 05 Aug 2019 09:18:05 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 06 Aug 2019 10:52:03 +0700</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Friendlist</title>
+      <link>/friendlist/</link>
+      <pubDate>Tue, 06 Aug 2019 10:52:03 +0700</pubDate>
+      
+      <guid>/friendlist/</guid>
+      <description>Addy&#39;s Blog   Addy-dclxvi.</description>
+    </item>
     
     <item>
       <title>#2 Go : Membahas program Hello World</title>
@@ -130,21 +139,12 @@
     </item>
     
     <item>
-      <title></title>
-      <link>/friendlist/</link>
-      <pubDate>Thu, 27 Jun 2019 20:24:43 +0700</pubDate>
-      
-      <guid>/friendlist/</guid>
-      <description>Friendlist  Addy&amp;rsquo;s Blog Hi!</description>
-    </item>
-    
-    <item>
       <title>About</title>
       <link>/about/</link>
       <pubDate>Thu, 27 Jun 2019 20:18:50 +0700</pubDate>
       
       <guid>/about/</guid>
-      <description>Selamat datang di linuxisekai website ini dibuat menggunkan : SSG : Hugo CSS Framework : Bulma Font :</description>
+      <description>Galih wisnuaji</description>
     </item>
     
     <item>
