@@ -40,12 +40,12 @@ body.light-mode h1 h2 h3 h4 h5 h6{
     }
    body.light-mode .masonry-item {
      background-color: #ffffff;
-     filter: drop-shadow(0px 4px 4px rgba(44, 44, 44, 0.397));
+     filter: drop-shadow(0px 4px 4px rgba(44, 44, 44, 0.597));
      color:#2E3240;
      }
      body.light-mode .masonry-item:hover {
       background-color: #ffffff;
-      filter: drop-shadow(0px 5px 7px rgba(44, 44, 44, 0.897));
+      filter: drop-shadow(0px 4px 4px rgba(44, 44, 44, 0.897));
       color:#2E3240;
       }
      body.light-mode .masonry-content {
@@ -56,11 +56,27 @@ body.light-mode h1 h2 h3 h4 h5 h6{
        color: #FF007D;
       }
       body.light-mode a:hover {
-        color: #DE00FF;
+        color: rgb(40, 122, 228);
        }
       body.light-mode .has-text-grey {
        background-color: #ffffff;
        color:#2E3240;
+      }
+     body.light-mode .t {
+       background-color: #FF007D;
+       color: #FFF;
+     }
+      body.light-mode .pagination-link {
+        background-color:#FF007D; 
+        border-color: #FF007D;
+      }
+      body.light-mode .pagination-previous {
+        background-color:#FF007D; 
+        border-color: #FF007D;
+      }
+      body.light-mode .pagination-next {
+        background-color:#FF007D; 
+        border-color: #FF007D;
       }
       body.light-mode .masonry-footer {
        border: 1px solid rgb(238, 236, 238);
@@ -231,6 +247,9 @@ body.light-mode h1 h2 h3 h4 h5 h6{
       body.light-mode .container {
         background-color: #FFF;
       }
+      body.light-mode .masonry-wrapper {
+        background-color: #FFF;
+      }
       body.light-mode columns {
        background-color: #fff;
       }
@@ -251,8 +270,4 @@ body.light-mode h1 h2 h3 h4 h5 h6{
         padding:2px;
         transition:.5s;
         font-size: 1rem;
-    }
-    .disqus-comment .disqus-button:hover{
-        color:rgb(75, 23, 117);
-        border-color:rgb(79, 23, 117)
     }
