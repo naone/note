@@ -39,7 +39,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/css/lightmode.css",
-    "revision": "1bce7585f0122bb2104b10822ccc0fbf"
+    "revision": "ad29ba1e6be0f9d05315146860d29e61"
   },
   {
     "url": "/css/mystyle.css",

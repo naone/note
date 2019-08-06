@@ -68,7 +68,7 @@ body.light-mode h1 h2 h3 h4 h5 h6{
      }
       body.light-mode .pagination-link {
         background-color:#FF007D; 
-        border-color: #FF007D;
+        border-color: transparent;
       }
       body.light-mode .pagination-previous {
         background-color:#FF007D; 

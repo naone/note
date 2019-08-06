@@ -2,8 +2,8 @@
     <div class="column">
 <div class="pagination is-rounded">
 {{ $paginator := .Paginator }}
-{{ $adjacent_links:=2 }}
-{{ $max_links:=(add (mul $adjacent_links 2) 1) }}
+{{ $adjacent_links:=1 }}
+{{ $max_links:=(add (mul $adjacent_links 1) 2) }}
 {{ $lower_limit:=(add $adjacent_links 1) }}
 {{ $upper_limit :=(sub $paginator.TotalPages $adjacent_links) }}
 {{ if gt $paginator.TotalPages 1 }}
@@ -26,39 +26,18 @@
 {{end}}
 </li>
 
-
+{{ $pagenumber := $paginator.PageNumber }}
 {{ range $paginator.Pagers }}
-{{ $.Scratch.Set "page_number_flag" false }}
-
-{{ if gt $paginator.TotalPages $max_links  }}
-
-{{ if le $paginator.PageNumber $lower_limit }}
-
-{{ if le .PageNumber $max_links }}
-{{ $.Scratch.Set "page_number_flag" true }}
-{{ end }}
-
-{{ else if ge $paginator.PageNumber $upper_limit }}
-
-{{ if gt .PageNumber (sub $paginator.TotalPages $max_links) }}
-{{ $.Scratch.Set "page_number_flag" true }}
-{{ end }}
-
-{{ else }}
-{{ if and ( ge .PageNumber (sub $paginator.PageNumber $adjacent_links) ) ( le .PageNumber (add $paginator.PageNumber $adjacent_links) ) }}
-{{ $.Scratch.Set "page_number_flag" true }}
-{{ end }}
-{{ end }}
-
-{{ else }}
-{{ $.Scratch.Set "page_number_flag" true }}
-{{ end }}
-
-{{ if eq ($.Scratch.Get "page_numberflag") true }}
-<li class="pagination__item{{ if eq .Paginator }} pagination__item--curent{{ end }}">
-    <a href="{{ .URL }}" class="pagination__link">
+<li>
+    {{ if not (eq $pagenumber .PageNumber) }}
+    <a href="{{ .URL }}" class="pagination-link t" aria-label="go to page{{ .PageNumber }}">
         {{ .PageNumber }}
     </a>
+    {{ else }}
+    <a class="pagination-link t has-background-info has-text-dark" aria-label="Page{{ .PageNumber }}">
+        {{ .PageNumber }}
+    </a>
+    {{ end }}
 </li>
 {{ end }}
 {{ end }}
@@ -80,7 +59,7 @@
 </li>
 
 </ul>
-{{end}}
+
 </div>
 </div>
 </div>
