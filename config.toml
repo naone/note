@@ -16,6 +16,7 @@ DisqusShortname = "linuxisekai-github-io"
 # Untuk Google Analytic, silahkan sesuikan
 
 googleAnalytics = "UA-143247560-1" 
+paginate = 6
 
 description = "Nolep enthuiast project."
 summaryLength = "1"

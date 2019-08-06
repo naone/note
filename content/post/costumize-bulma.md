@@ -4,7 +4,7 @@ date: 2019-08-03T21:38:01+07:00
 draft: false
 tags: ["bulma","sass"]
 image: /img/post/sagiri.png
-description: "memodifikasi tampilan bulma menggunakan sass-cli"
+description: "memodifikasi tampilan bulma menggunakan sass-cli..."
 ---
 
 #### # install sass

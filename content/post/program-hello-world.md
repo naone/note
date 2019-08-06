@@ -3,7 +3,7 @@ title: "#2 Go : Membahas program Hello World"
 date: 2019-08-05T09:18:05+07:00
 draft: false
 image : /img/post/go.webp
-description: "setiap file program pada bahasa go harus memiliki package. package <code>main</code> adalah package yang harus ada di setiap file program golang"
+description: "setiap file program pada bahasa go harus memiliki package..."
 tags: ["golang","ngopi"]
 ---
 

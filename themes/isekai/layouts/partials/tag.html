@@ -1,13 +1,11 @@
 <div class="masonry-wrapper">
+    <h1 class="title">Latest Post</h1>
     <div class="masonry">
-      <br>
-      <br>
-      <h1 class="title">Latest Post</h1>
                         {{ range .Data.Pages }}
                    
                         <a href="{{ .RelPermalink }}" class="judul-post">
                           <div class="masonry-item">
-                              <!--<img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" width="400px">-->
+                              <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" width="400px">
                             <div class="masonry-content">
                               <div class="h">
                                       <b>    

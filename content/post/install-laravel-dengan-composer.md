@@ -4,8 +4,7 @@ date: 2019-07-25T09:39:01+07:00
 draft: false
 image: img/post/laravel.png
 description: "install composer dan laravel installer
-    sudo pacman -S composer
-    composer global require laravel/installer"
+    sudo pacman -S composer..."
 tags: ["php","laravel"]
 ---
 

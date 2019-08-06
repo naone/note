@@ -4,7 +4,7 @@ date: 2019-08-04T21:04:51+07:00
 draft: false
 image: /img/post/golang.webp
 tags: ["golang","ngopi"]
-description: "golang ( atau bisa disebut dengan go ) adalah bahasa pemprograman yang dikembangkan di google oleh Robert Griesemer, Rob Pike, dan Ken Thompson pada tahun 2007 dan mulai diperkenalkan di publik pada tahun 2009."
+description: "golang ( atau bisa disebut dengan go ) adalah..."
 ---
 
 #### # Berkenalan dengan golang

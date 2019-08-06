@@ -4,7 +4,7 @@ date: 2019-06-30T08:08:26+07:00
 draft: false
 tags: ["linux","oomox"]
 image: /img/post/megumin.webp
-description: "oomox adalah aplikasi yang digunakan membuat gtk theme pada sistem operasi linux.oomox berbasisikan GUI jadi sangat mudah digunkan"
+description: "oomox adalah aplikasi yang digunakan membuat gtk theme pada..."
 ---
 
 ### Intro

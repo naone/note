@@ -4,7 +4,7 @@ date: 2019-07-13T19:58:55+07:00
 draft: false
 tags: ["hugo","pwa"]
 image: /img/post/thumbpwa.webp
-description: "setup Progresif Web Aplication menggunakan workbox dan gulp"
+description: "setup Progresif Web Aplication menggunakan workbox dan gulp..."
 ---
 
 <div class="no-border">

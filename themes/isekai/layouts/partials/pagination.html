@@ -1,43 +1,86 @@
+<div class="container">
+    <div class="column">
+<div class="pagination is-rounded">
+{{ $paginator := .Paginator }}
+{{ $adjacent_links:=2 }}
+{{ $max_links:=(add (mul $adjacent_links 2) 1) }}
+{{ $lower_limit:=(add $adjacent_links 1) }}
+{{ $upper_limit :=(sub $paginator.TotalPages $adjacent_links) }}
+{{ if gt $paginator.TotalPages 1 }}
 
-<div class="conteiner column">
-<div class="pagination is-rounded is-small" role="navigation" aria-label="pagination">
-        {{ $pag := $.Paginator }}
-        {{ if gt $pag.TotalPages 1 }}
-        <ul class="pagination-list">
-            {{ with $pag.First }}
-            
-            {{ end }}
-            <li
-            {{ if not $pag.HasPrev }}class="disabled page-item"{{ end }}>
-            <a class="pagination-link is-current" href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}" aria-label="Previous"><i class="fas fa-angle-left"></i></a>
-            </li>
-            {{ $.Scratch.Set "__paginator.ellipsed" false }}
-            {{ range $pag.Pagers }}
-            {{ $right := sub .TotalPages .PageNumber }}
-            {{ $showNumber := or (le .PageNumber 3) (eq $right 0) }}
-            {{ $showNumber := or $showNumber (and (gt .PageNumber (sub $pag.PageNumber 2)) (lt .PageNumber (add $pag.PageNumber 2)))  }}
-            {{ if $showNumber }}
-                {{ $.Scratch.Set "__paginator.ellipsed" false }}
-                {{ $.Scratch.Set "__paginator.shouldEllipse" false }}
-            {{ else }}
-                {{ $.Scratch.Set "__paginator.shouldEllipse" (not ($.Scratch.Get "__paginator.ellipsed") ) }}
-                {{ $.Scratch.Set "__paginator.ellipsed" true }}
-            {{ end }}
-            {{ if $showNumber }}
-            <li
-            {{ if eq . $pag }}{{ end }}><a class="pagination-link is-current" href="{{ .URL }}">{{ .PageNumber }}</a></li>
-            {{ else if ($.Scratch.Get "__paginator.shouldEllipse") }}
-            
-            {{ end }}
-            {{ end }}
-            <li
-            {{ if not $pag.HasNext }}class="disabled page-item"{{ end }}>
-            <a class="pagination-link is-current" href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}" aria-label="Next"><i class="fas fa-angle-right"></i></a>
-            </li>
-            {{ with $pag.Last }}
-            
-            {{ end }}
-        </ul>
-        {{ end }}
-    </div>
+<ul class="pagination-list">
+
+<!-- firt page -->
+<li>
+{{if ne $paginator.PageNumber 1}}
+<a href="{{ $paginator.First.URL }}" class="pagination-previous t">
+    First Page
+</a>
+{{end}}
+</li>
+
+<!--prev page-->
+<li>
+{{if $paginator.HasPrev}}
+<a href="{{$paginator.Prev.URL}}" class="pagination-link t"><i class="fa fa-angle-left"></i></a>
+{{end}}
+</li>
+
+
+{{ range $paginator.Pagers }}
+{{ $.Scratch.Set "page_number_flag" false }}
+
+{{ if gt $paginator.TotalPages $max_links  }}
+
+{{ if le $paginator.PageNumber $lower_limit }}
+
+{{ if le .PageNumber $max_links }}
+{{ $.Scratch.Set "page_number_flag" true }}
+{{ end }}
+
+{{ else if ge $paginator.PageNumber $upper_limit }}
+
+{{ if gt .PageNumber (sub $paginator.TotalPages $max_links) }}
+{{ $.Scratch.Set "page_number_flag" true }}
+{{ end }}
+
+{{ else }}
+{{ if and ( ge .PageNumber (sub $paginator.PageNumber $adjacent_links) ) ( le .PageNumber (add $paginator.PageNumber $adjacent_links) ) }}
+{{ $.Scratch.Set "page_number_flag" true }}
+{{ end }}
+{{ end }}
+
+{{ else }}
+{{ $.Scratch.Set "page_number_flag" true }}
+{{ end }}
+
+{{ if eq ($.Scratch.Get "page_numberflag") true }}
+<li class="pagination__item{{ if eq .Paginator }} pagination__item--curent{{ end }}">
+    <a href="{{ .URL }}" class="pagination__link">
+        {{ .PageNumber }}
+    </a>
+</li>
+{{ end }}
+{{ end }}
+
+{{ if $paginator.HasNext }}
+<li class="">
+    <a href="{{ $paginator.Next.URL }}" class="pagination-link t">
+        <i class="fa fa-angle-right"></i>
+    </a>
+</li>
+{{end}}
+
+<li>
+{{if ne $paginator.PageNumber $paginator.TotalPages}}
+    <a href="{{$paginator.Last.URL}}" class="pagination-next t">
+    last page
+    </a>
+    {{ end }}
+</li>
+
+</ul>
+{{end}}
+</div>
+</div>
 </div>
