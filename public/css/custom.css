@@ -176,6 +176,7 @@ html {scroll-behavior:smooth;}
   }
   @media only screen and (min-width: 1024px) {
     .masonry {
+      margin-right: 3rem;
       columns: 3;
     }
     .masonry-friendlist {
@@ -263,14 +264,18 @@ nav.pagination {
 .fixed {
   position: fixed;
   top: 0;
-  left: 6rem;
+  left: 5.8rem;
   height: 100%;
   font-size: 1.2rem;
   padding: 1rem;
-  width: 290px;
+  font-weight: 600;
+  width: 260px;
   z-index: 1;
   border-right: 12px solid #00192F;
   background-color: #011627;
+}
+.content {
+  margin-left: 2rem;
 }
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px) {  
@@ -309,6 +314,7 @@ span.icon {
 .content {
   background-color: #01121F;
   padding: 1rem;
+  
 }
 .judul-postingan {
   text-align: center;
