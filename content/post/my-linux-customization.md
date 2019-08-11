@@ -7,7 +7,8 @@ description: ""
 tags: ["linux","ricing"]
 ---
 
-### pendahuluan
+## Pendahuluan
+
 saya baru menggunakan linux baru sekitar 2 tahun, sebenarnya mulai kenal linux sekitar tahun 2016 yaitu awal masuk smk,
 kebetulan jurusan yang saya ambil adalah TKJ, disitu ada beberapa pelajaran yang berkaitan dengan linux, seperti setting dhcp server,
 apache, dns dan lain lain. mulai menggunakan linux secara intens pada tahun 2018, yaitu saat saya masuk kelas 2 SMK, karena saat
@@ -21,7 +22,7 @@ kali linux dan lain lain. kemudian say mulai masuk ke grub grub seputar linux di
 beliau menggunakan arch linux di laptop thunkpad, akhirnya saya ikut ikutan menggunakan arch linux, saya berusaha beradaptasi.
 disitu saya mulai mengenal kostumisasi linux, dan mulai tahu beberapa sesepuh sesepuh ricer seperti adhi pambudi fikri omar nanda okitavera dan lain lain.
 
-### Setup yang saya gunakan
+## Setup yang saya gunakan
 
 #### sistem operasi
 saya menggunakan manjaro. manjaro yang saya pilih sendiri bukan xfce tetapi openbox, alasanya tentu saja kemudahan dalam customisasi tampilan serta memakan sedikit ram,

@@ -6982,7 +6982,7 @@ a {
   border-color: #C0BDC0; }
 
 .navbar {
-  border-radius: 0.4em; }
+  border-radius: 0em; }
   .navbar.is-transparent {
     background-color: transparent; }
   @media screen and (max-width: 1023px) {

@@ -148,7 +148,7 @@ html {scroll-behavior:smooth;}
     vertical-align: top;
     margin-top: 12px;
     background-color: #011627;
-    filter: drop-shadow(0px 2px 0px #C0BDC0);
+    filter: drop-shadow(0px 2px 0px #5A3E8D);
   }
   @media screen and (max-width:767px) {
     .masonry-wrapper {
@@ -159,6 +159,9 @@ html {scroll-behavior:smooth;}
       }
       .judul-postingan {
         margin-top: 1rem;
+      }
+      .title {
+        padding-left:1rem;
       }
      
   }
@@ -191,12 +194,12 @@ html {scroll-behavior:smooth;}
       margin-right: auto;
       margin-left: auto;
     }
+    .masonry-item, .masonry-content {
+      border-radius: 10px;
+      overflow: hidden;
   }
-  .masonry-item, .masonry-content {
-    border-radius: 1px;
-    overflow: hidden;
-  }
-  
+}
+
   .masonry-content .judul-post {
     overflow: hidden;
   }
@@ -263,7 +266,7 @@ nav.pagination {
   filter: none;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1336px) {
 .fixed {
   position: fixed;
   top: 0;
@@ -280,22 +283,16 @@ nav.pagination {
 .content {
   margin-left: 2rem;
 }
+.label-fixed {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5rem;
 }
-@media only screen and (max-width: 1023px) and (min-width: 768px) {  
-  .fixed {
-    position: fixed;
-    top: 0;
-    left: 0rem;
-    height: 100%;
-    font-size: 1.2rem;
-    padding: 1rem;
-    margin-right:5rem; 
-    width:200px;
-    z-index: 1;
-    border-right: 12px solid #00192F;
-    background-color: #011627;
-  }
-  }
+.kiri-kanan {
+  border-left: 2px solid;
+  border-right: 2px solid;
+}
+}
 span.icon {
   padding-right: 1rem;
   margin:0;
@@ -337,4 +334,8 @@ padding: 1em;
 .no-margin {
   margin: 0;
   padding: 0;
+}
+.content h2 {
+  border-bottom: 1px solid #00192F;
+  padding-bottom: 0.4rem;
 }
