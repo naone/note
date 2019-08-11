@@ -194,13 +194,10 @@ html {scroll-behavior:smooth;}
       margin-right: auto;
       margin-left: auto;
     }
-    .masonry-item, .masonry-content {
-      border-radius: 10px;
-      overflow: hidden;
-  }
 }
 
   .masonry-content .judul-post {
+    border-radius: 10px;
     overflow: hidden;
   }
   
@@ -338,4 +335,25 @@ padding: 1em;
 .content h2 {
   border-bottom: 1px solid #00192F;
   padding-bottom: 0.4rem;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 255, 255);
+}
+body.light-mode ::-webkit-scrollbar-thumb:hover {
+  background: #F85191;
 }

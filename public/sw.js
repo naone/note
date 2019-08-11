@@ -31,11 +31,11 @@ self.__precacheManifest = [
   },
   {
     "url": "/css/custom.css",
-    "revision": "b38cf1a8472bdc97f9ebcf502964dd16"
+    "revision": "c18b160fcb5e86064587b537093abe6a"
   },
   {
     "url": "/css/highlight.css",
-    "revision": "a3ce2b0cbbf95edb0f29fd740d1fc9e6"
+    "revision": "d60bd25191521675f2039de99f6c1e5d"
   },
   {
     "url": "/css/lightmode.css",
