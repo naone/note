@@ -1,7 +1,7 @@
 ---
 title: "Vim Scheatsheet"
 date: 2019-08-12T01:09:38+07:00
-draft: false
+draft: true
 image :
 description: ""
 tags: ["vim","linux"]

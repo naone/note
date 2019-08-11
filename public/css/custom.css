@@ -149,6 +149,8 @@ html {scroll-behavior:smooth;}
     margin-top: 12px;
     background-color: #011627;
     filter: drop-shadow(0px 2px 0px #5A3E8D);
+    border-radius: 10px;
+    overflow: hidden;
   }
   @media screen and (max-width:767px) {
     .masonry-wrapper {
@@ -195,12 +197,6 @@ html {scroll-behavior:smooth;}
       margin-left: auto;
     }
 }
-
-  .masonry-content .judul-post {
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
   .masonry-title, .masonry-description {
     margin: 0;
   }

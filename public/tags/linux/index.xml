@@ -5,19 +5,10 @@
     <link>/tags/linux/</link>
     <description>Recent content in linux on Linuxisekai | Nolep enthuiast project</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 12 Aug 2019 01:09:38 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jul 2019 22:22:35 +0700</lastBuildDate>
     
 	<atom:link href="/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Vim Scheatsheet</title>
-      <link>/post/vim-scheatsheet/</link>
-      <pubDate>Mon, 12 Aug 2019 01:09:38 +0700</pubDate>
-      
-      <guid>/post/vim-scheatsheet/</guid>
-      <description>Global :help keyword - membuka bantuan keyword :saveas file - save file as :close - close current pane  Pergerakan Kursor h - memindahkan kursor ke kiri j - memindahkan kursor ke bawah k - memindahkan kursor ke atas l - memindahkan kursor ke kanan H - move to top of screen M - move to middle of screen L - move to bottom of screen w - lompat ke awal kata selanjutnya W - lompat ke awal kata selanjutanya (kata-kata dapat mengandung tanda baca) e - lompat ke akhir kata selanjutnya E - lompat ke akhir kata selanjutnya (kata-kata dapat mengandung tanda baca) b - lompat ke awal kata sebelumnya B - lompat ke awal kata sebelumnya (kata-kata dapat mengandung tanda baca) % - move to matching character (default supported pairs: &#39;()&#39;, &#39;{}&#39;, &#39;[]&#39; - use &amp;lt;code&amp;gt;:h matchpairs&amp;lt;/code&amp;gt; in vim for more info) 0 - lompat ke awal baris saat ini ^ - lompat ke karakter pertama baris saat ini $ - lompat ke akhir baris saat ini g_ - jump to the last non-blank character of the line gg - pindah ke baris teratas dokumen G - pindah ke baris paling akhir dokumen 5G - pindah ke baris ke-5 fx - lompat tepat pada karakter x tx - lompat tepat sebelum karakter x Fx - jump to previous occurence of character x Tx - jump to after previous occurence of character x ; - repeat previous f, t, F or T movement , - repeat previous f, t, F or T movement, backwards } - Lompat ke paragraf berikutnya (atau blok kode, saat mengedit kode) { - Lompat ke paragraf sebelumnya (atau blok kode, saat mengedit kode) zz - center cursor on screen Ctrl + e - move screen down one line (without moving cursor) Ctrl + y - move screen up one line (without moving cursor) Ctrl + b - move back one full screen Ctrl + f - move forward one full screen Ctrl + d - move forward 1/2 a screen Ctrl + u - move back 1/2 a screen  Tip Prefix a cursor movement command with a number to repeat it.</description>
-    </item>
     
     <item>
       <title>Realease Debian 10 codename Buster</title>
