@@ -15,20 +15,23 @@ tags: ["golang","ngopi"]
         fmt.Println("hello world);
     }
 
-#### # keyword <i>package</i>
+#### # keyword *package
 
     package <package-name>
 
-setiap file program pada bahasa go harus memiliki package. package <code>main</code> adalah package yang harus ada di setiap file program golang. golang sendiri memiliki banyak sekali package lain selain package <code>main</code>. file yang ber package main akan di eksekusi pertama kali saat program dijalankan.
+setiap file program pada bahasa go harus memiliki package. package <code>main</code> adalah package 
+yang harus ada di setiap file program golang. golang sendiri memiliki banyak sekali package lain selain 
+package <code>main</code>. file yang ber package main akan di eksekusi pertama kali saat program dijalankan.
 
-#### # keyword <i>import</i>
+#### # keyword *import
 
     import "<package-name>"
 
 keyword import digunakan unutk meng-includekan ayau memasukan package lain kedalam file program.
-package <code>fmt</code> merupakan salah satu package golang yang digunakan unutk keperluan i/o yang berhubungan dengan text.
+package <code>fmt</code> merupakan salah satu package golang yang digunakan unutk keperluan i/o yang 
+berhubungan dengan text.
 
-#### # fungsi <i>main()</i>
+#### # fungsi *main()
 
     func main {
         // here
@@ -36,7 +39,7 @@ package <code>fmt</code> merupakan salah satu package golang yang digunakan unut
 
 fungsi main() adalah fungsi yang dipanggil pertama kali saat program dieksekusi.
 
-#### # fungsi <i>fmt.Println()</i>
+#### # fungsi *fmt.Println()
 
     fmt.Println("hello wordl")
 
