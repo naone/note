@@ -21,17 +21,17 @@
     <link rel="stylesheet" media="screen" href="/css/font.css" type="text/css"/> 
     <link rel="manifest" href="/manifest.json"> 
     
-<meta itemprop="name" content="Membuat gtk theme sendiri menggunkan oomox">
-<meta itemprop="description" content="oomox adalah aplikasi yang digunakan membuat gtk theme pada...">
+<meta itemprop="name" content="Markdown Cheatsheet">
+<meta itemprop="description" content=" karena saya orangnya pelupa jadi... ">
 
 
-<meta itemprop="datePublished" content="2019-06-30T08:08:26&#43;07:00" />
-<meta itemprop="dateModified" content="2019-06-30T08:08:26&#43;07:00" />
-<meta itemprop="wordCount" content="211">
+<meta itemprop="datePublished" content="2019-08-11T17:21:07&#43;07:00" />
+<meta itemprop="dateModified" content="2019-08-11T17:21:07&#43;07:00" />
+<meta itemprop="wordCount" content="130">
 
 
 
-<meta itemprop="keywords" content="linux,oomox," />
+<meta itemprop="keywords" content="markdown,cheatsheet," />
 
     
     
@@ -48,16 +48,16 @@ if (!doNotTrack) {
 }
 </script>
 
-    <meta property="og:title" content="Membuat gtk theme sendiri menggunkan oomox" />
-<meta property="og:description" content="oomox adalah aplikasi yang digunakan membuat gtk theme pada..." />
+    <meta property="og:title" content="Markdown Cheatsheet" />
+<meta property="og:description" content=" karena saya orangnya pelupa jadi... " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/post/oomo-gtk/" />
-<meta property="article:published_time" content="2019-06-30T08:08:26&#43;07:00"/>
-<meta property="article:modified_time" content="2019-06-30T08:08:26&#43;07:00"/>
+<meta property="og:url" content="/post/markdown-cheatsheet/" />
+<meta property="article:published_time" content="2019-08-11T17:21:07&#43;07:00"/>
+<meta property="article:modified_time" content="2019-08-11T17:21:07&#43;07:00"/>
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Membuat gtk theme sendiri menggunkan oomox"/>
-<meta name="twitter:description" content="oomox adalah aplikasi yang digunakan membuat gtk theme pada..."/>
+<meta name="twitter:title" content="Markdown Cheatsheet"/>
+<meta name="twitter:description" content=" karena saya orangnya pelupa jadi... "/>
 
 </head>
 
@@ -244,81 +244,104 @@ if (!doNotTrack) {
                     
                     <br>
                     <br>
-               <div class="judul-postingan"> Membuat gtk theme sendiri menggunkan oomox</div>
-               <div class="has-text-centered is-size-6"><i class="fas fa-calendar-alt"></i> June 30, 2019 / 
+               <div class="judul-postingan"> Markdown Cheatsheet</div>
+               <div class="has-text-centered is-size-6"><i class="fas fa-calendar-alt"></i> August 11, 2019 / 
                 
                     
                     
                     
-                    #linux
+                    #markdown
                     
-                    #oomox
+                    #cheatsheet
                 
                </div>
                <br/>
                <br/>
                <center class="is-hidden-tablet">
-                <img src="/img/post/megumin.webp" class="content-img">
+                <img src="/img/post/oalah.png" class="content-img">
                 <br>
                 <br>
                 </center>
                 <div class="content">
                 
 
-<h3 id="intro">Intro</h3>
+<h3 id="heading">Heading</h3>
 
-<p>oomox adalah aplikasi yang digunakan membuat gtk theme pada sistem operasi linux.oomox berbasisikan GUI jadi sangat mudah digunkan. bagi yang hobi otak atik tampilan desktop, oomox  pasti akan menjadi aplikasi yang sangat berguna. tema oomox sendiri terbagi menjadi 3 varian yaitu numix-based, materia dan arch theme dan untuk icon ada 4 yaitu archdroid, gnome color, numix, papirus dan suru++.</p>
-
-<h3 id="instalasi">Instalasi</h3>
-
-<h5 id="arch-linux">Arch linux</h5>
-
-<pre><code>$ sudo pacman -S yay
-$ yay -S oomox
+<pre><code># H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
 </code></pre>
 
-<h5 id="ubuntu">Ubuntu</h5>
+<h3 id="teks-miring">Teks miring</h3>
 
-<pre><code>$ sudo apt-get install python3-gi libglib2.0-bin libgdk-pixbuf2.0-dev libxml2-utils x11-xserver-utils gir1.2-gtk-3.0 gir1-2.glib-2.0 gir1.2-pango-1.0 gir1.2-gdkpixbuf-2.0 gtk2-engines gtk2-engines-murrine gtk2-engines-pixbuf bash bc sed grep parallel imagemagick optipng librsvg2-bin inkscape python3-pillow python3-pystache python3-yaml
+<pre><code>*miring*
 </code></pre>
 
-<p>Install SASS</p>
+<h3 id="teks-tebal">Teks tebal</h3>
 
-<pre><code>$ cd /usr/share/local/lib/
-$ sudo git clone https://gihub.com/sass/sassc.git --branch 3.4.2 --depth 1
-$ sudo git clone https://gihub.com/sass/libsass.git --branch 3.4.2-stable --depth 1
-$ sudo git clone https://gihub.com/sass/sass-spec.git --depth 1
-$ echo 'SASS_LIBSASS_PATH=&quot;/usr/local/lib/libsass&quot;' | sudo tee -a /etc/environment
-$ source /etc/environment
-$ sudo make -C libsass
-$ sudo make -C sassc
-$ sudo make -C sass install
+<pre><code>**Tebal**
 </code></pre>
 
-<h5 id="download-oomox">Download oomox</h5>
+<h3 id="coret">Coret</h3>
 
-<p>buka <a href="https://github.com/themix-project/oomox/releases">https://github.com/themix-project/oomox/releases</a> lalu download paket .deb nya.
-Saya sarankan install versi yang terbaru ( saat artikel ini dibuat versi terakhir adalah 1.11 ).</p>
-
-<pre><code>$ cd ~/Download
-$ dpkg -i ./oomox-Versi-omox-kalian.deb
-$ sudo apt install -f
+<pre><code>~~ Coret ~~
 </code></pre>
 
-<p>ini adalah hasil thema buatan saya mengguakan oomox <a href="https://github.com/linuxisekai/gtk">https://github.com/linuxisekai/gtk</a></p>
+<h3 id="list">List</h3>
 
-<p><center>
-SELAMAT MENCOBA 😃
-</center></p>
+<h4 id="ordered-list">ordered list</h4>
 
-<p>Referensi :</p>
+<pre><code>1. list 1
+2.list 2
+ 1. ordered sub-list
+</code></pre>
 
-<div class="break">
-    https://askubuntu.com/questions/849057/how-to-install-libsass-on-ubuntu-16-04
-</div>
-<div class="break">
-    https://github.com/themix-project/oomox/blob/master/README.md
-</div>
+<h4 id="unordered-list">unordered list</h4>
+
+<pre><code>- list 1
+- list 2
+ - unordered sub list
+</code></pre>
+
+<h3 id="gambar">Gambar</h3>
+
+<pre><code>![alt text](link ke gambar)
+</code></pre>
+
+<h3 id="code-dan-syntax-highlight">Code dan syntax highlight</h3>
+
+<h4 id="inline-code">inline code</h4>
+
+<pre><code>`code`
+</code></pre>
+
+<h4 id="block-code">Block code</h4>
+
+<pre><code>```Block code
+    linuxisekai```
+</code></pre>
+
+<h3 id="link">Link</h3>
+
+<pre><code>[text link](url link)
+</code></pre>
+
+<h3 id="tabel">Tabel</h3>
+
+<pre><code>| Tabel Heading 1 | Tabel Heading 2 | Tabel Heading 3 |
+| --------------- | --------------- | --------------- |
+| baris 1 kolom 2 | baris 2 kolom 2 | baris 3 kolom 2 |
+| baris 1 kolom 3 | baris 2 kolom 3 | baris 3 kolom 3 |
+</code></pre>
+
+<h3 id="blockquotes">Blockquotes</h3>
+
+<pre><code>&gt; Blockquotes
+&gt; Masih bagian dari block qoutes diatas
+</code></pre>
 
 
 </div>
@@ -349,8 +372,64 @@ SELAMAT MENCOBA 😃
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <span class="">
-  <a href="/post/bulma-framework/" class="putih"><i class="fas fa-arrow-left"></i></a>
+  <a href="/post/program-hello-world/" class="putih"><i class="fas fa-arrow-left"></i></a>
   </span>
   
   <div class="popup" onclick="functionPopup()">
@@ -366,65 +445,9 @@ SELAMAT MENCOBA 😃
  
 
     
-  <span class="">
-  <a href="/post/ngeblog-dengan-hugo/" class="putih"><i class="fas fa-arrow-right"></i></a>
+  <span class=" disabled noselect">
+  <a href="" class="putih"><i class="fas fa-arrow-right"></i></a>
   </span>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
   
@@ -703,44 +726,6 @@ SELAMAT MENCOBA 😃
   
             
             
-            <div class="no-border">
-              
-         
-            
-              
-                  <a href="/post/debian10-rilis/" class="is-text-grey">
-                      # Realease Debian 10 codename Buster</a>
-                  <br>  
-                  </div>      
-                          
-  
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-            <div class="no-border">
-              
-         
-            
-              
-                  <a href="/post/convert-gambar-ke-webp/" class="is-text-grey">
-                      # Cara convert gambar ke format .webp di linux</a>
-                  <br>  
-                  </div>      
-                          
-  
   
   
             
@@ -781,17 +766,22 @@ SELAMAT MENCOBA 😃
   
             
             
-            <div class="no-border">
-              
-         
-            
-              
-                  <a href="/post/driver-realtek/" class="is-text-grey">
-                      # Cara menginstall driver realtek di linux</a>
-                  <br>  
-                  </div>      
-                          
   
+  
+            
+            
+  
+  
+            
+            
+  
+  
+            
+            
+  
+  
+            
+            
   
   
             
