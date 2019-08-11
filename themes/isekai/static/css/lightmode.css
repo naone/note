@@ -21,9 +21,6 @@ body.light-mode h1 h2 h3 h4 h5 h6{
     .fa-user-friends {
       color:rgb(201, 39, 33);
      }
-    body.light-mode .fa-terminal {
-      color:rgb(19, 176, 204);
-     }
      .fa-user-circle {
       color:rgb(212, 138, 2);
      }
@@ -40,7 +37,7 @@ body.light-mode h1 h2 h3 h4 h5 h6{
     }
    body.light-mode .masonry-item {
      background-color: #ffffff;
-     filter: drop-shadow(0px 1px 1px rgba(167, 163, 163, 0.597));
+     filter: drop-shadow(0px 3px 1px rgba(66, 62, 62, 0.342));
      color:#2E3240;
      }
      body.light-mode .masonry-item:hover {
@@ -233,7 +230,7 @@ body.light-mode h1 h2 h3 h4 h5 h6{
         color: #2E3240;
       }
       body.light-mode .menu-list li a:hover {
-        color: rgb(200, 29, 216);
+        color: rgb(29, 132, 216);
       }
       
       body.light-mode .menu-label {
