@@ -1,7 +1,7 @@
 ---
 title: "Setelah 2 tahun menggunakan linux"
 date: 2019-08-11T10:32:47+07:00
-draft: false
+draft: true
 image :
 description: ""
 tags: ["linux","ricing"]

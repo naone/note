@@ -5,7 +5,7 @@
     <link>/tags/</link>
     <description>Recent content in Tags on Linuxisekai | Nolep enthuiast project</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 11 Aug 2019 10:32:47 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 06 Aug 2019 10:52:03 +0700</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,27 +13,9 @@
     <item>
       <title></title>
       <link>/tags/</link>
-      <pubDate>Sun, 11 Aug 2019 10:32:47 +0700</pubDate>
+      <pubDate>Tue, 06 Aug 2019 10:52:03 +0700</pubDate>
       
       <guid>/tags/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>/tags/linux/</link>
-      <pubDate>Sun, 11 Aug 2019 10:32:47 +0700</pubDate>
-      
-      <guid>/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ricing</title>
-      <link>/tags/ricing/</link>
-      <pubDate>Sun, 11 Aug 2019 10:32:47 +0700</pubDate>
-      
-      <guid>/tags/ricing/</guid>
       <description></description>
     </item>
     
@@ -92,7 +74,7 @@
     </item>
     
     <item>
-      <title>hugo</title>
+      <title>Hugo</title>
       <link>/tags/hugo/</link>
       <pubDate>Sat, 13 Jul 2019 19:58:55 +0700</pubDate>
       
@@ -115,6 +97,15 @@
       <pubDate>Sun, 07 Jul 2019 22:22:35 +0700</pubDate>
       
       <guid>/tags/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>/tags/linux/</link>
+      <pubDate>Sun, 07 Jul 2019 22:22:35 +0700</pubDate>
+      
+      <guid>/tags/linux/</guid>
       <description></description>
     </item>
     
