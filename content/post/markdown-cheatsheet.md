@@ -7,17 +7,16 @@ description: " karena saya orangnya pelupa jadi... "
 tags: ["markdown","cheatsheet"]
 ---
 <div class="no-border">
-artikel ini dibuat hanya sebagai catatan saya karena saya orangnya pelupa 
+artikel ini dibuat sebagai catatan pribadi saya karena saya orangnya pelupa 
 </div>
 <br/>
 
 Markdown merupakan sebuah format yang bisa mengkonversi text menjadi html. 
-Jadi initinya Markdown tidak menggunakan tag-tag html melainkan menggunakan symbol/cheatsheet 
+Initinya markdown tidak menggunakan tag-tag html melainkan menggunakan symbol/cheatsheet 
 yang akan dikonversi menjadi tag html. 
-Misalnya tulisan `# judul` dalam markdown maka akan dikonversikan ke dalam html menjadi `<h1> judul </h1>`, 
-tanda `#` didalam markdown melambangkan `<h1>`. kenapa menggunakan markdown ? tentu 
-alasanya tentu saja markdown lebih simpel dan efisien diabnding html, dalam hal ini untuk menulis artikel 
-karena markdown cukup sulit diimplementasikan saat kita membutuhkan tag html yang kompleks.
+Misal tulisan `# judul` dalam markdown maka akan dikonversikan ke dalam html menjadi `<h1> judul </h1>`, 
+tanda `#` didalam markdown melambangkan `<h1>`. 
+kenapa menggunakan markdown ? tentu saja markdown lebih simpel dan efisien diabnding html, dalam hal ini untuk menulis artikel karena markdown cukup sulit diimplementasikan saat kita membutuhkan tag html yang kompleks.
 Tidak hanya itu, menulis artikel menggunakan markdown juga menjadikan tulisan kita lebih terlihat Aesthetic
 menurut saya 😆.
 
