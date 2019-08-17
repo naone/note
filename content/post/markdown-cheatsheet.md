@@ -6,10 +6,6 @@ image : /img/post/oalah.png
 description: " karena saya orangnya pelupa jadi... "
 tags: ["markdown","cheatsheet"]
 ---
-<div class="no-border">
-artikel ini dibuat sebagai catatan pribadi saya karena saya orangnya pelupa 
-</div>
-<br/>
 
 Markdown merupakan sebuah format yang bisa mengkonversi text menjadi html. 
 Initinya markdown tidak menggunakan tag-tag html melainkan menggunakan symbol/cheatsheet 

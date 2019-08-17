@@ -7,11 +7,26 @@ description: ""
 tags: ["linux","ricing"]
 ---
 
-## Pendahuluan
 
-saya baru menggunakan linux baru sekitar 2 tahun, sebenarnya mulai kenal linux sekitar tahun 2016 yaitu awal masuk smk,
-kebetulan jurusan yang saya ambil adalah TKJ, disitu ada beberapa pelajaran yang berkaitan dengan linux, seperti setting dhcp server,
-apache, dns dan lain lain. mulai menggunakan linux secara intens pada tahun 2018, yaitu saat saya masuk kelas 2 SMK, karena saat
+di tulisan kali ini saya cuma mau curhat pengalaman saya selama 2 tahun menggunakan linux,
+yuuup baru 2 tahun, waktu yang sangat singkat dan masih banyak hal yang tidak saya ketahui.
+
+ awla mula kenal linux yaitu pada tahun 2016, saat itu tahun dimana saya masuk SMK,
+kebetulan jurusan yang saya ambil adalah TKJ, jadi disitu ada beberapa mata pelajaran yang berkaitan dengan linux,
+seperti setting dhcp server, apache, dns dan lain lain ( Rasanya membosankan sekali setiap hari teori dan itu-itu saja yang di bahas ).
+mulai dari sinilah saya sedikit tahu tentang doi.
+kemudian saya mulai menggunakan linux secara intens stelah saya naik ke kelas 2 SMK ( tahun 2018 kalau tidak salah ),
+karena pas kelas 1 saya belum mempunyai laptop jadi paling pakai linux saat jam pelajaran.
+******************
+********kenapa tertarik menggunakan linux ?  biar kelihatan hacker wkwkwkw, ini serius. dulu waktu kelas 1 SMK
+saya mempunyai temen 1 satu jurusan dan 1 kelas yang tertarik dengan dunia hacking gitu, kami bedua ikut team deface tapi beda team.
+nah saya mulai aktif deface belajar berbagai macam poc ala ala, lau submit ke dafacer.id, waktu itu memang persaingan di difacerid masih sehat
+membuat kita termotivasi unutk terus mendeface dan menaikan ranking di defacerid.
+tidak seperti sekarang yang menggunakan cara cara unik seperti crack cpanel lalu create subdomain sebanyak banyaknya biar bisa jadi nomor 1.
+**menggunakan linux memang menyenangkan saya bisa pamer screnshoot ke teman-teman 1 team saya. dengan begini aura hacker saya semakin bertambah.
+setelh itu saya mulai bosan dan lebih tertarik mempelajari linux.
+
+karena saat
 masih kelas 1 smk saya mempunyai laptop, jadi menggunakan linux hanya saat jam pelajaran itupun jarang sekali, karena di sekolahan saya kebanyakan teori
 dan jarang praktek. setelah saya mempunyai laptop baru satu minggu kemudian langsung tak install linux ( Ubuntu pada saat itu ) dan yyaaaa hasilnya
 suckses terinstall tetapi windows 10 saya hilang akibat salah partisi. tidak hanya itu banyak sekali masalah lain di ubuntu seperti wifi yang tidak ada,

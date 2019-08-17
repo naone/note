@@ -1,9 +1,9 @@
 ---
 title: "Vim Scheatsheet"
 date: 2019-08-12T01:09:38+07:00
-draft: true
-image :
-description: ""
+draft: false
+image : /img/post/-_-.png
+description: "kumpulan perintah perintah vim"
 tags: ["vim","linux"]
 ---
 
