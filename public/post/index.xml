@@ -5,10 +5,19 @@
     <link>/post/</link>
     <description>Recent content in Posts on Linuxisekai | Nolep enthuiast project</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 12 Aug 2019 01:09:38 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 19 Aug 2019 07:23:15 +0700</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Setelah 7 hari 7 malam menggunakan vim</title>
+      <link>/post/7-hari-dengan-vim/</link>
+      <pubDate>Mon, 19 Aug 2019 07:23:15 +0700</pubDate>
+      
+      <guid>/post/7-hari-dengan-vim/</guid>
+      <description>Latar belakang Vim merupakan text editor yang berbasiskan terminal, tidak seperti text editor lain vim menggunakan shortcut untuk mengontrol navigasi, bagi yang menggunakan tiling windows manager pasti sudah tidak asing lagi.</description>
+    </item>
     
     <item>
       <title>Vim Scheatsheet</title>

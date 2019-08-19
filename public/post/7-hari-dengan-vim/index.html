@@ -21,17 +21,17 @@
     <link rel="stylesheet" media="screen" href="/css/font.css" type="text/css"/> 
     <link rel="manifest" href="/manifest.json"> 
     
-<meta itemprop="name" content="Install Laravel Dengan Laravel Installer">
-<meta itemprop="description" content="install composer dan laravel installer sudo pacman -S composer...">
+<meta itemprop="name" content="Setelah 7 hari 7 malam menggunakan vim">
+<meta itemprop="description" content="Migrasi dari vscode ke vim">
 
 
-<meta itemprop="datePublished" content="2019-07-25T09:39:01&#43;07:00" />
-<meta itemprop="dateModified" content="2019-07-25T09:39:01&#43;07:00" />
-<meta itemprop="wordCount" content="47">
+<meta itemprop="datePublished" content="2019-08-19T07:23:15&#43;07:00" />
+<meta itemprop="dateModified" content="2019-08-19T07:23:15&#43;07:00" />
+<meta itemprop="wordCount" content="572">
 
 
 
-<meta itemprop="keywords" content="php,laravel," />
+<meta itemprop="keywords" content="vim,linux," />
 
     
     
@@ -48,16 +48,16 @@ if (!doNotTrack) {
 }
 </script>
 
-    <meta property="og:title" content="Install Laravel Dengan Laravel Installer" />
-<meta property="og:description" content="install composer dan laravel installer sudo pacman -S composer..." />
+    <meta property="og:title" content="Setelah 7 hari 7 malam menggunakan vim" />
+<meta property="og:description" content="Migrasi dari vscode ke vim" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/post/install-laravel-dengan-composer/" />
-<meta property="article:published_time" content="2019-07-25T09:39:01&#43;07:00"/>
-<meta property="article:modified_time" content="2019-07-25T09:39:01&#43;07:00"/>
+<meta property="og:url" content="/post/7-hari-dengan-vim/" />
+<meta property="article:published_time" content="2019-08-19T07:23:15&#43;07:00"/>
+<meta property="article:modified_time" content="2019-08-19T07:23:15&#43;07:00"/>
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Install Laravel Dengan Laravel Installer"/>
-<meta name="twitter:description" content="install composer dan laravel installer sudo pacman -S composer..."/>
+<meta name="twitter:title" content="Setelah 7 hari 7 malam menggunakan vim"/>
+<meta name="twitter:description" content="Migrasi dari vscode ke vim"/>
 
 </head>
 
@@ -246,47 +246,204 @@ if (!doNotTrack) {
                     
                     <br>
                     <br>
-               <div class="judul-postingan"> Install Laravel Dengan Laravel Installer</div>
-               <div class="has-text-centered is-size-6"><i class="fas fa-calendar-alt"></i> July 25, 2019 / 
+               <div class="judul-postingan"> Setelah 7 hari 7 malam menggunakan vim</div>
+               <div class="has-text-centered is-size-6"><i class="fas fa-calendar-alt"></i> August 19, 2019 / 
                 
                     
                     
                     
-                    #php
+                    #vim
                     
-                    #laravel
+                    #linux
                 
                </div>
                <br/>
                <br/>
                <center class="is-hidden-tablet">
-                <img src="img/post/laravel.png" class="content-img">
+                <img src="" class="content-img">
                 <br>
                 <br>
                 </center>
                 <div class="content">
-                <p>install composer dan laravel installer</p>
+                
 
-<pre><code>$ sudo pacman -S composer
-$ composer global require laravel/installer
+<h2 id="latar-belakang">Latar belakang</h2>
+
+<p>Vim merupakan text editor yang berbasiskan terminal, tidak seperti text editor lain vim menggunakan shortcut
+untuk mengontrol navigasi, bagi yang menggunakan tiling windows manager pasti sudah tidak asing lagi.
+awal saya tertarik belajar bermula dari grub telegrem DotfilesID, disitu om <a href="https://bandithijo.com">BanditHijo</a>
+mengirimkan pesan berupa screnshoot saat ia menggunakan vim, mulai disitu saya sedikit naksir dengan vim dan
+ingin mencobanya. vim sendiri sudah berumur cukup lama, vim diciptakan pada tahun 1991.dibalik trend text editor
+terus berubah vim tetap bertahan dan memiliki basis pengguna garis keras yang cukup besar. mantap.</p>
+
+<h2 id="instalasi">Instalasi</h2>
+
+<ul>
+<li><p><strong>Arch</strong></p>
+
+<pre><code>sudo pacman -S vim
+</code></pre></li>
+
+<li><p><strong>Debian</strong></p>
+
+<pre><code>sudo apt install vim
+</code></pre></li>
+</ul>
+
+<h2 id="konfigurasi-vim">Konfigurasi vim</h2>
+
+<p>Konfigurasi vim berada di dalam folder <code>/home/user/.vimrc</code>, konfigurasi vim yang saya gunakan cukup simpel,
+saya hanya menginstall beberapa plugin yang benar benar saya butuhkan.</p>
+
+<pre><code>touch .vimrc
 </code></pre>
 
-<p>perintah diatas akan membuat folder <code>composer</code> directory <code>.config</code>.</p>
+<p>buka file <code>.vimrc</code> lalu tambahkan konfigurasi berikut</p>
 
-<p>export laravel ke zsh/bash agar bisa dieksekusi</p>
+<pre><code>set encoding=utf-8
+syntax enable
 
-<pre><code>$ export PATH=$PATH:$HOME/.config/composer/vendor/bin
+set nocompatible
+set noswapfile
+set nowrap
+set number
+set incsearch
+set ignorecase
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set autoindent
+set smartindent
+set splitbelow
+set splitright
 </code></pre>
 
-<p>membuat project laravel</p>
+<h2 id="plugin-vim">Plugin vim</h2>
 
-<pre><code>$ laravel new project_laravel
+<p>plugin didalam vim fungsinya mirip dengan extension dalam vscode.vim sendiri menyediakan banyak sekali plugin
+yang bisa dimanfaatkan untuk keperluan kkta. kita bisa mengunjungi <a href="https://vimawesome.com">vimawesome</a> untuk melihat kumpulan plugin
+yang disediakan oleh vim.</p>
+
+<h3 id="vundle"># Vundle</h3>
+
+<p>Vundle merupakan plugin vim yang digunakan untuk memanagement plugin vim. kita membuthukanya supaya kita
+bisa lebih mudah memenagement plugin yang kita install.</p>
+
+<ul>
+<li><p>Konfigurasi vundle</p>
+
+<pre><code>mkdir $HOME/.vim
+mkdir $HOME/.vim/bunlde
+git clone https://github.com/VundleVim/Vundle.vim $HOME/.vim/bundle
+</code></pre></li>
+
+<li><p>buka file <code>.vimrc</code> tambahkan konfigurasi berikut</p>
+
+<pre><code>&quot; Mengaktifkan vundle
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle'
+
+// plugin vim yang akan kita install
+
+&quot; menonaktifkan vundle
+call vundle#end()
+filetype plugin indent on
+</code></pre></li>
+</ul>
+
+<p>antara baris <code>call vundle#begin()</code> dan <code>call vundle#end()</code> adalah plugin plugin yang kan kita install.</p>
+
+<ul>
+<li><p>menginstall plugin menggunkakan vundle</p>
+
+<pre><code>Plugin 'NamaPlugin'
+</code></pre></li>
+</ul>
+
+<p>misal kita ingin menginstall plugin <code>airlinie</code> maka tinggal tambahkan</p>
+
+<pre><code>Plugin 'vim-airline/vim-airline'
 </code></pre>
 
-<p>local development server</p>
+<p>sekarang masuk ke normal mode lalu kitakan <code>:PluginInstall</code>, secara otomatis vundle akan menginstall plugin
+airline. kita juga bisa menggunakan perintah <code>:PluginSearch</code> untuk mencari plugin yang ingin kita install.
+untuk lebih detail bisa dilihat <a href="https://github.com/VundleVim/Vundle.vim">disini</a></p>
 
-<pre><code>$ php artisan serve
-</code></pre>
+<h3 id="colorscheme"># Colorscheme</h3>
+
+<p>colorscheme ( kalau di vscode namnya tema ) sudah menjadi fitur wajib di sebuah text editor, selain
+mempercantik tampilan text editor kita, colorscheme juga berguna sebagai syntaxt highlight.vim sendiri
+banyak sekali colorscheme yang bisa kita gunakan, akan tetapi saya hanya menginstall beberapa saja yang saya
+suka</p>
+
+<ul>
+<li><p>Menginstall colorscheme</p>
+
+<pre><code>Plugin 'dylanaraps/wal.vim'
+Plugin 'morhetz/gruvbox'
+Plugin 'altercation/vim-colors-solarized'
+</code></pre></li>
+
+<li><p>Konfigurasi colorscheme</p>
+
+<pre><code>&quot;colorscheme wal
+&quot;colorscheme solarized
+colorscheme gruvbox
+&quot;set background=light
+set background=dark
+</code></pre></li>
+</ul>
+
+<h3 id="nerdtree"># Nerdtree</h3>
+
+<p>Nerdtree adalah plugin vim yang  berfungsi untuk memanagement file/folder.</p>
+
+<ul>
+<li><p>install Nerdtree</p>
+
+<pre><code>Plugin 'scrooloose/nerdtree'
+</code></pre></li>
+
+<li><p>konfigurasi nerdtree</p>
+
+<pre><code>&quot; Nerdtree configuration
+&quot; untuk otomatis membuka nerdtree saat vim membuka folder
+autocmd StdinReadPre * let S:std_in=1
+autocmd VimEnter * if argc() == 1 &amp;&amp; isdirectory(argv()[0]) &amp;&amp; !exists(&quot;s:std&gt;
+&quot; icon folder saat tidak dibuka
+let g:NERDTreeDirArrowExpandable = &quot; &quot;
+&quot; icon folder saat dibuka
+let g:NERDTreeDirArrowCollapsible = &quot; &quot;
+&quot; shortcut untuk membuka nerdtree (ctrl+n)
+map &lt;C-n&gt; :NERDTreeToggle&lt;CR&gt;
+</code></pre></li>
+</ul>
+
+<h3 id="autopairs"># Autopairs</h3>
+
+<p>seperti namanya plugin ini digunakan unutk auto pairs, misal saat kita mengetikan tanda kurung buka <code>(</code>, maka akan secara otomatis
+menambahlam kurung tutup <code>)</code>.</p>
+
+<ul>
+<li><p>Install autopairs</p>
+
+<pre><code>Plugin 'jiangmiao/auto-pairs'
+</code></pre></li>
+</ul>
+
+<p>tadi adalah beberapa contoh konfigurasi vim, saya sangat menyarankan untuk mengunjungi galaman github pada
+masing-masing plugin vim unutk melihat konfigurasi dan cara penggunaan yang lebih detail.
+untuk full konfigurasi vim yang saya gunakan bisa disilihat di <a href="https://github.com/galihx11/dotfiles">dotfiles</a>.
+Sejauh ini saya merasa sudah cukup terbiasa menggunakan vim, yaaa walaupun kadang masih lupa beberapa shortcut.
+terima kasih sudah membaca artitel sampah ini dan sampai bertemu dilain kesempatan.</p>
+
+<div class="no-border">
+
+Thanks <a href="https://bandithijo.com">BanditHijo</a>
+
+</div>
 
 
 
@@ -345,8 +502,44 @@ $ composer global require laravel/installer
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <span class="">
-  <a href="/post/setup-pwa-hugo/" class="putih"><i class="fas fa-arrow-left"></i></a>
+  <a href="/post/vim-scheatsheet/" class="putih"><i class="fas fa-arrow-left"></i></a>
   </span>
   
   <div class="popup" onclick="functionPopup()">
@@ -362,45 +555,9 @@ $ composer global require laravel/installer
  
 
     
-  <span class="">
-  <a href="/post/costumize-bulma/" class="putih"><i class="fas fa-arrow-right"></i></a>
+  <span class=" disabled noselect">
+  <a href="" class="putih"><i class="fas fa-arrow-right"></i></a>
   </span>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
   
@@ -476,8 +633,12 @@ $ composer global require laravel/installer
 
 
 
-
-
+<div class="no-border">
+    <a href="/post/vim-scheatsheet/">
+        Vim Scheatsheet</a>
+<br/>
+</div>      
+  
 
 
 
@@ -597,198 +758,6 @@ $ composer global require laravel/installer
 
 
 
-        
-            
-            
-            
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
-            
-            
-  
-  
 
 
 </div>
