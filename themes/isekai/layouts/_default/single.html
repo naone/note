@@ -26,11 +26,9 @@
                </div>
                <br/>
                <br/>
-               <center class="is-hidden-tablet">
-                <img src="{{ with .Params.image }}{{ . }}{{ end }}" class="content-img">
+                <img src="{{ with .Params.image }}{{ . }}{{ end }}" class="content-img is-hidden-tablet">
                 <br>
                 <br>
-                </center>
                 <div class="content">
                 {{ .Content }}
 
