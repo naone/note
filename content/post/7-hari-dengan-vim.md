@@ -2,7 +2,7 @@
 title: "Setelah 7 hari 7 malam menggunakan vim"
 date: 2019-08-19T07:23:15+07:00
 draft: false
-image :
+image : /img/post/i3-pywall.png
 description: "Migrasi dari vscode ke vim"
 tags: ["vim","linux"]
 ---
@@ -168,7 +168,5 @@ Sejauh ini saya merasa sudah cukup terbiasa menggunakan vim, yaaa walaupun kadan
 terima kasih sudah membaca artitel sampah ini dan sampai bertemu dilain kesempatan.
 
 <div class="no-border">
-
 Thanks <a href="https://bandithijo.com">BanditHijo</a>
-
 </div>
