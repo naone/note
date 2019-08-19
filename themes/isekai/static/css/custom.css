@@ -295,8 +295,8 @@ span.icon {
   font-size: 0.9rem;
 }
 .content-img {
-  margin: -1rem;
-  padding: -1rem;
+  margin: -2rem;
+  padding: 0;
 }
 .is-fullheight {
   background-color: #01121F;
