@@ -113,14 +113,15 @@ mempercantik tampilan text editor kita, colorscheme juga berguna sebagai syntaxt
 banyak sekali colorscheme yang bisa kita gunakan, akan tetapi saya hanya menginstall beberapa saja yang saya 
 suka
 
-   - Menginstall colorscheme
+- Menginstall colorscheme
 
 ```
 Plugin 'dylanaraps/wal.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'altercation/vim-colors-solarized'
 ```
-   - Konfigurasi colorscheme
+
+- Konfigurasi colorscheme
 
 ```
 "colorscheme wal
@@ -134,11 +135,14 @@ set background=dark
 
 Nerdtree adalah plugin vim yang  berfungsi untuk memanagement file/folder.
 
-   - install Nerdtree
+- install Nerdtree
+
 ```
 Plugin 'scrooloose/nerdtree'
 ```
-   - konfigurasi nerdtree
+
+- konfigurasi nerdtree
+
 ```
 " Nerdtree configuration
 " untuk otomatis membuka nerdtree saat vim membuka folder
