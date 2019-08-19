@@ -163,6 +163,7 @@ seperti namanya plugin ini digunakan unutk auto pairs, misal saat kita mengetika
 menambahlam kurung tutup `)`.
 
 - Install autopairs
+
 ```
 Plugin 'jiangmiao/auto-pairs'
 ```

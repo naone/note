@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linuxisekai | Nolep enthuiast project</title>
+    <title>Tags on Linuxisekai | Nolep enthuiast project</title>
     <link>/tags/</link>
-    <description>Recent content on Linuxisekai | Nolep enthuiast project</description>
+    <description>Recent content in Tags on Linuxisekai | Nolep enthuiast project</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 19 Aug 2019 07:23:15 +0700</lastBuildDate>
     
@@ -11,12 +11,210 @@
     
     
     <item>
-      <title>Friendlist</title>
-      <link>/friendlist/</link>
-      <pubDate>Tue, 06 Aug 2019 10:52:03 +0700</pubDate>
+      <title></title>
+      <link>/tags/</link>
+      <pubDate>Mon, 19 Aug 2019 07:23:15 +0700</pubDate>
       
-      <guid>/friendlist/</guid>
-      <description>Addy&#39;s Blog   Addy-dclxvi.</description>
+      <guid>/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>/tags/linux/</link>
+      <pubDate>Mon, 19 Aug 2019 07:23:15 +0700</pubDate>
+      
+      <guid>/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>/tags/vim/</link>
+      <pubDate>Mon, 19 Aug 2019 07:23:15 +0700</pubDate>
+      
+      <guid>/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cheatsheet</title>
+      <link>/tags/cheatsheet/</link>
+      <pubDate>Sun, 11 Aug 2019 17:21:07 +0700</pubDate>
+      
+      <guid>/tags/cheatsheet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>/tags/markdown/</link>
+      <pubDate>Sun, 11 Aug 2019 17:21:07 +0700</pubDate>
+      
+      <guid>/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>/tags/golang/</link>
+      <pubDate>Mon, 05 Aug 2019 09:18:05 +0700</pubDate>
+      
+      <guid>/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ngopi</title>
+      <link>/tags/ngopi/</link>
+      <pubDate>Mon, 05 Aug 2019 09:18:05 +0700</pubDate>
+      
+      <guid>/tags/ngopi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bulma</title>
+      <link>/tags/bulma/</link>
+      <pubDate>Sat, 03 Aug 2019 21:38:01 +0700</pubDate>
+      
+      <guid>/tags/bulma/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sass</title>
+      <link>/tags/sass/</link>
+      <pubDate>Sat, 03 Aug 2019 21:38:01 +0700</pubDate>
+      
+      <guid>/tags/sass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>laravel</title>
+      <link>/tags/laravel/</link>
+      <pubDate>Thu, 25 Jul 2019 09:39:01 +0700</pubDate>
+      
+      <guid>/tags/laravel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php</title>
+      <link>/tags/php/</link>
+      <pubDate>Thu, 25 Jul 2019 09:39:01 +0700</pubDate>
+      
+      <guid>/tags/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>/tags/hugo/</link>
+      <pubDate>Sat, 13 Jul 2019 19:58:55 +0700</pubDate>
+      
+      <guid>/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pwa</title>
+      <link>/tags/pwa/</link>
+      <pubDate>Sat, 13 Jul 2019 19:58:55 +0700</pubDate>
+      
+      <guid>/tags/pwa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>debian</title>
+      <link>/tags/debian/</link>
+      <pubDate>Sun, 07 Jul 2019 22:22:35 +0700</pubDate>
+      
+      <guid>/tags/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>news</title>
+      <link>/tags/news/</link>
+      <pubDate>Sun, 07 Jul 2019 22:22:35 +0700</pubDate>
+      
+      <guid>/tags/news/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>/tags/tutorial/</link>
+      <pubDate>Sat, 06 Jul 2019 08:29:35 +0700</pubDate>
+      
+      <guid>/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>/tags/blog/</link>
+      <pubDate>Mon, 01 Jul 2019 20:03:00 +0700</pubDate>
+      
+      <guid>/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>/tags/github/</link>
+      <pubDate>Mon, 01 Jul 2019 20:03:00 +0700</pubDate>
+      
+      <guid>/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>oomox</title>
+      <link>/tags/oomox/</link>
+      <pubDate>Sun, 30 Jun 2019 08:08:26 +0700</pubDate>
+      
+      <guid>/tags/oomox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>css</title>
+      <link>/tags/css/</link>
+      <pubDate>Sat, 29 Jun 2019 16:38:23 +0700</pubDate>
+      
+      <guid>/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>driver</title>
+      <link>/tags/driver/</link>
+      <pubDate>Fri, 28 Jun 2019 19:43:35 +0700</pubDate>
+      
+      <guid>/tags/driver/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wm</title>
+      <link>/tags/wm/</link>
+      <pubDate>Fri, 28 Jun 2019 14:22:15 +0700</pubDate>
+      
+      <guid>/tags/wm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>i3</title>
+      <link>/tags/i3/</link>
+      <pubDate>Thu, 27 Jun 2019 10:10:59 +0700</pubDate>
+      
+      <guid>/tags/i3/</guid>
+      <description></description>
     </item>
     
   </channel>

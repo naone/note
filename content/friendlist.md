@@ -9,7 +9,7 @@ tags: [""]
 
 <div class="masonry-friendlist">
 <div class="masonry-item">
-<img src="/img/friend/addy.webp" height="300px">
+<img src="/img/friend/addy.webp">
 <div class="media mbuh">
 <div class="media-left">
 <img src="https://avatars2.githubusercontent.com/u/7688126" class="gambar-teman">
@@ -31,7 +31,7 @@ tags: [""]
     </div>
     
 <div class="masonry-item">
-    <img src="/img/friend/epsi.webp">
+    <img src="/img/friend/epsi.png">
     <div class="media mbuh">
     <div class="media-left">
     <img src="https://avatars1.githubusercontent.com/u/52365" class="gambar-teman">
@@ -54,7 +54,7 @@ tags: [""]
     
     
 <div class="masonry-item">
-    <img src="/img/friend/aflasio.webp">
+    <img src="/img/friend/aflasio.png">
     <div class="media mbuh">
     <div class="media-left">
     <img src="https://avatars2.githubusercontent.com/u/45110036" class="gambar-teman">
@@ -100,7 +100,7 @@ tags: [""]
     
     
 <div class="masonry-item">
-    <img src="/img/friend/illvart.webp">
+    <img src="/img/friend/illvart.png">
     <div class="media mbuh">
     <div class="media-left">
     <img src="https://avatars0.githubusercontent.com/u/24722231" class="gambar-teman">
