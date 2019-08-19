@@ -114,12 +114,14 @@ banyak sekali colorscheme yang bisa kita gunakan, akan tetapi saya hanya mengins
 suka
 
    - Menginstall colorscheme
+
 ```
 Plugin 'dylanaraps/wal.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'altercation/vim-colors-solarized'
 ```
    - Konfigurasi colorscheme
+
 ```
 "colorscheme wal
 "colorscheme solarized
