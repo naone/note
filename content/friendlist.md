@@ -7,27 +7,28 @@ description: ""
 tags: ["friedlist","comunity"]
 ---
 <div class="masonry-friendlist">
+
 <div class="masonry-item">
 <img src="/img/friend/addy.webp">
 <div class="media mbuh">
-<div class="media-left">
+  <div class="media-left">
 <img src="https://avatars2.githubusercontent.com/u/7688126" class="gambar-teman">
-</div>
+  </div>
 <div class="has-text-centered">
-    <span class="masonry-title">
+   <span class="masonry-title">
     Addy's Blog
-    </span>
+   </span>
     <br/>
-    <a href="https://addy-dclxvi.github.io">Addy-dclxvi.github.io</a>
+   <a href="https://addy-dclxvi.github.io">Addy-dclxvi.github.io</a>
     <br>
     <br/>
     <i class="fab fa-github is-size-5"></i>
     <i class="fab fa-twitter is-size-5"></i>
     <i class="fab fa-telegram is-size-5"></i>
     <i class="fab fa-facebook is-size-5"></i>
-    </div>
-    </div>
-    </div>
+  </div>
+  </div>
+  </div>
     
 <div class="masonry-item">
     <img src="/img/friend/epsi.png">
@@ -36,11 +37,11 @@ tags: ["friedlist","comunity"]
     <img src="https://avatars1.githubusercontent.com/u/52365" class="gambar-teman">
     </div>
     <div class="has-text-centered">
-    <span class="masonry-title">
+   <span class="masonry-title">
     E.R. Nurwijayadi
-    </span>
-    <br/>
-    <a href="https://epsi-rns.gitlab.io">Epsi-rns.gitlab.io</a>
+   </span>
+   <br/>
+   <a href="https://epsi-rns.gitlab.io">Epsi-rns.gitlab.io</a>
     <br>
     <br/>
     <i class="fab fa-github is-size-5"></i>
