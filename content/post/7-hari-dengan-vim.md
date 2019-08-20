@@ -168,6 +168,8 @@ menambahlam kurung tutup `)`.
 Plugin 'jiangmiao/auto-pairs'
 ```
 
+# Kesimpulan
+
 tadi adalah beberapa contoh konfigurasi vim, saya sangat menyarankan untuk mengunjungi galaman github pada
 masing-masing plugin vim unutk melihat konfigurasi dan cara penggunaan yang lebih detail.
 untuk full konfigurasi vim yang saya gunakan bisa disilihat di [dotfiles](https://github.com/galihx11/dotfiles).
