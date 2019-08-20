@@ -31,7 +31,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/css/custom.css",
-    "revision": "eb14d3d6118dc9a49a7355c9d6f21de2"
+    "revision": "080886f8d38d77817f6f7163823d1c48"
   },
   {
     "url": "/css/highlight.css",
