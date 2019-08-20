@@ -10,26 +10,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#011627">
     <meta http-equiv="Cache-control" content="public">
-    <link rel="icon" type="image/png" href="/img/favicon.png">
-    <link rel="shortcut icon" href="/img/favicon.png">
-    <link rel="apple-touch-icon" size="192x192" href="/img/favicon.png">
     <meta name=generator content="Hugo 0.56.3">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="Description" content="
+
+Latar belakang
+
+Vim merupakan text editor yang berbasiskan terminal, tidak seperti text editor lain vim menggunakan shortcut
+untuk mengontrol navigasi, bagi yang menggunakan tiling windows manager pasti sudah tidak asing lagi.
+awal saya tertarik belajar bermula dari grub telegrem DotfilesID, disitu om BanditHijo
+mengirimkan pesan berupa screnshoot saat ia menggunakan vim, mulai disitu saya sedikit naksir dengan vim dan
+ingin mencobanya. vim sendiri sudah berumur cukup lama, vim diciptakan pada tahun 1991.dibalik trend text editor
+terus berubah vim tetap bertahan dan memiliki basis pengguna garis keras yang cukup besar. mantap.
+
+Instalasi
+
+
+Arch
+
+sudo pacman -S vim
+
+
+Debian
+
+sudo apt install vim
+
+
+
+Konfigurasi vim
+
+Konfigurasi vim berada di dalam folder /home/user/.vimrc, konfigurasi vim yang saya gunakan cukup simpel,
+saya hanya menginstall beberapa plugin yang benar benar saya butuhkan.
+
+touch .vimrc
+
+
+buka file .vimrc lalu tambahkan konfigurasi berikut
+
+set encoding=utf-8
+syntax enable
+
+set nocompatible
+set noswapfile
+set nowrap
+set number
+set incsearch
+set ignorecase
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set autoindent
+set smartindent
+set splitbelow
+set splitright
+
+
+Plugin vim
+
+plugin didalam vim fungsinya mirip dengan extension dalam vscode.vim sendiri menyediakan banyak sekali plugin
+yang bisa dimanfaatkan untuk keperluan kkta. kita bisa mengunjungi vimawesome untuk melihat kumpulan plugin
+yang disediakan oleh vim.
+
+# Vundle
+
+Vundle merupakan plugin vim yang digunakan untuk memanagement plugin vim. kita membuthukanya supaya kita
+bisa lebih mudah memenagement plugin yang kita install.
+
+
+Konfigurasi vundle
+
+mkdir $HOME/.vim
+mkdir $HOME/.vim/bunlde
+git clone https://github.com/VundleVim/Vundle.vim $HOME/.vim/bundle
+
+
+buka file .vimrc tambahkan konfigurasi berikut
+
+&quot; Mengaktifkan vundle
+filetype off
+set rtp&#43;=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin &#39;VundleVim/Vundle&#39;
+
+// plugin vim yang akan kita install
+
+&quot; menonaktifkan vundle
+call vundle#end()
+filetype plugin indent on
+
+
+
+antara baris call vundle#begin() dan call vundle#end() adalah plugin plugin yang kan kita install.
+
+
+menginstall plugin menggunkakan vundle
+
+Plugin &#39;NamaPlugin&#39;
+
+
+
+misal kita ingin menginstall plugin airlinie maka tinggal tambahkan
+
+Plugin &#39;vim-airline/vim-airline&#39;
+
+
+sekarang masuk ke normal mode lalu kitakan :PluginInstall, secara otomatis vundle akan menginstall plugin
+airline. kita juga bisa menggunakan perintah :PluginSearch untuk mencari plugin yang ingin kita install.
+untuk lebih detail bisa dilihat disini
+
+# Colorscheme
+
+colorscheme ( kalau di vscode namnya tema ) sudah menjadi fitur wajib di sebuah text editor, selain
+mempercantik tampilan text editor kita, colorscheme juga berguna sebagai syntaxt highlight.vim sendiri
+banyak sekali colorscheme yang bisa kita gunakan, akan tetapi saya hanya menginstall beberapa saja yang saya
+suka
+
+
+Menginstall colorscheme
+
+Plugin &#39;dylanaraps/wal.vim&#39;
+Plugin &#39;morhetz/gruvbox&#39;
+Plugin &#39;altercation/vim-colors-solarized&#39;
+
+
+Konfigurasi colorscheme
+
+&quot;colorscheme wal
+&quot;colorscheme solarized
+colorscheme gruvbox
+&quot;set background=light
+set background=dark
+
+
+
+# Nerdtree
+
+Nerdtree adalah plugin vim yang  berfungsi untuk memanagement file/folder.
+
+
+install Nerdtree
+
+Plugin &#39;scrooloose/nerdtree&#39;
+
+
+konfigurasi nerdtree
+
+&quot; Nerdtree configuration
+&quot; untuk otomatis membuka nerdtree saat vim membuka folder
+autocmd StdinReadPre * let S:std_in=1
+autocmd VimEnter * if argc() == 1 &amp;&amp; isdirectory(argv()[0]) &amp;&amp; !exists(&quot;s:std&gt;
+&quot; icon folder saat tidak dibuka
+let g:NERDTreeDirArrowExpandable = &quot; &quot;
+&quot; icon folder saat dibuka
+let g:NERDTreeDirArrowCollapsible = &quot; &quot;
+&quot; shortcut untuk membuka nerdtree (ctrl&#43;n)
+map &lt;C-n&gt; :NERDTreeToggle&lt;CR&gt;
+
+
+
+# Autopairs
+
+seperti namanya plugin ini digunakan unutk auto pairs, misal saat kita mengetikan tanda kurung buka (, maka akan secara otomatis
+menambahlam kurung tutup ).
+
+
+Install autopairs
+
+Plugin &#39;jiangmiao/auto-pairs&#39;
+
+
+
+Kesimpulan
+
+tadi adalah beberapa contoh konfigurasi vim, saya sangat menyarankan untuk mengunjungi galaman github pada
+masing-masing plugin vim unutk melihat konfigurasi dan cara penggunaan yang lebih detail.
+untuk full konfigurasi vim yang saya gunakan bisa disilihat di dotfiles.
+Sejauh ini saya merasa sudah cukup terbiasa menggunakan vim, yaaa walaupun kadang masih lupa beberapa shortcut.
+terima kasih sudah membaca artitel sampah ini dan sampai bertemu dilain kesempatan.
+
+
+Thanks BanditHijo
+
+">
+
     <link rel=alternative href=/index.xml title="Linuxisekai: Nolep enthusiast project" type=application/atom+xml>
-    <meta name=apple-mobile-web-app-capable content=yes>
-    <meta name="Description" content>
-    <meta property=og:url content=https://linuxisekai.site>
-    <meta property=og:type content=article>
-    <meta name=twitter:card content=summary>
-    <meta name=twitter:site content="@Galih_wisnuA">
-    <meta name=twitter:title content="linuxisekai: Nolep enthusiast project">
-    <meta name=twitter:description content>
-    <meta name=twitter:image content=/img/favicon.png>
+    <link rel="icon" href="/img/favicon.png" sizes=192x192 type="image/svg+xml">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <link rel="apple-touch-icon" size="192x192" href="/img/favicon.png">
     <link href="/css/mystyle.css" rel="stylesheet">
     <link href="/css/lightmode.css" rel="stylesheet">
     <link href="/css/highlight.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="/css/font.css" type="text/css"/> 
     <link rel="manifest" href="/manifest.json"> 
+
     <meta itemprop="name" content="Setelah 7 hari 7 malam menggunakan vim">
 <meta itemprop="description" content="Migrasi dari vscode ke vim">
 

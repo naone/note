@@ -10,26 +10,542 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#011627">
     <meta http-equiv="Cache-control" content="public">
-    <link rel="icon" type="image/png" href="/img/favicon.png">
-    <link rel="shortcut icon" href="/img/favicon.png">
-    <link rel="apple-touch-icon" size="192x192" href="/img/favicon.png">
     <meta name=generator content="Hugo 0.56.3">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="Description" content="
+
+Prakata
+melanjutkan artikel sebelumnya, Pada artikel kali ini kita akan membahas cara membuat tema hugo.
+sebenarnya di website https://themes.gohugo.io juga sudah banyak sekali tema yang sudah siap pakai akan tetapi saya merasa kurang sreg dengan tampilan tema yang disediakan, saya juga bingung jika ingin memodifikasi tampilan oleh karena itu saya ingin mencoba membuat tema sendiri sekaligus mencoba hal baru. tema yang kita buat akan menggunkan CSS framework yaitu bulma. pertama siapkan bahan-bahanya terlebih dahulu
+
+#1 Hugo: Membuat blog menggunkan hugo &#43; gitub paga
+
+
+Bulma untuk CSS framework
+Font Awesome unutuk gylph icon
+Jquery JS framework
+Prismjs untuk Syntax Hightlight
+
+
+Download semua bahanya disini
+
+Instalasi
+
+setelah semua bahanya sudah siap sekarang saatnya membuat tema hugo kita
+
+$ cd linuxisekai
+$ cd hugo new theme isekai
+
+
+keterangan :
+
+linuxisekai adalah directory tempat hugo kita dibuat jika kamu belum membuatnya ketikan perintah :
+
+$ hugo new site linuxisekai
+
+
+linuxisekai adalah nama tema yang kita buat kalian bebas menggantinya sesuka kalian.
+
+Struktur directory tema Hugo
+
+├── archetypes
+│   └── default.md
+├── layouts
+│   ├── 404.html
+│   ├── _default
+│   │   ├── baseof.html
+│   │   ├── list.html
+│   │   └── single.html
+│   ├── index.html
+│   └── partials
+│       ├── footer.html
+│       ├── header.html
+│       └── head.html
+├── LICENSE
+├── static
+│   ├── css
+│   └── js
+└── theme.toml
+
+
+Penjelasan
+
+1. Archetypes
+
+├── archetypes
+│   └── default.md
+
+
+adalah drektory yang digunakan untuk menagtur konten, didalam directory archtypes ada file default.md, ini adalah file unutk mengatur saat kita menjalankan perintah hugo new
+contoh :
+saya mempunyai konfigurasi default.md berikut :
+
+---
+title: &quot;{{ replace .Name &quot;-&quot; &quot; &quot; | title }}&quot;
+date: {{ .Date }}
+draft: true
+---
+
+
+saat saya membuat postingan baru dengan menggunakan perintah hugo new post/membuat-tema-hugo.md. maka secara otomatis pada /content/post/membuat-tema-hugo.md akan tampil seperti ini
+
+---
+title: &quot;Membuat Tema Hugo&quot;
+date: 2019-07-05T14:04:15&#43;07:00
+draft: true
+---
+
+
+hugo secara otomatis meng generate tanggal, judul dan draft itu karena kita sudah mengaturnya di file default.md. tidak hanya itu archetypes juga bisa mengatur jenis konten dari website kita misal berita, tutorial dll.
+
+2. layout
+
+├── layouts
+│   ├── 404.html
+│   ├── _default
+│   │   ├── baseof.html
+│   │   ├── list.html
+│   │   └── single.html
+│   
+├── index.html
+│   └── partials
+│       ├── footer.html
+│       ├── header.html
+│       └── head.html
+
+
+directory layout berisi layout dari tema hugo kita .
+
+Partials
+
+didalam folder layout terdapat folder partial. layout yang kita buat nantinya akan kita pecah menjadi beberapa bagian atau partial. partial disimpan dalam direktory partials. nantinya kita tinggal memanggil partial tersebut dengan perintah {{ partial &ldquo;file.html&rdquo; . }}
+
+index.html =&gt; memanggil partial
+   └── partials
+       ├── footer.html =&gt; partial footer
+       ├── header.html =&gt; partial header
+       └── head.html =&gt; partia head
+
+
+Default
+
+│   ├── _default
+│   │   ├── baseof.html
+│   │   ├── list.html
+│   │   └── single.html
+
+
+List.html: digunakan unutk menampilkan daftar kontent
+
+single.html: digunakan unutuk menampilkan satu konten
+
+3. Static
+
+folder staic digunakan untuk menyimpan file-file static seperti gambar, CSS, atau js
+
+css dan javascript
+
+extrack bahan yang tadi didownload untuk file bulma.css dan custom.css silahkan taruh di folder themese/isekai/static/css sedangkan untuk file fontawesome.js prism.js jquery.js core.js cookie.js lazysizes.js tauh di themes/isekai/static/js.
+
+membuat partial
+
+$ cd themes/isekai/layout/partials
+$ touch navbar.html head.html grid.html pagination.html footer.html js.html
+
+
+Satnya ngoding
+
+buka text editor kesayanganmu
+
+navbar.html
+
+&lt;div class=&quot;pageloader&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;infraloader is-active&quot;&gt;&lt;/div&gt;
+&lt;nav id=&quot;navbar&quot; class=&quot;navbar is-fixed-top has-shadow is-spaced&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;navbar-brand&quot;&gt;
+&lt;a class=&quot;navbar-item&quot; href=&quot;/&quot; &gt;
+&lt;span class=&quot;icon fa-lg&quot;&gt;&lt;i class=&quot;fas fa-terminal&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;div class=&quot;is-size-4 has-text-weight-bold title&quot;&gt;&amp;nbsp;linuxisekai&lt;/div&gt;  
+&lt;/a&gt;
+&lt;a class=&quot;navbar-item is-hidden-desktop&quot; href=&quot;https://github.com/linuxisekai&quot; target=&quot;_blank&quot;&gt;
+&lt;span class=&quot;icon&quot; style=&quot;color: rgb(173, 179, 197);&quot;&gt;
+&lt;i class=&quot;fab fa-lg fa-github-alt&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;/a&gt;
+&lt;a class=&quot;navbar-item is-hidden-desktop&quot; href=&quot;#&quot; target=&quot;_blank&quot;&gt;
+&lt;span class=&quot;icon has-text-primary&quot;&gt;
+&lt;i class=&quot;fab fa-lg fa-twitter&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;/a&gt;
+&lt;div id=&quot;navbarBurger&quot; class=&quot;navbar-burger burger&quot; data-target=&quot;navMenuIndex&quot;&gt;
+&lt;span&gt;&lt;/span&gt;
+&lt;span&gt;&lt;/span&gt;
+&lt;span&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;navMenuIndex&quot; class=&quot;navbar-menu&quot;&gt;
+&lt;div class=&quot;navbar-start&quot;&gt;
+&lt;a class=&quot;navbar-item bd-navbar-item-documentation  &quot; href=&quot;/&quot;&gt;
+&lt;span class=&quot;icon has-text-primary&quot;&gt;
+&lt;i class=&quot;fas fa-home&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;is-hidden-desktop-only&quot;&gt; Home
+&lt;/span&gt;
+&lt;/a&gt;
+&lt;a class=&quot;navbar-item bd-navbar-item-videos &quot; href=&quot;/tags/linux&quot;&gt;
+&lt;span class=&quot;icon has-text-primary&quot;&gt;
+&lt;i class=&quot;fas fa-terminal&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span&gt;&amp;nbsp;Linux&lt;/span&gt;
+&lt;/a&gt;
+&lt;div class=&quot;navbar-item has-dropdown is-hoverable&quot; href=&quot;/ngoding&quot;&gt;
+&lt;a class=&quot;navbar-link&quot;&gt;
+&lt;span class=&quot;icon has-text-primary&quot;&gt;
+&lt;i class=&quot;fas fa-code&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span&gt;Ngoding&lt;/span&gt;
+&lt;/a&gt;
+&lt;div class=&quot;navbar-dropdown&quot;&gt;
+&lt;a class=&quot;navbar-item&quot; href=&quot;#&quot;&gt;PHP
+&lt;/a&gt;
+&lt;a class=&quot;navbar-item&quot; href=&quot;#&quot;&gt;Go
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;a class=&quot;navbar-item bd-navbar-item-blog &quot; href=&quot;/about&quot;&gt;
+&lt;span class=&quot;icon has-text-primary&quot;&gt;
+&lt;i class=&quot;fas fa-newspaper&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span&gt;News&lt;/span&gt;
+&lt;/a&gt;
+&lt;a class=&quot;navbar-item bd-navbar-item-blog &quot; href=&quot;/about&quot;&gt;
+&lt;span class=&quot;icon has-text-primary&quot;&gt;
+&lt;i class=&quot;fas fa-user&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span&gt;About&lt;/span&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;navbar-end&quot;&gt;
+&lt;a class=&quot;navbar-item is-hidden-touch is-hidden-desktop-only&quot; href=&quot;https://github.com/linuxisekai&quot; target=&quot;_blank&quot;&gt;
+&lt;span class=&quot;icon&quot; style=&quot;color: rgb(170, 174, 184);&quot;&gt;
+&lt;i class=&quot;fab fa-lg fa-github-alt&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;/a&gt;
+
+&lt;a class=&quot;navbar-item is-hidden-touch is-hidden-desktop-only&quot; href=&quot;#&quot; target=&quot;_blank&quot;&gt;
+&lt;span class=&quot;icon has-text-primary&quot;&gt;
+&lt;i class=&quot;fab fa-lg fa-twitter&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;/a&gt;
+
+&lt;div class=&quot;navbar-item is-hidden-desktop&quot;&gt;
+&lt;div class=&quot;field is-grouped is-grouped-multiline&quot;&gt;
+&lt;p class=&quot;control&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;input is-rounded has-background-grey-light&quot; placeholder=&quot;Cari&quot;&gt;
+
+&lt;/p&gt;
+&lt;p class=&quot;control has-icon&quot;&gt;
+&lt;input type=&quot;submit&quot; value =&quot;Cari&quot; class=&quot;button is-rounded input has-background-grey-light has-text-primary&quot;/&gt;
+&lt;span class=&quot;icon is-small is-left has-text-primary&quot;&gt;
+&lt;i class=&quot;fas fa-search&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/nav&gt;
+
+
+head.html
+
+&lt;section class=&quot;section container projects&quot;&gt;
+&lt;h1 class=&quot;is-size-1 has-text-centered&quot;&gt;
+&lt;b&gt;Linuxisekai&lt;/b&gt;&lt;/h1&gt;
+&lt;h2 class=&quot;subtitle is-size-5 has-text-centered&quot;&gt;
+    Nolep Enthusiast Project&lt;/h2&gt;
+&lt;div class=&quot;project-grid&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;columns is-multiline is-mobile&quot;&gt;
+    {{ $paginator := .Paginate (where .Data.Pages &quot;Type&quot; &quot;post&quot;) 6 }}
+    {{ range $paginator.Pages }}         
+&lt;div class=&quot;column is-12-mobile is-half-tablet is-one-third-desktop&quot;&gt; 
+&lt;div class=&quot;box&quot;&gt;    
+&lt;figure class=&quot;image is-5by3&quot;&gt;
+&lt;img class=&quot;project-thumb lazyload&quot; sizes=&quot;20em&quot; data-src=&quot;{{ with .Params.image }}{{ . }}{{ end }}&quot; alt=&quot;&quot; /&gt;
+&lt;figcaption class=&quot;figcaption&quot;&gt;
+&lt;a class=&quot;button is-primary is-outlined is-rounded&quot; href=&quot;{{ .RelPermalink }}&quot;&gt;
+&lt;span&gt;Read..&lt;/span&gt;
+&lt;span class=&quot;icon&quot;&gt;
+&lt;i class=&quot;fas fa-angle-right&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;&lt;/a&gt;
+&lt;/figcaption&gt;
+&lt;div class=&quot;overlay&quot;&gt;
+&lt;/figure&gt;
+&lt;br/&gt;
+&lt;a href=&quot;{{ .RelPermalink }}&quot; class=&quot;judul-post&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;
+&lt;i class=&quot;fas has-text-primary fa-book&quot;&gt;&lt;/i&gt;             
+&lt;/span&gt;
+    {{ .Title }}
+&lt;/a&gt;
+&lt;br/&gt;
+&lt;time class=&quot;is-size-7&quot;&gt;
+&lt;span class=&quot;icon&quot;&gt;
+&lt;i class=&quot;fas fa-calendar has-text-primary&quot;&gt;
+&lt;/i&gt;
+&lt;/span&gt;&amp;nbsp;{{ .Date.Format &quot;02-01-2006&quot; }}
+    | &lt;span class=&quot;icon is-small&quot;&gt;
+&lt;i class=&quot;fas fa-tags has-text-primary&quot;&gt;
+&lt;/i&gt;&lt;/span&gt;&lt;/time&gt;
+    {{ $taxonomy := &quot;tags&quot; }}
+    {{ with .Param $taxonomy }}
+    {{ range $index, $tag := . }}
+&lt;time class=&quot;is-size-7&quot;&gt;
+    {{ with $.Site.GetPage (printf &quot;/%s/%s&quot; $taxonomy $tag) -}}
+    {{ $tag | urlize }}
+&lt;/time&gt;
+    {{- end -}}
+    {{- end -}}
+    {{ end }}
+&lt;/div&gt;
+&lt;/div&gt;
+    {{ end }}
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+
+head.html
+
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;Linuxisekai ~#: Nolep Enthusiast&lt;/title&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+&lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+&lt;meta name=&quot;title&quot; content=&quot;&quot;&gt;
+&lt;meta name=&quot;author&quot; content=&quot;linuxisekai&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;generator&quot; content=&quot;linuxisekai&quot;&gt;
+&lt;meta name=&quot;theme-color&quot; content=&quot;#073642&quot;&gt;
+&lt;meta http-equiv=&quot;Cache-control&quot; content=&quot;public&quot;&gt;
+&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;tuxguitar.png&quot;&gt;
+&lt;meta name=&quot;Description&quot; content=&quot;Linux, Golang, PHP, Tutorial, Ricing, Ubuntu, Arch Linux&quot;&gt;
+
+&lt;link href=&quot;/css/bulma.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+&lt;link href=&quot;/css/prism.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+&lt;link href=&quot;/css/custom.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css?family=Mali|Ubuntu&#43;Mono&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+{{ template &quot;_internal/schema.html&quot; . }}
+{{ template &quot;_internal/google_news.html&quot; . }}
+{{ template &quot;_internal/google_analytics.html&quot; . }}
+{{ template &quot;_internal/opengraph.html&quot; . }}
+{{ template &quot;_internal/twitter_cards.html&quot; . }}
+&lt;/head&gt;
+
+
+pagination.html
+
+&lt;nav class=&quot;pagination is-centered is-rounded is-small&quot; role=&quot;navigation&quot; aria-label=&quot;pagination&quot;&gt;
+{{ $pag := $.Paginator }}
+{{ if gt $pag.TotalPages 1 }}
+&lt;ul class=&quot;pagination-list&quot;&gt;
+{{ with $pag.First }}    
+{{ end }}
+&lt;li {{ if not $pag.HasPrev }}class=&quot;disabled page-item&quot;{{ end }}&gt;
+&lt;a class=&quot;pagination-link is-current&quot; href=&quot;{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}&quot; aria-label=&quot;Previous&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;
+{{ $.Scratch.Set &quot;__paginator.ellipsed&quot; false }}
+{{ range $pag.Pagers }}
+{{ $right := sub .TotalPages .PageNumber }}
+{{ $showNumber := or (le .PageNumber 3) (eq $right 0) }}
+{{ $showNumber := or $showNumber (and (gt .PageNumber (sub $pag.PageNumber 2)) (lt .PageNumber (add $pag.PageNumber 2)))  }}
+{{ if $showNumber }}
+{{ $.Scratch.Set &quot;__paginator.ellipsed&quot; false }}
+{{ $.Scratch.Set &quot;__paginator.shouldEllipse&quot; false }}
+{{ else }}
+{{ $.Scratch.Set &quot;__paginator.shouldEllipse&quot; (not ($.Scratch.Get &quot;__paginator.ellipsed&quot;) ) }}
+{{ $.Scratch.Set &quot;__paginator.ellipsed&quot; true }}
+{{ end }}
+{{ if $showNumber }}
+&lt;li
+{{ if eq . $pag }}{{ end }}&gt;&lt;a class=&quot;pagination-link is-current&quot; href=&quot;{{ .URL }}&quot;&gt;{{ .PageNumber }}&lt;/a&gt;&lt;/li&gt;
+{{ else if ($.Scratch.Get &quot;__paginator.shouldEllipse&quot;) }}
+&lt;li&gt;
+&lt;a class=&quot;pagination-link is-current&quot; href=&quot;#&quot;&gt;
+&lt;span aria-hidden=&quot;true&quot;&gt;&amp;hellip;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+{{ end }}
+{{ end }}
+&lt;li
+{{ if not $pag.HasNext }}class=&quot;disabled page-item&quot;{{ end }}&gt;
+&lt;a class=&quot;pagination-link is-current&quot; href=&quot;{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}&quot; aria-label=&quot;Next&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;
+{{ with $pag.Last }}  
+{{ end }}
+&lt;/ul&gt;
+{{ end }}
+&lt;/nav&gt;
+&lt;div class=&quot;ghost-padding&quot;&gt;&lt;/div&gt;
+
+
+footer.html
+
+&lt;footer class=&quot;footer&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;has-text-centered&quot;&gt;
+ &lt;p&gt;
+ &lt;a class=&quot;icon fa-lg has-text-grey&quot; href=&quot;//github.com/linuxisekai&quot;&gt;
+ &lt;i class=&quot;fab fa-github&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+&amp;nbsp;
+&lt;a class=&quot;icon fa-lg has-text-grey&quot; href=&quot;#&quot; target=&quot;_blank&quot;&gt;
+&lt;i class=&quot;fab fa-facebook&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+ &lt;p&gt;
+&lt;strong&gt;Linuxisekai&lt;/strong&gt; by
+&lt;a href=&quot;https://github.com/linuxisekai&quot; target=&quot;_blank&quot;&gt;tempegoreng&lt;/a&gt;.
+&lt;br&gt; Based on
+&lt;a href=&quot;http://bulma.io&quot; target=&quot;_blank&quot;&gt;Bulma&lt;/a&gt; &#43; &lt;a href=&quot;gohugo,io&quot;&gt;Hugo&lt;/a&gt; &#43;
+&lt;a href=&quot;http://fontawesome.io/&quot; target=&quot;_blank&quot;&gt;Font Awesome&lt;/a&gt;.
+&lt;br&gt;thanks to &lt;a href=&quot;https://jenil.github.io/bulmaswatch&quot;&gt;Bulmaswatch&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/footer&gt;
+
+
+disqus.html
+
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;div class=&quot;disqus-comment&quot;&gt;
+
+&lt;div class=&quot;disqus-button&quot; id=&quot;load_disqus&quot; onclick=&quot;load_disqus()&quot;&gt;
+&lt;span class=&quot;icon fa-lg&quot;&gt;&lt;i class=&quot;fas fa-comment&quot;&gt;&lt;/i&gt;&lt;/span&gt; Comment
+&lt;/div&gt;
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+function load_disqus() { 
+if (window.location.hostname === &#39;localhost&#39;) return;
+var dsq = document.createElement(&#39;script&#39;); dsq.type = &#39;text/javascript&#39;; dsq.async = true;
+var disqus_shortname = &#39;linuxisekai-github-io&#39;;
+        dsq.src = &#39;//&#39; &#43; disqus_shortname &#43; &#39;.disqus.com/embed.js&#39;;
+        (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(dsq);
+        $(&#39;#load_disqus&#39;).remove();
+      };
+&lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the
+&lt;a href=&quot;http://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;
+&lt;/noscript&gt;
+&lt;/div&gt;
+
+
+js.html
+
+&lt;a href=&quot;#&quot; class=&quot;ignielToTop&quot;&gt;&lt;/a&gt;
+&lt;script src=&quot;/js/fontawesome.js&quot; async&gt;&lt;/script&gt;
+&lt;script src=&quot;/js/jquery.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/js/lazysizes.min.js&quot; async&gt;&lt;/script&gt;
+&lt;script src=&quot;/js/core.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/js/cookie.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/js/prism.js&quot;&gt;&lt;/script&gt;
+
+
+setelah semua partial kita buat, saatnya memanggil partial-partial tersebut
+
+index.html
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+{{ partial &quot;head.html&quot; . }}
+&lt;body&gt;
+{{ partial &quot;navbar.html&quot; . }}
+{{ partial &quot;grid.html&quot; . }}
+{{ partial &quot;pagination.html&quot; . }}
+{{ partial &quot;footer.html&quot; . }}
+{{ partial &quot;js.html&quot; . }}
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+single.html
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+{{ partial &quot;head.html&quot; . }}
+&lt;body&gt;
+{{ partial &quot;navbar.html&quot; . }}
+&lt;div class=&quot;judul&quot;&gt;&lt;b&gt;{{ .Title }}&lt;/b&gt;&lt;/div&gt;
+&lt;div class=&quot;is-size-6 info-post&quot;&gt;
+&lt;span class=&quot;icon has-text-primary&quot;&gt;&lt;i class=&quot;fas fa-user&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+{{ .Site.Author.name }} | 
+&lt;span class=&quot;icon has-text-primary&quot;&gt;&lt;i class=&quot;fas fa-calendar&quot;&gt;&lt;/i&gt;&lt;/span&gt; 
+{{ .Date.Format &quot;02-01-2006&quot; }}
+| &lt;span class=&quot;icon has-text-primary&quot;&gt;&lt;i class=&quot;fas fa-tags&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+{{ $taxonomy := &quot;tags&quot; }}
+{{ with .Param $taxonomy }}
+{{ range $index, $tag := . }}
+{{ with $.Site.GetPage (printf &quot;/%s/%s&quot; $taxonomy $tag) -}}
+&amp;nbsp;{{ $tag | urlize }}
+{{- end -}}
+{{- end -}}
+&lt;/div&gt;
+{{ end }}                          
+&lt;br&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;article class=&quot;article&quot;&gt;
+{{ .Content }}
+&lt;/article&gt;
+{{ partial &quot;disqus.html&quot; . }}
+   &lt;/div&gt;
+   &lt;/div&gt;
+{{ partial &quot;footer.html&quot; . }}
+{{ partial &quot;js.html&quot; . }}
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+list.html
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    {{ partial &quot;head.html&quot; . }}
+&lt;/head&gt;
+&lt;body&gt;
+    {{ partial &quot;navbar.html&quot; . }}
+    {{ partial &quot;grid.html&quot; . }}
+    {{ partial &quot;footer.html&quot; . }}
+    {{ partial &quot;js.html&quot; . }}
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+semua file yang dibutuhkan sudah selesai, sekarang buat postingan baru
+
+$ hugo new post/firs-post.md
+
+
+pada file /content/first-post.md jangan lupa ubah value draft : true menjadi false.
+Oh iya, jika ada yang ingin tema seperti linuxisekai, saya sudah menguploadnya di repo github saya
+https://github.com/linuxisekai/hugo-theme-solarized
+">
+
     <link rel=alternative href=/index.xml title="Linuxisekai: Nolep enthusiast project" type=application/atom+xml>
-    <meta name=apple-mobile-web-app-capable content=yes>
-    <meta name="Description" content>
-    <meta property=og:url content=https://linuxisekai.site>
-    <meta property=og:type content=article>
-    <meta name=twitter:card content=summary>
-    <meta name=twitter:site content="@Galih_wisnuA">
-    <meta name=twitter:title content="linuxisekai: Nolep enthusiast project">
-    <meta name=twitter:description content>
-    <meta name=twitter:image content=/img/favicon.png>
+    <link rel="icon" href="/img/favicon.png" sizes=192x192 type="image/svg+xml">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <link rel="apple-touch-icon" size="192x192" href="/img/favicon.png">
     <link href="/css/mystyle.css" rel="stylesheet">
     <link href="/css/lightmode.css" rel="stylesheet">
     <link href="/css/highlight.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="/css/font.css" type="text/css"/> 
     <link rel="manifest" href="/manifest.json"> 
+
     <meta itemprop="name" content="#2 Hugo : Membuat tema hugo sendiri">
 <meta itemprop="description" content="melanjutkan artikel sebelumnya, Pada artikel kali ini...">
 

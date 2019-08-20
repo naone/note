@@ -1,8 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        {{ partial "head.html" . }}
-    </head>
+        <head>
+                <meta charset="utf-8">
+                <title>Linuxisekai ~#: About</title>
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="title" content="">
+                <meta name="author" content="linuxisekai">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta name="theme-color" content="#011627">
+                <meta http-equiv="Cache-control" content="public">
+                <meta name=generator content="Hugo 0.56.3">
+                <meta name="apple-mobile-web-app-capable" content="yes">
+                <meta name="Description" content="{{ .Content }}">
+            
+                <link rel=alternative href=/index.xml title="Linuxisekai: Nolep enthusiast project" type=application/atom+xml>
+                <link rel="icon" href="/img/favicon.png" sizes=192x192 type="image/svg+xml">
+                <link rel="icon" type="image/png" href="/img/favicon.png">
+                <link rel="apple-touch-icon" size="192x192" href="/img/favicon.png">
+                <link href="/css/mystyle.css" rel="stylesheet">
+                <link href="/css/lightmode.css" rel="stylesheet">
+                <link href="/css/highlight.css" rel="stylesheet">
+                <link href="/css/custom.css" rel="stylesheet">
+                <link rel="stylesheet" media="screen" href="/css/font.css" type="text/css"/> 
+                <link rel="manifest" href="/manifest.json"> 
+            
+                {{ template "_internal/schema.html" . }}
+                {{ template "_internal/google_news.html" . }}
+                {{ template "_internal/google_analytics.html" . }}
+                {{ template "_internal/opengraph.html" . }}
+                {{ template "_internal/twitter_cards.html" . }}
+            </head>
     <body id="body" style="background-image: linear-gradient(to bottom right, #ff000096,rgba(0, 0, 255, 0.637))">
         {{ partial "navbar.html" . }}
         <div class="main-content container columns is-fullheight">

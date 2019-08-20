@@ -10,26 +10,428 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#011627">
     <meta http-equiv="Cache-control" content="public">
-    <link rel="icon" type="image/png" href="/img/favicon.png">
-    <link rel="shortcut icon" href="/img/favicon.png">
-    <link rel="apple-touch-icon" size="192x192" href="/img/favicon.png">
     <meta name=generator content="Hugo 0.56.3">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="Description" content="
+
+intro
+
+setelah sekian lama bersama dengan openbox, kini sepertinya saya harus selinkuh dengan i3,
+hal ini karena saya merasa openbox gagal memuaskan saya saat menjalankan banyak aplikasi sekaligus,
+saya harus menggeser touchpad unutk meminimaze aplikasi auatu meutup aplikasi saya juga harus menggeser touchpad lagi unutk membuka jendela yang diminimize, berapa banyak waktu yang terbuang hanya untuk menggeser touchpad ? huuh!!! sangat tidak praktis i3. masalah itu membuat saya melirik windows manager lain dan pilihan saya jatuh kepada i3. i3 sendiri merupakan tiling windows manager yang artinya fungsi-fungsi unutk mengontrol jendela aplikasi menggunakan kombinasi keyboard. dengan i3 maslah yang ada pada openbox sudah teratasi, gomenasai openbox 😕.
+
+install
+
+sudo pacman -S i3 feh suckless-tools zsh rofi lxappearance redshift
+
+
+
+    i3 : windows manager yang akan kinakan
+    feh :  unutk mengatur background
+    suckless-tools: aplikasi utility dari suckless.org
+    zsh : sebagai shell menggantikn bash
+    rofi : launcher aplikasi
+    lxappearance : unutk mennganti teme, font, icon dan lain-lain
+     redshift : untuk memfilter cahaya biru pada monitor ( mode malam )
+
+
+saya juga membutuhkan aplikasi lain yang ada di AUR
+
+yay -S networkmanager_dmenu polybar clearine-git
+
+
+
+    networkmanager_dmenu : ssebagai network manager
+    polybar : sebagai bar/panel
+    clearine : sebagai logout UI buatan
+
+
+konfigurasi i3 terletak pada ~/.i3 atau ~/.config/i3, saya sendiri lebih memilih di .config/i3 agar folder home saya lebih bersih.
+
+mkdir ~/.config/i3
+touch ~/.config/i3/config
+
+
+Autostart aplication
+
+exec --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id feh --bg-scale ~/Pictures/dek.png
+exec --no-startup-id redshift
+
+
+set font
+
+set $ft pango: ubuntumono Nerd Font 12
+font $ft
+
+
+set tampilan
+
+# border jendela
+new_window pixel 3
+new_float pixel 3
+
+# ukuran minimum jendela saat mode floating
+floating_minimum_size 10x10
+
+# ukuran maximum jendela saat mode floating
+floating_maximum_size -1x-1
+
+# mengatur fokus jendela mengikuti mouse ubah ke &#39;yes&#39; untuk mengaktifkanyas
+focus_follows_mouse no
+
+# Mengambil warna dari .Xresources
+set_from_resource $back         i3wm.background 
+set_from_resource $black        i3wm.color0     
+set_from_resource $grey         i3wm.color8     
+set_from_resource $lightgrey    i3wm.color7     
+set_from_resource $white        i3wm.color15    
+set_from_resource $yellow       i3wm.color11    
+set_from_resource $red          i3wm.color9 
+set_from_resource $darkred      i3wm.color1     
+set_from_resource $green        i3wm.color10    
+
+# mengatur warna border, backgound, dan text
+#class                      border      backgr.     text        split
+client.focused              $green      $green      $black      $red
+client.focused_inactive     $green      $grey       $lightgrey  $grey
+client.unfocused            $green      $grey       $lightgrey  $grey
+client.urgent               $green      $red        $black      $red
+client.background           $back
+
+
+Keybinds untuk aplikasi
+
+# Mod4 = Win key
+set $mod Mod4
+# jika kalian  lebih suka menggunakan tombol alt
+# Mod1 = alt
+# set $mod Mod1
+
+# Terminal (mod&#43;Enter)
+bindsym $mod&#43;Return exec xst
+# Networkmanager_dmenu (mod&#43;alt&#43;p)
+bindsym $mod&#43;Mod1&#43;p exec networkmanager_dmenu
+# lxappearance (mod&#43;alt&#43;a)
+bindsym $mod&#43;Mod1&#43;a exec lxappearance
+# QT5 (mod&#43;alt&#43;q)
+bindsym $mod&#43;Mod1&#43;q exec qt5ct
+# Gcolor2 (mod&#43;alt&#43;g)
+bindsym $mod&#43;Mod1&#43;g exec gcolor2
+# rofi (mod&#43;w)
+bindsym $mod&#43;w exec rofi -show drun
+# clearine (mod&#43;c)
+bindsym $mod&#43;c exec clearine
+
+# Multimedia control
+
+# f8 (volume up)
+bindsym XF86AudioRaiseVolume exec &quot;amixer sset Master 5%&#43;&quot;
+# f7 (volume down)
+bindsym XF86AudioLowerVolume exec &quot;amixer sset Master 5%-&quot;
+# f6 (mute)
+bindsym XF86AudioMute exec &quot;amixer -q sset Master toggle&quot;
+# f3 ( brightness up)
+bindsym XF86MonBrightnessDown exec &quot;light -U 5&quot;
+# f2 ( brightness down)
+bindsym XF86MonBrightnessUp exec &quot;light -A 5&quot;
+# f10 ( ncmpcpp (music player) play)
+bindsym XF86AudioPlay exec ncmpcpp toggle
+# f10 ( ncmpcpp (music player) pause)
+bindsym XF86AudioStop exec ncmpcpp stop
+# f9 ( ncmpcpp (music player) prev)
+bindsym XF86AudioPrev exec ncmpcpp prev
+# f11 ( ncmpcpp (music player) next)
+bindsym XF86AudioNext exec ncmpcpp next
+
+
+keybinds unutk i3
+
+# menutup jendela aplikasi (mod&#43;q)
+bindsym $mod&#43;q kill
+
+# Fokus jendela aplikasi
+bindsym $mod&#43;Left focus left
+bindsym $mod&#43;Down focus down
+bindsym $mod&#43;Up focus up
+bindsym $mod&#43;Right focus right
+
+# Memindahkan jendela aplikasi
+bindsym $mod&#43;Shift&#43;Left move left
+bindsym $mod&#43;Shift&#43;Down move down
+bindsym $mod&#43;Shift&#43;Up move up
+bindsym $mod&#43;Shift&#43;Right move right
+
+# horizontal mode (mod&#43;h)
+bindsym $mod&#43;h split h
+
+# vertikal mode (mod&#43;v)
+bindsym $mod&#43;v split v
+
+# Fullscreen mode (mod&#43;f)
+bindsym $mod&#43;f fullscreen
+
+# layout mode (stacked (mod&#43;s), tabbed (mod&#43;t), default(mod&#43;e))
+bindsym $mod&#43;s layout stacking
+bindsym $mod&#43;t layout tabbed
+bindsym $mod&#43;e layout default
+
+# mode tiling / floating (mod&#43;shitf&#43;space)
+bindsym $mod&#43;Shift&#43;space floating toggle
+bindsym $mod&#43;Mod1&#43;space floating toggle
+
+# mengubah fokus saat mode tiling / floating (mod&#43;space)
+bindsym $mod&#43;space focus mode_toggle
+
+# focus parent container (mod&#43;a)
+bindsym $mod&#43;a focus parent
+
+# focus child container (mod&#43;z)
+bindsym $mod&#43;z focus child
+
+# Berpindah workspace
+bindsym $mod&#43;1 workspace 1:term
+bindsym $mod&#43;2 workspace 2:www
+bindsym $mod&#43;3 workspace 3:vbox
+bindsym $mod&#43;4 workspace 4:vnc
+bindsym $mod&#43;5 workspace 5:vid
+bindsym $mod&#43;6 workspace 6:img
+bindsym $mod&#43;7 workspace 7:misc
+bindsym $mod&#43;8 workspace 8
+bindsym $mod&#43;9 workspace 9
+bindsym $mod&#43;0 workspace 10:float
+
+# memindahkan jendela aplikasi ke workspace tertentu
+bindsym $mod&#43;Shift&#43;1 move container to workspace 1:term
+bindsym $mod&#43;Shift&#43;2 move container to workspace 2:www
+bindsym $mod&#43;Shift&#43;3 move container to workspace 3:vbox
+bindsym $mod&#43;Shift&#43;4 move container to workspace 4:vnc
+bindsym $mod&#43;Shift&#43;5 move container to workspace 5:vid
+bindsym $mod&#43;Shift&#43;6 move container to workspace 6:img
+bindsym $mod&#43;Shift&#43;7 move container to workspace 7:misc
+bindsym $mod&#43;Shift&#43;8 move container to workspace 8
+bindsym $mod&#43;Shift&#43;9 move container to workspace 9
+bindsym $mod&#43;Shift&#43;0 move container to workspace 10:float
+
+# reload konfigurasi i3
+bindsym $mod&#43;Shift&#43;c reload
+# restart i3 (mod&#43;shitf&#43;r)
+bindsym $mod&#43;Shift&#43;r restart
+
+
+# resize (mod&#43;r)
+mode &quot;resize&quot; {
+
+# menggunkann tombol a,s,w,d
+bindsym a resize shrink width 10 px or 10 ppt
+bindsym s resize grow height 10 px or 10 ppt
+bindsym w resize shrink height 10 px or 10 ppt
+bindsym d resize grow width 10 px or 10 ppt
+
+# menggunakan tombol arah
+bindsym Left resize shrink width 1 px or 1 ppt
+bindsym Down resize grow height 1 px or 1 ppt
+bindsym Up resize shrink height 1 px or 1 ppt
+bindsym Right resize grow width 1 px or 1 ppt
+
+# keluar dari mode resize 
+bindsym Return mode &quot;default&quot;
+bindsym Escape mode &quot;default&quot;
+}
+# resize mode
+bindsym $mod&#43;r mode &quot;resize&quot;
+
+
+Full configurasi
+
+exec --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id feh --bg-scale ~/Pictures/dek.png
+exec --no-startup-id redshift
+
+set $ft pango: ubuntumono Nerd Font 12
+font $ft
+
+# border jendela
+new_window pixel 3
+new_float pixel 3
+
+# ukuran minimum jendela saat mode floating
+floating_minimum_size 10x10
+
+# ukuran maximum jendela saat mode floating
+floating_maximum_size -1x-1
+
+# mengatur fokus jendela mengikuti mouse ubah ke &#39;yes&#39; untuk mengaktifkanyas
+focus_follows_mouse no
+
+# Mengambil warna dari .Xresources
+set_from_resource $back         i3wm.background 
+set_from_resource $black        i3wm.color0     
+set_from_resource $grey         i3wm.color8     
+set_from_resource $lightgrey    i3wm.color7     
+set_from_resource $white        i3wm.color15    
+set_from_resource $yellow       i3wm.color11    
+set_from_resource $red          i3wm.color9 
+set_from_resource $darkred      i3wm.color1     
+set_from_resource $green        i3wm.color10    
+
+# mengatur warna border, backgound, dan text
+#class                      border      backgr.     text        split
+client.focused              $green      $green      $black      $red
+client.focused_inactive     $green      $grey       $lightgrey  $grey
+client.unfocused            $green      $grey       $lightgrey  $grey
+client.urgent               $green      $red        $black      $red
+client.background           $back
+
+# Mod4 = Win key
+set $mod Mod4
+# jika kalian  lebih suka menggunakan tombol alt
+# Mod1 = alt
+# set $mod Mod1
+
+# Terminal (mod&#43;Enter)
+bindsym $mod&#43;Return exec xst
+# Networkmanager_dmenu (mod&#43;alt&#43;p)
+bindsym $mod&#43;Mod1&#43;p exec networkmanager_dmenu
+# lxappearance (mod&#43;alt&#43;a)
+bindsym $mod&#43;Mod1&#43;a exec lxappearance
+# QT5 (mod&#43;alt&#43;q)
+bindsym $mod&#43;Mod1&#43;q exec qt5ct
+# Gcolor2 (mod&#43;alt&#43;g)
+bindsym $mod&#43;Mod1&#43;g exec gcolor2
+# rofi (mod&#43;w)
+bindsym $mod&#43;w exec rofi -show drun
+# clearine (mod&#43;c)
+bindsym $mod&#43;c exec clearine
+
+# Multimedia control
+
+# f8 (volume up)
+bindsym XF86AudioRaiseVolume exec &quot;amixer sset Master 5%&#43;&quot;
+# f7 (volume down)
+bindsym XF86AudioLowerVolume exec &quot;amixer sset Master 5%-&quot;
+# f6 (mute)
+bindsym XF86AudioMute exec &quot;amixer -q sset Master toggle&quot;
+# f3 ( brightness up)
+bindsym XF86MonBrightnessDown exec &quot;light -U 5&quot;
+# f2 ( brightness down)
+bindsym XF86MonBrightnessUp exec &quot;light -A 5&quot;
+# f10 ( ncmpcpp (music player) play)
+bindsym XF86AudioPlay exec ncmpcpp toggle
+# f10 ( ncmpcpp (music player) pause)
+bindsym XF86AudioStop exec ncmpcpp stop
+# f9 ( ncmpcpp (music player) prev)
+bindsym XF86AudioPrev exec ncmpcpp prev
+# f11 ( ncmpcpp (music player) next)
+bindsym XF86AudioNext exec ncmpcpp next
+
+# menutup jendela aplikasi (mod&#43;q)
+bindsym $mod&#43;q kill
+
+# Fokus jendela aplikasi
+bindsym $mod&#43;Left focus left
+bindsym $mod&#43;Down focus down
+bindsym $mod&#43;Up focus up
+bindsym $mod&#43;Right focus right
+
+# Memindahkan jendela aplikasi
+bindsym $mod&#43;Shift&#43;Left move left
+bindsym $mod&#43;Shift&#43;Down move down
+bindsym $mod&#43;Shift&#43;Up move up
+bindsym $mod&#43;Shift&#43;Right move right
+
+# horizontal mode (mod&#43;h)
+bindsym $mod&#43;h split h
+
+# vertikal mode (mod&#43;v)
+bindsym $mod&#43;v split v
+
+# Fullscreen mode (mod&#43;f)
+bindsym $mod&#43;f fullscreen
+
+# layout mode (stacked (mod&#43;s), tabbed (mod&#43;t), default(mod&#43;e))
+bindsym $mod&#43;s layout stacking
+bindsym $mod&#43;t layout tabbed
+bindsym $mod&#43;e layout default
+
+# mode tiling / floating (mod&#43;shitf&#43;space)
+bindsym $mod&#43;Shift&#43;space floating toggle
+bindsym $mod&#43;Mod1&#43;space floating toggle
+
+# mengubah fokus saat mode tiling / floating (mod&#43;space)
+bindsym $mod&#43;space focus mode_toggle
+
+# focus parent container (mod&#43;a)
+bindsym $mod&#43;a focus parent
+
+# focus child container (mod&#43;z)
+bindsym $mod&#43;z focus child
+
+# Berpindah workspace
+bindsym $mod&#43;1 workspace 1:term
+bindsym $mod&#43;2 workspace 2:www
+bindsym $mod&#43;3 workspace 3:vbox
+bindsym $mod&#43;4 workspace 4:vnc
+bindsym $mod&#43;5 workspace 5:vid
+bindsym $mod&#43;6 workspace 6:img
+bindsym $mod&#43;7 workspace 7:misc
+bindsym $mod&#43;8 workspace 8
+bindsym $mod&#43;9 workspace 9
+bindsym $mod&#43;0 workspace 10:float
+
+# memindahkan jendela aplikasi ke workspace tertentu
+bindsym $mod&#43;Shift&#43;1 move container to workspace 1:term
+bindsym $mod&#43;Shift&#43;2 move container to workspace 2:www
+bindsym $mod&#43;Shift&#43;3 move container to workspace 3:vbox
+bindsym $mod&#43;Shift&#43;4 move container to workspace 4:vnc
+bindsym $mod&#43;Shift&#43;5 move container to workspace 5:vid
+bindsym $mod&#43;Shift&#43;6 move container to workspace 6:img
+bindsym $mod&#43;Shift&#43;7 move container to workspace 7:misc
+bindsym $mod&#43;Shift&#43;8 move container to workspace 8
+bindsym $mod&#43;Shift&#43;9 move container to workspace 9
+bindsym $mod&#43;Shift&#43;0 move container to workspace 10:float
+
+# reload konfigurasi i3
+bindsym $mod&#43;Shift&#43;c reload
+# restart i3 (mod&#43;shitf&#43;r)
+bindsym $mod&#43;Shift&#43;r restart
+
+
+# resize (mod&#43;r)
+mode &quot;resize&quot; {
+
+# menggunkann tombol a,s,w,d
+bindsym a resize shrink width 10 px or 10 ppt
+bindsym s resize grow height 10 px or 10 ppt
+bindsym w resize shrink height 10 px or 10 ppt
+bindsym d resize grow width 10 px or 10 ppt
+
+# menggunakan tombol arah
+bindsym Left resize shrink width 1 px or 1 ppt
+bindsym Down resize grow height 1 px or 1 ppt
+bindsym Up resize shrink height 1 px or 1 ppt
+bindsym Right resize grow width 1 px or 1 ppt
+
+# keluar dari mode resize 
+bindsym Return mode &quot;default&quot;
+bindsym Escape mode &quot;default&quot;
+}
+# resize mode
+bindsym $mod&#43;r mode &quot;resize&quot;
+
+">
+
     <link rel=alternative href=/index.xml title="Linuxisekai: Nolep enthusiast project" type=application/atom+xml>
-    <meta name=apple-mobile-web-app-capable content=yes>
-    <meta name="Description" content>
-    <meta property=og:url content=https://linuxisekai.site>
-    <meta property=og:type content=article>
-    <meta name=twitter:card content=summary>
-    <meta name=twitter:site content="@Galih_wisnuA">
-    <meta name=twitter:title content="linuxisekai: Nolep enthusiast project">
-    <meta name=twitter:description content>
-    <meta name=twitter:image content=/img/favicon.png>
+    <link rel="icon" href="/img/favicon.png" sizes=192x192 type="image/svg+xml">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <link rel="apple-touch-icon" size="192x192" href="/img/favicon.png">
     <link href="/css/mystyle.css" rel="stylesheet">
     <link href="/css/lightmode.css" rel="stylesheet">
     <link href="/css/highlight.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="/css/font.css" type="text/css"/> 
     <link rel="manifest" href="/manifest.json"> 
+
     <meta itemprop="name" content="Mencoba i3wm">
 <meta itemprop="description" content="setelah sekian lama bersama dengan openbox, kini...">
 

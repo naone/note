@@ -10,26 +10,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#011627">
     <meta http-equiv="Cache-control" content="public">
-    <link rel="icon" type="image/png" href="/img/favicon.png">
-    <link rel="shortcut icon" href="/img/favicon.png">
-    <link rel="apple-touch-icon" size="192x192" href="/img/favicon.png">
     <meta name=generator content="Hugo 0.56.3">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="Description" content="
+
+Intro
+
+setelah selesai menginstall sistem operasi linux terus ternyata tidak ada wifinya ? mengkin itu terjadi karena driver dari wifi tersebut belum terinstall, memenag ada beberapa yang wifinya secara default sudah terinstall beberapa vendor seperti realtek atau broadcom yang secara dedault belum terinstal yang saya sendiri juga tidak tau alasnya.
+
+Instalasi
+
+$ uname -a
+$ Linux asuna 5.2.0-1-MANJARO #1 SMP PREEMPT Sun Jun 9 16:43:42 UTC 2019 x86_64 GNU/Linux
+
+
+selanjutnya install paket-paket yang dibutuhkan
+
+$ sudo pacman -S linux52-headers dkms git build-essential automake
+
+
+NB : untuk linux52-headers silahkan kalian sesuaikan dengan versi karnel kalian, misal versi karnel kalian adalah 4.19.0 berarti linux419-headers
+
+$ sudo apt install linux-headers-$(uname -r) git build-essential automake
+$ git clone https://github.com/lwfinger/rtlwifi_new.git
+$ cd rtlwifi_new
+$ sudo make
+$ sudo make install
+$ reboot
+
+
+Troubleshooting
+
+jika setelah reboot wifi sudah ada akan tetapi sinyalnya sedikit, berikut cara mengatasinya:
+
+$ sudo modprobe -v rtl8723de ant_sel=2
+$ sudo /bin/sh -c &#39;echo &quot;options rtl8723de ant_sel=2&quot; &gt;&gt; /etc/modprobe.d/rtl8723.conf&#39;
+$ reboot
+
+
+NB : rtl8723de sialahkan sesuaikan dengan chipset yang kalian gunakan
+
+jika setelah reboot wifinya masih tidak kedetek maka gunakan cara kedua ini
+
+$ git clone -b extended --single-branch https://github.com/lwfinger/rtlwifi_new.git
+$ cd rtlwifi_new
+$ sudo make
+$ sudo make install
+$ reboot
+
+
+selamat mencoba 😇
+
+
+TERIMA KASIH SUDAH MEMBACA ARTIKEL SAMPAH INI 😃
+
+">
+
     <link rel=alternative href=/index.xml title="Linuxisekai: Nolep enthusiast project" type=application/atom+xml>
-    <meta name=apple-mobile-web-app-capable content=yes>
-    <meta name="Description" content>
-    <meta property=og:url content=https://linuxisekai.site>
-    <meta property=og:type content=article>
-    <meta name=twitter:card content=summary>
-    <meta name=twitter:site content="@Galih_wisnuA">
-    <meta name=twitter:title content="linuxisekai: Nolep enthusiast project">
-    <meta name=twitter:description content>
-    <meta name=twitter:image content=/img/favicon.png>
+    <link rel="icon" href="/img/favicon.png" sizes=192x192 type="image/svg+xml">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <link rel="apple-touch-icon" size="192x192" href="/img/favicon.png">
     <link href="/css/mystyle.css" rel="stylesheet">
     <link href="/css/lightmode.css" rel="stylesheet">
     <link href="/css/highlight.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="/css/font.css" type="text/css"/> 
     <link rel="manifest" href="/manifest.json"> 
+
     <meta itemprop="name" content="Cara menginstall driver realtek di linux">
 <meta itemprop="description" content="setelah selesai menginstall sistem operasi linux...">
 
