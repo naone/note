@@ -60,6 +60,11 @@
   </url>
   
   <url>
+    <loc>/about/</loc>
+    <lastmod>2019-08-06T10:52:03+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/friendlist/</loc>
     <lastmod>2019-08-06T10:52:03+07:00</lastmod>
   </url>
@@ -241,11 +246,6 @@
     <loc>/tags/wm/</loc>
     <lastmod>2019-06-28T14:22:15+07:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/about/</loc>
-    <lastmod>2019-06-27T20:18:50+07:00</lastmod>
   </url>
   
   <url>

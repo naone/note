@@ -319,7 +319,7 @@ span.icon {
 }
 .gambar-teman {
   border-radius: 50%;
-  width: 100px;
+  width: 80px;
 }
 .mbuh {
 padding: 1em;
@@ -331,4 +331,11 @@ padding: 1em;
 .content h2 {
   border-bottom: 1px solid #00192F;
   padding-bottom: 0.4rem;
+}
+.portofolio-heading {
+  border-bottom: 1px solid rgb(82, 95, 107); 
+  padding-bottom: 0.1rem;
+}
+.portofolio-item {
+  padding-left: 3rem;
 }

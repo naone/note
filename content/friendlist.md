@@ -5,6 +5,7 @@ draft: false
 image :
 description: ""
 tags: ["friedlist","comunity"]
+layout: "friend"
 ---
 <div class="masonry-friendlist">
 
