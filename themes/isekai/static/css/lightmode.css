@@ -96,13 +96,6 @@ body.light-mode {
        background-color: #ffffff;
        color:#202127;
       }
-      body.light-mode .container{
-       background-color: #ffffff;
-       color:#202127;
-      }
-      body.light-mode .is-fullheight {
-        background-color: #ffffff;
-      }
       body.light-mode .navbar{
        background-color: #ffffff;
        color:#202127;
@@ -233,14 +226,8 @@ body.light-mode {
       body.light-mode .box {
         background-color: #EFEFEF;
       }
-      body.light-mode .container {
-        background-color: #FFF;
-      }
       body.light-mode .masonry-wrapper {
         background-color: #FFF;
-      }
-      body.light-mode columns {
-       background-color: #fff;
       }
       body.light-mode .masonry {
         background-color: #FFF;
@@ -262,4 +249,16 @@ body.light-mode {
     }
 body.light-mode .content h2 {
   border-bottom: 1px solid #CECECE;
+}
+body.light-mode .main-content {
+  background-color: #FFF;
+}
+body.light-mode .container {
+  background-color: #FFF;
+}
+body.light-mode .columns {
+  background-color: #FFF;
+}
+body.light-mode .is-fullheight {
+  background-color: #FFF;
 }
