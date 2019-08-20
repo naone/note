@@ -4,9 +4,8 @@ date: 2019-08-06T10:52:03+07:00
 draft: false
 image :
 description: ""
-tags: [""]
+tags: ["friedlist","comunity"]
 ---
-
 <div class="masonry-friendlist">
 <div class="masonry-item">
 <img src="/img/friend/addy.webp">

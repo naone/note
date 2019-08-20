@@ -11,15 +11,6 @@
     
     
     <item>
-      <title></title>
-      <link>/tags/</link>
-      <pubDate>Mon, 19 Aug 2019 07:23:15 +0700</pubDate>
-      
-      <guid>/tags/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>linux</title>
       <link>/tags/linux/</link>
       <pubDate>Mon, 19 Aug 2019 07:23:15 +0700</pubDate>
@@ -52,6 +43,24 @@
       <pubDate>Sun, 11 Aug 2019 17:21:07 +0700</pubDate>
       
       <guid>/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>comunity</title>
+      <link>/tags/comunity/</link>
+      <pubDate>Tue, 06 Aug 2019 10:52:03 +0700</pubDate>
+      
+      <guid>/tags/comunity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>friedlist</title>
+      <link>/tags/friedlist/</link>
+      <pubDate>Tue, 06 Aug 2019 10:52:03 +0700</pubDate>
+      
+      <guid>/tags/friedlist/</guid>
       <description></description>
     </item>
     
@@ -110,7 +119,7 @@
     </item>
     
     <item>
-      <title>Hugo</title>
+      <title>hugo</title>
       <link>/tags/hugo/</link>
       <pubDate>Sat, 13 Jul 2019 19:58:55 +0700</pubDate>
       

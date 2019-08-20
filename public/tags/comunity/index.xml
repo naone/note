@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>comunity on Linuxisekai | Nolep enthuiast project</title>
+    <link>/tags/comunity/</link>
+    <description>Recent content in comunity on Linuxisekai | Nolep enthuiast project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 06 Aug 2019 10:52:03 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/comunity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Friendlist</title>
+      <link>/friendlist/</link>
+      <pubDate>Tue, 06 Aug 2019 10:52:03 +0700</pubDate>
+      
+      <guid>/friendlist/</guid>
+      <description>Addy&#39;s Blog   Addy-dclxvi.</description>
+    </item>
+    
+  </channel>
+</rss>
