@@ -1,41 +1,35 @@
 <div class="masonry-wrapper">
     <h1 class="title">Latest Post</h1>
     <div class="masonry">
-                        {{ range .Data.Pages }}
-                   
-                        <a href="{{ .RelPermalink }}" class="judul-post">
-                          <div class="masonry-item">
-                              <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" width="400px">
-                            <div class="masonry-content">
-                              <div class="h">
-                                      <b>    
-                                {{ .Title }}
-                                </b>
-                      
-                                <br/>
-                                </a>
-                                
-                                {{ .Description }}
-                                <br/>
-                                <a href="{{ .RelPermalink }}">Read more..</a>
-                                </h6>
-                                <br/>
-                                <i class="fas fa-calendar-alt"></i>
-                                {{ .PublishDate.Format "January 2, 2006" }}
+  {{ range .Data.Pages }}                   
+<a href="{{ .RelPermalink }}" class="judul-post">
+   <div class="masonry-item">
+<img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" width="400px">
+  <div class="masonry-content">
+<div class="h">
+  <b>    
+ {{ .Title }}
+  </b>                      
+  <br/>
+</a>                
+ {{ .Description }}
+<br/>
+<a href="{{ .RelPermalink }}">Read more..</a>
+    </h6>
+     <br/>
+  <i class="fas fa-calendar-alt"></i>
+   {{ .PublishDate.Format "January 2, 2006" }}
                                     {{ $taxonomy := "tags" }}
-                                    {{ with .Param $taxonomy }}
-                                    {{ range $index, $tag := . }}
-                                    
-                                    {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
-                                    #{{ $tag | urlize }}
-                                    {{- end -}}
-                                    {{- end -}}
-                                 
-                                    {{ end }}
-                                 
-                                    </div> 
-                                </div>
-                              </div>
-                              </a>
-                            {{ end }}
-                            </div>
+   {{ with .Param $taxonomy }}
+ {{ range $index, $tag := . }}   
+        {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+   #{{ $tag | urlize }}
+  {{- end -}}
+      {{- end -}}                               
+     {{ end }}
+  </div> 
+  </div>
+  </div>
+  </a>
+    {{ end }}
+   </div>
