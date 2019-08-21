@@ -171,7 +171,9 @@ html {scroll-behavior:smooth;}
       .title {
         padding-left:1rem;
       }
-     
+      .content {
+        font-size : 1rem !important;
+      }
   }
 
   @media only screen and (max-width: 1023px) and (min-width: 768px) {  
@@ -223,7 +225,7 @@ html {scroll-behavior:smooth;}
     border-radius: 10px;
     padding-top: 2em;
     font-size: 1.1rem;
-    padding-bottom: 0em;
+    padding-bottom: 1.5rem;
   }
 .content h4 {
   font-size: 1.1rem;
@@ -282,6 +284,7 @@ nav.pagination {
 }
 .content {
   margin-left: 2rem;
+  font-size : 1.1rem !important;
 }
 .label-fixed {
   font-size: 2rem;
