@@ -26,12 +26,8 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "/css/bs.css",
-    "revision": "bc808befcd5b63878d4135039e6e2a53"
-  },
-  {
     "url": "/css/custom.css",
-    "revision": "9d8a13f7c4b30b0f2b129d96b6e06cad"
+    "revision": "59f573882a69f651b66af651d881b76a"
   },
   {
     "url": "/css/highlight.css",
@@ -46,8 +42,8 @@ self.__precacheManifest = [
     "revision": "9e47222cc5293cb7547ecb9448bdc706"
   },
   {
-    "url": "/css/oke.css",
-    "revision": "2c9aad0324d37d967cd4ec0471cb9067"
+    "url": "/css/style.css",
+    "revision": "c8d99dad1938fd71ea93854bdd396881"
   },
   {
     "url": "/font/GlacialIndifferenceRegular.otf",
