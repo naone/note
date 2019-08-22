@@ -354,3 +354,8 @@ body {
 .bottom {
   justify-self: end;
 }
+.navbar-item.navbar-center {
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+}
