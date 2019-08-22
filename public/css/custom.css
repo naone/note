@@ -26,8 +26,8 @@
 }
 .disqus-comment .disqus-button{
     cursor:pointer;
-    border:2px solid #011627;
-    background-color: #011627;
+    border:2px solid #0D142A;
+    background-color: #0D142A;
     margin:0 auto;
     max-width:150px;
     text-align:center;
@@ -119,7 +119,7 @@
   }
   
 .btn-counter{
-    border-color:  #011627;
+    border-color:  #0D142A;
 }
 .btn-counter:after{
     content:attr(data-count);
@@ -153,8 +153,6 @@ html {scroll-behavior:smooth;}
     display: inline-block;
     vertical-align: top;
     margin-top: 12px;
-    background-color: #011627;
-    filter: drop-shadow(0px 2px 0px #5A3E8D);
     border-radius: 10px;
     overflow: hidden;
   }
@@ -198,6 +196,9 @@ html {scroll-behavior:smooth;}
     .masonry-friendlist {
       columns: 2;
     }
+    .masonry-item {
+    background-color: #0D142A;
+    }
     .masonry-wrapper {
       padding: 1em;
       max-width: 1024px;
@@ -237,13 +238,13 @@ html {scroll-behavior:smooth;}
     width: 1.4em;
   }
   .no-border {
-    border-left: 0.2rem solid #5A3E8D;
-    background-color: #011627;
+    border-left: 0.2rem solid #A33A4E;
+    background-color: #0D142A;
     margin: 0;
     padding: 1rem;
   }
   pre {
-    border-left: 5px solid #5A3E8D;
+    border-left: 5px solid #A33A4E;
     border-top-left-radius: 8px;
     border-top-right-radius : 8px;
     border-bottom-right-radius: 8px;
@@ -346,4 +347,7 @@ padding: 1em;
 }
 .progress {
   background-color: #C0BDC0 !important;
+}
+body {
+  background-image: linear-gradient(to bottom right, rgba(234, 50, 72, 0.555),rgba(245, 168, 59, 0.747))
 }

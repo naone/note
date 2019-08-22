@@ -1,25 +1,28 @@
 body.light-mode {
-  background-color: #ffffff;
+  background-image: linear-gradient(to bottom right, rgb(233, 97, 176),rgb(106, 130, 209));
   color:#202127;
   }
    .fa-code {
-     color:rgb(20, 141, 131);
+     color:#A5876B;
     }
   
    .fa-coffee {
-      color:rgb(150, 192, 52);
+      color:#A5876B;
      }
     .fa-home {
-      color:#FF007D;
+      color:#A5876B;
      }
     .fa-user-friends {
-      color:rgb(201, 39, 33);
+      color:#A5876B;
      }
      .fa-user-circle {
-      color:rgb(212, 138, 2);
+      color:#A5876B;
      }
      .fa-php {
-      color:rgb(21, 197, 228);
+      color:#A5876B;
+     }
+     .fa-terminal {
+      color:#A5876B;
      }
    body.light-mode article {
      background-color: #ffffff;

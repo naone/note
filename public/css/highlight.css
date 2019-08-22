@@ -8,8 +8,8 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
   display: block;
   overflow-x: auto;
   padding: 1em;
-  background: #00192F;
-  color: rgb(227, 228, 231);
+  background: #0D142A;
+  color: #A5876B;
 }
 
 .hljs-comment,
@@ -21,7 +21,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-addition {
-  color: #AFB736;
+  color:#63504E;
 }
 
 /* Solarized Cyan */
@@ -31,7 +31,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .hljs-literal,
 .hljs-doctag,
 .hljs-regexp {
-  color: #36B1B7;
+  color: #EB3247;
 }
 
 /* Solarized Blue */
@@ -40,7 +40,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .hljs-name,
 .hljs-selector-id,
 .hljs-selector-class {
-  color: #3682B7;
+  color: #F35743;
 }
 
 /* Solarized Yellow */
@@ -50,7 +50,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .hljs-template-variable,
 .hljs-class .hljs-title,
 .hljs-type {
-  color: #FF70A7;
+  color: #F6A73B;
 }
 
 /* Solarized Orange */
@@ -62,13 +62,13 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .hljs-selector-attr,
 .hljs-selector-pseudo,
 .hljs-link {
-  color: #B77736;
+  color: #F9D42E;
 }
 
 /* Solarized Red */
 .hljs-built_in,
 .hljs-deletion {
-  color: #B73652;
+  color: #A33A4E;
 }
 
 .hljs-formula {
