@@ -52,7 +52,6 @@
   }
   .h{
     padding:1rem;
-    padding-top: 0rem;
   }
   .f {
       font-size: 1rem;
@@ -191,13 +190,14 @@ html {scroll-behavior:smooth;}
   @media only screen and (min-width: 1024px) {
     .masonry {
       margin-right: 3rem;
-      columns: 3;
+      columns: 1;
     }
     .masonry-friendlist {
       columns: 2;
     }
     .masonry-item {
     background-color: #0D142A;
+    width: 100%;
     }
     .masonry-wrapper {
       padding: 1em;
@@ -350,4 +350,7 @@ padding: 1em;
 }
 body {
   background-image: linear-gradient(to bottom right, rgba(234, 50, 72, 0.555),rgba(245, 168, 59, 0.747))
+}
+.bottom {
+  justify-self: end;
 }

@@ -12,7 +12,7 @@
           
           <a href="{{ .RelPermalink }}" class="judul-post">
           <div class="masonry-item">
-              <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}">
+              <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" class="is-hidden-tablet">
             <div class="h">
               
                       <b>    
@@ -40,7 +40,7 @@
                  
                     {{ end }}
                    
-                    
+                   
                 </div>
               </div>
               
