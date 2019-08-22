@@ -280,7 +280,7 @@ nav.pagination {
   font-weight: 600;
   width: 260px;
   z-index: 1;
-  background-color: #011627;
+  background-color: #0D142A;
 }
 .content {
   margin-left: 2rem;
@@ -305,16 +305,15 @@ span.icon {
   padding: 0;
 }
 .is-fullheight {
-  background-color: #01121F;
+  background-color: #0A1124;
  }
  .button-post {
    margin-right: 40%;
    margin-left: 40%;
  }
 .content {
-  background-color: #01121F;
   padding: 1rem;
-  
+  background-color: #0A1124;
 }
 .judul-postingan {
   text-align: center;
