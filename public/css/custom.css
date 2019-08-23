@@ -348,7 +348,8 @@ padding: 1em;
   padding-bottom: 0.1rem;
 }
 .portofolio-item {
-  padding-left: 3rem;
+  margin: 2rem;
+
 }
 .progress {
   background-color: #C0BDC0 !important;
