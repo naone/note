@@ -1,5 +1,4 @@
 <div class="container">
-    <div class="column">
 <nav class="pagination is-rounded">
 {{ $paginator := .Paginator }}
 {{ $adjacent_links:=1 }}
@@ -34,7 +33,7 @@
         {{ .PageNumber }}
     </a>
     {{ else }}
-    <a class="pagination-link t has-background-info has-text-dark" aria-label="Page{{ .PageNumber }}">
+    <a class="pagination-link t has-background-success has-text-dark" aria-label="Page{{ .PageNumber }}">
         {{ .PageNumber }}
     </a>
     {{ end }}
@@ -61,5 +60,4 @@
 </ul>
 
 </nav>
-</div>
 </div>
