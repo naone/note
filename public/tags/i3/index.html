@@ -60,21 +60,20 @@ if (!doNotTrack) {
 <nav id="navbar" class="navbar is-fixed-top is-hidden-tablet">
         <div class="navbar-brand">
           <a class="navbar-item" href="/" >
-            &nbsp;&nbsp;<span class="icon is-medium"><i class="fas fa-terminal is-primary"></i></span>
+            &nbsp;&nbsp;<span class="icon is-medium"><i class="fas fa-terminal is-size-5 is-primary"></i></span>
           </a>
          
         <a class="navbar-item navbar-center" href="/">
             <div class="is-size-4 has-text-weight-bold">linuxisekai</div>
             </a>
-
-          <a id="navbarBurgers" class="navbar-burger is-hidden-desktop navbar-item has-text-success" data-target="navMenuIndex">
-           <i class="fa fa-bars" onclick="openNav()"></i>
+          <a id="navbarBurgers" class="navbar-burger is-hidden-desktop navbar-item has-text-success" data-target="navMenu">
+           <span></span>
+           <span></span>
+           <span></span>
           </a>
           </div>
-
-        <div id="mySidenav" class="sidenav is-size-6">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
+        
+        <div id="navMenu" class="navbar-menu is-size-6 burger">
           <div class="navbar-start">
             <a class="navbar-item" href="/">
               &nbsp;<span class="icon">
@@ -124,7 +123,6 @@ if (!doNotTrack) {
                 </span>
                 <span> Portofolio</span>
               </a>
-              
           </div>
       
           <div class="navbar-end">
