@@ -159,6 +159,9 @@ html {scroll-behavior:smooth;}
     .masonry-wrapper {
       margin:1rem;
     }
+    .masonry-item {
+      background-color: #0D142A;
+    }
       .masonry-friendlist {
         columns: 1;
       }
@@ -365,7 +368,9 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
+.o {
+  height: 2px;
+}
 
 .burger {
   height: 100%; /* 100% Full-height */

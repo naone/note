@@ -1,12 +1,8 @@
 
    <div class="container">
-     <br/>
-     <div class="is-hidden-tablet">
-       <br>
-     </div>
-     <br/>
       <h1 class="title">Latest post</h1>
       <div class="masonry">
+        
           {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
           {{ range $paginator.Pages }}
           

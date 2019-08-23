@@ -59,12 +59,3 @@ $(document).ready(function(){
     },3000)
   });
 });
-
-function openNav() {
-  document.getElementById("navMenu").style.height = "100%";
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-} 
