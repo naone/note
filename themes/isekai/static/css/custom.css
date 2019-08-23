@@ -265,9 +265,8 @@ html {scroll-behavior:smooth;}
   line-height: 1.125;
  }
  .t {
-   padding:3px;
+   padding:20px;
    background-color: #EA2F3E;
-   color: rgb(241, 237, 241);
  }
 body.dark-mode{
  

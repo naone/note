@@ -1,7 +1,8 @@
 <br/>
 <br/>
 <div class="container">
-<div class="pagination is-rounded">
+    <div class="column">
+<div class="buttons is-rounded has-text-left-desktop has-text-centered">
 {{ $paginator := .Paginator }}
 {{ $adjacent_links:=1 }}
 {{ $max_links:=(add (mul $adjacent_links 1) 2) }}
@@ -60,5 +61,6 @@
 </li>
 
 </ul>
+</div>
 </div>
 </div>
