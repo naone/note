@@ -1,9 +1,9 @@
+<div class="container">
 <h1 class="title">Latest post</h1>
       <div class="masonry">
           {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
           {{ range $paginator.Pages }}
-          
-          <a href="{{ .RelPermalink }}" padding-left:1rem;class="judul-post">
+          <a href="{{ .RelPermalink }}" class="judul-post">
           <div class="masonry-item">
               <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}">
             <div class="h">
@@ -36,7 +36,5 @@
               </div>
               {{ end }}
             </div>
-            <br/>
-            <br/>
-            
+          </div>
        
