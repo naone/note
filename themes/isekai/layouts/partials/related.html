@@ -6,10 +6,11 @@
 {{ range .Site.Pages }}
 {{ $isMatchTags := intersect $tags .Params.tags | len | lt 1 }}
 {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) }}
-
+<div class="no-border">
     <a href="{{ .Permalink }}">
         # {{ .Title }}</a>
-<br/>    
+<br/>
+</div>
   {{ $.Scratch.Add "count" 1 }}
 {{ end }}
 {{ end }}
@@ -26,12 +27,11 @@
             {{ $isMatchTags := intersect $tags .Params.tags | len | lt 0 }}
             {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) (lt ($.Scratch.Get "limit") 3) }}
               {{ $.Scratch.Add "limit" 1 }}
-         
-            
-              
+         <div class="no-border">
                   <a href="{{ .Permalink }}" class="is-text-grey">
                       # {{ .Title }}</a>
                   <br>      
+                  </div>
                           
   {{ end }}
   

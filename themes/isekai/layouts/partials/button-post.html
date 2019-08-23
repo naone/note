@@ -1,5 +1,7 @@
 <div class="container has-text-centered">
-<div class="column">  
+<div class="column">
+  <br/>
+  <br/> 
   {{ $currentPage := . }}
   {{range where .Site.Pages.ByDate "Params.recuil" .Params.recuil }}
   {{ if eq .RelPermalink $currentPage.RelPermalink }}
