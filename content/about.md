@@ -13,7 +13,7 @@ layout: "about"
     <br/>
     <h1 class="title">Portofolio</h1>
     <div class="tile is-ancestor">
-<div class="tile is-parent">
+    <div class="tile is-parent">
     <div class="tile is-child">
     <div class="is-size-3  portofolio-heading">
         Personal information
@@ -41,7 +41,6 @@ layout: "about"
             </div>
             </div>
             </div>
-
 <div class="tile is-parent">
 <div class="tile is-child">
 <div class="is-size-3 portofolio-heading">
@@ -55,7 +54,7 @@ layout: "about"
 <br>
 <div class="is-size-5">
     <a href="facebook.com"><i class="fab fa-facebook has-text-info"></i></a>
-    <a href="https:/t.me/Xzxt"><i class="fab fa-telegram has-text-warning"></i></a>
+    <a href="https:/t.me/Xzxt"><i class="fab fa-telegram has-text-grey"></i></a>
     <a href="facebook.com"><i class="fab fa-instagram has-text-danger"></i></a>
     <a href="facebook.com"><i class="fab fa-twitter has-text-success"></i></a>
     <a href="facebook.com"><i class="fab fa-linkedin"></i></a>
@@ -65,12 +64,13 @@ layout: "about"
 </div>
 </div>
 </div>
-
-<div class="tile is-parent">
-    <div class="tile is-child">
+<div class="tile is-ancestor">
+        <div class="tile is-parent">
+            <div class="tile is-child">
     <div class="is-size-3 portofolio-heading">
     Experience
     </div>
+    <br/>
     <div class="portofolio-item">
     <div class="has-text-weight-bold">Juli-September 2019</div>
     Magang di UPT Puskom Universitas Negeri Yogyakarta
@@ -78,6 +78,7 @@ layout: "about"
     <div class="is-size-3 portofolio-heading">
             Education
             </div>
+            <br/>
             <div class="portofolio-item">
             <div class="has-text-weight-bold">
     2016-2019
@@ -87,6 +88,7 @@ layout: "about"
     <div class="is-size-3 portofolio-heading">
             Skill
             </div>
+            <br/>
    <div class="has-text-weight-bold portofolio-item">
     # Makan
    <progress class="progress is-primary is-small" value="80" max="100">80%</progress>
@@ -100,4 +102,4 @@ layout: "about"
    </div>
     </div>
     </div>
-   
+    </div>
