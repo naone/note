@@ -1,5 +1,4 @@
-<div class="container">
-<nav class="pagination is-rounded">
+<div class="pagination is-rounded">
 {{ $paginator := .Paginator }}
 {{ $adjacent_links:=1 }}
 {{ $max_links:=(add (mul $adjacent_links 1) 2) }}
@@ -58,6 +57,4 @@
 </li>
 
 </ul>
-
-</nav>
 </div>
