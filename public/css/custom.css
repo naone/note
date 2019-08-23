@@ -35,10 +35,6 @@
     transition:.5s;
     font-size: 1rem;
 }
-.disqus-comment .disqus-button:hover{
-    color:rgb(75, 23, 117);
-    border-color:rgb(79, 23, 117)
-}
             
 .ghost-padding {
     padding-bottom: 6rem;
@@ -51,6 +47,7 @@
       font-size: 1.19rem; 
   }
   .h{
+    padding-top: 0 !important;
     padding:1rem;
   }
   .f {
@@ -199,7 +196,7 @@ html {scroll-behavior:smooth;}
   @media only screen and (min-width: 1024px) {
     .masonry {
       margin-right: 3rem;
-      columns: 1;
+      columns: 3;
     }
     .masonry-friendlist {
       columns: 2;

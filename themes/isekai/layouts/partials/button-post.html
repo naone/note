@@ -4,7 +4,7 @@
   {{range where .Site.Pages.ByDate "Params.recuil" .Params.recuil }}
   {{ if eq .RelPermalink $currentPage.RelPermalink }}
   <span class="{{if not .PrevInSection}} disabled noselect{{ end }}">
-  <a href="{{if .PrevInSection}}{{.PrevInSection.RelPermalink}}{{end}}" class="putih"><i class="fas fa-arrow-left"></i></a>
+  <a href="{{if .PrevInSection}}{{.PrevInSection.RelPermalink}}{{end}}"><i class="fas fa-arrow-left"></i></a>
   </span>
   
   <div class="popup" onclick="functionPopup()">
@@ -21,7 +21,7 @@
 
     
   <span class="{{if not .NextInSection}} disabled noselect{{ end }}">
-  <a href="{{if .NextInSection}}{{.NextInSection.RelPermalink}}{{end}}" class="putih"><i class="fas fa-arrow-right"></i></a>
+  <a href="{{if .NextInSection}}{{.NextInSection.RelPermalink}}{{end}}"><i class="fas fa-arrow-right"></i></a>
   </span>
   {{end}}
   {{end}}
