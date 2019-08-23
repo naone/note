@@ -287,13 +287,15 @@ if (!doNotTrack) {
         <a class="navbar-item navbar-center" href="/">
             <div class="is-size-4 has-text-weight-bold">linuxisekai</div>
             </a>
-          <a id="navbarBurgers" class="navbar-burger is-hidden-desktop navbar-item" data-target="navMenuIndex">
-           <span></span>
-           <span></span>
-           <span></span>
+
+          <a id="navbarBurgers" class="navbar-burger is-hidden-desktop navbar-item has-text-success" data-target="navMenuIndex">
+           <i class="fa fa-bars" onclick="openNav()"></i>
           </a>
           </div>
-        <div id="navMenuIndex" class="navbar-menu is-size-6">
+
+        <div id="mySidenav" class="sidenav is-size-6">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
           <div class="navbar-start">
             <a class="navbar-item" href="/">
               &nbsp;<span class="icon">
@@ -343,6 +345,7 @@ if (!doNotTrack) {
                 </span>
                 <span> Portofolio</span>
               </a>
+              
           </div>
       
           <div class="navbar-end">
