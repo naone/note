@@ -151,19 +151,13 @@ html {scroll-behavior:smooth;}
     margin-top: 12px;
     border-radius: 10px;
     overflow: hidden;
-    margin:0;
   }
   @media screen and (max-width:767px) {
     .masonry-wrapper {
-     
       margin:0;
     }
     .masonry-item {
-      border-radius: 0 !important;
-      border-top-right-radius: 10px !important;
-      border-top-left-radius: 10px !important; 
       background-color: #0D142A;
-      margin: 0;
     }
       .masonry-friendlist {
         columns: 1;
