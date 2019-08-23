@@ -360,6 +360,9 @@ body {
 .bottom {
   justify-self: end;
 }
+.navbar {
+  height: 3.5rem;
+}
 .navbar-item.navbar-center {
   flex-grow: 1;
   flex-direction: column;
