@@ -154,7 +154,7 @@ html {scroll-behavior:smooth;}
   }
   @media screen and (max-width:767px) {
     .masonry-wrapper {
-      margin:0;
+      margin:1rem;
     }
     .masonry-item {
       background-color: #0D142A;
@@ -165,7 +165,9 @@ html {scroll-behavior:smooth;}
       .judul-postingan {
         margin-top: 1rem;
       }
-     
+      .title {
+        padding-left:1rem;
+      }
       .content {
         font-size : 1rem !important;
       }
@@ -174,8 +176,6 @@ html {scroll-behavior:smooth;}
       }
       .h {
         padding-top: 0;
-        padding: 1rem;
-        margin: 0;
       }
   }
 
@@ -359,6 +359,9 @@ body {
 }
 .bottom {
   justify-self: end;
+}
+.navbar {
+  height: 3.5rem;
 }
 .navbar-item.navbar-center {
   flex-grow: 1;
