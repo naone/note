@@ -12,7 +12,6 @@ layout: "about"
 <div class="container">
     <div class="is-hidden-tablet"><br/><br></div>
     <br/>
-    <h1 class="title">Portofolio</h1>
     <div class="tile is-ancestor">
     <div class="tile is-parent">
     <div class="tile is-child">
