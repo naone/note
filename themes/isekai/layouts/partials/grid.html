@@ -1,7 +1,7 @@
 
    <div class="container">
      <br/>
-      <div class="is-size-3 has-text-centered has-text-weight-bold">Latest post</div>
+      <h1 class="title">Latest post</h1>
       <div class="masonry">
         
           {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
@@ -10,7 +10,7 @@
           <a href="{{ .RelPermalink }}" class="judul-post">
           <div class="masonry-item">
               <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}">
-           
+            <div class="h">
               
                       <b>    
                 {{ .Title }}
@@ -38,7 +38,7 @@
                     {{ end }}
                    
                    
-                
+                </div>
               </div>
               
               {{ end }}
