@@ -344,9 +344,11 @@ padding: 1em;
 .portofolio-heading {
   border-bottom: 1px solid rgb(82, 95, 107); 
   padding-bottom: 0.1rem;
+  margin: 1rem;
 }
 .portofolio-item {
-  margin: 2rem;
+  margin-right: 2rem;
+  margin-left: 3rem;
 
 }
 .progress {

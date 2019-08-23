@@ -9,6 +9,7 @@ layout: "about"
 ---
 
 <div class="column is-8">
+<div class="container">
     <div class="is-hidden-tablet"><br/><br></div>
     <br/>
     <h1 class="title">Portofolio</h1>
@@ -46,7 +47,6 @@ layout: "about"
 <div class="is-size-3 portofolio-heading">
     Contact
  </div>
- <br/>
  <div class="portofolio-item">
 <strong><i class="fa fa-envelope"></i> Email :</strong> galihwisnu18@gmail.com
 <br/>
@@ -70,7 +70,6 @@ layout: "about"
     <div class="is-size-3 portofolio-heading">
     Experience
     </div>
-    <br/>
     <div class="portofolio-item">
     <div class="has-text-weight-bold">Juli-September 2019</div>
     Magang di UPT Puskom Universitas Negeri Yogyakarta
@@ -78,7 +77,6 @@ layout: "about"
     <div class="is-size-3 portofolio-heading">
             Education
             </div>
-            <br/>
             <div class="portofolio-item">
             <div class="has-text-weight-bold">
     2016-2019
@@ -88,7 +86,6 @@ layout: "about"
     <div class="is-size-3 portofolio-heading">
             Skill
             </div>
-            <br/>
    <div class="has-text-weight-bold portofolio-item">
     # Makan
    <progress class="progress is-primary is-small" value="80" max="100">80%</progress>
@@ -98,7 +95,6 @@ layout: "about"
    <progress class="progress is-success is-small" value="100" max="100">100%</progress>
    # Ngemil
    <progress class="progress is-danger is-small" value="50" max="100">100%</progress>
-   <br/>
    </div>
     </div>
     </div>
