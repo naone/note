@@ -31,7 +31,7 @@ function functionPopup() {
   popup.classList.toggle("show");
   setTimeout(function() { 
     document.getElementById("myPopup").classList.toggle("show");}, 2000);
-}
+}*
 /*
 $('.btn-counter').on('click', function(event,count){
   event.preventDefault();
@@ -59,3 +59,8 @@ $(document).ready(function(){
     },3000)
   });
 });
+
+function openNav() {
+document.getElementById("navMenu").style.width = "250px";
+document.getElementById("main").style.marginLeft = "250px";
+}

@@ -6,11 +6,18 @@
 {{ range .Site.Pages }}
 {{ $isMatchTags := intersect $tags .Params.tags | len | lt 1 }}
 {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) }}
-<div class="no-border">
-    <a href="{{ .Permalink }}">
-        # {{ .Title }}</a>
-<br/>
-</div>
+<div class="masonry-friendlist">
+    <div class="media">
+     <div class="media-left">
+    <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" width="150px">
+     </div>
+    <div class="media-content">
+          <a href="{{ .Permalink }}" class="is-size-5 has-text-light">
+            
+              # {{ .Title }}</b></a>
+          </div>     
+          </div>
+          </div>
   {{ $.Scratch.Add "count" 1 }}
 {{ end }}
 {{ end }}
@@ -19,18 +26,29 @@
 <div class="has-text-danger"><b>Tetap semangat ngoding 👊</b></div>
 <br/>-->
 {{ if eq ($.Scratch.Get "count") 0 }}
-
-        
             {{ $.Scratch.Set "limit" 0 }}
+            
             {{/* range (where .Site.Pages "Section" "tutorials") */}}
             {{ range .Site.Pages }}
             {{ $isMatchTags := intersect $tags .Params.tags | len | lt 0 }}
+           
             {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) (lt ($.Scratch.Get "limit") 3) }}
+            
               {{ $.Scratch.Add "limit" 1 }}
-         <div class="no-border">
-                  <a href="{{ .Permalink }}" class="is-text-grey">
-                      # {{ .Title }}</a>
-                  <br>      
+              
+         <div class="masonry-friendlist">
+            <div class="media">
+             <div class="media-left">
+            <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" width="150px">
+             </div>
+            <div class="media-content">
+                  <a href="{{ .Permalink }}" class="is-size-6 has-text-light">
+                    <b>
+                      # {{ .Title }}
+                    </b>
+                    </a>
+                  </div>     
+                  </div>
                   </div>
                           
   {{ end }}

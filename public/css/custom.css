@@ -44,7 +44,8 @@
     word-break: break-all;
   }
   .judul-post {
-      font-size: 1.19rem; 
+      font-size: 1.1rem; 
+      font-weight: 600;
   }
   .h{
     padding-top: 0 !important;
@@ -265,10 +266,8 @@ html {scroll-behavior:smooth;}
  .t {
    padding:3px;
    background-color: #EA2F3E;
+   color:#C3AB95;
  }
-body.dark-mode{
- 
-}
 nav.pagination {
   filter: none;
 }
@@ -374,25 +373,29 @@ body {
 
 .burger {
   height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
+  width: 80%; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 3rem; /* Stay at the top */
-  left: 0;
+  left: 0.5rem;
   background-color: #0A1124; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 0; /* Place content 60px from the top */
-  transition: 0s; /* 0.5 second transition effect to slide in the sidenav */
+  transition-property: width;
+  -moz-webkit-transition-property: width;
+  transition-duration: 4s;
+  -moz-webkit-transition-duration:4s;
+  transition-timing-function: linear;
+  -moz-webkit-transition-timing-function: linear;
 }
 
 /* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
+.burger a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.2rem;
   display: block;
   color: #C3AB7C;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -412,7 +415,7 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-.burger {
-  height: 100% !important;
-  width: 100%;
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
 }
