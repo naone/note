@@ -299,6 +299,7 @@ nav.pagination {
   border-right: 2px solid;
 }
 }
+
 span.icon {
   padding-right: 1rem;
   margin:0;
@@ -341,18 +342,19 @@ padding: 1em;
   padding-bottom: 0.4rem;
 }
 .portofolio-heading {
-  border-bottom: 1px solid rgb(82, 95, 107); 
-  padding-bottom: 0.1rem;
+  border-bottom: 1px solid #191D29; 
   margin: 1rem;
 }
 .portofolio-item {
-  margin-right: 2rem;
   margin-left: 3rem;
-
 }
 .progress {
   background-color: #C0BDC0 !important;
 }
+progress {
+  background-color: #C0BDC0 !important;
+}
+
 body {
   background-image: linear-gradient(to bottom right, rgba(234, 50, 72, 0.555),rgba(245, 168, 59, 0.747))
 }

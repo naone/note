@@ -8,6 +8,7 @@ tags: ["friedlist","comunity"]
 layout: "about"
 ---
 
+
 <div class="column is-8">
 <div class="container">
     <div class="is-hidden-tablet"><br/><br></div>
@@ -52,12 +53,12 @@ layout: "about"
 <strong><i class="fa fa-phone"></i> No Telp/whatsapp :</strong> 085746125372
 <br>
 <div class="is-size-5">
-    <a href="facebook.com"><i class="fab fa-facebook has-text-info"></i></a>
-    <a href="https:/t.me/Xzxt"><i class="fab fa-telegram has-text-grey"></i></a>
-    <a href="facebook.com"><i class="fab fa-instagram has-text-danger"></i></a>
-    <a href="facebook.com"><i class="fab fa-twitter has-text-success"></i></a>
+    <a href="facebook.com"><i class="fab fa-facebook"></i></a>
+    <a href="https:/t.me/Xzxt"><i class="fab fa-telegram"></i></a>
+    <a href="facebook.com"><i class="fab fa-instagram"></i></a>
+    <a href="facebook.com"><i class="fab fa-twitter"></i></a>
     <a href="facebook.com"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/galihx11"><i class="fab fa-github has-text-grey-light"></i></a>
+    <a href="https://github.com/galihx11"><i class="fab fa-github"></i></a>
     </div>
 </div>
 </div>

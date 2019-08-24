@@ -15,6 +15,10 @@
           <a href="{{ .Permalink }}" class="is-size-5">
             
               <b>{{ .Title }}</b></a>
+              <br/>
+              <div class="is-size-7">
+                  {{ .PublishDate.Format "January 2, 2006" }}
+                  </div>
           </div>     
           </div>
           </div>
@@ -39,12 +43,15 @@
               <div class="masonry-friendlist">
                   <div class="media">
                    <div class="media-left">
+                      <a href="{{ .Permalink }}" class="is-size-6">
                   <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" width="150px">
                    </div>
                   <div class="media-content">
-                        <a href="{{ .Permalink }}" class="is-size-6">
-                          
                            <b> {{ .Title }}</b></a>
+                           <br/>
+                           <div class="is-size-7">
+                           {{ .PublishDate.Format "January 2, 2006" }}
+                           </div>
                         </div>     
                         </div>
                       </div>
