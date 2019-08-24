@@ -31,7 +31,7 @@ function functionPopup() {
   popup.classList.toggle("show");
   setTimeout(function() { 
     document.getElementById("myPopup").classList.toggle("show");}, 2000);
-}*
+}
 /*
 $('.btn-counter').on('click', function(event,count){
   event.preventDefault();
