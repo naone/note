@@ -373,11 +373,12 @@ body {
 
 .burger {
   height: 100%; /* 100% Full-height */
-  width: 80%; /* 0 width - change this with JavaScript */
+  width: 40%; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 0; /* Stay on top */
   top: 3rem; /* Stay at the top */
   left: 0rem;
+  font-size: 1.05rem;
   background-color: #0A1124; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 0; /* Place content 60px from the top */
@@ -385,7 +386,7 @@ body {
 }
 
 /* The navigation menu links */
-.burger a {
+.sidebar a {
   text-decoration: none;
   font-size: 1.2rem;
   display: block;
