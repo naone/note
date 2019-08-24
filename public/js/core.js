@@ -59,8 +59,3 @@ $(document).ready(function(){
     },3000)
   });
 });
-
-function openNav() {
-document.getElementById("navMenu").style.width = "250px";
-document.getElementById("main").style.marginLeft = "250px";
-}

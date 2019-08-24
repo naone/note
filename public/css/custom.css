@@ -377,7 +377,7 @@ body {
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 3rem; /* Stay at the top */
-  left: 0.5rem;
+  left: 0rem;
   background-color: #0A1124; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 0; /* Place content 60px from the top */
