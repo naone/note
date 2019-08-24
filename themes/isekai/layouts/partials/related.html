@@ -12,9 +12,9 @@
     <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" width="150px">
      </div>
     <div class="media-content">
-          <a href="{{ .Permalink }}" class="is-size-5 has-text-light">
+          <a href="{{ .Permalink }}" class="is-size-5">
             
-              # {{ .Title }}</b></a>
+              <b>{{ .Title }}</b></a>
           </div>     
           </div>
           </div>
@@ -25,9 +25,10 @@
 <img class="content-img" src="/img/sagi.gif">
 <div class="has-text-danger"><b>Tetap semangat ngoding 👊</b></div>
 <br/>-->
+
 {{ if eq ($.Scratch.Get "count") 0 }}
             {{ $.Scratch.Set "limit" 0 }}
-            
+            <div class="masonry-friendlist"></div>
             {{/* range (where .Site.Pages "Section" "tutorials") */}}
             {{ range .Site.Pages }}
             {{ $isMatchTags := intersect $tags .Params.tags | len | lt 0 }}
@@ -35,25 +36,37 @@
             {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) (lt ($.Scratch.Get "limit") 3) }}
             
               {{ $.Scratch.Add "limit" 1 }}
-              
-         <div class="masonry-friendlist">
-            <div class="media">
-             <div class="media-left">
-            <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" width="150px">
-             </div>
-            <div class="media-content">
-                  <a href="{{ .Permalink }}" class="is-size-6 has-text-light">
-                    <b>
-                      # {{ .Title }}
-                    </b>
-                    </a>
-                  </div>     
-                  </div>
-                  </div>
+              <div class="masonry-friendlist">
+                  <div class="media">
+                   <div class="media-left">
+                  <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" width="150px">
+                   </div>
+                  <div class="media-content">
+                        <a href="{{ .Permalink }}" class="is-size-6">
                           
+                           <b> {{ .Title }}</b></a>
+                        </div>     
+                        </div>
+                      </div>
   {{ end }}
-  
   {{ end }}
-
 {{ end }}
+<br/>
+<div class="tile is-ancestor">
+  <div class="tile is-parent">
+    <div class="tile is-child">
+      <div class="judul-post">
+        Support linuxisekai untuk membeli kopi dan cemilan 😄
+      </div>
+      <div class="tile is-parent is-6">
+      <div class="tile is-child has-text-centered">
+          ovo
+        </h2>
+      </div>
+      <div class="tile is-child has-text-centered">
+        gopay
+      </div>
+      </div>
+    </div>
+  </div>
 </div>

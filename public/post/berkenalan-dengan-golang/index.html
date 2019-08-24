@@ -165,15 +165,14 @@ if (!doNotTrack) {
     
 <nav id="navbar" class="navbar is-fixed-top is-hidden-tablet is-spaced">
         <div class="navbar-brand">
-            <a id="navbarBurgers" class="navbar-burger is-hidden-desktop navbar-item has-text-success" data-target="navMenu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <a class="is-hidden-desktop navbar-item has-text-success" data-target="navMenu">
+                <span onclick="openNav()"><i class="fa fa-bars"></i></span>
                </a>
-         
-        <a class="navbar-item navbar-center" href="/">
-            <div class="is-size-4 has-text-weight-bold">linuxisekai</div>
-            </a>
+        <span class="navbar-item navbar-center">
+          <a href="/">
+            <div class="is-size-4 has-text-weight-bold has-text-success">linuxisekai</div> 
+          </a>
+          </span>
 
           <a type="button" name="dark_light" class="navbar-item is-hidden-desktop has-text-success" onclick="toggleDarkLight()" title="Toggel dark/light">
             <i class="fas fa-moon">
@@ -182,9 +181,18 @@ if (!doNotTrack) {
 
           </div>
         
-        <div id="navMenu" class="navbar-menu has-text-weight-bold burger">
-          <div class="navbar-start">
-            <a class="navbar-item" href="/">
+        <div id="sideNav" class="has-text-weight-bold sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <i class="fa fa-angle-left"></i>
+            </a>
+            <div class="navbar-header has-background-grey-dark">
+              <div class="title">
+            <span class="has-text-primary">Linux</span>isekai
+            </div>
+            <div class="has-text-centered">Nolep enthusiast project.</div>
+          </div>
+            <br/>
+            <a class="navbar-item sidenav-item" href="/">
               &nbsp;<span class="icon">
               <i class="fas fa-home"></i>
               </span>
@@ -192,7 +200,6 @@ if (!doNotTrack) {
               Home
               </span>
             </a>
-      
             
               <a class="navbar-item" href="/tags/linux">
                 &nbsp;<span class="icon">
@@ -201,24 +208,14 @@ if (!doNotTrack) {
       
                 <span>Linux</span>
               </a>
-            
-              <div class="navbar-item has-dropdown is-hoverable" href="/ngoding">
-                <a class="navbar-link">
+                <a class="navbar-item" href="/ngoding">
                 &nbsp;<span class="icon">
                   <i class="fas fa-coffee"></i>
                 </span>
-      
-                <span>Ngopi</span>
+                <span>
+                Ngopi
+                </span>
                 </a>
-                <div class="navbar-dropdown">
-                  <a class="navbar-item" href="#">
-                    PHP
-                  </a>
-                  <a class="navbar-item" href="#">
-                    Go
-                  </a>
-                </div>
-              </div>
               <a class="navbar-item" href="/friendlist">
                 &nbsp;<span class="icon">
                   <i class="fas fa-user-friends"></i>
@@ -232,27 +229,22 @@ if (!doNotTrack) {
                 </span>
                 <span> Portofolio</span>
               </a>
-          </div>
-      
-          <div class="navbar-end">
-
-              <a type="button" name="dark_light" class="navbar-item is-hidden-touch" onclick="toggleDarkLight()" title="Toggel dark/light">
-                <i class="fas fa-moon">
-                  
-                </i>
-                            </a>
-            <a class="navbar-item is-hidden-touch" href="https://github.com/linuxisekai" rel="noopener" target="_blank">
-              <span class="icon">
-                <i class="fab fa-github"></i>
-              </span>
-            </a>
-      
-            <a class="navbar-item is-hidden-touch" href="#" target="_blank">
-                <span class="icon">
-                <i class="fab fa-twitter"></i>
-              </span>
-            </a>
-                </div>
+              
+              <div class="is-size-5">
+                  &nbsp;Join us
+              </div>
+              <a href="#" class="navbar-item"><span class="icon"><i class="fab fa-facebook has-text-success"></i></span>
+                <span> Facebook</span>
+              </a>
+              <a href="#" class="navbar-item"><span class="icon"><i class="fab fa-telegram has-text-success"></i></span>
+                <span> Telegram</span>
+              </a>
+              <a href="#" class="navbar-item">
+                <span class="icon"><i class="fab fa-youtube has-text-success"></i></span>
+                <span> Youtube</span>
+              </a>
+              
+              </div>
                 </div>
                 </div>
                
@@ -670,9 +662,9 @@ pastikan sudah berada di dalam direktory project golang kamu saat menjalankan pe
     <img src="/img/post/go.webp" alt="#2 Go : Membahas program Hello World" width="150px">
      </div>
     <div class="media-content">
-          <a href="/post/program-hello-world/" class="is-size-5 has-text-light">
+          <a href="/post/program-hello-world/" class="is-size-5">
             
-              # #2 Go : Membahas program Hello World</b></a>
+              <b>#2 Go : Membahas program Hello World</b></a>
           </div>     
           </div>
           </div>
@@ -780,6 +772,25 @@ pastikan sudah berada di dalam direktory project golang kamu saat menjalankan pe
 
 
 
+
+<br/>
+<div class="tile is-ancestor">
+  <div class="tile is-parent">
+    <div class="tile is-child">
+      <div class="judul-post">
+        Support linuxisekai untuk membeli kopi dan cemilan 😄
+      </div>
+      <div class="tile is-parent is-6">
+      <div class="tile is-child has-text-centered">
+          ovo
+        </h2>
+      </div>
+      <div class="tile is-child has-text-centered">
+        gopay
+      </div>
+      </div>
+    </div>
+  </div>
 </div>
 
                 </div>

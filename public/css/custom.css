@@ -371,26 +371,26 @@ body {
   height: 2px;
 }
 
-.burger {
+.sidenav {
   height: 100%; /* 100% Full-height */
-  width: 40%; /* 0 width - change this with JavaScript */
+  width: 0%; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 0; /* Stay on top */
-  top: 3rem; /* Stay at the top */
-  left: 0rem;
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  bottom: 0;
   font-size: 1.05rem;
   background-color: #0A1124; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 0; /* Place content 60px from the top */
   transition: 0.5s;
-  filter: drop-shadow(1px 1px 0px #F5A63B);
 }
 
 /* The navigation menu links */
-.sidebar a {
+.sidenav a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: block;
+  padding-left: 1.5rem;
   color: #C3AB7C;
   transition: 0.5s;
 }
@@ -404,9 +404,9 @@ body {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 10px;
-  font-size: 36px;
-  margin-left: 90%;
+  right: 1.5rem;
+  font-size: 2rem;
+  margin-left: 80%;
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -415,4 +415,8 @@ body {
 #main {
   transition: margin-left .5s;
   padding: 20px;
+}
+.navbar-header {
+  padding: 2rem;
+  padding-top: 3rem;
 }

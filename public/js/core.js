@@ -12,6 +12,7 @@
         }, 300 );
     })
 }*/
+/*
 document.addEventListener('DOMContentLoaded', () => {
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
   if ( $navbarBurgers.length>0){
@@ -24,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
-});
+});*/
 
 function functionPopup() {
   var popup = document.getElementById("myPopup");
@@ -59,3 +60,10 @@ $(document).ready(function(){
     },3000)
   });
 });
+
+function openNav(){
+  document.getElementById("sideNav").style.width = "85%";
+}
+function closeNav(){
+  document.getElementById("sideNav").style.width = "0";
+}
