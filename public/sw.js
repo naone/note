@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [
   {
     "url": "/css/custom.css",
-    "revision": "fc24776b1bcd7bf61e8b9dc72da73929"
+    "revision": "97555d296d7daf4f2ff9bbced474c21c"
   },
   {
     "url": "/css/highlight.css",
@@ -35,7 +35,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/css/lightmode.css",
-    "revision": "6fe8a59459fb0131b1741b43f2fc3ce4"
+    "revision": "aeb3593b988b739a0682087caf5fa4c2"
   },
   {
     "url": "/css/style.css",

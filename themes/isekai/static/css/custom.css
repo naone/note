@@ -301,8 +301,11 @@ nav.pagination {
 }
 
 span.icon {
-  padding-right: 1rem;
-  margin:0;
+  margin-left: 0rem;
+  margin-right: 1rem;
+}
+a.navbar-item {
+  font-weight: 600;
 }
 .content-img {
   margin: 0;
@@ -343,7 +346,6 @@ padding: 1em;
 }
 .portofolio-heading {
   border-bottom: 1px solid #191D29; 
-  margin: 1rem;
 }
 .portofolio-item {
   margin-left: 3rem;
@@ -363,6 +365,7 @@ body {
 }
 .navbar {
   height: 3.5rem;
+  background-color:#0D142A
 }
 .navbar-item.navbar-center {
   flex-grow: 1;
@@ -382,7 +385,7 @@ body {
   left: 0;
   bottom: 0;
   font-size: 1.05rem;
-  background-color: #0A1124; /* Black*/
+  background-color: #0D142A; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s;
 }
@@ -393,7 +396,7 @@ body {
   font-size: 1rem;
   display: block;
   padding-left: 1.5rem;
-  color: #C3AB7C;
+  color: #C3AB95;
   transition: 0.5s;
 }
 
@@ -405,9 +408,9 @@ body {
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
+  top: 1rem;
   right: 1.5rem;
-  font-size: 2rem;
+  font-size: 1rem;
   margin-left: 80%;
 }
 @media screen and (max-height: 450px) {

@@ -67,27 +67,27 @@ if (!doNotTrack) {
     
 <nav id="navbar" class="navbar is-fixed-top is-hidden-tablet is-spaced">
         <div class="navbar-brand">
-            <a class="is-hidden-desktop navbar-item has-text-success" data-target="navMenu">
+            <a class="is-hidden-desktop navbar-item has-text-grey-light" data-target="navMenu">
                 <span onclick="openNav()"><i class="fa fa-bars"></i></span>
                </a>
         <span class="navbar-item navbar-center">
           <a href="/">
-            <div class="is-size-4 has-text-weight-bold has-text-success">linuxisekai</div> 
+            <div class="is-size-4 has-text-weight-bold has-text-grey-light">linuxisekai</div> 
           </a>
           </span>
 
-          <a type="button" name="dark_light" class="navbar-item is-hidden-desktop has-text-success" onclick="toggleDarkLight()" title="Toggel dark/light">
+          <a type="button" name="dark_light" class="navbar-item is-hidden-desktop has-text-hrey-light" onclick="toggleDarkLight()" title="Toggel dark/light">
             <i class="fas fa-moon">
             </i>&nbsp;
           </a>
 
           </div>
         
-        <div id="sideNav" class="has-text-weight-bold sidenav">
+        <div id="sideNav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                <i class="fa fa-angle-left"></i>
+                <i class="fa fa-times"></i>
             </a>
-            <div class="navbar-header has-background-grey-dark has-text-centered">
+            <div class="navbar-header has-text-centered" style="background-color: #0A1124">
               <div class="media">
               <div class="media-left">
                     <img src="https://avatars.githubusercontent.com/u/46141275" width="100px" style="border-radius: 50%;">
@@ -102,7 +102,7 @@ if (!doNotTrack) {
             </div>
             <br/>
             <a class="navbar-item sidenav-item" href="/">
-              &nbsp;<span class="icon">
+              <span class="icon">
               <i class="fas fa-home"></i>
               </span>
               <span>
@@ -111,14 +111,14 @@ if (!doNotTrack) {
             </a>
             
               <a class="navbar-item" href="/tags/linux">
-                &nbsp;<span class="icon">
+               <span class="icon">
                   <i class="fas fa-terminal"></i>
                 </span>
       
                 <span>Linux</span>
               </a>
                 <a class="navbar-item" href="/ngoding">
-                &nbsp;<span class="icon">
+                <span class="icon">
                   <i class="fas fa-coffee"></i>
                 </span>
                 <span>
@@ -126,31 +126,28 @@ if (!doNotTrack) {
                 </span>
                 </a>
               <a class="navbar-item" href="/friendlist">
-                &nbsp;<span class="icon">
+                <span class="icon">
                   <i class="fas fa-user-friends"></i>
                 </span>
       
-                <span> Friends</span>
+                <span>  Friends</span>
               </a>
               <a class="navbar-item" href="/about">
-                &nbsp;<span class="icon fa-php">
+                <span class="icon fa-php">
                   <i class="fas fa-user"></i>
                 </span>
-                <span> Portofolio</span>
+                <span>  Portofolio</span>
               </a>
-              
-              <div class="is-size-5">
-                  &nbsp;Join us
-              </div>
-              <a href="#" class="navbar-item"><span class="icon"><i class="fab fa-facebook has-text-success"></i></span>
-                <span> Facebook</span>
+              <div class="portofolio-heading"></div>
+              <a href="#" class="navbar-item"><span class="icon"><i class="fab fa-facebook"></i></span>
+                <span>  Facebook</span>
               </a>
-              <a href="#" class="navbar-item"><span class="icon"><i class="fab fa-telegram has-text-success"></i></span>
-                <span> Telegram</span>
+              <a href="#" class="navbar-item"><span class="icon"><i class="fab fa-telegram"></i></span>
+                <span>  Telegram</span>
               </a>
               <a href="#" class="navbar-item">
-                <span class="icon"><i class="fab fa-youtube has-text-success"></i></span>
-                <span> Youtube</span>
+                <span class="icon"><i class="fab fa-youtube"></i></span>
+                <span>  Youtube</span>
               </a>
               
               </div>
@@ -525,7 +522,8 @@ if (!doNotTrack) {
 <br/>
 <div class="container">
     <div class="column">
-<div class="buttons is-rounded has-text-left-desktop has-text-centered">
+        <center>
+<div class="pagination container is-rounded has-text-left-desktop has-text-centered">
 
 
 
@@ -534,11 +532,8 @@ if (!doNotTrack) {
 
 
 <ul class="pagination-list">
+       
 
-
-<li>
-
-</li>
 
 
 <li>
@@ -573,13 +568,6 @@ if (!doNotTrack) {
 </li>
 
 
-<li>
-
-    <a href="/page/2/" class="pagination-next t">
-    last page
-    </a>
-    
-</li>
 
 </ul>
 </div>
