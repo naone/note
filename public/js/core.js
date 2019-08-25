@@ -1,7 +1,4 @@
-
-
-/*if ($('.pageloader').length) {
-
+/*if ($('.pageloader').length){
     $('.pageloader').toggleClass('is-active');
 
     $(window).on('load', function() {
@@ -11,7 +8,7 @@
             clearTimeout( pageloaderTimeout );
         }, 300 );
     })
-}*/
+}
 /*
 document.addEventListener('DOMContentLoaded', () => {
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
@@ -33,7 +30,6 @@ function functionPopup() {
   setTimeout(function() { 
     document.getElementById("myPopup").classList.toggle("show");}, 2000);
 }
-/*
 $('.btn-counter').on('click', function(event,count){
   event.preventDefault();
   var $this = $(this),
@@ -45,7 +41,7 @@ $('.btn-counter').on('click', function(event,count){
   $this.attr('data-count', ! active || multiple ? ++count : --count )[multiple ? 'noop' : 'toggleClass']('active');
 
 });
-*/
+
 function toggleDarkLight(){
   var body = document.getElementById("body");
   var currentClass = body.className;
