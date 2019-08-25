@@ -1,9 +1,11 @@
+<div class="column">
+  <br/>
+  <br/>
 <div class="container">
-  <div class="title has-text-centered-mobile">latest post</div>
       <div class="masonry">
           {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
           {{ range $paginator.Pages }}
-          <a href="{{ .RelPermalink }}">
+          <a href="{{ .RelPermalink }}" class="judul-post">
           <div class="masonry-item">
               <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}">
             <div class="h">
