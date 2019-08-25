@@ -153,7 +153,10 @@ html {scroll-behavior:smooth;}
     border-radius: 10px;
     overflow: hidden;
   }
-  @media screen and (max-width:767px) {
+  @media screen and (max-width:540px) {
+    .masonry {
+      margin: 2rem;
+    }
     .masonry-wrapper {
       margin:1rem;
     }
@@ -178,7 +181,7 @@ html {scroll-behavior:smooth;}
       }
   }
 
-  @media only screen and (max-width: 1023px) and (min-width: 768px) {  
+  @media only screen and (max-width: 1023px) and (min-width: 541px) {  
     .masonry {
       columns: 2;
   }

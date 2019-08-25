@@ -3,7 +3,7 @@
       <div class="masonry">
           {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
           {{ range $paginator.Pages }}
-          <a href="{{ .RelPermalink }}" class="judul-post has-text-grey-light">
+          <a href="{{ .RelPermalink }}">
           <div class="masonry-item">
               <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}">
             <div class="h">
@@ -16,7 +16,7 @@
                 
                 {{ .Description }}
                 <br/>
-                <a href="{{ .RelPermalink }}" class="has-text-grey-light">Read more..</a>
+                <a href="{{ .RelPermalink }}">Read more..</a>
                 </h6>
                 <br/>
                 <i class="fas fa-calendar-alt"></i>

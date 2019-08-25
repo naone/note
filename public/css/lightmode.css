@@ -76,6 +76,7 @@ body.light-mode {
       body.light-mode .navbar{
        background-color: #ffffff;
        color:#4A4A4A;
+       border-bottom: 2px solid rgb(240, 234, 234)
       }
       body.light-mode .has-text-primary {
         color:#FF007D !important;
@@ -211,8 +212,7 @@ body.light-mode {
         margin: 1rem;
       }
       body.light-mode .masonry {
-        background-color: #F5F5F5;
-        margin: 1rem;
+        background-color: #fff;
       }
     
       body.light-mode .disqus-comment .disqus-button{
