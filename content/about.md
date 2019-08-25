@@ -8,7 +8,6 @@ tags: ["friedlist","comunity"]
 layout: "about"
 ---
 
-
 <div class="column is-8">
 <div class="container">
     <div class="is-hidden-tablet"><br/><br></div>

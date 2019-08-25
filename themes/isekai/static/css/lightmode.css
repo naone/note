@@ -1,27 +1,28 @@
 body.light-mode {
   background-image: linear-gradient(to bottom right, rgb(233, 97, 176),rgb(106, 130, 209));
-  color:#202127;
+  color:#4A4A4A;
   }
   
    body.light-mode article {
      background-color: #ffffff;
-     color:#202127;
+     color:#4A4A4A;
     }
    body.light-mode a{
      background-color: transparent;
     }
    body.light-mode .masonry-item {
-     background-color: #E7E9EB;
-     filter: drop-shadow(0px 2px 0px #FF0089);
-     color:#202127;
+     background-color: #fff;
+     filter: drop-shadow(0px 2px 2px rgba(71, 68, 70, 0.336));
+     color:#4A4A4A;
      }
      body.light-mode .masonry-item:hover {
-      background-color: #E7E9EB;
-      color:#2E3240;
+      background-color: #fff;
+      filter: drop-shadow(0px 2px 4px rgba(71, 68, 70, 0.536));
+      color:#4A4A4A;
       }
      body.light-mode .masonry-content {
-       background-color: #E7E9EB;
-       color:#202127;
+       background-color: #fff;
+       color:#4A4A4A;
       }
       body.light-mode a {
        color: #FF007D;
@@ -31,7 +32,7 @@ body.light-mode {
        }
       body.light-mode .has-text-grey {
        background-color: #ffffff;
-       color:#202127;
+       color:#4A4A4A;
       }
      body.light-mode .t {
        background-color: #FF007D;
@@ -53,16 +54,16 @@ body.light-mode {
        border: 1px solid rgb(238, 236, 238);
       }
       body.light-mode .h {
-       background-color: #E7E9EB;
-       color:#202127;
+       background-color: #fff;
+       color:#4A4A4A;
       }
       body.light-mode .navbar-link{
        background-color: #ffffff;
-       color:#202127;
+       color:#4A4A4A;
       }
-      body.light-mode .navbar-item{
+      body.light-mode .navbar-item {
        background-color: #ffffff;
-       color:#202127;
+       color:#4A4A4A;
       }
       body.light-mode strong{
        background-color: #ffffff;
@@ -70,11 +71,11 @@ body.light-mode {
       }
       body.light-mode nav{
        background-color: #ffffff;
-       color:#202127;
+       color:#4A4A4A;
       }
       body.light-mode .navbar{
        background-color: #ffffff;
-       color:#202127;
+       color:#4A4A4A;
       }
       body.light-mode .has-text-primary {
         color:#FF007D !important;
@@ -83,7 +84,10 @@ body.light-mode {
       border-color: #F85191;
        
       }
-
+      body.light-mode .judul-postingan {
+        color: #363636;
+        background-color: #FFF;
+      }
       body.light-mode .hljs {
         background: #E7E9EB;
         color: rgb(79, 82, 90);
@@ -93,52 +97,52 @@ body.light-mode {
       }
       body.light-mode .is-fixed-top{
        background-color: #ffffff;
-       color:#202127;
+       color:#4A4A4A;
       }
       body.light-mode .masonry-info{
        background-color: #E7E9EB;
-       color:#202127;
+       color:#4A4A4A;
       }
       body.light-mode .judul{
        background-color: #ffffff;
-       color:#202127;
+       color:#4A4A4A;
       }
       body.light-mode h1.header-judul{
        background-color: #ffffff;
-       color:#202127;
+       color:#4A4A4A;
       }
       body.light-mode .content-lay{
        background-color: #ffffff;
-       color:#202127;
+       color:#4A4A4A;
       }
       body.light-mode .no-border{
       background-color: #E7E9EB;
       margin: 0;
       padding: 1rem;
       border-left: 4px solid #F85191;
-      color: #202127;
+      color: #4A4A4A;
       }
       body.light-mode .popuptext {
         background-color: #2E3240;
         color: #fff;
       }
       body.light-mode .putih{
-       color: #202127;
+       color: #4A4A4A;
       }
       body.light-mode .content{
        background-color: #ffffff;
-       color:#202127;
+       color:#4A4A4A;
       }
       body.light-mode .content-lay{
         border: 1px solid transparent;
       }
       body.light-mode .masonry-info{
        background-color: #E7E9EB;
-       color:#202127;
+       color:#4A4A4A;
       }
       body.light-mode h1{
        background-color: #ffffff;
-       color:#202127;
+       color:#363636;
       }
       body.light-mode .disqus-button{
         background-color: #fff;
@@ -146,29 +150,29 @@ body.light-mode {
       }
       body.light-mode h2{
        background-color: #ffffff;
-       color:#202127;
+       color:#363636;
       }
       body.light-mode h3{
        background-color: #ffffff;
-       color:#202127;
+       color:#4A4A4A;
       }
       body.light-mode h4{
        background-color: #ffffff;
-       color:#202127;
+       color:#4A4A4A;
       }
       body.light-mode h5{
        background-color: #ffffff;
-       color:#202127;
+       color:#4A4A4A;
       }
       
       body.light-mode .button{
        background-color: #ffffff;
-       color:#2E3240;
+       color:#4A4A4A;
        border-color:#fff;
       }
       body.light-mode .button-next{
        background-color: #ffffff;
-       color:#2E3240;
+       color:#4A4A4A;
       }
       body.light-mode .is-current{
         background-color: #FF007D;
@@ -179,24 +183,24 @@ body.light-mode {
        color:#ffffff;
       }
       body.light-mode footer {
-       background-color: #ffffff;
-       color:#202127;
+       background-color: #FFF;
+       color:#4A4A4A;
        border: 0;
       }
       body.light-mode .fixed {
         background-color: #E7E9EB;
-        color: #202127;
+        color: #4A4A4A;
       }
       body.light-mode .menu-list li a {
         background-color: #E7E9EB;
-        color: #202127;
+        color: #4A4A4A;
       }
       body.light-mode .menu-list li a:hover {
         color: rgb(29, 132, 216);
       }
       
       body.light-mode .menu-label {
-       color: #202127;
+       color: #4A4A4A;
         
       }
       body.light-mode .box {
@@ -204,9 +208,11 @@ body.light-mode {
       }
       body.light-mode .masonry-wrapper {
         background-color: #FFF;
+        margin: 1rem;
       }
       body.light-mode .masonry {
-        background-color: #FFF;
+        background-color: #F5F5F5;
+        margin: 1rem;
       }
     
       body.light-mode .disqus-comment .disqus-button{
@@ -225,32 +231,32 @@ body.light-mode .content h2 {
   border-bottom: 1px solid #CECECE;
 }
 body.light-mode .main-content {
-  background-color: #FFF;
+  background-color: #F5F5F5;
 }
 body.light-mode .container {
-  background-color: #FFF;
+  background-color:#Ffff;
 }
 body.light-mode .columns {
-  background-color: #FFF;
+  background-color: #fff;
 }
 body.light-mode .is-fullheight {
-  background-color: #FFF;
+  background-color: #Fff;
 }
 body.light-mode .has-text-grey-light {
-  color: #2E3240 !important;
+  color: #4A4A4A !important;
 }
 body.light-mode .sidenav {
 background-color: #fff !important;
 }
 /* The navigation menu links */
 body.light-mode .sidenav a {
-  color: #2E3240 !important;
+  color: #4A4A4A !important;
 }
 body.light-mode .navbar-header {
   background-color: #E7E9EB !important;
 }
 body.light-mode .title {
-  color: #2E3240;
+  color: #4A4A4A;
 }
 body.light-mode .portofolio-heading {
   border-color: #CECECE;
