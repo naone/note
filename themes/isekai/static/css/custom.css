@@ -183,7 +183,7 @@ html {scroll-behavior:smooth;}
 
   @media only screen and (max-width: 1023px) and (min-width: 541px) {  
     .masonry {
-      columns: 2;
+      columns:2;
   }
   .masonry-friendlist {
     columns: 2;
@@ -193,6 +193,15 @@ html {scroll-behavior:smooth;}
         max-width: 1024px;
         margin-right: auto;
         margin-left: auto;
+      }
+      .content {
+      margin-left: 3rem;
+      margin-right: -18rem;
+      }
+      .judul-postingan {
+        margin-left: 3rem;
+        margin-top: 3rem;
+        margin-right: -18rem;
       }
   }
   @media only screen and (min-width: 1024px) {
@@ -274,8 +283,6 @@ html {scroll-behavior:smooth;}
 nav.pagination {
   filter: none;
 }
-
-@media screen and (min-width:1336px) {
 .fixed {
   position: fixed;
   top: 0;
@@ -288,6 +295,7 @@ nav.pagination {
   z-index: 1;
   background-color: #0D142A;
 }
+@media screen and (min-width:1024px) {
 .content {
   margin-left: 2rem;
   font-size : 1.1rem !important;

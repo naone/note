@@ -15,7 +15,7 @@ layout: "about"
     <div class="tile is-ancestor">
     <div class="tile is-parent">
     <div class="tile is-child">
-    <div class="is-size-3  portofolio-heading">
+    <div class="is-size-3">
         Personal information
             </div>
             <div class="media portofolio-item mbuh">
@@ -43,7 +43,7 @@ layout: "about"
             </div>
 <div class="tile is-parent">
 <div class="tile is-child">
-<div class="is-size-3 portofolio-heading">
+<div class="is-size-3">
     Contact
  </div>
  <div class="portofolio-item">
@@ -66,14 +66,14 @@ layout: "about"
 <div class="tile is-ancestor">
         <div class="tile is-parent">
             <div class="tile is-child">
-    <div class="is-size-3 portofolio-heading">
+    <div class="is-size-3 ">
     Experience
     </div>
     <div class="portofolio-item">
     <div class="has-text-weight-bold">Juli-September 2019</div>
     Magang di UPT Puskom Universitas Negeri Yogyakarta
     </div>
-    <div class="is-size-3 portofolio-heading">
+    <div class="is-size-3">
             Education
             </div>
             <div class="portofolio-item">
@@ -82,7 +82,7 @@ layout: "about"
     </div>
     SMK N 1 Sragi Pekalongan ( Teknik Komputer dan Jaringan )
     </div>
-    <div class="is-size-3 portofolio-heading">
+    <div class="is-size-3">
             Skill
             </div>
    <div class="has-text-weight-bold portofolio-item">
