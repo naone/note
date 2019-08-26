@@ -1,4 +1,4 @@
-<div class="column">
+<div class="column is-10">
   <br/>
 <div class="container">
       <div class="masonry">
@@ -6,16 +6,13 @@
           {{ range $paginator.Pages }}
           <a href="{{ .RelPermalink }}" class="judul-post">
           <div class="masonry-item">
-
-            <div class="is-hidden-desktop">
-                <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}">
+                <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" class="crop">
         <div class="h">
-                  <b>    
+                  <b>  
             {{ .Title }}
             </b>
             <br/>
             </a>
-            
             {{ .Description }}
             <br/>
             <a href="{{ .RelPermalink }}">Read more..</a>
@@ -32,42 +29,8 @@
                 {{- end -}}
                 {{- end -}}
   {{ end }}
-      </div>
-</div>
-</div>
-
-              <div class="media is-hidden-touch">
-                <div class="media-left">
-                    <a href="{{ .RelPermalink }}" class="judul-post">
-                    <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" width="200px" class="rounded">
-                </div>
-            <div class="h">
-              <div class="media-content">
-                      <b>    
-                {{ .Title }}
-                </b>
-                <br/>
-                </a>
-                
-                {{ .Description }}
-                <br/>
-                <a href="{{ .RelPermalink }}">Read more..</a>
-                </h6>
-                <br/>
-                <i class="fas fa-calendar-alt"></i>
-                {{ .PublishDate.Format "January 2, 2006" }}
-                    {{ $taxonomy := "tags" }}
-                    {{ with .Param $taxonomy }}
-                    {{ range $index, $tag := . }}
-                    
-                    {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
-                    #{{ $tag | urlize }}
-                    {{- end -}}
-                    {{- end -}}
-                  </div>
-                    {{ end }}
-
                 </div>
               </div>
               {{ end }}
+           </div>
            

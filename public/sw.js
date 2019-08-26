@@ -31,7 +31,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/css/custom.css",
-    "revision": "6efea0d225edfc68258163d1fd78a68d"
+    "revision": "bb847f4ea49fc2999b1db939c0caf2cc"
   },
   {
     "url": "/css/highlight.css",
@@ -39,7 +39,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/css/lightmode.css",
-    "revision": "1ed9ff3b3b0a407950215a2c465ec49a"
+    "revision": "931278fa273186c0cfb5f80416c583f1"
   },
   {
     "url": "/css/portofolio.css",

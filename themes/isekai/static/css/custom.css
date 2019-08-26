@@ -150,7 +150,9 @@ html {scroll-behavior:smooth;}
     display: inline-block;
     vertical-align: top;
     margin-top: 12px;
+    border-radius: 10px;
     overflow: hidden;
+    background-color: #0D142A;
   }
   @media screen and (max-width:768px) {
     .masonry {
@@ -158,10 +160,6 @@ html {scroll-behavior:smooth;}
     }
     .masonry-wrapper {
       margin:1rem;
-    }
-    .masonry-item {
-      background-color: #0D142A;
-      border-radius: 10px;
     }
       .masonry-friendlist {
         columns: 1;
@@ -198,20 +196,14 @@ html {scroll-behavior:smooth;}
      margin-left: 3rem;
      margin-right: -10rem;
       }
-      .judul-postingan {
-      
-      }
   }
   @media only screen and (min-width: 1024px) {
     .masonry {
-      right: 0;
-      columns: 1;
+      right: 2rem;
+      columns: 3;
     }
     .masonry-friendlist {
       columns: 2;
-    }
-    .masonry-item {
-    width: 100%;
     }
     .masonry-wrapper {
       padding: 1em;
@@ -283,13 +275,14 @@ nav.pagination {
 .fixed {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 2rem;
   height: 100%;
   font-size: 1.2rem;
   padding: 1rem;
   font-weight: 600;
   width: 350px;
   z-index: 1;
+  border-right: 1px solid #191D29;
 }
 @media screen and (min-width:1024px) {
 .label-fixed {
@@ -430,11 +423,20 @@ progress {
   border-radius: 6px;
 }
 .aside-item {
-  margin: 1rem;
+  margin-top: 1rem;
 }
 .aside-item:hover {
   color: rgb(255, 226, 245) !important;
 }
 body.light-mode .aside-item:hover {
   color: rgb(230, 9, 152) !important;
+}
+
+.masonry-item img {
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+.masonry-item:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }

@@ -10,7 +10,6 @@ body.light-mode {
    body.light-mode a{
      background-color: transparent;
     }
-    @media only screen and (max-width: 1023px) and (min-width: 541px) {  
    body.light-mode .masonry-item {
      background-color: #fff;
      filter: drop-shadow(0px 2px 2px rgba(71, 68, 70, 0.336));
@@ -21,7 +20,7 @@ body.light-mode {
       filter: drop-shadow(0px 2px 4px rgba(71, 68, 70, 0.536));
       color:#4A4A4A;
       }
-    }
+    
      body.light-mode .masonry-content {
        background-color: #fff;
        color:#4A4A4A;
@@ -192,6 +191,7 @@ body.light-mode {
       }
       body.light-mode .fixed {
         color: #4A4A4A;
+        border-right: #CECECE 1px solid;
       }
       body.light-mode .menu-list li a {
         background-color: #E7E9EB;
