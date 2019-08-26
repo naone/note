@@ -114,10 +114,10 @@
         <link rel="icon" type="image/png" href="/img/icon/favicon-128.png" sizes="128x128" />
         <link rel=alternative href=/index.xml title="Linuxisekai: Nolep enthusiast project" type=application/atom+xml>
         <link rel="icon" type="image/png" href="/img/favicon.png">
-        <link href="/css/style.css" rel="stylesheet">
+        <link href="/css/bulma.css" rel="stylesheet">
+        <link href="/css/portofolio.css" rel="stylesheet">
         <link href="/css/lightmode.css" rel="stylesheet">
         <link href="/css/highlight.css" rel="stylesheet">
-        <link href="/css/custom.css" rel="stylesheet">
         <link rel="stylesheet" media="screen" href="/css/font.css" type="text/css"/> 
         <link rel="manifest" href="/manifest.json"> 
     
@@ -159,283 +159,64 @@ if (!doNotTrack) {
 <meta name="twitter:title" content="About"/>
 <meta name="twitter:description" content=""/>
 
-    </head>
-    <body id="body">
-    <nav id="navbar" class="navbar is-fixed-top is-hidden-desktop is-spaced">
-        <div class="navbar-brand">
-            <a onclick="openNav()" class="is-hidden-desktop navbar-item navbar-burger has-text-grey-light" data-target="navMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-               </a>
-        <span class="navbar-item navbar-center">
-          <a href="/">
-            <div class="is-size-4 has-text-weight-bold has-text-grey-light"><span class="has-text-primary">
-              linux</span>isekai
-          </div> 
-          </a>
-          </span>
-
-          <a type="button" name="dark_light" class="navbar-item is-hidden-desktop has-text-grey-light" onclick="toggleDarkLight()" title="Toggel dark/light">
-            <i class="fas fa-moon">
-            </i>&nbsp;
-          </a>
-
-          </div>
-        
-        <div id="sideNav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                <i class="fa fa-times"></i>
-            </a>
-            <div class="navbar-header has-text-centered" style="background-color: #0A1124">
-              <div class="media">
-              <div class="media-left">
-                    <img src="https://avatars.githubusercontent.com/u/46141275" width="100px" style="border-radius: 50%;">
-                    </div>
-              <div class="media-content">
-                <div class="is-size-3 has-text-weight-bold">
-            <span class="has-text-primary">Linux</span>isekai
-                </div>
-            Nolep enthusiast project.
-          </div>
-              </div>
-            </div>
+</head>
+<body id="body">
+    <div class="container">
+ <div class="columns is-2 has-background-light">
+ <div class="column is-two-fifths">
+     <div class="container">
+            <div class="portofolio">
+         <div class="has-text-centered">
+     <img src="/img/me1.jpg" style="border-radius: 50%" width="300">
+           <div class="is-size-1 has-text-weight-bold">
+            Galih Wisnuaji
+           </div>
+         </div>
+           <div class="portofolio-heading">
+           </div>
+           <div class="is-size-4 has-text-weight-bold">
+           <span class="icon"><i class="fa fa-hashtag"></i></span> Informasi
+           </div>
+           <div class="portofolio-item">
+            <b>umur :</b> 18 tahun
+           <br/>
+           <b>Agama : </b> Islam
+           <br/>
+           <b>kota : </b> Pekalongan
+           <br/>
+           </div>
+           <div class="is-size-4 has-text-weight-bold">
+                <span class="icon"><i class="fa fa-hashtag"></i></span>
+           kontak
+           </div>
+           <div class="portofolio-item">
+           <b>email :</b>
+           <br/>
+           <b>no telp :</b>
+           <br/>
+           <b>whatspp :</b>
+           </div>
+           <div class="is-size-4 has-text-weight-bold">
+                <span class="icon"><i class="fa fa-hashtag"></i></span>
+           Social media
+           </div>
+           <div class="portofolio-item">
+           <b>Facebook</b>
+           <br/>
+           <b>telegram</b>
+           <br/>
+           <b>instagram</b>
             <br/>
-            <a class="navbar-item" href="/">
-              <span class="icon">
-              <i class="fas fa-home has-text-primary"></i>
-              </span>
-              <span>
-              Home
-              </span>
-            </a>
-            
-              <a class="navbar-item" href="/tags/linux">
-               <span class="icon">
-                  <i class="fas fa-terminal has-text-primary"></i>
-                </span>
-      
-                <span>Linux</span>
-              </a>
-                <a class="navbar-item" href="/tags/ngopi">
-                <span class="icon">
-                  <i class="fas fa-coffee has-text-primary"></i>
-                </span>
-                <span>
-                Ngopi
-                </span>
-                </a>
-              <a class="navbar-item" href="/friendlist">
-                <span class="icon">
-                  <i class="fas fa-user-friends has-text-primary"></i>
-                </span>
-      
-                <span>  Friends</span>
-              </a>
-              <a class="navbar-item" href="/about">
-                <span class="icon fa-php">
-                  <i class="fas fa-user has-text-primary"></i>
-                </span>
-                <span>  Portofolio</span>
-              </a>
-              <span class="container">
-              <div class="portofolio-heading navbar-item"></div>
-              </span>
-              <a href="#" class="navbar-item"><span class="icon"><i class="fab fa-facebook has-text-primary"></i></span>
-                <span>  Facebook</span>
-              </a>
-              <a href="#" class="navbar-item"><span class="icon"><i class="fab fa-telegram has-text-primary"></i></span>
-                <span>  Telegram</span>
-              </a>
-              <a href="#" class="navbar-item">
-                <span class="icon"><i class="fab fa-youtube has-text-primary"></i></span>
-                <span>  Youtube</span>
-              </a>
-              
-              </div>
-                </div>
-                </div>
-               
-                </nav>
-               
-          
-      
-    <div class="main-content container columns is-fullheight">
-    <aside class="column is-3 is-fullheight section is-hidden-touch">
-        <div class="fixed bg">
-          <br/>
-          <div class="label-fixed has-text-centered">
-            <span class="has-text-primary">Linux</span>isekai</div>
-            <div class="has-text-centered">Nolep enthusiast project.</div>
-            <br>
-          <ul class="menu-list">
-            
-            <li class="">
-              <a href="/" class="">
-                <span class="icon">
-                  <i class="fa fa-home has-text-primary"></i>
-                </span> Home
-              </a>
-            </li>
-            <li>
-              <a class="" href="/tags/linux">
-              <span class="icon">
-                <i class="fas fa-terminal has-text-primary"></i>
-              </span> Linux
-            </a>
-            </li>
-            <li>
-              <a href="/tags/ngopi" class="">
-                <span class="icon">
-                  <i class="fa fa-coffee has-text-primary"></i></span> Ngopi
-              </a>
-              <ul>
-                <li>
-                  <a href="/tags/golang" class="is-size-7">
-                    <span class="icon is-small ">
-                      <i class="fa fa-code has-text-primary"></i></span> Golang
-                      
-                  </a>
-                </li>
-                <li>
-                  <a href="/tags/php" class="is-size-7">
-                    <span class="icon is-small">
-                      <i class="fa fa-code has-text-primary"></i></span>  PHP
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="/friendlist" class="">
-                <span class="icon">
-                  <i class="fa fa-user-friends has-text-primary"></i></span> Friends
-              </a>
-            </li>
-            <li>
-                <a href="/about" class="">
-                  <span class="icon">
-                    <i class="fa fa-user-circle has-text-primary"></i></span> Portofolio
-                </a>
-              </li>
-          <li>
-  
-          
-          <center>
-          <a type="button" name="dark_light" class="navbar-item is-hidden-mobile" onclick="toggleDarkLight()" title="Toggel dark/light">
-            <i class="fas fa-moon">
-            </i>
-                        </a>
-                        </center>
-                        </li>
-                        </ul>
-        </div>
-        </aside>
-        
-  
-
-        <div class="column is-8">
-<div class="container">
-    <div class="is-hidden-tablet"><br/><br></div>
-    <br/>
-    <div class="tile is-ancestor">
-    <div class="tile is-parent">
-    <div class="tile is-child">
-    <div class="is-size-3">
-        Personal information
-            </div>
-            <div class="media portofolio-item mbuh">
-            <div class="media-left">
-            <img src="https://avatars.githubusercontent.com/u/46141275" class="gambar-teman">
-            </div>
-            <div class="media-content">
-            <strong>
-                Nama:
-            </strong>
-            Galih wisnuaji
-            <br/>
-            <strong>
-            Umur:
-                </strong>
-               18 tahun
-               <br/>
-                <strong>
-                Kota :
-                    </strong>
-                   Pekalongan
-            </div>
-            </div>
-            </div>
-            </div>
-<div class="tile is-parent">
-<div class="tile is-child">
-<div class="is-size-3">
-    Contact
+           <b>twitter</b>
+           </div>
+           </div>
+           </div>
  </div>
- <div class="portofolio-item">
-<strong><i class="fa fa-envelope"></i> Email :</strong> galihwisnu18@gmail.com
-<br/>
-<strong><i class="fa fa-phone"></i> No Telp/whatsapp :</strong> 085746125372
-<br>
-<div class="is-size-5">
-    <a href="facebook.com"><i class="fab fa-facebook"></i></a>
-    <a href="https:/t.me/Xzxt"><i class="fab fa-telegram"></i></a>
-    <a href="facebook.com"><i class="fab fa-instagram"></i></a>
-    <a href="facebook.com"><i class="fab fa-twitter"></i></a>
-    <a href="facebook.com"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/galihx11"><i class="fab fa-github"></i></a>
-    </div>
-</div>
-</div>
-</div>
-</div>
-<div class="tile is-ancestor">
-        <div class="tile is-parent">
-            <div class="tile is-child">
-    <div class="is-size-3 ">
-    Experience
-    </div>
-    <div class="portofolio-item">
-    <div class="has-text-weight-bold">Juli-September 2019</div>
-    Magang di UPT Puskom Universitas Negeri Yogyakarta
-    </div>
-    <div class="is-size-3">
-            Education
-            </div>
-            <div class="portofolio-item">
-            <div class="has-text-weight-bold">
-    2016-2019
-    </div>
-    SMK N 1 Sragi Pekalongan ( Teknik Komputer dan Jaringan )
-    </div>
-    <div class="is-size-3">
-            Skill
-            </div>
-   <div class="has-text-weight-bold portofolio-item">
-    # Makan
-   <progress class="progress is-primary is-small" value="80" max="100">80%</progress>
-   # Tidur
-   <progress class="progress is-info is-small" value="90" max="100">90%</progress>
-   # Rebahan
-   <progress class="progress is-success is-small" value="100" max="100">100%</progress>
-   # Ngemil
-   <progress class="progress is-danger is-small" value="50" max="100">100%</progress>
-   </div>
-    </div>
-    </div>
-    </div>
-
-        
-<footer class="footer">
-              <strong>Linuxisekai</strong> by
-              <a href="https://github.com/linuxisekai" target="_blank">tempegoreng</a>.
-              <br/>
-              Made with <i class="fa fa-heart has-text-primary"></i>
-              using <a href="gohugo,io">Hugo</a>.
-              <br/>
-              Surce code is available on <a href="https://github.com/galihx11/blog" target="_blank">github</a>
-            </footer>
-          
-        </div>
+           <div class="column">
+               kkk
+           </div>
+       </div>
+       </div>
         
 <script src="/js/all.min.js"></script>
 <script src="/js/core.js"></script>

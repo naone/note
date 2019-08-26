@@ -44,7 +44,7 @@
     word-break: break-all;
   }
   .judul-post {
-      font-size: 1.1rem; 
+      font-size: 1.3rem; 
       font-weight: 600;
   }
   .h{
@@ -150,10 +150,9 @@ html {scroll-behavior:smooth;}
     display: inline-block;
     vertical-align: top;
     margin-top: 12px;
-    border-radius: 10px;
     overflow: hidden;
   }
-  @media screen and (max-width:540px) {
+  @media screen and (max-width:768px) {
     .masonry {
       margin: 0.5rem;
     }
@@ -162,6 +161,7 @@ html {scroll-behavior:smooth;}
     }
     .masonry-item {
       background-color: #0D142A;
+      border-radius: 10px;
     }
       .masonry-friendlist {
         columns: 1;
@@ -181,7 +181,7 @@ html {scroll-behavior:smooth;}
       }
   }
 
-  @media only screen and (max-width: 1023px) and (min-width: 541px) {  
+  @media only screen and (max-width: 1023px) and (min-width: 769px) {  
     .masonry {
       columns:2;
   }
@@ -195,25 +195,22 @@ html {scroll-behavior:smooth;}
         margin-left: auto;
       }
       .content {
-      margin-left: 3rem;
-      margin-right: -18rem;
+     margin-left: 3rem;
+     margin-right: -10rem;
       }
       .judul-postingan {
-        margin-left: 3rem;
-        margin-top: 3rem;
-        margin-right: -18rem;
+      
       }
   }
   @media only screen and (min-width: 1024px) {
     .masonry {
-      margin-right: 3rem;
-      columns: 3;
+      right: 0;
+      columns: 1;
     }
     .masonry-friendlist {
       columns: 2;
     }
     .masonry-item {
-    background-color: #0D142A;
     width: 100%;
     }
     .masonry-wrapper {
@@ -286,20 +283,15 @@ nav.pagination {
 .fixed {
   position: fixed;
   top: 0;
-  left: 5.8rem;
+  left: 0;
   height: 100%;
   font-size: 1.2rem;
   padding: 1rem;
   font-weight: 600;
-  width: 260px;
+  width: 350px;
   z-index: 1;
-  background-color: #0D142A;
 }
 @media screen and (min-width:1024px) {
-.content {
-  margin-left: 2rem;
-  font-size : 1.1rem !important;
-}
 .label-fixed {
   font-size: 2rem;
   font-weight: 600;
@@ -347,6 +339,7 @@ a.navbar-item {
 .mbuh {
 padding: 1em;
 }
+
 .no-margin {
   margin: 0;
   padding: 0;
@@ -368,9 +361,6 @@ progress {
   background-color: #C0BDC0 !important;
 }
 
-body {
-  background-image: linear-gradient(to bottom right, rgba(234, 50, 72, 0.555),rgba(245, 168, 59, 0.747))
-}
 .bottom {
   justify-self: end;
 }
@@ -435,4 +425,16 @@ body {
 .navbar-header {
   padding: 2rem;
   padding-top: 3rem;
+}
+.rounded {
+  border-radius: 6px;
+}
+.aside-item {
+  margin: 1rem;
+}
+.aside-item:hover {
+  color: rgb(255, 226, 245) !important;
+}
+body.light-mode .aside-item:hover {
+  color: rgb(230, 9, 152) !important;
 }

@@ -24,10 +24,10 @@
         <link rel="icon" type="image/png" href="/img/icon/favicon-128.png" sizes="128x128" />
         <link rel=alternative href=/index.xml title="Linuxisekai: Nolep enthusiast project" type=application/atom+xml>
         <link rel="icon" type="image/png" href="/img/favicon.png">
-        <link href="/css/style.css" rel="stylesheet">
+        <link href="/css/bulma.css" rel="stylesheet">
+        <link href="/css/portofolio.css" rel="stylesheet">
         <link href="/css/lightmode.css" rel="stylesheet">
         <link href="/css/highlight.css" rel="stylesheet">
-        <link href="/css/custom.css" rel="stylesheet">
         <link rel="stylesheet" media="screen" href="/css/font.css" type="text/css"/> 
         <link rel="manifest" href="/manifest.json"> 
     
@@ -36,14 +36,64 @@
         {{ template "_internal/google_analytics.html" . }}
         {{ template "_internal/opengraph.html" . }}
         {{ template "_internal/twitter_cards.html" . }}
-    </head>
-    <body id="body">
-    {{ partial "navbar.html" . }}
-    <div class="main-content container columns is-fullheight">
-    {{ partial "aside.html" . }}
-        {{ .Content }}
-        {{ partial "footer.html" . }}
-        </div>
+</head>
+<body id="body">
+    <div class="container">
+ <div class="columns is-2 has-background-light">
+ <div class="column is-two-fifths">
+     <div class="container">
+            <div class="portofolio">
+         <div class="has-text-centered">
+     <img src="/img/me1.jpg" style="border-radius: 50%" width="300">
+           <div class="is-size-1 has-text-weight-bold">
+            Galih Wisnuaji
+           </div>
+         </div>
+           <div class="portofolio-heading">
+           </div>
+           <div class="is-size-4 has-text-weight-bold">
+           <span class="icon"><i class="fa fa-hashtag"></i></span> Informasi
+           </div>
+           <div class="portofolio-item">
+            <b>umur :</b> 18 tahun
+           <br/>
+           <b>Agama : </b> Islam
+           <br/>
+           <b>kota : </b> Pekalongan
+           <br/>
+           </div>
+           <div class="is-size-4 has-text-weight-bold">
+                <span class="icon"><i class="fa fa-hashtag"></i></span>
+           kontak
+           </div>
+           <div class="portofolio-item">
+           <b>email :</b>
+           <br/>
+           <b>no telp :</b>
+           <br/>
+           <b>whatspp :</b>
+           </div>
+           <div class="is-size-4 has-text-weight-bold">
+                <span class="icon"><i class="fa fa-hashtag"></i></span>
+           Social media
+           </div>
+           <div class="portofolio-item">
+           <b>Facebook</b>
+           <br/>
+           <b>telegram</b>
+           <br/>
+           <b>instagram</b>
+            <br/>
+           <b>twitter</b>
+           </div>
+           </div>
+           </div>
+ </div>
+           <div class="column">
+               kkk
+           </div>
+       </div>
+       </div>
         {{ partial "js-init.html" . }}
     </body>
 </html>
