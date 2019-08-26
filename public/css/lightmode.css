@@ -90,6 +90,12 @@ body.light-mode {
         color: #363636;
         background-color: #FFF;
       }
+      body.light-mode .judul-post {
+        color: #4A4A4A;
+      }
+      body.light-mode .judul-post:hover {
+        color: #FF007D;
+      }
       body.light-mode .hljs {
         background: #E7E9EB;
         color: rgb(79, 82, 90);
@@ -261,4 +267,7 @@ body.light-mode .title {
 }
 body.light-mode .portofolio-heading {
   border-color: #CECECE;
+}
+body.light-mode .light {
+  background-color: #F5F5F5;
 }
