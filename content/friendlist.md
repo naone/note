@@ -15,7 +15,7 @@ layout: "friend"
   <div class="media-left">
 <img src="https://avatars2.githubusercontent.com/u/7688126" class="gambar-teman">
   </div>
-<div class="has-text-centered">
+
    <span class="masonry-title">
     Addy's Blog
    </span>
@@ -29,7 +29,6 @@ layout: "friend"
    <i class="fab fa-facebook is-size-5"></i>
   </div>
   </div>
-  </div>
     
 <div class="masonry-item">
    <img src="/img/friend/epsi.png">
@@ -37,7 +36,7 @@ layout: "friend"
    <div class="media-left">
    <img src="https://avatars1.githubusercontent.com/u/52365" class="gambar-teman">
    </div>
-   <div class="has-text-centered">
+   
    <span class="masonry-title">
    E.R. Nurwijayadi
    </span>
@@ -49,7 +48,7 @@ layout: "friend"
    <i class="fab fa-twitter is-size-5"></i>
    <i class="fab fa-telegram is-size-5"></i>
    <i class="fab fa-facebook is-size-5"></i>
-   </div>
+   
    </div>
    </div>
     
@@ -60,7 +59,7 @@ layout: "friend"
    <div class="media-left">
    <img src="https://avatars2.githubusercontent.com/u/45110036" class="gambar-teman">
    </div>
-   <div class="has-text-centered">
+   
    <span class="masonry-title">
    Sira Argia
    </span>
@@ -74,7 +73,6 @@ layout: "friend"
    <i class="fab fa-facebook is-size-5"></i>
    </div>
    </div>
-   </div>
     
     
 <div class="masonry-item">
@@ -83,7 +81,7 @@ layout: "friend"
    <div class="media-left">
    <img src="https://avatars2.githubusercontent.com/u/3227736" class="gambar-teman">
    </div>
-   <div class="has-text-centered">
+
    <span class="masonry-title">
    Rizqi Nur Assyaufi
    </span>
@@ -94,11 +92,9 @@ layout: "friend"
    <i class="fab fa-github is-size-5"></i>
    <i class="fab fa-twitter is-size-5"></i>
    <i class="fab fa-telegram is-size-5"></i>   
-   <i class="fab fa-facebook is-size-5"></i>
    </div>
    </div>
-   </div>
-    
+
     
 <div class="masonry-item">
    <img src="/img/friend/illvart.png">
@@ -106,7 +102,7 @@ layout: "friend"
    <div class="media-left">
    <img src="https://avatars0.githubusercontent.com/u/24722231" class="gambar-teman">
    </div>
-   <div class="has-text-centered">
+
    <span class="masonry-title">
    MNF
    </span>
@@ -120,8 +116,6 @@ layout: "friend"
    <i class="fab fa-facebook is-size-5"></i>
    </div>
    </div>
-   </div>
-    
     
 <div class="masonry-item">
 <img src="/img/friend/jamstack.webp">
@@ -129,7 +123,7 @@ layout: "friend"
 <div class="media-left">
 <img src="https://avatars1.githubusercontent.com/u/49210332" class="gambar-teman">
 </div>
-<div class="has-text-centered">
+
 <span class="masonry-title">
 JAMstack Indonesia
 </span>
@@ -143,15 +137,35 @@ JAMstack Indonesia
    <i class="fab fa-facebook is-size-5"></i>
    </div>
    </div>
-   </div>
-    
+
+<div class="masonry-item">
+    <img src="/img/friend/tkjasik.png">
+    <div class="media mbuh">
+    <div class="media-left">
+    <img src="https://avatars1.githubusercontent.com/u/47948861" class="gambar-teman">
+    </div>
+
+   <span class="masonry-title">
+    PeryMerdeka      
+    </span>
+    <br/>
+    <a href="https://tkjasikk.blogspot.com">tkjasikk.blogspot.com</a>     
+    <br>
+    <br/>
+    <i class="fab fa-github is-size-5"></i>
+    <i class="fab fa-twitter is-size-5"></i>
+    <i class="fab fa-telegram is-size-5"></i>
+    <i class="fab fa-facebook is-size-5"></i>
+    </div>
+    </div>
+
 <div class="masonry-item">
 <img src="/img/friend/tan.png">
 <div class="media mbuh">
 <div class="media-left">
 <img src="https://avatars3.githubusercontent.com/u/47093017" class="gambar-teman">
 </div>
-<div class="has-text-centered">
+
 <span class="masonry-title">
 Tanmyid
 </span>
@@ -165,29 +179,6 @@ Tanmyid
 <i class="fab fa-facebook is-size-5"></i>
 </div>
 </div>
-</div>
-
-<div class="masonry-item">                                                                                                                         
-<img src="/img/friend/tkjasik.png">                                                                                                                    
-<div class="media mbuh">                                                                                                                           
-<div class="media-left">                                                                                                                          
-<img src="https://avatars1.githubusercontent.com/u/47948861" class="gambar-teman">                                                                 
- </div>                                                                                                                                             
- <div class="has-text-centered">                                                                                                                    
- <span class="masonry-title">                                                                                                                       
- PeryMerdeka                                                                                                                                            
- </span>                                                                                                                                           
- <br/>                                                                                                                                              
- <a href="https://tkjasikk.blogspot.com">tkjasikk.blogspot.com</a>                                                                                                         
- <br/>                                                                                                                                              
- <br/>                                                                                                                                             
- <i class="fab fa-github is-size-5"></i>                                                                                                           
- <i class="fab fa-twitter is-size-5"></i>                                                                                                           
- <i class="fab fa-telegram is-size-5"></i>                                                                                                          
- <i class="fab fa-facebook is-size-5"></i>                                                                                                         
-</div>                                                                                                                                            
-</div>                                                                                                                                             
-</div>
 
 <div class="masonry-item">
    <img src="/img/friend/ypraw.webp">
@@ -195,6 +186,7 @@ Tanmyid
    <div class="media-left">
    <img src="https://avatars2.githubusercontent.com/u/16682706" class="gambar-teman">
    </div>
+
    <div class="has-text-centered">
    <span class="masonry-title">
    Yunindyo Prabowo
@@ -217,8 +209,8 @@ Tanmyid
     <div class="media-left">
     <img src="https://avatars2.githubusercontent.com/u/9277632" class="gambar-teman">
     </div>
-    <div class="has-text-centered">
-    <span class="masonry-title">
+
+   <span class="masonry-title">
     Yuune Okitavera
     </span>
     <br/>
@@ -231,6 +223,4 @@ Tanmyid
     <i class="fab fa-facebook is-size-5"></i>
     </div>
     </div>
-    </div>
-          
 </div>

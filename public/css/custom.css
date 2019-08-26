@@ -203,7 +203,7 @@ html {scroll-behavior:smooth;}
       columns: 3;
     }
     .masonry-friendlist {
-      columns: 2;
+      columns: 3;
     }
     .masonry-wrapper {
       padding: 1em;
@@ -212,13 +212,10 @@ html {scroll-behavior:smooth;}
       margin-left: auto;
     }
 }
-  .masonry-title, .masonry-description {
-    margin: 0;
-  }
+ 
   .masonry-title {
     font-weight: 700;
     font-size: 1.1rem;
-    padding: 1rem;
   }
   
   .masonry-description {
@@ -311,8 +308,8 @@ a.navbar-item {
   background-color: #0A1124;
  }
  .button-post {
-   margin-right: 40%;
-   margin-left: 40%;
+   margin-right: 30%;
+   margin-left: 30%;
  }
 .content {
   padding: 1rem;
