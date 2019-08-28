@@ -63,7 +63,6 @@ body.light-mode {
        color:#4A4A4A;
       }
       body.light-mode .navbar-item {
-       background-color: #ffffff;
        color:#4A4A4A;
       }
       body.light-mode strong{
@@ -71,7 +70,6 @@ body.light-mode {
        color:#2E3240;
       }
       body.light-mode nav{
-       background-color: #ffffff;
        color:#4A4A4A;
       }
       body.light-mode .navbar{

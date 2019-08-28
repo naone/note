@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Courgette|Fira+Code&display=swap");
 @font-face {
   font-family: 'GlacialIndifferenceRegular';
   src: url('/font/GlacialIndifferenceRegular.otf') format('opentype');
@@ -400,7 +401,7 @@ progress {
 .sidenav .closebtn {
   position: absolute;
   top: 1rem;
-  right: 1.5rem;
+  right: 1.2rem;
   font-size: 1rem;
   margin-left: 80%;
 }
@@ -436,4 +437,13 @@ body.light-mode .aside-item:hover {
 .masonry-item:hover img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+::-webkit-scrollbar {
+  width: 10px
+}
+::-webkit-scrollbar-track {
+  background: #00192F;
+}
+::-webkit-scrollbar-thumb {
+background: #00192F;
 }
