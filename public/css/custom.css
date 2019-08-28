@@ -328,7 +328,7 @@ a.navbar-item {
   width: 80px;
 }
 .mbuh {
-padding: 1em;
+padding: 2rem;
 }
 
 .no-margin {
@@ -340,7 +340,7 @@ padding: 1em;
   padding-bottom: 0.4rem;
 }
 .portofolio-heading {
-  border-bottom: 1px solid #191D29; 
+  border-bottom: 1px solid #191D29;
 }
 .portofolio-item {
   margin-left: 3rem;
