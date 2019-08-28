@@ -7,9 +7,15 @@ description: ""
 tags: ["friedlist","comunity"]
 layout: "friend"
 ---
+<div class="no-border">
+ini adalah list website teman-teman saya, saya sangat berterima kasih tertama unutk 
+   para member JAMstack ID yang
+   telah membantu saya dalam belajar
+   </div>
 <div class="masonry-friendlist">
 
 <div class="masonry-item">
+
 <img src="/img/friend/addy.webp">
 <div class="media mbuh">
   <div class="media-left">

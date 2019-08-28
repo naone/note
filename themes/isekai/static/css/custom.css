@@ -156,9 +156,6 @@ html {scroll-behavior:smooth;}
     background-color: #0D142A;
   }
   @media screen and (max-width:768px) {
-    .masonry {
-      margin: 0.5rem;
-    }
     .masonry-wrapper {
       margin:1rem;
     }
