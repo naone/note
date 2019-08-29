@@ -5,7 +5,7 @@
           {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
           {{ range $paginator.Pages }}
           <div class="masonry-item">
-                <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" class="crop" width="500px">
+                <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" class="crop" width="1000px">
         <div class="h">
             <a href="{{ .RelPermalink }}" class="judul-post">
                   <b>  
