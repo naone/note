@@ -50,7 +50,7 @@
   }
   .h{
     padding-top: 0 !important;
-    padding:1rem;
+    padding:2rem;
   }
   .f {
       font-size: 1rem;
@@ -174,9 +174,6 @@ html {scroll-behavior:smooth;}
   }
   .masonry-item {
     display: inline-block;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    transform-origin: bottom;
     vertical-align: top;
     margin-top: 12px;
     border-radius: 10px;
@@ -218,14 +215,9 @@ html {scroll-behavior:smooth;}
         margin-right: auto;
         margin-left: auto;
       }
-      .content {
-     margin-left: 3rem;
-     margin-right: -10rem;
-      }
   }
   @media only screen and (min-width: 1024px) {
     .masonry {
-      right: 2rem;
       columns: 3;
     }
     .masonry-friendlist {
@@ -236,6 +228,10 @@ html {scroll-behavior:smooth;}
       max-width: 1024px;
       margin-right: auto;
       margin-left: auto;
+    }
+    .h{
+      padding-top: 0 !important;
+      padding:1rem;
     }
 }
  
@@ -255,7 +251,7 @@ html {scroll-behavior:smooth;}
     border-radius: 10px;
     padding-top: 2em;
     font-size: 1.1rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0rem;
   }
 .content h4 {
   font-size: 1.1rem;
@@ -297,15 +293,11 @@ nav.pagination {
 }
 .fixed {
   position: fixed;
-  top: 0;
-  left: 2rem;
   height: 100%;
-  font-size: 1.2rem;
-  padding: 1rem;
-  font-weight: 600;
-  width: 350px;
-  z-index: 1;
-  border-right: 1px solid #191D29;
+}
+.bg {
+  background-color: #0D142A;
+  padding: 2rem;
 }
 @media screen and (min-width:1024px) {
 .label-fixed {
@@ -338,7 +330,7 @@ a.navbar-item {
    margin-left: 30%;
  }
 .content {
-  padding: 1rem;
+  padding: 2rem;
   background-color: #0A1124;
 }
 .judul-postingan {
@@ -447,6 +439,7 @@ progress {
 }
 .aside-item {
   margin-top: 1rem;
+  font-size: 1.2rem;
 }
 .aside-item:hover {
   color: rgb(255, 226, 245) !important;
@@ -455,14 +448,6 @@ body.light-mode .aside-item:hover {
   color: rgb(0, 130, 252) !important;
 }
 
-.masonry-item img {
-  -webkit-transition: 0.6s ease;
-  transition: 0.6s ease;
-}
-.masonry-item:hover img {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
 ::-webkit-scrollbar {
   width: 10px
 }
@@ -471,59 +456,4 @@ body.light-mode .aside-item:hover {
 }
 ::-webkit-scrollbar-thumb {
 background: #00192F;
-}
-.ld-animation {
-  display: inline-block;
-  position: relative;
-  width: 64px;
-  height: 64px;
-}
-.ld-animation div {
-  position: absolute;
-  background-color: #2AA198;
-  top: 27px;
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  animation-timing-function: cubic-bezier(0,1,1,0)
-}
-.ld-animation div:nth-child(1) {
-left: 6px;
-animation: ld-animation 0.6s infinite;
-}
-.ld-animation div:nth-child(2) {
-  left: 6px;
-  animation: ld-animation1 0.6s infinite;
-  }
-.ld-animation div:nth-child(3) {
-    left: 26px;
-    animation: ld-animation2 0.6s infinite;
-    }
-.ld-animation div:nth-child(4) {
-  left: 45px;
-  animation: ld-animation3 0.6s infinite;
-      }
-@keyframes ld-animation1 {
-  0% {
-    transform: scale(0)
-  }
-  100% {
-    transform: scale(1)
-  }
-}
-@keyframes ld-animation3 {
-  0% {
-    transform: scale(1)
-  }
-  100% {
-    transform: scale(0)
-  }
-}
-@keyframes ld-animation2 {
-  0% {
-    transform: translate(0,0)
-  }
-  100% {
-    transform: translate(19px,0)
-  }
 }

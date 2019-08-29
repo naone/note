@@ -1,11 +1,12 @@
-<div class="column is-10">
-  <br/>
-<div class="container">
+
+<div class="column is-9 container info">
+            <br/>
+            <br/>
       <div class="masonry">
           {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
           {{ range $paginator.Pages }}
           <div class="masonry-item">
-                <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" class="crop" width="500px">
+                <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}">
         <div class="h">
             <a href="{{ .RelPermalink }}" class="judul-post">
                   <b>  
@@ -33,3 +34,5 @@
               </div>
               {{ end }}
            </div>
+           
+         

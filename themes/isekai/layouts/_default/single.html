@@ -39,13 +39,16 @@
     </head>
     <body id="body">
     {{ partial "navbar.html" . }}
-    <div class="main-content container columns is-fullheight">
+    <div class="columns">
     {{ partial "aside.html" . }}
-    <div class="column is-9 no-margin">
+    <div class="column is-9 container info">
                     <!--<img src="{{ .Params.image }}" alt="{{ .Title }}">-->
                     <br>
-                    <br>
-               <div class="judul-postingan"> {{ .Title }}</div>
+                    <br/>
+                    <div class="is-hidden-desktop">
+                        <br/>
+                    </div>
+               <div class="has-text-centered is-size-2 has-text-weight-bold judul-postingan"> {{ .Title }}</div>
                <div class="has-text-centered is-size-6"><i class="fas fa-calendar-alt"></i> {{ .PublishDate.Format "January 2, 2006" }} / 
                 {{ $taxonomy := "tags" }}
                     {{ with .Param $taxonomy }}
@@ -60,18 +63,23 @@
                 
                </div>
                <br/>
-                <img src="{{ with .Params.image }}{{ . }}{{ end }}" class="content-img is-hidden-tablet">
-                
-               
+                <img src="{{ with .Params.image }}{{ . }}{{ end }}" class="content-img is-hidden-desktop">
+              
                 <div class="content">
                 {{ .Content }}
 
 
 {{ partial "button-post.html" . }}
 {{ partial "disqus.html" . }}
+<br/>
+<br/>
+<div class="is-size-3">
+    Related post
+</div>
 {{ partial "related.html" . }}
                 </div>
             </div>
+            
   {{ partial "footer.html" . }}
               
     {{ partial "js-init.html" . }}

@@ -189,9 +189,8 @@ body.light-mode {
        color:#4A4A4A;
        border: 0;
       }
-      body.light-mode .fixed {
-        color: #4A4A4A;
-        border-right: #CECECE 1px solid;
+      body.light-mode .bg {
+        background-color: #E7E9EB;
       }
       body.light-mode .menu-list li a {
         background-color: #E7E9EB;
