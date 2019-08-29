@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [
   {
     "url": "/css/custom.css",
-    "revision": "3fa356d5c14975df1dc35d56869849cc"
+    "revision": "0d9b661433549de7d9ddc5cb3d3846a7"
   },
   {
     "url": "/css/highlight.css",
