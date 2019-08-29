@@ -26,24 +26,16 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "/css/bulma.css",
-    "revision": "b15b1b1893809fc6c6a8d7268fd7d3fe"
-  },
-  {
     "url": "/css/custom.css",
-    "revision": "ec4c2875293ee051d238c72dbd1d5636"
+    "revision": "3fa356d5c14975df1dc35d56869849cc"
   },
   {
     "url": "/css/highlight.css",
-    "revision": "8ed9b6c1b5514f73ad40caa6f207e0d8"
+    "revision": "9ff70a054c8396d4d67fa5ea049dcccc"
   },
   {
     "url": "/css/lightmode.css",
-    "revision": "b2582b0255dfb9c36309b635bfaede78"
-  },
-  {
-    "url": "/css/portofolio.css",
-    "revision": "d8103f0c1d57436d35639eb21a0f0a38"
+    "revision": "7114216035b18e31a2e0f7629f585ee2"
   },
   {
     "url": "/css/style.css",
@@ -63,7 +55,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/js/core.js",
-    "revision": "ded88f57b3d462c8fe2a0d07a0b72ed0"
+    "revision": "361f41190967b6a5e6118e543028a2d2"
   },
   {
     "url": "/js/highlight.pack.js",

@@ -94,12 +94,8 @@ body.light-mode {
       body.light-mode .judul-post:hover {
         color: #FF007D;
       }
-      body.light-mode .hljs {
-        background: #E7E9EB;
-        color: rgb(79, 82, 90);
-      }
       body.light-mode code {
-        background-color: #E7E9EB;
+        background-color: #fff;
       }
       body.light-mode .is-fixed-top{
        background-color: #ffffff;

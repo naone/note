@@ -1,9 +1,3 @@
-/*
-
-Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
-
-*/
-
 .hljs {
   display: block;
   overflow-x: auto;
@@ -82,6 +76,85 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .hljs-strong {
   font-weight: bold;
 }
-.content {
-  background-color: #011627;
+
+
+
+/*light mode*/
+body.light-mode .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+  background: #282A36;
+  color: #EEF2F4;
+}
+
+body.light-mode .hljs-comment,
+body.light-mode .hljs-quote {
+  color: #44475A;
+}
+
+/* Solarized Green */
+body.light-mode .hljs-keyword,
+body.light-mode .hljs-selector-tag,
+body.light-mode .hljs-addition {
+  color:#50F97B;
+}
+
+/* Solarized Cyan */
+body.light-mode .hljs-number,
+body.light-mode .hljs-string,
+body.light-mode .hljs-meta .hljs-meta-string,
+body.light-mode .hljs-literal,
+body.light-mode .hljs-doctag,
+body.light-mode .hljs-regexp {
+  color: #FE79F5;
+}
+
+/* Solarized Blue */
+body.light-mode .hljs-title,
+body.light-mode .hljs-section,
+body.light-mode .hljs-name,
+body.light-mode .hljs-selector-id,
+body.light-mode .hljs-selector-class {
+  color: #8AE8FC;
+}
+
+/* Solarized Yellow */
+body.light-mode .hljs-attribute,
+body.light-mode .hljs-attr,
+body.light-mode .hljs-variable,
+body.light-mode .hljs-template-variable,
+body.light-mode .hljs-class .hljs-title,
+body.light-mode .hljs-type {
+  color: #F0F98B;
+}
+
+/* Solarized Orange */
+body.light-mode .hljs-symbol,
+body.light-mode .hljs-bullet,
+body.light-mode .hljs-subst,
+body.light-mode .hljs-meta,
+body.light-mode .hljs-meta .hljs-keyword,
+body.light-mode .hljs-selector-attr,
+body.light-mode .hljs-selector-pseudo,
+body.light-mode .hljs-link {
+  color: #BC92F8;
+}
+
+/* Solarized Red */
+body.light-mode .hljs-built_in,
+body.light-mode .hljs-deletion {
+  color: #FE5555;
+}
+
+body.light-mode .hljs-formula {
+  background: #073642;
+}
+
+body.light-mode .hljs-emphasis {
+  font-style: italic;
+}
+
+body.light-mode .hljs-strong {
+  font-weight: bold;
 }
