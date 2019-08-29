@@ -4,110 +4,15 @@
         <meta charset="utf-8">
         <title>#1 Go : Berkenalan Dengan Golang</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="title" content="">
+        <meta name="title" content="#1 Go : Berkenalan Dengan Golang">
         <meta name="author" content="linuxisekai">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#0A1124">
         <meta http-equiv="Cache-control" content="public">
         <meta name=generator content="Hugo 0.56.3">
-        <meta name="Description" content="
-
-# Berkenalan dengan golang
-
-golang ( atau bisa disebut dengan go ) adalah bahasa pemprograman yang dikembangkan di google oleh Robert Griesemer, Rob Pike, dan Ken Thompson pada tahun 2007 dan mulai diperkenalkan di publik pada tahun 2009.
-
-Golang sendiri diciptakan berdasaekan bahasa C dan C&#43;&#43;, oleh karena itu syntaks penulisanya sangat mirip.
-
-# Kelebihan golang
-
-
-Mendukung konsekuensi di level bahasa dengan pengaplikasian cukup mudah
-Mendukung pemprosesan data dengan banyak prosesor dalam waktu uang bersamaan ( pararel prosessing)
-memiliki garbage collector
-prosess compilasi yang sangat cepat
-bukan bahasa pemprograman hirakial, menjadikan programmer tidak perlu ribet memikirkan segmen OOP-nya
-pavkage atau modu; yang disediakan terbilang lengkap. karena bahasa ini open source, banyal sekali developer yang mengembangkan modul-modul lain yang bisa kita gunakan.
-
-
-# Instalasi golang
-
-Arch linux
-
-sudo pacman -S go
-
-
-Ubuntu
-
-yaa seperti biasa debian dan turunanya memang kurang update kalau masalah package dibanding arch dan turunanya, kita harus menginstall golang secara manual!!!. bagi orang pemalas seperti saya ini adalah ahal yang sangat merepotkan 😠.
-
-$ wget https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz
-$ tar -C /usr/local -xzf go1.12.7.linux-amd64.tar.gz
-$ echo &quot;export PATH=$PATH:/usr/local/go/bin&quot; &gt;&gt; ~/.bashrc
-$ source ~/.bashrc
-
-
-
-jika kamu menggunakan zsh export ke ~/.zshrc
-
-
-cek apakah golang sudah terinstall dengan benar atau belum
-
-$ go version
-
-
-# Goroot
-
-GOROOT adalah direktory tempat golang terinstall, kalau di OS saya (manjaro) berada di /usr/lib/go. sedangkan jika menggunakan ubuntu dan menggunakan cara diatas makar GOROOT berada di /usr/local. atau kita juga bisa mengeceknya dengan perintah go env
-
-# Gopath
-
-GOPATH adalah variabel yang digunakan oleh golang sebagai rujukan di mana semua project disimpan. atau lebih gampangnyanya jika kita ingin membuat project menggunakan golang maka project tersebut harus berada di GOPATH. GOPATH terdiri atas 3 sub folder yaitu src, bin, dan pkg.
-
-# Setup gopath
-
-seperti  yang dijelaskan diatas, project kita harus berada di dalam gopath, oleh karena itu kita harus mendaftarkan directory yang akan kita jadikan sebagai gopath. untuk foldernya sendiri bebas asal jangan berada di dalam goroot ( tempat golang terinstall ).
-
-$ mkdir golang
-$ echo &quot;export GOPATH=$HOME/golang&quot; &gt;&gt; ~/.bashrc
-$ source ~/.bashrc
-
-
-
-jika kamu menggunakan zsh export ke ~/.zshrc
-
-
-cek apakah gopath sudah terdaftar
-
-$ exho $GOPATH
-
-
-# Hello world
-
-$ cd $GOPATH/src
-$ mkdir golang-project
-$ touch golang-project/hello-world.go
-$ nano golang-project/hello-world.go
-
-
-isi dengan kode berikut
-
-package main
-import &quot;fmt&quot;
-func main() {
-    fmt.Println(&quot;hello world&quot;)
-    }
-
-
-mengeksekusi golang
-
-$ go run hello-world.go
-
-
-
-pastikan sudah berada di dalam direktory project golang kamu saat menjalankan perintah diatas
-
-">
-        <meta name="application-name" content="&nbsp;"/>
+        <meta name="Description" content="golang ( atau bisa disebut dengan go ) adalah...">
+        <meta name="Keywords" content="golang ngopi">
+        <meta name="application-name" content="Linuxisekai"/>
         <meta name="msapplication-TileColor" content="#FFFFFF" />
         <meta name="msapplication-TileImage" content="/img/icon/mstile-144x144.png" />
         <meta name="msapplication-square310x310logo" content="/img/icon/mstile-310x310.png" />
@@ -120,6 +25,7 @@ pastikan sudah berada di dalam direktory project golang kamu saat menjalankan pe
         <link rel="icon" type="image/png" href="/img/icon/favicon-128.png" sizes="128x128" />
         <link rel=alternative href=/index.xml title="Linuxisekai: Nolep enthusiast project" type=application/atom+xml>
         <link rel="icon" type="image/png" href="/img/favicon.png">
+
         <link href="/css/style.css" rel="stylesheet">
         <link href="/css/lightmode.css" rel="stylesheet">
         <link href="/css/highlight.css" rel="stylesheet">
