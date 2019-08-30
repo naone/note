@@ -1,84 +1,3 @@
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 1em;
-  background: #0D142A;
-  color: #A5876B;
-}
-
-.hljs-comment,
-.hljs-quote {
-  color: rgb(175, 169, 175);
-}
-
-/* Solarized Green */
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-addition {
-  color:#63504E;
-}
-
-/* Solarized Cyan */
-.hljs-number,
-.hljs-string,
-.hljs-meta .hljs-meta-string,
-.hljs-literal,
-.hljs-doctag,
-.hljs-regexp {
-  color: #EB3247;
-}
-
-/* Solarized Blue */
-.hljs-title,
-.hljs-section,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class {
-  color: #F35743;
-}
-
-/* Solarized Yellow */
-.hljs-attribute,
-.hljs-attr,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-class .hljs-title,
-.hljs-type {
-  color: #F6A73B;
-}
-
-/* Solarized Orange */
-.hljs-symbol,
-.hljs-bullet,
-.hljs-subst,
-.hljs-meta,
-.hljs-meta .hljs-keyword,
-.hljs-selector-attr,
-.hljs-selector-pseudo,
-.hljs-link {
-  color: #F9D42E;
-}
-
-/* Solarized Red */
-.hljs-built_in,
-.hljs-deletion {
-  color: #A33A4E;
-}
-
-.hljs-formula {
-  background: #073642;
-}
-
-.hljs-emphasis {
-  font-style: italic;
-}
-
-.hljs-strong {
-  font-weight: bold;
-}
-
-
-
 /*light mode*/
 body.light-mode .hljs {
   display: block;
@@ -93,14 +12,12 @@ body.light-mode .hljs-quote {
   color: #44475A;
 }
 
-/* Solarized Green */
 body.light-mode .hljs-keyword,
 body.light-mode .hljs-selector-tag,
 body.light-mode .hljs-addition {
   color:#50F97B;
 }
 
-/* Solarized Cyan */
 body.light-mode .hljs-number,
 body.light-mode .hljs-string,
 body.light-mode .hljs-meta .hljs-meta-string,
@@ -110,7 +27,6 @@ body.light-mode .hljs-regexp {
   color: #FE79F5;
 }
 
-/* Solarized Blue */
 body.light-mode .hljs-title,
 body.light-mode .hljs-section,
 body.light-mode .hljs-name,
@@ -119,7 +35,6 @@ body.light-mode .hljs-selector-class {
   color: #8AE8FC;
 }
 
-/* Solarized Yellow */
 body.light-mode .hljs-attribute,
 body.light-mode .hljs-attr,
 body.light-mode .hljs-variable,
@@ -129,7 +44,6 @@ body.light-mode .hljs-type {
   color: #F0F98B;
 }
 
-/* Solarized Orange */
 body.light-mode .hljs-symbol,
 body.light-mode .hljs-bullet,
 body.light-mode .hljs-subst,
@@ -141,7 +55,6 @@ body.light-mode .hljs-link {
   color: #BC92F8;
 }
 
-/* Solarized Red */
 body.light-mode .hljs-built_in,
 body.light-mode .hljs-deletion {
   color: #FE5555;

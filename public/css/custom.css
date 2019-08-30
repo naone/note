@@ -365,7 +365,10 @@ padding: 2rem;
   padding-bottom: 0.4rem;
 }
 .portofolio-heading {
-  border-bottom: 1px solid #191D29;
+  margin: 1rem;
+  margin-left: 3rem;
+  margin-right: 0rem;
+  border: 1px solid #1D2230;
 }
 .portofolio-item {
   margin-left: 3rem;
