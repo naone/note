@@ -162,7 +162,7 @@ html {scroll-behavior:smooth;}
   
   @media screen and (max-width:768px) {
     .masonry-wrapper {
-      margin:1rem;
+      margin:0rem;
     }
       .masonry-friendlist {
         columns: 1;
@@ -435,59 +435,4 @@ body.light-mode .aside-item:hover {
 }
 ::-webkit-scrollbar-thumb {
 background: #00192F;
-}
-.ld-animation {
-  display: inline-block;
-  position: relative;
-  width: 64px;
-  height: 64px;
-}
-.ld-animation div {
-  position: absolute;
-  background-color: #2AA198;
-  top: 27px;
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  animation-timing-function: cubic-bezier(0,1,1,0)
-}
-.ld-animation div:nth-child(1) {
-left: 6px;
-animation: ld-animation 0.6s infinite;
-}
-.ld-animation div:nth-child(2) {
-  left: 6px;
-  animation: ld-animation1 0.6s infinite;
-  }
-.ld-animation div:nth-child(3) {
-    left: 26px;
-    animation: ld-animation2 0.6s infinite;
-    }
-.ld-animation div:nth-child(4) {
-  left: 45px;
-  animation: ld-animation3 0.6s infinite;
-      }
-@keyframes ld-animation1 {
-  0% {
-    transform: scale(0)
-  }
-  100% {
-    transform: scale(1)
-  }
-}
-@keyframes ld-animation3 {
-  0% {
-    transform: scale(1)
-  }
-  100% {
-    transform: scale(0)
-  }
-}
-@keyframes ld-animation2 {
-  0% {
-    transform: translate(0,0)
-  }
-  100% {
-    transform: translate(19px,0)
-  }
 }
