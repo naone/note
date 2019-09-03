@@ -265,9 +265,9 @@ html {scroll-behavior:smooth;}
   font-weight: 600;
   line-height: 1.125;
  }
- .t {
+ .pagination-link {
    padding:3px;
-   background-color: #EA2F3E;
+   border: 1px solid aliceblue;
    color:#C3AB95;
  }
 nav.pagination {

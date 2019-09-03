@@ -39,17 +39,25 @@ body.light-mode {
        background-color: #FF007D;
        color: #FFF;
      }
-      body.light-mode .pagination-link {
-        background-color:#FF007D; 
-        border-color: transparent;
+     body.light-mode .pagination{ 
+      background-color: #FFF !important;
+      border-color: #4A4A4A;
+    }
+     body.light-mode .pagination-list { 
+      background-color: #FFF !important;
+      border-color: #4A4A4A;
+    }
+      body.light-mode .pagination-link { 
+        background-color: #FFF !important;
+        border-color: #4A4A4A;
       }
       body.light-mode .pagination-previous {
-        background-color:#FF007D; 
-        border-color: #FF007D;
+        background-color: #FFF !important;
+        border-color: #4A4A4A;
       }
       body.light-mode .pagination-next {
-        background-color:#FF007D; 
-        border-color: #FF007D;
+        background-color: #FFF !important;
+        border-color: #4A4A4A;
       }
       body.light-mode .masonry-footer {
        border: 1px solid rgb(238, 236, 238);
@@ -178,7 +186,7 @@ body.light-mode {
        color:#4A4A4A;
       }
       body.light-mode .is-current{
-        background-color: #FF007D;
+        background-color: #FF007D !important;
         border-color: #FF007D;
        }
       body.light-mode .ignielToTop{
