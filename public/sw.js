@@ -31,7 +31,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/css/custom.css",
-    "revision": "2fa4d8de60ffd008a5b670e2232424bf"
+    "revision": "fa1522249be1f7c4e76b73b8f12fb919"
   },
   {
     "url": "/css/highlight-dark.css",
@@ -79,7 +79,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/solar.css",
-    "revision": "3493748afada3d00b5e398cc57ced070"
+    "revision": "44aaa7cf69a6170a24fe0272ea4e83ae"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {

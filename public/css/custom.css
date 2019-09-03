@@ -156,7 +156,9 @@ html {scroll-behavior:smooth;}
     border-radius: 10px;
     overflow: hidden;
   }
-  
+ .masonry-item {
+    background-color: #0D142A;
+    }
   @media screen and (max-width:768px) {
     .masonry-wrapper {
       margin:0rem;
