@@ -186,13 +186,11 @@ body.light-mode {
        color:#ffffff;
       }
       body.light-mode footer {
-       background-color: #FFF;
        color:#4A4A4A;
        border: 0;
       }
       body.light-mode .fixed {
         color: #4A4A4A;
-        border-right: #CECECE 1px solid;
       }
       body.light-mode .menu-list li a {
         background-color: #E7E9EB;
@@ -206,6 +204,9 @@ body.light-mode {
        color: #4A4A4A;
         
       }
+      body.light-mode .has-background-grey {
+        background-color: #FFF;
+      }
       body.light-mode .box {
         background-color: #EFEFEF;
       }
@@ -216,7 +217,10 @@ body.light-mode {
       body.light-mode .masonry {
         background-color: #fff;
       }
-    
+      body.light-mode .footer {
+        background-color: #fff;
+        color: #4A4A4A;
+      }
       body.light-mode .disqus-comment .disqus-button{
         cursor:pointer;
         border:2px solid #E7E9EB;

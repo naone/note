@@ -26,8 +26,12 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
+    "url": "/bulma.min.css",
+    "revision": "a6bbc38bc700e01c0ef510c4ca235379"
+  },
+  {
     "url": "/css/custom.css",
-    "revision": "a8eeef14495168bce50db6a6304eb17b"
+    "revision": "12a9a6eda7efdd6529f0b7bdb028fbc3"
   },
   {
     "url": "/css/highlight-dark.css",
@@ -39,7 +43,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/css/lightmode.css",
-    "revision": "0d17f6e4bc285599d3b00689e2d3fce0"
+    "revision": "40287ed9ec5faec80296d6cce322503a"
   },
   {
     "url": "/css/style.css",
@@ -48,6 +52,10 @@ self.__precacheManifest = [
   {
     "url": "/css/style.old.css",
     "revision": "c8d99dad1938fd71ea93854bdd396881"
+  },
+  {
+    "url": "/drac.css",
+    "revision": "9d0c19a6c698f62c349ec03d451dc994"
   },
   {
     "url": "/font/GlacialIndifferenceRegular.otf",

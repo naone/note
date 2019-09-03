@@ -142,32 +142,6 @@ html {scroll-behavior:smooth;}
 .info {
   padding:1rem;
 }
-/* box masonry style */
-
-  .bounce {
-    animation-name: bounce;
-    animation-timing-function: cubic-bezier(0.280,0.840,0.420,1);
-  }
-  @keyframes bounce {
-0% {
-  transform: scale(1,1) translateY(0)
-}
-10% {
-  transform: scale(1.1,.9) translateY(-100px)
-}
-50% {
-  transform: scale(.9,1.1) translateY(0)
-}
-57% {
-  transform: scale(1.05,.95) translateY(-7px)
-}
-64% {
-  transform: scale(1,1) translateY(0)
-}
-100% {
-  transform: scale(1,1) translateY(0)
-}
-  }
   .masonry {
     columns: 1;
     column-gap: 12px;
@@ -181,8 +155,12 @@ html {scroll-behavior:smooth;}
     margin-top: 12px;
     border-radius: 10px;
     overflow: hidden;
-    background-color: #0D142A;
+    filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.281));
   }
+  body.light-mode .masonry-item:hover {
+    filter: drop-shadow(0px 2px 4px rgba(71, 68, 70, 0.536));
+    }
+  
   @media screen and (max-width:768px) {
     .masonry-wrapper {
       margin:1rem;
@@ -218,15 +196,11 @@ html {scroll-behavior:smooth;}
         margin-right: auto;
         margin-left: auto;
       }
-      .content {
-     margin-left: 3rem;
-     margin-right: -10rem;
-      }
   }
   @media only screen and (min-width: 1024px) {
     .masonry {
-      right: 2rem;
       columns: 3;
+      
     }
     .masonry-friendlist {
       columns: 3;
@@ -273,7 +247,7 @@ html {scroll-behavior:smooth;}
     padding: 1rem;
   }
   pre {
-    border-left: 5px solid #A33A4E;
+    border-left: 5px solid rgb(214, 83, 107);
     border-top-left-radius: 8px;
     border-top-right-radius : 8px;
     border-bottom-right-radius: 8px;
@@ -298,14 +272,13 @@ nav.pagination {
 .fixed {
   position: fixed;
   top: 0;
-  left: 2rem;
+  left: 0;
   height: 100%;
   font-size: 1.2rem;
   padding: 1rem;
   font-weight: 600;
-  width: 350px;
   z-index: 1;
-  border-right: 1px solid #191D29;
+  
 }
 @media screen and (min-width:1024px) {
 .label-fixed {
@@ -330,16 +303,13 @@ a.navbar-item {
   margin: 0;
   padding: 0;
 }
-.is-fullheight {
-  background-color: #0A1124;
- }
+
  .button-post {
    margin-right: 30%;
    margin-left: 30%;
  }
 .content {
-  padding: 1rem;
-  background-color: #0A1124;
+  padding: 2rem;
 }
 .judul-postingan {
   text-align: center;
@@ -447,6 +417,7 @@ progress {
 }
 .aside-item {
   margin-top: 1rem;
+  padding-left: 0.5rem;
 }
 .aside-item:hover {
   color: rgb(255, 226, 245) !important;
@@ -455,14 +426,8 @@ body.light-mode .aside-item:hover {
   color: rgb(0, 130, 252) !important;
 }
 
-.masonry-item img {
-  -webkit-transition: 0.6s ease;
-  transition: 0.6s ease;
-}
-.masonry-item:hover img {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
+
+
 ::-webkit-scrollbar {
   width: 10px
 }

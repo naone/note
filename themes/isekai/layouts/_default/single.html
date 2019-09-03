@@ -25,7 +25,7 @@
         <link rel="icon" type="image/png" href="/img/icon/favicon-128.png" sizes="128x128" />
         <link rel="icon" type="image/png" href="/img/favicon.png">
 
-        <link href="/css/style.css" rel="stylesheet">
+        <link href="/drac.css" rel="stylesheet">
         <link href="/css/lightmode.css" rel="stylesheet">
         <link href="/css/highlight-dark.css" rel="stylesheet">
         <link href="/css/highlight-light.css" rel="stylesheet">
@@ -43,10 +43,12 @@
     {{ partial "navbar.html" . }}
     <div class="main-content container columns is-fullheight">
     {{ partial "aside.html" . }}
-    <div class="column is-9 no-margin">
                     <!--<img src="{{ .Params.image }}" alt="{{ .Title }}">-->
-                    <br>
-                    <br>
+                   
+                    
+                    <div class="column is-10">
+                        <br/>
+                        <br/>
                <div class="judul-postingan"> {{ .Title }}</div>
                <div class="has-text-centered is-size-6"><i class="fas fa-calendar-alt"></i> {{ .PublishDate.Format "January 2, 2006" }} / 
                 {{ $taxonomy := "tags" }}
@@ -64,7 +66,7 @@
                <br/>
                 <img src="{{ with .Params.image }}{{ . }}{{ end }}" class="content-img is-hidden-tablet">
                 
-               
+              
                 <div class="content">
                 {{ .Content }}
 
