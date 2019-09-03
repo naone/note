@@ -31,7 +31,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/css/custom.css",
-    "revision": "c9efa2482ee87ece322ed5c60fb9b312"
+    "revision": "2fa4d8de60ffd008a5b670e2232424bf"
   },
   {
     "url": "/css/highlight-dark.css",
@@ -55,7 +55,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/drac.css",
-    "revision": "9d0c19a6c698f62c349ec03d451dc994"
+    "revision": "3ae17eed096ffbf86f436e78c1cfeeb2"
   },
   {
     "url": "/font/GlacialIndifferenceRegular.otf",
@@ -76,6 +76,10 @@ self.__precacheManifest = [
   {
     "url": "/js/masonry.js",
     "revision": "c39480835cf00844e6407f24d8aaba2e"
+  },
+  {
+    "url": "/solar.css",
+    "revision": "3493748afada3d00b5e398cc57ced070"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {
