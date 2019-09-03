@@ -152,7 +152,6 @@ html {scroll-behavior:smooth;}
     animation-iteration-count: infinite;
     transform-origin: bottom;
     vertical-align: top;
-    margin-top: 12px;
     border-radius: 10px;
     overflow: hidden;
     filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.281));
@@ -179,7 +178,7 @@ html {scroll-behavior:smooth;}
         padding: 0;
       }
       .h {
-        padding-top: 0;
+        padding: 1rem;
       }
   }
 
