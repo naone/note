@@ -4,12 +4,11 @@
       <div class="masonry">
           {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
           {{ range $paginator.Pages }}
-          <div class="masonry-item has-background-grey">
-                <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" width="1000px">
-      
+          <div class="masonry-item has-background-grey-dark">
+                <img src="{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}" class="crop" width="1000px">
         <div class="h">
             <a href="{{ .RelPermalink }}" class="judul-post">
-                  <b> 
+                  <b>  
             {{ .Title }}
             </b>
             <br/>
@@ -34,3 +33,5 @@
               </div>
               {{ end }}
            </div>
+           </div>
+           
