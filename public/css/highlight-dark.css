@@ -14,7 +14,7 @@
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-addition {
-  color:#63504E;
+  color:#C03678;
 }
 
 .hljs-number,
@@ -23,7 +23,7 @@
 .hljs-literal,
 .hljs-doctag,
 .hljs-regexp {
-  color: #EB3247;
+  color: #DB322F;
 }
 
 /* Solarized Blue */
@@ -32,7 +32,7 @@
 .hljs-name,
 .hljs-selector-id,
 .hljs-selector-class {
-  color: #F35743;
+  color: #268AD1;
 }
 
 .hljs-attribute,
@@ -41,7 +41,7 @@
 .hljs-template-variable,
 .hljs-class .hljs-title,
 .hljs-type {
-  color: #F6A73B;
+  color: #849800;
 }
 
 .hljs-symbol,
@@ -52,12 +52,12 @@
 .hljs-selector-attr,
 .hljs-selector-pseudo,
 .hljs-link {
-  color: #F9D42E;
+  color: #B48800;
 }
 
 .hljs-built_in,
 .hljs-deletion {
-  color: #A33A4E;
+  color: #27A097;
 }
 
 .hljs-formula {
