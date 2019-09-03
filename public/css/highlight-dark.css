@@ -3,18 +3,18 @@
   overflow-x: auto;
   padding: 1em;
   background: #0D142A;
-  color: #A5876B;
+  color: rgb(187, 187, 187);
 }
 
 .hljs-comment,
 .hljs-quote {
-  color: rgb(175, 169, 175);
+  color: rgb(143, 143, 143);
 }
 
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-addition {
-  color:#C03678;
+  color:rgb(255, 0, 123);
 }
 
 .hljs-number,
@@ -23,7 +23,7 @@
 .hljs-literal,
 .hljs-doctag,
 .hljs-regexp {
-  color: #DB322F;
+  color: #27A097;
 }
 
 /* Solarized Blue */
@@ -41,7 +41,7 @@
 .hljs-template-variable,
 .hljs-class .hljs-title,
 .hljs-type {
-  color: #849800;
+  color: #ddff00;
 }
 
 .hljs-symbol,
@@ -52,12 +52,12 @@
 .hljs-selector-attr,
 .hljs-selector-pseudo,
 .hljs-link {
-  color: #B48800;
+  color: rgb(255, 191, 0);
 }
 
 .hljs-built_in,
 .hljs-deletion {
-  color: #27A097;
+  color: rgb(250, 8, 8);
 }
 
 .hljs-formula {
