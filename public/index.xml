@@ -47,6 +47,15 @@
     </item>
     
     <item>
+      <title>About</title>
+      <link>/friendlist/</link>
+      <pubDate>Tue, 06 Aug 2019 10:52:03 +0700</pubDate>
+      
+      <guid>/friendlist/</guid>
+      <description>ini adalah list website teman-teman saya, saya sangat berterima kasih tertama unutk para member JAMstack ID yang telah membantu saya dalam belajar    Addy&amp;rsquo;s Blog   Addy-dclxvi.</description>
+    </item>
+    
+    <item>
       <title>#2 Go : Membahas program Hello World</title>
       <link>/post/program-hello-world/</link>
       <pubDate>Mon, 05 Aug 2019 09:18:05 +0700</pubDate>
