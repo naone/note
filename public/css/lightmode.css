@@ -25,9 +25,7 @@ body.light-mode {
        background-color: #fff;
        color:#4A4A4A;
       }
-      body.light-mode a {
-       color: #FF007D;
-      }
+      
       body.light-mode a:hover {
         color: rgb(40, 122, 228);
        }
@@ -85,23 +83,12 @@ body.light-mode {
        color:#4A4A4A;
        border-bottom: 2px solid rgb(240, 234, 234)
       }
-      body.light-mode .has-text-primary {
-        color:#FF007D !important;
-      }
-      body.light-mode pre{
-      border-color: #F85191;
-       
-      }
+     
       body.light-mode .judul-postingan {
         color: #363636;
         background-color: #FFF;
       }
-      body.light-mode .judul-post {
-        color: #4A4A4A;
-      }
-      body.light-mode .judul-post:hover {
-        color: #FF007D;
-      }
+      
       
       body.light-mode code {
         background-color: #fff;
@@ -130,7 +117,6 @@ body.light-mode {
       background-color: #E7E9EB;
       margin: 0;
       padding: 1rem;
-      border-left: 4px solid #F85191;
       color: #4A4A4A;
       }
       body.light-mode .popuptext {
@@ -186,8 +172,8 @@ body.light-mode {
        color:#4A4A4A;
       }
       body.light-mode .is-current{
-        background-color: #FF007D !important;
-        border-color: #FF007D;
+        background-color: #2AA198 !important;
+        border-color: #2AA198;
        }
       body.light-mode .ignielToTop{
        background-color: #F85191;
