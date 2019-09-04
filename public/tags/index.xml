@@ -47,6 +47,15 @@
     </item>
     
     <item>
+      <title>about</title>
+      <link>/tags/about/</link>
+      <pubDate>Tue, 06 Aug 2019 10:52:03 +0700</pubDate>
+      
+      <guid>/tags/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>comunity</title>
       <link>/tags/comunity/</link>
       <pubDate>Tue, 06 Aug 2019 10:52:03 +0700</pubDate>
@@ -119,7 +128,7 @@
     </item>
     
     <item>
-      <title>Hugo</title>
+      <title>hugo</title>
       <link>/tags/hugo/</link>
       <pubDate>Sat, 13 Jul 2019 19:58:55 +0700</pubDate>
       
