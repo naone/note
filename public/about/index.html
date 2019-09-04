@@ -12,6 +12,7 @@
         <meta name=generator content="Hugo 0.56.3">
         <meta name="Description" content="
  
+ 
          
              
      
@@ -39,10 +40,11 @@
  https://linuxisekai.site
 
  /in/galih-wisnuaji-17b4b9169
-           
+
  /galihx11
 
 
+           
            
            
                
@@ -107,6 +109,7 @@ membuat web (https://linuxisekai.site) sebagai tempat untuk menulis catatan dari
              Server &amp; git (DNS, Web server, Proxy etc.)
             75%
             
+        
            
            
            
@@ -172,8 +175,121 @@ if (!doNotTrack) {
 
 </head>
 <body id="body">
+    <nav id="navbar" class="navbar is-fixed-top is-hidden-desktop is-spaced">
+        <div class="navbar-brand">
+            <a type="button" name="dark_light" class="navbar-item is-hidden-desktop has-text-grey-light" onclick="toggleDarkLight()" title="Toggel dark/light">
+              &nbsp;&nbsp;<i class="fas fa-moon">
+              </i>
+            </a>
+        <span class="navbar-item navbar-center">
+          <a href="/">
+            <div class="is-size-4 has-text-weight-bold has-text-grey-light" style="font-family: 'Courgette', cursive;">
+              <span class="has-text-primary">
+              Linux</span>isekai
+          </div> 
+          </a>
+          </span>
+          <a onclick="openNav()" class="is-hidden-desktop navbar-item has-text-grey-light" data-target="navMenu">
+              <i class="fa fa-bars"></i>&nbsp;&nbsp;
+             </a>
+          </div>
+        
+        <div id="sideNav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <i class="fa fa-times has-text-weight-light is-siz-5"></i>
+            </a>
+            <div class="navbar-header has-text-centered" style="background-color: #0A1124">
+              <div class="media">
+              <div class="media-left">
+                    <img src="https://avatars.githubusercontent.com/u/46141275" width="100px" style="border-radius: 50%;">
+                    </div>
+              <div class="media-content">
+                <div class="is-size-3 has-text-weight-bold" style="font-family: 'Courgette', cursive;">
+            <span class="has-text-primary">Linux</span>isekai
+                </div>
+            Nolep enthusiast project.
+          </div>
+              </div>
+            </div>
+            <br/>
+            <a class="navbar-item" href="/">
+              <span class="icon">
+              <i class="fas fa-home has-text-primary"></i>
+              </span>
+              <span>
+              Home
+              </span>
+            </a>
+            
+              <a class="navbar-item" href="/tags/linux">
+               <span class="icon">
+                  <i class="fas fa-terminal has-text-primary"></i>
+                </span>
+      
+                <span>Linux</span>
+              </a>
+                <a class="navbar-item" href="/tags/ngopi">
+                <span class="icon">
+                  <i class="fas fa-coffee has-text-primary"></i>
+                </span>
+                <span>
+                Ngopi
+                </span>
+                </a>
+              <a class="navbar-item" href="/friendlist">
+                <span class="icon">
+                  <i class="fas fa-user-friends has-text-primary"></i>
+                </span>
+      
+                <span>  Friends</span>
+              </a>
+              <a class="navbar-item" href="/about">
+                <span class="icon fa-php">
+                  <i class="fas fa-user has-text-primary"></i>
+                </span>
+                <span>  Resume</span>
+              </a>
+        <br/>
+      
+              <div class="has-text-centered is-size-4">
+                  <a href="#" class="has-text-grey-light">
+                    <span class="icon"><i class="fab fa-facebook" style="color: rgb(66, 113, 241)"></i></span>
+                  
+                  </a>
+                 
+                  <a href="#" class="has-text-grey-light">
+                    <span class="icon"><i class="fab fa-telegram has-text-info"></i></span>
+                  
+                  </a>
+                  
+                  <a href="#" class="has-text-grey-light">
+                    <span class="icon"><i class="fab fa-youtube has-text-danger"></i></span>
+                  </a>
+                  <a href="#" class="has-text-grey-light">
+                      <span class="icon"><i class="fab fa-github has-text-grey-light"></i></span>
+                    
+                    </a>
+                  </div>
+                  <br/>
+                  <br/>
+                  <div class="aside-item has-text-centered">
+              <a name="dark_light" class="aside-item has-text-grey-light" onclick="toggleDarkLight()" title="Toggel dark/light">
+                <span class="icon">
+                    <i class="fas fa-moon"></i>
+                  </span>
+                            </a>
+                  </div>
+              </div>
+                </div>
+                </div>
+               
+                </nav>
+               
+          
+      
          <p><div class="columns is-2">
  <div class="column is-4 has-background-grey-dark has-text-light mbuh">
+ <div class="container">
          <div class="has-text-centered">
              <br/><br/>
      <img src="https://avatars.githubusercontent.com/u/46141275" style="border-radius: 5%"  width="200">
@@ -201,12 +317,13 @@ if (!doNotTrack) {
 <i class="fa fa-globe has-text-grey-lighter"></i> <a href="https://linuxisekai.site">https://linuxisekai.site</a>
 <br/>
 <i class="fab fa-linkedin has-text-grey-lighter"></i> /in/galih-wisnuaji-17b4b9169
-           </br>
+</br>
 <i class="fab fa-github has-text-grey-lighter"></i> /galihx11
 </div>
-<br/>
+</div>
            </div>
            <div class="column">
+           <div class="container">
                <div class="section container">
             <div class="is-size-3 has-text-weight-bold">
         <span class="has-text-primary">#</span> About
@@ -269,6 +386,7 @@ membuat web (<a href="https://linuxisekai.site">https://linuxisekai.site</a>) se
             <i class="fa fa-circle-notch is-size-7"></i> Server &amp; git (DNS, Web server, Proxy etc.)
             <progress class="progress is-primary is-small" value="30" max="100">75%</progress>
             <br/>
+        </div>
            </div>
            </div>
            </div>

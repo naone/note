@@ -38,6 +38,7 @@
         {{ template "_internal/twitter_cards.html" . }}
 </head>
 <body id="body">
+    {{ partial "navbar.html" . }}
          {{ .Content }}
         {{ partial "js-init.html" . }}
     </body>

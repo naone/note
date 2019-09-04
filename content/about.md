@@ -9,6 +9,7 @@ layout: "about"
 ---
  <div class="columns is-2">
  <div class="column is-4 has-background-grey-dark has-text-light mbuh">
+ <div class="container">
          <div class="has-text-centered">
              <br/><br/>
      <img src="https://avatars.githubusercontent.com/u/46141275" style="border-radius: 5%"  width="200">
@@ -36,12 +37,13 @@ layout: "about"
 <i class="fa fa-globe has-text-grey-lighter"></i> https://linuxisekai.site
 <br/>
 <i class="fab fa-linkedin has-text-grey-lighter"></i> /in/galih-wisnuaji-17b4b9169
-           </br>
+</br>
 <i class="fab fa-github has-text-grey-lighter"></i> /galihx11
 </div>
-<br/>
+</div>
            </div>
            <div class="column">
+           <div class="container">
                <div class="section container">
             <div class="is-size-3 has-text-weight-bold">
         <span class="has-text-primary">#</span> About
@@ -104,6 +106,7 @@ membuat web (https://linuxisekai.site) sebagai tempat untuk menulis catatan dari
             <i class="fa fa-circle-notch is-size-7"></i> Server & git (DNS, Web server, Proxy etc.)
             <progress class="progress is-primary is-small" value="30" max="100">75%</progress>
             <br/>
+        </div>
            </div>
            </div>
            </div>
