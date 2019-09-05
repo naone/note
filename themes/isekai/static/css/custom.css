@@ -12,6 +12,18 @@
         font-family:'Fira Code', monospace;
         font-size:0.8rem !important;
     }
+    .content h1 {
+      font-family: 'Courgette', cursive;
+      font-size: 2rem;
+    }
+   .content h2 {
+      font-family: 'Courgette', cursive;
+      font-size: 1.8rem;
+    }
+    .content h3 {
+      font-family: 'Courgette', cursive;
+      font-size: 1.5rem;
+    }
 .info-header {
   margin-bottom: 3rem;
   border-top: 0.15rem solid ;
@@ -159,6 +171,9 @@ html {scroll-behavior:smooth;}
  .masonry-item {
     background-color: #0D142A;
     }
+    .content {
+      font-size : 1.1rem !important;
+    }
   @media screen and (max-width:768px) {
     .masonry-wrapper {
       margin:0rem;
@@ -168,10 +183,7 @@ html {scroll-behavior:smooth;}
       }
       .judul-postingan {
         margin-top: 1rem;
-      }
-     
-      .content {
-        font-size : 1rem !important;
+        font-size: 2em !important;
       }
       .column {
         padding: 0;
@@ -206,13 +218,22 @@ html {scroll-behavior:smooth;}
       columns: 3;
     }
     .content {
-      margin-left: -3rem;
+      margin-right: 3rem !important;
+      padding: 0rem !important;
     }
     .masonry-wrapper {
       padding: 1em;
       max-width: 1024px;
       margin-right: auto;
       margin-left: auto;
+    }
+    .content-img {
+      border-radius: 10px !important;
+      padding-right: 3rem !important;
+      padding-bottom: 2rem !important;
+    }
+    .judul-postingan {
+      margin-right: 3rem !important;
     }
 }
  
@@ -317,10 +338,11 @@ a.navbar-item {
 }
 .judul-postingan {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5em;
   padding: 1rem;
   font-weight: 600;
   line-height: 1.125;
+  font-family: 'Courgette', cursive;
 }
 .gambar-teman {
   border-radius: 50%;
