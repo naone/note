@@ -55,7 +55,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/js/core.js",
-    "revision": "361f41190967b6a5e6118e543028a2d2"
+    "revision": "916f6d346324d2f19d248e21caa0588b"
   },
   {
     "url": "/js/highlight.pack.js",

@@ -16,11 +16,16 @@ setelah selesai menginstall sistem operasi linux terus ternyata tidak ada wifiny
 
 selanjutnya install paket-paket yang dibutuhkan
 
+#### arch
     $ sudo pacman -S linux52-headers dkms git build-essential automake
 
 NB : untuk linux52-headers silahkan kalian sesuaikan dengan versi karnel kalian, misal versi karnel kalian adalah 4.19.0 berarti linux419-headers
 
+#### Debian
     $ sudo apt install linux-headers-$(uname -r) git build-essential automake
+
+selanjutnya
+
     $ git clone https://github.com/lwfinger/rtlwifi_new.git
     $ cd rtlwifi_new
     $ sudo make
@@ -29,7 +34,7 @@ NB : untuk linux52-headers silahkan kalian sesuaikan dengan versi karnel kalian,
     
 ### Troubleshooting
 
-jika setelah reboot wifi sudah ada akan tetapi sinyalnya sedikit, berikut cara mengatasinya:
+***jika setelah reboot wifi sudah ada akan tetapi sinyalnya sedikit, berikut cara mengatasinya:***
 
     $ sudo modprobe -v rtl8723de ant_sel=2
     $ sudo /bin/sh -c 'echo "options rtl8723de ant_sel=2" >> /etc/modprobe.d/rtl8723.conf'
@@ -37,7 +42,7 @@ jika setelah reboot wifi sudah ada akan tetapi sinyalnya sedikit, berikut cara m
 
 NB : rtl8723de sialahkan sesuaikan dengan chipset yang kalian gunakan
 
-jika setelah reboot wifinya masih tidak kedetek maka gunakan cara kedua ini
+***jika setelah reboot wifinya masih tidak kedetek maka gunakan cara kedua ini***
 
     $ git clone -b extended --single-branch https://github.com/lwfinger/rtlwifi_new.git
     $ cd rtlwifi_new

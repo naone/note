@@ -39,7 +39,7 @@
 
 <meta itemprop="datePublished" content="2019-06-28T19:43:35&#43;07:00" />
 <meta itemprop="dateModified" content="2019-06-28T19:43:35&#43;07:00" />
-<meta itemprop="wordCount" content="211">
+<meta itemprop="wordCount" content="214">
 
 
 
@@ -320,13 +320,21 @@ $ Linux asuna 5.2.0-1-MANJARO #1 SMP PREEMPT Sun Jun 9 16:43:42 UTC 2019 x86_64 
 
 <p>selanjutnya install paket-paket yang dibutuhkan</p>
 
+<h4 id="arch">arch</h4>
+
 <pre><code>$ sudo pacman -S linux52-headers dkms git build-essential automake
 </code></pre>
 
 <p>NB : untuk linux52-headers silahkan kalian sesuaikan dengan versi karnel kalian, misal versi karnel kalian adalah 4.19.0 berarti linux419-headers</p>
 
+<h4 id="debian">Debian</h4>
+
 <pre><code>$ sudo apt install linux-headers-$(uname -r) git build-essential automake
-$ git clone https://github.com/lwfinger/rtlwifi_new.git
+</code></pre>
+
+<p>selanjutnya</p>
+
+<pre><code>$ git clone https://github.com/lwfinger/rtlwifi_new.git
 $ cd rtlwifi_new
 $ sudo make
 $ sudo make install
@@ -335,7 +343,7 @@ $ reboot
 
 <h3 id="troubleshooting">Troubleshooting</h3>
 
-<p>jika setelah reboot wifi sudah ada akan tetapi sinyalnya sedikit, berikut cara mengatasinya:</p>
+<p><strong><em>jika setelah reboot wifi sudah ada akan tetapi sinyalnya sedikit, berikut cara mengatasinya:</em></strong></p>
 
 <pre><code>$ sudo modprobe -v rtl8723de ant_sel=2
 $ sudo /bin/sh -c 'echo &quot;options rtl8723de ant_sel=2&quot; &gt;&gt; /etc/modprobe.d/rtl8723.conf'
@@ -344,7 +352,7 @@ $ reboot
 
 <p>NB : rtl8723de sialahkan sesuaikan dengan chipset yang kalian gunakan</p>
 
-<p>jika setelah reboot wifinya masih tidak kedetek maka gunakan cara kedua ini</p>
+<p><strong><em>jika setelah reboot wifinya masih tidak kedetek maka gunakan cara kedua ini</em></strong></p>
 
 <pre><code>$ git clone -b extended --single-branch https://github.com/lwfinger/rtlwifi_new.git
 $ cd rtlwifi_new
