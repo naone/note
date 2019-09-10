@@ -5,10 +5,28 @@
     <link>/tags/</link>
     <description>Recent content in Tags on Linuxisekai | Nolep enthuiast project</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 19 Aug 2019 07:23:15 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 10 Sep 2019 10:14:00 +0700</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>UI</title>
+      <link>/tags/ui/</link>
+      <pubDate>Tue, 10 Sep 2019 10:14:00 +0700</pubDate>
+      
+      <guid>/tags/ui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>react</title>
+      <link>/tags/react/</link>
+      <pubDate>Tue, 10 Sep 2019 10:14:00 +0700</pubDate>
+      
+      <guid>/tags/react/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>linux</title>

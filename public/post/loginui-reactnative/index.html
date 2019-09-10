@@ -2,16 +2,16 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Cara convert gambar ke format .webp di linux</title>
+        <title>Mencoba membuat login UI denagn React Nativ</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="title" content="Cara convert gambar ke format .webp di linux">
+        <meta name="title" content="Mencoba membuat login UI denagn React Nativ">
         <meta name="author" content="linuxisekai">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#0A1124">
         <meta http-equiv="Cache-control" content="public">
         <meta name=generator content="Hugo 0.56.3">
-        <meta name="Description" content="bagi yang belum tau .webp adalah format gambar digital yang...">
-        <meta name="Keywords" content="linux tutorial">
+        <meta name="Description" content="">
+        <meta name="Keywords" content="react UI">
         <meta name="application-name" content="Linuxisekai"/>
         <meta name="msapplication-TileColor" content="#FFFFFF" />
         <meta name="msapplication-TileImage" content="/img/icon/mstile-144x144.png" />
@@ -33,17 +33,17 @@
         <link rel="stylesheet" media="screen" href="/css/font.css" type="text/css"/> 
         <link rel="manifest" href="/manifest.json"> 
     
-        <meta itemprop="name" content="Cara convert gambar ke format .webp di linux">
-<meta itemprop="description" content="bagi yang belum tau .webp adalah format gambar digital yang...">
+        <meta itemprop="name" content="Mencoba membuat login UI denagn React Nativ">
+<meta itemprop="description" content="Nama project : React native login UI  Waktu : 2 hari  Kopi : 3 gelas  Inspirasi project :  Source kode : https://github.">
 
 
-<meta itemprop="datePublished" content="2019-07-06T08:29:35&#43;07:00" />
-<meta itemprop="dateModified" content="2019-07-06T08:29:35&#43;07:00" />
-<meta itemprop="wordCount" content="166">
+<meta itemprop="datePublished" content="2019-09-10T10:14:00&#43;07:00" />
+<meta itemprop="dateModified" content="2019-09-10T10:14:00&#43;07:00" />
+<meta itemprop="wordCount" content="22">
 
 
 
-<meta itemprop="keywords" content="linux,tutorial," />
+<meta itemprop="keywords" content="react,UI," />
 
         
         
@@ -60,16 +60,16 @@ if (!doNotTrack) {
 }
 </script>
 
-        <meta property="og:title" content="Cara convert gambar ke format .webp di linux" />
-<meta property="og:description" content="bagi yang belum tau .webp adalah format gambar digital yang..." />
+        <meta property="og:title" content="Mencoba membuat login UI denagn React Nativ" />
+<meta property="og:description" content="Nama project : React native login UI  Waktu : 2 hari  Kopi : 3 gelas  Inspirasi project :  Source kode : https://github." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/post/convert-gambar-ke-webp/" />
-<meta property="article:published_time" content="2019-07-06T08:29:35+07:00" />
-<meta property="article:modified_time" content="2019-07-06T08:29:35+07:00" />
+<meta property="og:url" content="/post/loginui-reactnative/" />
+<meta property="article:published_time" content="2019-09-10T10:14:00+07:00" />
+<meta property="article:modified_time" content="2019-09-10T10:14:00+07:00" />
 
         <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Cara convert gambar ke format .webp di linux"/>
-<meta name="twitter:description" content="bagi yang belum tau .webp adalah format gambar digital yang..."/>
+<meta name="twitter:title" content="Mencoba membuat login UI denagn React Nativ"/>
+<meta name="twitter:description" content="Nama project : React native login UI  Waktu : 2 hari  Kopi : 3 gelas  Inspirasi project :  Source kode : https://github."/>
 
     </head>
     <body id="body">
@@ -293,83 +293,28 @@ if (!doNotTrack) {
                     <div class="column is-10">
                         <br/>
                         <br/>
-               <div class="judul-postingan"> Cara convert gambar ke format .webp di linux</div>
-               <div class="has-text-centered is-size-6"><i class="fas fa-calendar-alt"></i> July 6, 2019 / 
+               <div class="judul-postingan"> Mencoba membuat login UI denagn React Nativ</div>
+               <div class="has-text-centered is-size-6"><i class="fas fa-calendar-alt"></i> September 10, 2019 / 
                 
                     
                     
                     
-                    #linux
+                    #react
                     
-                    #tutorial
+                    #ui
                </div>
                <br/>
-               <img src="/img/post/pink.webp" class="content-img">
+               <img src="/img/post/UI.png" class="content-img">
                <div class="content">
-                                    
-
-<h3 id="pendahuluan">Pendahuluan</h3>
-
-<p>bagi yang belum tau .webp adalah format gambar digital yang dibuat oleh google. format ini pertama kali diperkenalkan pada tanggal 30 september 2010. pada awal perilisanya hanya browser google chrome saja yang mendukung. tetapi unutk sekarang sudah hampir semua browser.</p>
-
-<h3 id="mengapa-menggunakan-webp">mengapa menggunakan .webp</h3>
-
-<p>1.webp menghasilkan file yang kecil dengan kualias gambar yang bagus</p>
-
-<p>2.mampu menampilkan gambar bergerak</p>
-
-<p>3.mempercepat loading website</p>
-
-<h3 id="instalasi">instalasi</h3>
-
-<h4 id="arch-linux">arch linux</h4>
-
-<pre><code>sudo pacman -S libwebp gthumb
-</code></pre>
-
-<h4 id="ubuntu">ubuntu</h4>
-
-<pre><code>sudo apt-get install libwebp gthumb
-</code></pre>
-
-<h3 id="convert-gambar">Convert gambar</h3>
-
-<pre><code>asuna@linuxisekai:~$ cd Pictures
-asuna@linuxisekai:~/Pictures$ ls
-    asuna.jpg   megumin.png
-asuna@linuxisekai:~/Pictures$  cwebp -q 100 asuna.jpg -o asuna.webp
-</code></pre>
-
-<h3 id="tips-dan-trick">Tips dan trick</h3>
-
-<p>jika kamu ingin mengconvert gambar dalam jumlah banyak sekaligus</p>
-
-<pre><code>asuna@linuxisekai:~$ cd Pictures
-asuna@linuxisekai:~/Pictures$ nano convert.sh
-
-#!/bin/bash
-
-PARAMS=('-m 6 -q 70 -mt -af -progress')
-
-if [ $# -ne 0 ]; then
-PARAMS=$@;
-fi
-
-cd $(pwd)
-
-shopt -s nullglob nocaseglob extglob
-
-for FILE in *.@(jpg|jpeg|tif|tiff|png); do 
-cwebp $PARAMS &quot;$FILE&quot; -o &quot;${FILE%.*}&quot;.webp;
-done
-
-asuna@linuxisekai:~/Pictures$ chmod +x convert.sh
-asuna@linuxisekai:~/Pictures$ ./convert.sh
-asuna@linuxisekai:~/Pictures$ ls
-    asuna.jpg asuna.webp megumin.png megumin.webp
-</code></pre>
-
-<p>semua gambar di folder Pictures sudah diconvert ke format .webp</p>
+                                    <p><strong>Nama project</strong> : React native login UI
+<br/>
+<strong>Waktu</strong> : 2 hari
+<br/>
+<strong>Kopi</strong> : 3 gelas
+<br/>
+<strong>Inspirasi project</strong> :
+<br/>
+<strong>Source kode</strong> : <a href="https://github.com/galihx11/react-native-loginUI">https://github.com/galihx11/react-native-loginUI</a></p>
 
 
 <div class="column">
@@ -411,8 +356,70 @@ asuna@linuxisekai:~/Pictures$ ls
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <span class="">
-  <a href="/post/membuat-tema-hugo/"><i class="fas fa-arrow-left"></i></a>
+  <a href="/post/7-hari-dengan-vim/"><i class="fas fa-arrow-left"></i></a>
   </span>
   
   <div class="popup" onclick="functionPopup()">
@@ -423,71 +430,9 @@ asuna@linuxisekai:~/Pictures$ ls
       Thanks 😇
     </span>
   </div>
-  <span class="">
-  <a href="/post/debian10-rilis/"><i class="fas fa-arrow-right"></i></a>
+  <span class=" disabled noselect">
+  <a href=""><i class="fas fa-arrow-right"></i></a>
   </span>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
   
@@ -730,42 +675,6 @@ asuna@linuxisekai:~/Pictures$ ls
             
            
             
-            
-              
-              <div class="no-border">
-                      <a href="/post/7-hari-dengan-vim/">
-                           <b> Setelah 7 hari 7 malam menggunakan vim</b></a>
-                           <br/>
-                           <div class="is-size-7">
-                            <i class="fa fa-calendar-alt"></i> August 19, 2019
-                    </div>
-                    </div>
-                    <div class="portofolio-heading"></div>
-  
-  
-            
-           
-            
-  
-            
-           
-            
-  
-            
-           
-            
-            
-              
-              <div class="no-border">
-                      <a href="/post/vim-scheatsheet/">
-                           <b> Vim cheatsheet</b></a>
-                           <br/>
-                           <div class="is-size-7">
-                            <i class="fa fa-calendar-alt"></i> August 12, 2019
-                    </div>
-                    </div>
-                    <div class="portofolio-heading"></div>
-  
   
             
            
@@ -854,18 +763,18 @@ asuna@linuxisekai:~/Pictures$ ls
             
            
             
-            
-              
-              <div class="no-border">
-                      <a href="/post/debian10-rilis/">
-                           <b> Realease Debian 10 codename Buster</b></a>
-                           <br/>
-                           <div class="is-size-7">
-                            <i class="fa fa-calendar-alt"></i> July 7, 2019
-                    </div>
-                    </div>
-                    <div class="portofolio-heading"></div>
   
+            
+           
+            
+  
+            
+           
+            
+  
+            
+           
+            
   
             
            

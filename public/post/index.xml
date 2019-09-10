@@ -5,10 +5,19 @@
     <link>/post/</link>
     <description>Recent content in Posts on Linuxisekai | Nolep enthuiast project</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 19 Aug 2019 07:23:15 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 10 Sep 2019 10:14:00 +0700</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mencoba membuat login UI denagn React Nativ</title>
+      <link>/post/loginui-reactnative/</link>
+      <pubDate>Tue, 10 Sep 2019 10:14:00 +0700</pubDate>
+      
+      <guid>/post/loginui-reactnative/</guid>
+      <description>Nama project : React native login UI  Waktu : 2 hari  Kopi : 3 gelas  Inspirasi project :  Source kode : https://github.</description>
+    </item>
     
     <item>
       <title>Setelah 7 hari 7 malam menggunakan vim</title>

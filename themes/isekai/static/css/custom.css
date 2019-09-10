@@ -73,7 +73,7 @@
   .borderless {
         padding: 2rem;
         border-left:3rem;
-        border-left-color: rgb(0, 168, 168);
+        border-left-color: rgba(0, 59, 168, 0.178);
         
   }
   .e {
